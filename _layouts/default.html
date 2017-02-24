@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<style>
+	div.container {
+		width: 100%;
+		border: 1px solid gray;
+	}
+	header {
+		padding: 1em;
+		color: #00FF00;
+		font-size: 16px;
+		font-style: italic;
+		background-color: #4C4C4C;
+		clear: left;
+		text-align: center;
+	}
+	footer {
+		padding: 2em;
+		color: #D7D9D7;
+		font-size: 12px;
+		background-color: #4C4C4C;
+		clear: left;
+		text-align: center;
+	}
+	nav {
+		float: left;
+		max-width: 160px;
+		margin: 0;
+		padding: 2em;
+	}
+	article {
+		margin-left: 170px;
+		border-left: 0px;
+		padding: 1em;
+		overflow: hidden;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			{% include head.html %}
+		</header>
+		<nav>
+			{% include navigation.html %}
+		</nav>
+		<article>
+			{{ content }}
+		</article>
+		<footer>{% include footer.html %}</footer>
+	</div>
+</body>
+</html>

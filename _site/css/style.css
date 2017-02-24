@@ -1,0 +1,26 @@
+body {
+	background-color: #32383F;
+    color: #ffffff;
+    font-family: Arial;
+ }
+ 
+ /* unvisited link */
+a:link {
+    color: #D7D9D7;
+}
+
+/* visited link */
+a:visited {
+    color: #D7D9D7;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF7519;
+	border-bottom: 2px dashed #D7D9D7;
+}
+
+/* selected link */
+a:active {
+    color: #39ED3C;
+}
