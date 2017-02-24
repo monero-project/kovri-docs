@@ -1,0 +1,2 @@
+<nav> {% assign url = page.url|remove:'index.html' %} {% for link in site.navigation %} <p><a class="menu-item {% if url == link.url %}active{%
+endif %}" role="menuitem" href="{{ link.url }}" title="{{ link.title }}"> {{ link.text }}</p></a>{% endfor %} </nav>

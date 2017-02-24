@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<style>
+	div.container {
+		width: 100%;
+		border: 1px solid gray;
+	}
+	header {
+		padding: 1em;
+		color: #00FF00;
+		font-size: 16px;
+		font-style: italic;
+		background-color: #4C4C4C;
+		clear: left;
+		text-align: center;
+	}
+	footer {
+		padding: 2em;
+		color: #D7D9D7;
+		font-size: 12px;
+		background-color: #4C4C4C;
+		clear: left;
+		text-align: center;
+	}
+	nav {
+		float: left;
+		max-width: 160px;
+		margin: 0;
+		padding: 2em;
+	}
+	article {
+		margin-left: 170px;
+		border-left: 0px;
+		padding: 1em;
+		overflow: hidden;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kovri</title>
+	<meta name="description" content="Kovri, a secure, private, untraceable C++ router implementation of I2P">
+	<meta name="author" content="The Kovri I2P Router Project">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<header>
+	<img src="img/kovri_logo.png" alt="The Kovri I2P Router Project">
+	<br>
+	/// No javascript - No cookies - No web analytics trackers - Open Sourced
+	<hr />
+</header>
+		</header>
+		<nav>
+			<nav>   <p><a class="menu-item " role="menuitem" href="index" title=""> Home</p></a> <p><a class="menu-item " role="menuitem" href="USER_GUIDE" title=""> User Guide</p></a> <p><a class="menu-item " role="menuitem" href="STYLE" title=""> Style</p></a> <p><a class="menu-item " role="menuitem" href="QUALITY_ASSURANCE" title=""> Quality</p></a> <p><a class="menu-item " role="menuitem" href="CONTRIBUTING" title=""> Contrubuting</p></a> <p><a class="menu-item " role="menuitem" href="FAQ" title=""> FAQ</p></a> <p><a class="menu-item " role="menuitem" href="BUILDING" title=""> Building</p></a> <p><a class="menu-item " role="menuitem" href="ACKNOWLEDGEMENTS" title=""> Acknowledgements</p></a> </nav>
+		</nav>
+		<article>
+			<h1 id="quality-assurance">Quality Assurance</h1>
+
+<p>The following is a proposed model for QA workflow. While linear in nature, any phase can be worked on individually if needed - as long as all phases are eventually addressed.</p>
+
+<h2 id="phase-1-basic-review">Phase 1: Basic Review</h2>
+
+<ul>
+  <li>All code must adhere to our contributing guidelines</li>
+  <li>Note areas that need improving (mentally or in code)</li>
+  <li>Create TODO’s and assign if possible</li>
+</ul>
+
+<h2 id="phase-2-specification-review---implementation--code-documentation">Phase 2: Specification Review /  Implementation / Code Documentation</h2>
+
+<ul>
+  <li>Complete specification review on a per module basis; e.g., Streaming, I2PControl, etc.
+    <ul>
+      <li>Code must be in-line with essential parts of the specification that will maintain the same (or better) level of anonymity that java I2P provides</li>
+      <li>Refactor/implement/patch when/where needed</li>
+    </ul>
+  </li>
+  <li>Ensure C++11/14 compliant implementation
+    <ul>
+      <li>Review phase 2 if needed</li>
+    </ul>
+  </li>
+  <li>Resolve all related TODO’s</li>
+  <li>Document code as much as possible with inline comments and Doxygen
+    <ul>
+      <li>Code should be understood by novice to experienced coders</li>
+      <li>Code should guide the reader to a better understanding of I2P
+        <ul>
+          <li>I2P is very complex so our code should act as sovereign replacement of spec documentation and not simply as a supplement (this can be a tedious objective but very rewarding in terms of maintenance and software lifespan)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="phase-3-crypto-review--security-auditing">Phase 3: Crypto Review / Security auditing</h2>
+
+<ul>
+  <li>Ensure that crypto is up-to-date and properly implemented</li>
+  <li>Establish every vector for known exploitation
+    <ul>
+      <li>Keep these vectors in mind when writing tests</li>
+    </ul>
+  </li>
+  <li>Break Kovri every which-way possible
+    <ul>
+      <li>Fix what you break</li>
+    </ul>
+  </li>
+  <li>Always use trustworthy, well-written libraries when possible
+    <ul>
+      <li>Avoid homebrewed, ad-hoc, <em>I’m sure I know better than the community</em> type of code</li>
+    </ul>
+  </li>
+  <li>Seek a 2nd (or more) opinion(s) from colleagues before proceeding to next phase</li>
+</ul>
+
+<h2 id="phase-4-bug-squashing--tests--profiling">Phase 4: Bug squashing / Tests / Profiling</h2>
+
+<ul>
+  <li>Resolve priority bugs/issues</li>
+  <li>Write unit-tests tests for every module
+    <ul>
+      <li>Run tests. Run them again</li>
+      <li>Full review of test results. Patch if needed. Refactor as necessary</li>
+    </ul>
+  </li>
+  <li>Ensure that automation is running on a regular basis
+    <ul>
+      <li>valgrind, doxygen, clang-format</li>
+      <li>Patch if needed, refactor as necessary</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="phase-5-confer">Phase 5: Confer</h2>
+
+<ul>
+  <li>Confer with colleagues and the community
+    <ul>
+      <li>Conferring should be done publicly via ticket, meetings, and/or IRC</li>
+    </ul>
+  </li>
+  <li>Accept all feedback and, in response, produce tangible results</li>
+  <li>If satisfied, proceed with next phase, else repeat this phase (or start from a previous phase)</li>
+</ul>
+
+<h2 id="phase-6-repeat-the-cycle-from-the-beginning">Phase 6: Repeat the cycle from the beginning</h2>
+
+		</article>
+		<footer><footer> <hr /> <a href="https://github.com/anonimal/kovri-site/blob/master/legal/copyright.md"
+target="_blank">Copyright</a> (c) 2013-2017, The Kovri I2P Router Project <br> XMR:
+44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A <br> OpenAlias:
+donate.getmonero.org <br> <a href="https://github.com/anonimal/kovri-site" target="_blank">source code</a> | <a
+href="https://github.com/anonimal/kovri-site/blob/master/legal/terms.md" target="_blank">terms of use</a> | <a
+href="https://github.com/anonimal/kovri-site/blob/master/legal/privacy.md" target="_blank">privacy</a> <br> version:
+2017-02-24 </footer></footer>
+	</div>
+</body>
+</html>

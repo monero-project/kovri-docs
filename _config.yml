@@ -1,0 +1,20 @@
+title: The Kovri I2P Router Project
+description: Kovri, a secure, private, untraceable C++ router implementation of I2P
+
+navigation:
+  - text: Home
+    url: index
+  - text: User Guide
+    url: USER_GUIDE
+  - text: Style
+    url: STYLE
+  - text: Quality
+    url: QUALITY_ASSURANCE
+  - text: Contrubuting
+    url: CONTRIBUTING
+  - text: FAQ
+    url: FAQ
+  - text: Building
+    url: BUILDING
+  - text: Acknowledgements
+    url: ACKNOWLEDGEMENTS
