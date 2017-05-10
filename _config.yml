@@ -10,7 +10,7 @@ navigation:
     url: STYLE
   - text: Quality
     url: QUALITY_ASSURANCE
-  - text: Contrubuting
+  - text: Contributing
     url: CONTRIBUTING
   - text: FAQ
     url: FAQ
