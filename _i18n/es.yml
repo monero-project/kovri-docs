@@ -8,4 +8,11 @@ langs:
   es: Español
   ru: Русский
 titles:
-  index: Que es Kovri?
+  index: What is Kovri?
+  acknowledgements: Acknowledgements
+  quality: Quality Assurance
+  contributing: General Contribution Guidelines
+  building: Building Instructions
+  faq: FAQ
+  style: Style Guide
+  user: User Guide

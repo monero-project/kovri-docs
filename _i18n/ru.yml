@@ -12,3 +12,12 @@ langs:
   en: English
   es: Español
   ru: Русский
+titles:
+  index: What is Kovri?
+  acknowledgements: Acknowledgements
+  quality: Quality Assurance
+  contributing: General Contribution Guidelines
+  building: Building Instructions
+  faq: FAQ
+  style: Style Guide
+  user: User Guide
