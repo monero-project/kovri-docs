@@ -4,7 +4,6 @@ baseurl: ""
 permalink: /:title/
 exclude: [".gitignore", "README.md"]
 
-
 # Plugins
 gems: 
   - jekyll-multiple-languages-plugin
