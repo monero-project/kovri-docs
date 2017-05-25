@@ -1,0 +1,14 @@
+global:
+  language: Русский
+  about: О нас!
+  twitter: Twitter
+  github: GitHub
+pages:
+  Home:
+  Get Started:
+  Contributing: 
+  FAQ:
+langs:
+  en: English
+  es: Español
+  ru: Русский

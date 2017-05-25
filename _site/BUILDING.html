@@ -1,69 +1,271 @@
 <!DOCTYPE html>
 <html>
-<body>
-	<style>
-	div.container {
-		width: 100%;
-		border: 1px solid gray;
-	}
-	header {
-		padding: 1em;
-		color: #00FF00;
-		font-size: 16px;
-		font-style: italic;
-		background-color: #4C4C4C;
-		clear: left;
-		text-align: center;
-	}
-	footer {
-		padding: 2em;
-		color: #D7D9D7;
-		font-size: 12px;
-		background-color: #4C4C4C;
-		clear: left;
-		text-align: center;
-	}
-	nav {
-		float: left;
-		max-width: 160px;
-		margin: 0;
-		padding: 2em;
-	}
-	article {
-		margin-left: 170px;
-		border-left: 0px;
-		padding: 1em;
-		overflow: hidden;
-	}
-	</style>
-</head>
-<body>
-	<div class="container">
-		<header>
-			<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Kovri</title>
+        <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/flexboxgrid.css">
+        <link rel="stylesheet" href="/css/custom.css">
+		<title>Kovri</title>
 	<meta name="description" content="Kovri, a secure, private, untraceable C++ router implementation of I2P">
 	<meta name="author" content="The Kovri I2P Router Project">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
+<body>
+    <div class="page-wrapper">
+          
+        <div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+               
+                     
+                        <div class="row">
+                             <div class="col-xs-12">
+                                <div class="text-center nav-item">
+                                    
+                               <a href="index.html">Home</a>
+                                
+                                </div>
+                             </div>
 
-<header>
-	<img src="img/kovri_logo.png" alt="The Kovri I2P Router Project">
-	<br>
-	/// No javascript - No cookies - No web analytics trackers - Open Sourced
-	<hr />
-</header>
-		</header>
-		<nav>
-			<nav>   <p><a class="menu-item " role="menuitem" href="index" title=""> Home</p></a> <p><a class="menu-item " role="menuitem" href="USER_GUIDE" title=""> User Guide</p></a> <p><a class="menu-item " role="menuitem" href="STYLE" title=""> Style</p></a> <p><a class="menu-item " role="menuitem" href="QUALITY_ASSURANCE" title=""> Quality</p></a> <p><a class="menu-item " role="menuitem" href="CONTRIBUTING" title=""> Contrubuting</p></a> <p><a class="menu-item " role="menuitem" href="FAQ" title=""> FAQ</p></a> <p><a class="menu-item " role="menuitem" href="BUILDING" title=""> Building</p></a> <p><a class="menu-item " role="menuitem" href="ACKNOWLEDGEMENTS" title=""> Acknowledgements</p></a> </nav>
-		</nav>
-		<article>
-			<h2 id="step-1-minimum-requirements">Step 1. Minimum requirements</h2>
+                        </div>
+                         
+                        <div class="row">
+                             <div class="col-xs-12">
+                                <div class="text-center nav-item">
+                                    
+                                    
+                                <label for="drop1">Get Started<div class="arrow-down"></div></label>
+                               <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                               <div class="mob dropdown-content">
+                                  
+                              <a href="building.html">Building</a>
+                                  
+                              <a href="user_guide.html">User Guide</a>
+                                  
+                                </div>
+                              
+                                </div>
+                             </div>
 
-<p>####Note: Due to <a href="https://github.com/monero-project/kovri/issues/403">#403</a>, a minimum of 1 GiB of RAM is suggested for build environments.</p>
+                        </div>
+                         
+                        <div class="row">
+                             <div class="col-xs-12">
+                                <div class="text-center nav-item">
+                                    
+                                    
+                                <label for="drop2">Contributing<div class="arrow-down"></div></label>
+                               <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                               <div class="mob dropdown-content">
+                                  
+                              <a href="contributing.html">General</a>
+                                  
+                              <a href="style.html">Style</a>
+                                  
+                              <a href="quality_assurance.html">Quality</a>
+                                  
+                                </div>
+                              
+                                </div>
+                             </div>
+
+                        </div>
+                         
+                        <div class="row">
+                             <div class="col-xs-12">
+                                <div class="text-center nav-item">
+                                    
+                               <a href="FAQ.html">FAQ</a>
+                                
+                                </div>
+                             </div>
+
+                        </div>
+                        
+                    
+        </div>
+       </div>
+</div>
+<div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-7 col-md-6 col-sm-6 col-xs-4">
+                    <a href="
+                    
+                    
+                    
+                    /
+                    
+                    
+                    
+                    "><img src="/img/kovri_logo.png" alt="The Kovri I2P Router Project" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-12 topnav-list">
+                      <div class="row end-xs">
+                         <div class="col-xs-6 text-center top-link">
+                             <a href="https://www.getmonero.org" class="mob">Monero</a>
+                         </div>
+                          <div class="dropdown col-xs-6 text-center language-change">
+                            <label for="langdrop">
+                            
+                            
+                            
+                                
+                            
+                                    English
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                            <div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <div class="dropdown-content text-center">
+                               
+                                
+                              
+                                
+                                  
+                                    <a href="/es/building.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/ru/building.html" >Русский</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                
+                
+                
+                      
+                    <div class="col-md-3 dropdown text-center nav-item">
+                          
+                           <a href="index.html">Home</a>
+                            
+                    </div>
+                     
+                    <div class="col-md-3 dropdown text-center nav-item">
+                          
+                            <label for="drop1">Get Started<div class="arrow-down"></div></label>
+                           <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                           <div class="dropdown-content">
+                              
+                              <a href="building.html">Building</a>
+                              
+                              <a href="user_guide.html">User Guide</a>
+                              
+                            </div>
+                          
+                    </div>
+                     
+                    <div class="col-md-3 dropdown text-center nav-item">
+                          
+                            <label for="drop1">Contributing<div class="arrow-down"></div></label>
+                           <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                           <div class="dropdown-content">
+                              
+                              <a href="contributing.html">General</a>
+                              
+                              <a href="style.html">Style</a>
+                              
+                              <a href="quality_assurance.html">Quality</a>
+                              
+                            </div>
+                          
+                    </div>
+                     
+                    <div class="col-md-3 dropdown text-center nav-item">
+                          
+                           <a href="FAQ.html">FAQ</a>
+                            
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </nav>
+</div>
+<div class="mob bot-nav white-nav">
+            <div class="row center-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /
+                    
+                    "><img src="/img/kovri_logo.png" alt="" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop">
+                            
+                                
+                            
+                                    English
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/es/building.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/ru/building.html" >Русский</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>  
+          <div class="site-wrap">
+              <article class="container full">
+                <div class="info-block">
+                    <div class="row center-xs">
+                        <div class="col"><h2>Building Instructions</h2></div>
+                    </div>
+                    <div class="row middle-xs info-block-row">
+                       <div class="col-xs-12">
+                            <h2 id="step-1-minimum-requirements">Step 1. Minimum requirements</h2>
+
+<h4 id="note-due-to-403-a-minimum-of-1-gib-of-ram-is-suggested-for-build-environments">Note: Due to <a href="https://github.com/monero-project/kovri/issues/403">#403</a>, a minimum of 1 GiB of RAM is suggested for build environments.</h4>
 
 <h3 id="linux--macosx--freebsd-10">Linux / MacOSX / FreeBSD 10</h3>
 <ul>
@@ -128,7 +330,7 @@ Below are instructions for PPA:</p>
 </div>
 
 <h3 id="debian-stable">Debian (stable)</h3>
-<p>We’ll need to pull from <code class="highlighter-rouge">testing</code> for <code class="highlighter-rouge">Boost 1.58+</code> and because of a <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656">broken CMake</a>. For documentation’s sake, we will pull all dependencies from <code class="highlighter-rouge">testing</code>. If you’re unfamiliar with apt-pinning, proceed with the following before installing dependencies:</p>
+<p>We&#8217;ll need to pull from <code class="highlighter-rouge">testing</code> for <code class="highlighter-rouge">Boost 1.58+</code> and because of a <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656">broken CMake</a>. For documentation&#8217;s sake, we will pull all dependencies from <code class="highlighter-rouge">testing</code>. If you&#8217;re unfamiliar with apt-pinning, proceed with the following before installing dependencies:</p>
 
 <ul>
   <li>Create and edit <code class="highlighter-rouge">/etc/apt/preferences.d/custom.pref</code></li>
@@ -220,10 +422,10 @@ pacman -Su
 </code></pre>
     </div>
   </li>
-  <li>For those of you already familiar with pacman, you can run the normal <code class="highlighter-rouge">pacman -Syu</code> to update, but you may get errors and need to restart MSYS2 if pacman’s dependencies are updated.</li>
+  <li>For those of you already familiar with pacman, you can run the normal <code class="highlighter-rouge">pacman -Syu</code> to update, but you may get errors and need to restart MSYS2 if pacman&#8217;s dependencies are updated.</li>
   <li>Install dependencies: <code class="highlighter-rouge">pacman -S make mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-boost mingw-w64-x86_64-openssl</code></li>
-  <li>Optional: <code class="highlighter-rouge">mingw-w64-x86_64-doxygen</code>  (you’ll need <a href="http://graphviz.org/doc/winbuild.html">Graphviz</a> for doxygen)</li>
-  <li>Note: You’ll need  <code class="highlighter-rouge">mingw-w64-x86_64-miniupnpc</code> if you are behind a restrictive NAT firewall.</li>
+  <li>Optional: <code class="highlighter-rouge">mingw-w64-x86_64-doxygen</code>  (you&#8217;ll need <a href="http://graphviz.org/doc/winbuild.html">Graphviz</a> for doxygen)</li>
+  <li>Note: You&#8217;ll need  <code class="highlighter-rouge">mingw-w64-x86_64-miniupnpc</code> if you are behind a restrictive NAT firewall.</li>
 </ul>
 
 <h2 id="step-3-build">Step 3. Build</h2>
@@ -287,7 +489,7 @@ pacman -Su
 </ul>
 
 <h3 id="optional-custom-data-path">(Optional) Custom data path</h3>
-<p>You can customize Kovri’s data path to your liking. Simply export <code class="highlighter-rouge">KOVRI_DATA_PATH</code>; example:</p>
+<p>You can customize Kovri&#8217;s data path to your liking. Simply export <code class="highlighter-rouge">KOVRI_DATA_PATH</code>; example:</p>
 
 <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">export </span><span class="nv">KOVRI_DATA_PATH</span><span class="o">=</span><span class="nv">$HOME</span>/.another-kovri-data-path <span class="o">&amp;&amp;</span> make <span class="o">&amp;&amp;</span> make install-resources
 </code></pre>
@@ -304,14 +506,38 @@ pacman -Su
 </code></pre>
 </div>
 
-		</article>
-		<footer><footer> <hr /> <a href="https://github.com/anonimal/kovri-site/blob/master/legal/copyright.md"
-target="_blank">Copyright</a> (c) 2013-2017, The Kovri I2P Router Project <br> XMR:
-44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A <br> OpenAlias:
-donate.getmonero.org <br> <a href="https://github.com/anonimal/kovri-site" target="_blank">source code</a> | <a
-href="https://github.com/anonimal/kovri-site/blob/master/legal/terms.md" target="_blank">terms of use</a> | <a
-href="https://github.com/anonimal/kovri-site/blob/master/legal/privacy.md" target="_blank">privacy</a> <br> version:
-2017-02-24 </footer></footer>
-	</div>
+                        </div>
+                    </div>
+                </div>
+        </article>
+            </div>
+		<footer>
+  
+   <div class="container footer-container">
+        <div class="row center-xs footer-wrap"> 
+            <img src="../img/wallet.png" class="img-wallet">   
+            <p>XMR: 44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A </p>
+            <p>OpenAlias:  donate.getmonero.org</p> 
+           </div>
+           <div class="row center-xs">
+    <p>No javascript - No cookies - No web analytics trackers - Open Sourced</p>
+</div> 
+        <div class="row center-xs">
+            <p>
+                <a class="white" href="https://github.com/anonimal/kovri-site" target="_blank">Source code</a> | 
+                <a class="white" href="https://github.com/anonimal/kovri-site/blob/master/legal/terms.md" target="_blank">Terms of use</a> | 
+                <a class="white" href="https://github.com/anonimal/kovri-site/blob/master/legal/privacy.md" target="_blank">Privacy policy</a> |
+                <a href="acknowledgements.html" class="white" target="_blank">Acknowledgements</a>
+            </p>
+        </div> 
+         <div class="row center-xs">
+               <p><a href="https://github.com/anonimal/kovri-site/blob/master/legal/copyright.md" target="_blank">Copyright</a> 
+                &copy; 2013-2017, The Kovri I2P Router Project </p>
+         </div>
+   </div>
+    
+</footer>
+     </div>
+           
 </body>
 </html>

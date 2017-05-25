@@ -1,0 +1,11 @@
+global:
+  language: Español
+  about: Sobre
+  twitter: Twitter
+  github: GitHub
+langs:
+  en: English
+  es: Español
+  ru: Русский
+titles:
+  index: Que es Kovri?

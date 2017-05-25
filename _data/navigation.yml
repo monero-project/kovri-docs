@@ -1,0 +1,59 @@
+en:
+- title: Home
+  url: index.html
+- title: Get Started
+  subfolderitems:
+  - page: Building
+    url: building.html
+  - page: User Guide
+    url: user_guide.html
+- title: Contributing
+  subfolderitems:
+    - page: General
+      url: contributing.html
+    - page: Style
+      url: style.html
+    - page: Quality
+      url: quality_assurance.html
+- title: FAQ
+  url: FAQ.html
+  
+es:
+- title: Inicio
+  url: index.html
+- title: Get Started
+  subfolderitems:
+  - page: Building
+    url: building.html
+  - page: User Guide
+    url: user_guide.html
+- title: Contributing
+  subfolderitems:
+    - page: General
+      url: contributing.html
+    - page: Style
+      url: style.html
+    - page: Quality
+      url: quality_assurance.html
+- title: FAQ
+  url: faq.html
+  
+ru:
+- title: Главная
+  url: index.html
+- title: Начало
+  subfolderitems:
+  - page: Установка
+    url: building.html
+  - page: Руководство для пользователя
+    url: user_guide.html
+- title: Contributing
+  subfolderitems:
+    - page: General
+      url: contributing.html
+    - page: Style
+      url: style.html
+    - page: Quality
+      url: quality_assurance.html
+- title: FAQ
+  url: faq.html
