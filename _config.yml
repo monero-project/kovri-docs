@@ -3,7 +3,6 @@ description: Kovri, a secure, private, untraceable C++ router implementation of 
 baseurl: ""
 permalink: /:title/
 exclude: [".gitignore", "README.md"]
-
 # Plugins
 gems: 
   - jekyll-multiple-languages-plugin
@@ -11,4 +10,4 @@ gems:
 # jekyll-multiple-languages-plugin settings:
 languages: ["en", "es", "ru"]
 
-exclude_from_localizations: ["img", "css", "fonts"]
+exclude_from_localizations: ["img", "css", "fonts", "Kovri Website Instructions.md"]
