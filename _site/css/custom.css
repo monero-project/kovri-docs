@@ -584,7 +584,7 @@ footer {
 .footer-wrap {
     word-wrap: break-word;
     word-break: break-all;
-    border: 1px solid white;
+    border: 1px solid #e8ebef;
     padding: 2rem 2rem;
     margin: 0 1rem 1.5rem 1rem;
     position: relative;
@@ -593,9 +593,12 @@ footer {
 .footer-wrap img.img-wallet {
     height: 3rem;
     position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     background-color: #393939;
     top: -1.8rem;
     padding:  0 2rem;
+    margin: 0 auto;
 }
 
 .footer-wrap p {
