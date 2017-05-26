@@ -3,24 +3,24 @@
 ## Table of Contents
 
 1. Intro
-1. Instructions
+2. Instructions
    1. To change or add design elements (Jekyll)
       1. Jekyll
-      1. Required Plugins
-      1. GitHub
-   1. To edit or add pages (Markdown)
+      2. Required Plugins
+      3. GitHub
+   2. To edit or add pages (Markdown)
       1. Of GitHub and Markdown
-      1. .html: frontmatter & more
-      1. Writing Your Page
-      1. Multi-language ready
-      1. Navigation (more multi-language)
-   1. To translate
+      2. .html: frontmatter & more
+      3. Writing Your Page
+      4. Multi-language ready
+      5. Navigation (more multi-language)
+   3. To translate
       1. Fork that code!
-      1. Humble beginnings
-      1. Translate it!
-      1. Housekeeping
-1. Choosing a layout
-1. Questions & Contact
+      2. Humble beginnings
+      3. Translate it!
+      4. Housekeeping
+3. Choosing a layout
+4. Questions & Contact
 
 ## 1. Intro
 Hey everyone, I'm rehrar. The kid responsible for making the custom framework and design that is used in both the getmonero.org and getkovri.org websites. If you're reading this you probably want to know how to edit a page or add content, maybe even take content away. Let me be the first to say, thank you so much! The Monero Project is made and run by the community, and you're helping to make it better. 
@@ -29,13 +29,7 @@ There are a couple of differences between the Kovri and Monero websites, so I ju
 
 Feel free to skip down to a relevant section if you already know what you need. Also, any help translating this document into another language is greatly appreciated.
 
-If for any reason you have questions or need to contact me, you can find me on the Monero Slack, reddit, and sometimes the various IRC channels using the same name: rehrar. There's a second 'r' after the 'h'. Don't forget. ;)
-
-If you're also feeling generous, a donation for my work on the website and documentation is apprecaited. Although don't forget to donate to getmonero.org also. Both addresses are provided below:
-
-rehrar XMR address: 44LGJKw6Eda72gGDaiVkB9aVq7aYpCHuC1sFFixT8FNB5vLQ1LTXztaMtYvib3QetCddxFGXZvoWDGEBvcghPLSbTaBbFpY
-
-getmonero.org XMR address: 44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A
+If for any reason you have questions or need to contact us, you can find us on the IRC channel #kovri-dev. We'll do whatever we can to help you.
 
 ## 2. Instructions
 
@@ -245,6 +239,6 @@ _More layouts to be added later_
 ## 4. Questions & Contact
 That should be everything that you need. There will be an assets document released as well for the framework at large that will show how to make your own layouts by simply copy and pasting out of the document. This instructions document will be updated with the link when it is released.
 
-Once again, I am rehrar. Feel free to contact me with any questions regarding translation, page-creation, content, markdown, jekyll, html/css, or anything else.
+Feel free to contact us with any questions regarding translation, page-creation, content, markdown, jekyll, html/css, or anything else. Again, you can reach us at the #kovri-dev IRC channel.
 
 Thank you for being a part of, and contributing to, the Monero community. This coin is all the stronger for your help.

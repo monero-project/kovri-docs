@@ -158,6 +158,8 @@ img {max-width: 100%;}
 
 code {
     white-space: pre-wrap;
+    background-color: black;
+    color: white;
 }
 
 .arrow-down {
@@ -207,8 +209,8 @@ h2 {
 }
 
 h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.3125rem;
+    font-family: 'Hind', 'Open Sans', sans-serif;
+    font-size: 1.2125rem;
     font-weight: 400;
     margin: 0 0 0.7rem 0;
     letter-spacing: 0.125rem;
@@ -300,6 +302,11 @@ a.btn-link:hover, a.btn-link:active, a.btn-link:focus {
 }
 
 /*main*/
+
+.page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
 
 img.monero-logo {
     max-width: 100%;
@@ -433,7 +440,7 @@ img.monero-logo {
 .desktop-nav .nav-item .arrow-down {
     display: inline-block;
     margin-left: 0.2rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.25rem;
 }
 
 .nav-items>.nav-item>label:hover, .nav-items>.nav-item>a:hover, .nav-items>.nav-item>a:focus, .nav-items>.nav-item>a:active {
@@ -552,7 +559,7 @@ img.monero-logo {
     padding: 3rem;
 }
 
-.monero-video iframe {
+.monero-video video {
     max-width: 100%;
 }
 
