@@ -12,6 +12,8 @@ langs:
   en: English
   es: Español
   ru: Русский
+  fr: French
+  it: Italian
 titles:
   index: What is Kovri?
   acknowledgements: Acknowledgements
