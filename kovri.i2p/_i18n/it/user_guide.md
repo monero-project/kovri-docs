@@ -43,10 +43,10 @@ $ cd build/ && ./kovri
 
 Note:
 
-- **Just like with Tor, one doesn't need SSL to safely and securely use the network**
-- SSL site support and outproxy service is not currently implemented
-- If someone gives you a .i2p address that's not in your address book, use the `Jump` service at http://stats.i2p/i2p/lookup.html
-- Look through hosts.txt in your data directory to view a list of default sites you can easily visit
+- **Come Tor, una persona non ha bisogno di SSL per usare in sicurezza la rete**
+- Il supporto dei siti con SSL non è stato implementato
+- Se qualcuno ti da un indirizzo .i2p che non è nel tuo address book,  usa il servizio  `Jump` http://stats.i2p/i2p/lookup.html
+- Guarda nel file hosts.txt , dovresti trovare alcuni siti che potresti visitare
 - Overall, HTTP Proxy and address book implementation are in development and not yet feature-complete
 
 ## Step 6. Host your own garlic-service (garlic-site/eepsite)
