@@ -1,52 +1,52 @@
-# So, you've installed Kovri. Now what?
+# Ok, ho appena installato Kovri. E adesso?
 
-## Step 1. Open your NAT/Firewall
-1. Choose a port between ```9111``` and ```30777```
-2. **Save this port to your configuration file** (`kovri.conf`)
-3. Poke a hole in your NAT/Firewall to allow incoming TCP/UDP connections to that port (See notes below if you don't have access)
+## Step 1. Apri il tuo NAT/Firewall
+1.  Scegli una porta tra ```9111``` e ```30777``` (ovviamente questa non dovrà interferire con altre applicazioni)
+2. **Salva la porta scelta nel tuo file di configurazione** (`kovri.conf`)
+3. Configura il tuo NAT/Fifewall per consentire ad esso di accettare le connessioni  TCP/UDP in entrata dalla porta (Guarda le note qui sotto se non hai accesso)
 
-Notes:
+Note:
 
-- **Don't share your port number with anyone as it will effect your anonymity!**
-- If you don't save the port, kovri will randomly generate a new one on each startup (you also have the choice to pass the port with the `--port` flag on each startup).
-- If you do not have access to your NAT, see instructions in [BUILDING](https://github.com/monero-project/kovri/blob/master/doc/BUILDING.md) for your OS. 
+- **Non condividere il tuo numero di porta con nessuno altrimenti la tua anonimità sarà compromessa!**
+- Se non salvi la porta, Kovri ne rigenererà una nuova ad ogni avvio (hai anche la scelta di indicare la porta con `--port` ad ogni avvio).
+- Se non hai accesso al tuo NAT, segui le istruzioni in [BUILDING](https://github.com/monero-project/kovri/blob/master/doc/BUILDING.md) per il tuo OS. 
 
-## Step 2. Configure Kovri
+## Step 2. Configurare Kovri
 
-For a full list of options:
+Per una lista completa di opzioni, digitare:
 
 ```bash
 $ ./kovri --help
 ```
 
-For complete detailed options:
+Per le opzioni scritte in maniera dettagliata:
 
-- `kovri.conf` configuration file for router and client
-- `tunnels.conf` configuration file for client/server tunnels
+- `kovri.conf` file di configurazione per il router e il client
+- `tunnels.conf` file di configurazione per il client/server tunnels
 
-## Step 3. Run Kovri
+## Step 3. Eseguire Kovri
 ```bash
 $ cd build/ && ./kovri
 ```
 
-- Wait 5 minutes or so to get bootstrapped into the network before attempting to use services
+- Aspettare 5 minuti (il tempo di attesa può variare a seconda del tuo compuer) per entrare nella rete prima del tentativo di usare servizi
 
-## Step 4. Join us on IRC
-1. Startup your [IRC client](https://en.wikipedia.org/wiki/List_of_IRC_clients)
-2. Setup your client to connect to kovri's IRC port (default 6669). This will connect you to the Irc2P network (I2P's IRC network)
-3. Join `#kovri` and `#kovri-dev`
+## Step 4. Unisciti al canale IRC
+1. Avvia il tuo [IRC client](https://en.wikipedia.org/wiki/List_of_IRC_clients)
+2. Imposta il tuo client per connettersi con la porta IRC di kovri (default 6669). Questo ti collegherà al network Irc2P (I2P's IRC network)
+3. Entra in  `#kovri` e `#kovri-dev`
 
-## Step 5. Browse an I2P website (garlic-site/eepsite)
-1. Startup a browser of your choosing (preferably a browser devoted to kovri usage)
-2. Configure your browser by reading [these instructions](https://geti2p.net/en/about/browser-config) **but instead of port 4444 and 4445** change HTTP proxy port to **4446** and SSL proxy port *also* to **4446**
-3. Visit http://check.kovri.i2p
+## Step 5. Navigare su un sito I2P (garlic-site/eepsite)
+1. Apri un browser (preferibilmente un browser cha abbia il supporto a kovri)
+2. Configura il browser usando questa guida [these instructions](https://geti2p.net/en/about/browser-config) **invece di usare la porta 4444 e 4445** cambia la porta HTTP proxy a **4446** e la porta SSL proxy a **4446**
+3. Se tutto è stato configurato correttamente, dovresti vedere un sito come questo http://check.kovri.i2p
 
-Notes:
+Note:
 
-- **Just like with Tor, one doesn't need SSL to safely and securely use the network**
-- SSL site support and outproxy service is not currently implemented
-- If someone gives you a .i2p address that's not in your address book, use the `Jump` service at http://stats.i2p/i2p/lookup.html
-- Look through hosts.txt in your data directory to view a list of default sites you can easily visit
+- **Come Tor, una persona non ha bisogno di SSL per usare in sicurezza la rete**
+- Il supporto dei siti con SSL non è stato implementato
+- Se qualcuno ti da un indirizzo .i2p che non è nel tuo address book,  usa il servizio  `Jump` http://stats.i2p/i2p/lookup.html
+- Guarda nel file hosts.txt , dovresti trovare alcuni siti che potresti visitare
 - Overall, HTTP Proxy and address book implementation are in development and not yet feature-complete
 
 ## Step 6. Host your own garlic-service (garlic-site/eepsite)
