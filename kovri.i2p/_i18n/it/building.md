@@ -1,6 +1,6 @@
-## Step 1. Minimum requirements
+## Step 1. Requisiti minimi
 
-Note: Due to [#403](https://github.com/monero-project/kovri/issues/403), a minimum of 1 GiB of RAM is suggested for build environments.
+Nota: A causa di [#403](https://github.com/monero-project/kovri/issues/403), è richiesto almeno un minimo di 1 GiB di RAM per i seguenti ambienti di compilazione..
 
 ### Linux / MacOSX / FreeBSD 10
 - [Git](https://git-scm.com/download) 1.9.1
@@ -23,14 +23,14 @@ Optional:
 ### MacOSX
 - [Homebrew](http://brew.sh/)
 
-## Step 2. Install dependencies
+## Step 2. Installa le dipendenze
 
 ### Ubuntu Xenial (16.04)
-Required dependencies:
+Dipendenze richieste:
 ```bash
 $ sudo apt-get install git cmake libboost-all-dev libssl-dev  # gcc/g++ and libssl installed by default
 ```
-Optional dependencies:
+Dipendenze opzionali:
 ```bash
 $ sudo apt-get install clang
 $ sudo apt-get install doxygen graphviz
@@ -38,10 +38,10 @@ $ sudo apt-get install libminiupnpc-dev #For users behind a restrictive NAT
 ```
 
 ### Ubuntu Trusty (14.04)
-You can either build Boost from source or use PPA
-Below are instructions for PPA:
+Puoi costruire Boost dal codice sorgente oppure usando PPA
+Istruzioni per PPA:
 
-Required dependencies:
+Dipendenze richieste:
 ```bash
 $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 $ sudo add-apt-repository ppa:kojoley/boost
@@ -49,7 +49,7 @@ $ sudo apt-get update
 $ sudo apt-get install libboost-{chrono,log,program-options,date-time,thread,system,filesystem,regex,test}1.58-dev
 $ sudo apt-get install git g++-4.9 cmake libboost-all-dev libssl-dev libssl1.0.0
 ```
-Optional dependencies:
+Dipendenze opzionali:
 ```bash
 $ sudo apt-get install clang-3.5
 $ sudo apt-get install doxygen graphviz
@@ -57,10 +57,10 @@ $ sudo apt-get install libminiupnpc-dev #For users behind a restrictive NAT
 ```
 
 ### Debian (stable)
-We'll need to pull from ```testing``` for ```Boost 1.58+``` and because of a [broken CMake](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656). For documentation's sake, we will pull all dependencies from ```testing```. If you're unfamiliar with apt-pinning, proceed with the following before installing dependencies:
+Dovremo togliere  ```testing``` per ```Boost 1.58+``` e per [broken CMake](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656). Per motivi di documentazione, toglieremo tutte le dipendenze da  ```testing```. Se non hai esperienza con apt-pinning, procedi con le seguenti istruzioni prima di installare le dipendenze:
 
-- Create and edit ```/etc/apt/preferences.d/custom.pref```
-- Enter and save the following:
+- Crea e modifica ```/etc/apt/preferences.d/custom.pref```
+- Salva il file con il seguente testo:
 
 ```
 Package: *
@@ -71,16 +71,16 @@ Package: *
 Pin: release a=testing
 Pin-Priority: 650
 ```
-- Create and edit ```/etc/apt/sources.list.d/custom.list```
+- Crea e modifica ```/etc/apt/sources.list.d/custom.list```
 ```
 # Stable
 deb [Enter your mirror here] stable main non-free contrib
 # Testing
 deb [Enter your mirror here] testing main non-free contrib
 ```
-- Replace ```[Enter your mirror here]``` with your mirror (see ```/etc/apt/sources.list```)
-- Run ```$ sudo apt-get update```
-- Install dependencies with the ```-t testing``` switch:
+- Sostituisci ```[Enter your mirror here]``` con il tuo mirror (guarda ```/etc/apt/sources.list```)
+- Esegui ```$ sudo apt-get update```
+- Installa le dipendenze con ```-t testing```:
 
 Required dependencies:
 ```bash
