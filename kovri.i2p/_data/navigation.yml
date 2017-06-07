@@ -79,21 +79,22 @@ fr:
   url: faq.html
   
 it:
-- title: Home
-  url: index.html
-- title: Get Started
-  subfolderitems:
-  - page: Building
-    url: building.html
-  - page: User Guided
-    url: user_guide.html
-- title: Contributing
-  subfolderitems:
-    - page: General
-      url: contributing.html
-    - page: Style
-      url: style.html
-    - page: Quality
-      url: quality_assurance.html
-- title: FAQ
+  - title: Home
+    url: index.html
+- title: Inizia ora
+    subfolderitems:
+   - page: Costruzione
+      url: building.html
+   - page: Guida utente
+      url: user_guide.html
+ - title: Contribuisci
+    subfolderitems:
+    - page: Generale
+        url: contributing.html
+ 
+  - page: Stile
+        url: style.html
+    - page: Qualità
+        url: quality_assurance.html
+  - title: FAQ
   url: faq.html

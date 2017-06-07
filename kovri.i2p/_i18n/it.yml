@@ -1,0 +1,25 @@
+global:
+  language: Italian
+  about: About
+  twitter: Twitter
+  github: GitHub
+langs:
+ en: English
+  es: Español
+  ru: Русский
+  fr: French
+  it: Italian
+pages:
+  Home: Home
+  Get Started: Inizia ora
+  Contributing: Contribuisci
+  FAQ: FAQ
+titles:
+  index: Cosa è Kovri?
+  acknowledgements: Acknowledgements
+  quality: Qualità
+  contributing: Linee guida per contribuire
+  building: Istruzioni per la compilazione
+  faq: FAQ
+  style: Guida per lo stile
+  user: Guida per l'utente
