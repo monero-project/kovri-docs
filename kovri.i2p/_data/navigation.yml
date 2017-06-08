@@ -17,6 +17,8 @@ en:
       url: quality_assurance.html
 - title: FAQ
   url: FAQ.html
+- title: Download
+  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
   
 es:
 - title: Inicio
@@ -37,6 +39,8 @@ es:
       url: quality_assurance.html
 - title: FAQ
   url: faq.html
+- title: Download
+  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
   
 ru:
 - title: Главная
@@ -57,6 +61,8 @@ ru:
       url: quality_assurance.html
 - title: FAQ
   url: faq.html
+- title: Download
+  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
   
 fr:
 - title: Home
@@ -77,6 +83,8 @@ fr:
       url: quality_assurance.html
 - title: FAQ
   url: faq.html
+- title: Download
+  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
   
 it:
 - title: Home
@@ -97,3 +105,5 @@ it:
       url: quality_assurance.html
 - title: FAQ
   url: faq.html
+- title: Download
+  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge

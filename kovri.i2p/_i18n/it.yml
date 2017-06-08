@@ -4,11 +4,11 @@ global:
   twitter: Twitter
   github: GitHub
 langs:
- en: English
+  en: English
   es: Español
   ru: Русский
   fr: French
-  it: Italian
+  it: Italiano
 pages:
   Home: Home
   Get Started: Inizia ora
@@ -22,4 +22,4 @@ titles:
   building: Istruzioni per la compilazione
   faq: FAQ
   style: Guida per lo stile
-  user: Guida per l'utente
+  user: Guida per l\'utente
