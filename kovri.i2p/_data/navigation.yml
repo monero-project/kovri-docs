@@ -1,6 +1,8 @@
 en:
 - title: Home
   url: index.html
+- title: Download
+  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
 - title: Get Started
   subfolderitems:
   - page: Building
@@ -17,12 +19,12 @@ en:
       url: quality_assurance.html
 - title: FAQ
   url: FAQ.html
-- title: Download
-  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
   
 es:
 - title: Inicio
   url: index.html
+- title: Download
+  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
 - title: Get Started
   subfolderitems:
   - page: Building
@@ -39,12 +41,12 @@ es:
       url: quality_assurance.html
 - title: FAQ
   url: faq.html
-- title: Download
-  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
   
 ru:
 - title: Главная
   url: index.html
+- title: Download
+  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
 - title: Начало
   subfolderitems:
   - page: Установка
@@ -61,12 +63,12 @@ ru:
       url: quality_assurance.html
 - title: FAQ
   url: faq.html
-- title: Download
-  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
   
 fr:
 - title: Home
   url: index.html
+- title: Download
+  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
 - title: Get Started
   subfolderitems:
   - page: Building
@@ -83,12 +85,13 @@ fr:
       url: quality_assurance.html
 - title: FAQ
   url: faq.html
-- title: Download
-  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
+
   
 it:
 - title: Home
   url: index.html
+- title: Download
+  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
 - title: Inizia ora
   subfolderitems:
     - page: Costruzione
@@ -105,5 +108,3 @@ it:
       url: quality_assurance.html
 - title: FAQ
   url: faq.html
-- title: Download
-  url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
