@@ -56,7 +56,7 @@ $ sudo apt-get install doxygen graphviz
 $ sudo apt-get install libminiupnpc-dev #For users behind a restrictive NAT 
 ```
 
-### Debian (stable)
+### Debian (stabile)
 Dovremo togliere  ```testing``` per ```Boost 1.58+``` e per [broken CMake](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656). Per motivi di documentazione, toglieremo tutte le dipendenze da  ```testing```. Se non hai esperienza con apt-pinning, procedi con le seguenti istruzioni prima di installare le dipendenze:
 
 - Crea e modifica ```/etc/apt/preferences.d/custom.pref```
@@ -82,11 +82,11 @@ deb [Enter your mirror here] testing main non-free contrib
 - Esegui ```$ sudo apt-get update```
 - Installa le dipendenze con ```-t testing```:
 
-Required dependencies:
+Dipendenze richieste:
 ```bash
 $ sudo apt-get -t testing install git g++ cmake libboost-all-dev libssl-dev libssl1.0.0
 ```
-Optional dependencies:
+Dipendenze opzionali:
 ```bash
 $ sudo apt-get -t testing install clang
 $ sudo apt-get -t testing install doxygen graphviz
@@ -94,11 +94,11 @@ $ sudo apt-get -t testing install libminiupnpc-dev #For users behind a restricti
 ```
 
 ### Arch Linux
-Required dependencies:
+Dipendenze richieste:
 ```bash
 $ sudo pacman -Syu cmake boost  # gcc/g++ and openssl installed by default
 ```
-Optional dependencies:
+Dipendenze opzionali:
 ```bash
 $ sudo pacman -S clang
 $ sudo pacman -S doxygen graphviz
@@ -106,18 +106,18 @@ $ sudo pacman -S miniupnpc #For users behind a restrictive NAT
 ```
 
 ### Mac OSX
-Required dependencies:
+Dipendenze richieste:
 ```bash
 $ brew install cmake boost openssl # clang installed by default
 ```
-Optional dependencies:
+Dipendenze opzionali:
 ```bash
 $ brew install doxygen graphviz
 $ brew install miniupnpc #For users behind a restrictive NAT 
 ```
 
 ### FreeBSD 10
-Required dependencies:
+Dipendenze richieste:
 ```bash
 $ sudo pkg install git cmake gmake clang36 openssl
 # Build latest boost (1.58 minimum)
@@ -126,17 +126,17 @@ $ tar xvjf latest_boost.tar.bz2 && cd latest_boost
 $ ./bootstrap.sh --with-toolset=clang  # OK to build with clang 3.5
 $ sudo ./b2 --toolset=clang install
 ```
-Optional dependencies:
+Dipendenze opzionali:
 ```bash
 $ sudo pkg install doxygen graphviz
 $ sudo pkg install miniupnpc #For users behind a restrictive NAT 
 ```
-**Note: see FreeBSD build instructions below**
+**Nota: guarda le istruzioni per la build FreeBSD qui sotto**
 
 ### Windows (MSYS2/MinGW-64)
-* Download the [MSYS2 installer](http://msys2.github.io/), 64-bit or 32-bit as needed, and run it.
-* Use the shortcut associated with your architecture to launch the MSYS2 environment. On 64-bit systems that would be the MinGW-w64 Win64 Shell shortcut. Note that if you are running 64-bit Windows, you will have both 64-bit and 32-bit environments.
-* Update the packages in your MSYS2 install:
+* Scarica [MSYS2 installer](http://msys2.github.io/), 64 bit o 32 bit, dipende dal tuo computer ed eseguilo..
+* Usa il collegamento associato con la tua architetura per lanciare l'ambiente MSYS2. Nota che se sei su Windows 64 bit, avrai tutti e due gli ambienti, 64 e 32 bit.
+* Aggiorna i pacchetti con i seguenti comandi:
 ```
 pacman -Sy
 pacman -Su --ignoregroup base
