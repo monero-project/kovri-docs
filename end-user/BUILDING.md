@@ -29,7 +29,7 @@ Optional:
 
 ## Step 2. Install dependencies
 
-#### Note: for container options (like Docker and snapcraft), see the [User Guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md)
+#### Note: for container options (like Docker and snapcraft), see the [User Guide](https://github.com/anonimal/kovri-docs/blob/master/end-user/USER_GUIDE.md)
 
 ### Ubuntu Xenial (16.04)
 Required dependencies:
@@ -246,7 +246,7 @@ $ export KOVRI_DATA_PATH=$HOME/.another-kovri-data-path && make && make install
 ```
 
 ## Step 4. Proceed to the user guide
-Read the [user guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md) to get started
+Read the [user guide](https://github.com/anonimal/kovri-docs/blob/master/end-user/USER_GUIDE.md) to get started
 
 ## Docker
 
