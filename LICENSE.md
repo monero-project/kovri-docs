@@ -1,6 +1,8 @@
 # Kovri
 
-Copyright (c) 2015-2017, The Kovri I2P Router Project
+This project is licensed under the BSD 3-clause license.
+
+Copyright (c) 2017, The Kovri I2P Router Project
 
 All rights reserved.
 
