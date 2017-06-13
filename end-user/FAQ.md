@@ -1,7 +1,7 @@
 # Frequently Asked Questions (and answers)
 
 ## What is Kovri?
-Kovri is a secure, private, untraceable C++ router implementation of the [I2P](https://geti2p.net) anonymous network. What was once a fork of i2pd, Kovri has become a unique, actively-developed, community-driven C++ I2P implementation with many improvements, security enhancements, and new features over its predecessor.
+Kovri provides users with the ability to run and access nodes that hide their geographic location and IP address. When used in conjunction with Kovri, the origin of Monero transactions is concealed to protect the privacy of the sender while mitigating network monitoring and other attacks. Under the hood, Kovri is a secure, private, untraceable C++ router implementation of the [I2P](https://geti2p.net) anonymous network. What was once a fork of i2pd, Kovri has become a unique, actively-developed, community-driven C++ I2P implementation with many improvements, security enhancements, and new features over its predecessor.
 
 Read more about Kovri in the [Moneropedia](https://getmonero.org/knowledge-base/moneropedia/kovri).
 
@@ -12,7 +12,7 @@ Read more about Kovri in the [Moneropedia](https://getmonero.org/knowledge-base/
 | Hides your physical location from sites you visit| GUI for improved configuration and usability     | Provides a convoluted, painful web user interface|
 | Anonymizes you on IRC and allows anonymous Email | Library API and bindings for external apps/libs  | Requires authorities for network consensus       |
 | Allows you to host anonymous websites or services| Firefox extension to easily access eepsites      | Access to internet websites via an "outproxy"    |
-| Provides funding to developers via the FFS       | Provides funding/bounty to hackers/researchers   | Requires a performance-killing Java VM           |
+| Provides funding to developers, hackers, researchers via the FFS and HackerOne | Website Development (getkovri.org / kovri.i2p) | Requires a performance-killing Java VM |
 | Aims for rigorous code-quality and dev standards | Extensive documentation from ELI5 to developer   | Walks your dog or favorite pet, pays your taxes  |
 
 ## What is the current state of Kovri?
@@ -21,7 +21,7 @@ Kovri is in active development and currently pre-alpha. Kovri is *not* yet integ
 Currently, you can use the Kovri to connect to (and partake in) the I2P network: browse eepsites, connect to IRC, and run client and server tunnels.
 
 ## When is your first release?
-An alpha release is in the works for early 2017. Once other essential quality-assurance has been resolved and an API has been fully implemented, we will bring-forth a beta release.
+An alpha release is in the works for 2017. Once other essential quality-assurance has been resolved and an API has been fully implemented, we will bring-forth a beta release.
 
 ## Why does my log show a date/time different from my timezone?
 Logs are recorded in UTC to protect your privacy. By using UTC, you are in a better position to upload log pastes to share with developers or the community without impacting your anonymity.
