@@ -39,13 +39,13 @@ $ cd build/ && ./kovri
 ## Step 5. Browse an I2P website (garlic-site/eepsite)
 1. Startup a browser of your choosing (preferably a browser devoted to kovri usage)
 2. Configure your browser by reading [these instructions](https://geti2p.net/en/about/browser-config) **but instead of port 4444 and 4445** change HTTP proxy port to **4446** and SSL proxy port *also* to **4446**
-3. Visit http://check.kovri.i2p
+3. Visit this [website](http://check.kovri.i2p) to check if works
 
 Notes:
 
 - **Just like with Tor, one doesn't need SSL to safely and securely use the network**
 - SSL site support and outproxy service is not currently implemented
-- If someone gives you a .i2p address that's not in your address book, use the `Jump` service at http://stats.i2p/i2p/lookup.html
+- If someone gives you a .i2p address that's not in your address book, use the `Jump` service [here](http://stats.i2p/i2p/lookup.html)
 - Look through hosts.txt in your data directory to view a list of default sites you can easily visit
 - Overall, HTTP Proxy and address book implementation are in development and not yet feature-complete
 

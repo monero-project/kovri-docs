@@ -1,6 +1,6 @@
 global:
   language: Español
-  about: Sobre
+  about: Acerca de
   twitter: Twitter
   github: GitHub
 langs:
@@ -9,12 +9,17 @@ langs:
   ru: Русский
   fr: French
   it: Italiano
+pages:
+  Home: Inicio
+  Get Started: Comenzar
+  Contributing: Contribuciones
+  FAQ: FAQ
 titles:
-  index: What is Kovri?
-  acknowledgements: Acknowledgements
-  quality: Quality Assurance
-  contributing: General Contribution Guidelines
-  building: Building Instructions
+  index: ¿Que es Kovri?
+  acknowledgements: Agradecimientos
+  quality: Calidad
+  contributing: Pautas Generales para contribuir
+  building: Compilando.
   faq: FAQ
-  style: Style Guide
-  user: User Guide
+  style: Guia de estilo
+  user: Guia de usuario

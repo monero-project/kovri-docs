@@ -1,18 +1,18 @@
-1. Read [Google's C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
-2. Run [cpplint](https://pypi.python.org/pypi/cpplint/)
+1. Lee [La guía de estilo de C++ de Google](https://google.github.io/styleguide/cppguide.html)
+2. Inicia [cpplint](https://pypi.python.org/pypi/cpplint/)
 ```bash
 $ cpplint src/path/to/my/file
 ```
-3. Run [clang-format](http://llvm.org/releases/3.8.0/tools/clang/docs/ClangFormat.html) with ```-style=file``` using provided [.clang-format](https://github.com/monero-project/kovri/blob/master/.clang-format)
+3. Inicia [clang-format](http://llvm.org/releases/3.8.0/tools/clang/docs/ClangFormat.html) con ```-style=file``` usando el [.clang-format](https://github.com/monero-project/kovri/blob/master/.clang-format)
 ```bash
 $ cd kovri/ && clang-format -i -style=file src/path/to/my/file
 ```
 
-## Here's what's currently not caught by clang-format and differs from Google's proposed C++ style
+## Aquí esta lo que no se acomoda por clang-format y difiera de lo propuesto por el estilo C++ de Google
 
-- Keep with codebase's present (vertical) style for consistency
-- Newline break all function parameters for consisentcy across codebase
-- When function args newline break, ensure that *every* arg indent is 4 spaces
+- Mantente con la base del código (verticalmente) para tener consistencia
+- Las funciones siempre comienzan con una nueva línea para tener consistencia en el código
+- Las nuevas líneas en los argumentos de las funciones, deben tener 4 espacios en *todos* los argumentos
 
 ```cpp
   /// @brief Constructs SSU header with pre-determined payload type
@@ -41,15 +41,15 @@ $ cd kovri/ && clang-format -i -style=file src/path/to/my/file
   std::uint8_t* GetMAC() const;
 ```
 
-- Expressions can be broken before operators if:
-  - The line is greater that 80 columns
-  - Doing so aids in better documentation
+- Las expresiones pueden ser rotas antes de los operadores si:
+  - La línea es mayor a 80 columnas
+  - Hacerlo mejora la documentación
 
 ```cpp
-if (this is a very long expr1
-    && this is a very long expr2
-    && this is also a very long expr3)
-  DoSomeThing();
+if (esta es una expresión muy larga expr1
+    && esta es una expresión muy larga expr2
+    && esta también es una expresión muy larga expr3)
+  HazAlgo();
 ```
 
 ```cpp
@@ -60,9 +60,9 @@ return SSUPacket::GetSize()
        + m_SignatureSize;   // Signature size
 ```
 
-- Class member variables should be prepended with ```m_```
-- Don't use "cheap function" names; always use MixedCaseFunctions()
-- Avoid prepended mixed-case ```k``` and MACRO_TYPE for all constants
-- Use Doxygen three-slash ```/// C++ comments``` when documenting for Doxygen
-- Document all your work for Doxygen as you progress
-- If anonymity is a concern, try to blend in with a present contributor's style
+- Las variables miembro de una clases deben iniciar con ```m_```
+- No uses nombres "baratos" en funciones; siempre usa FuncionesConMayusculas()
+- No prepongas ```k```  o MACRO_TYPE para todas las constantes
+- Usa triple-barra Doxygen ```/// Comentario en C++``` cuando documentes Doxygens
+- Documenta todo tu trabajo para Doxygen mientras progresas
+- Si el anonimato es una preocupación, mézclalo con la presente guía de contribuidores
