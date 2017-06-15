@@ -23,24 +23,24 @@ en:
 es:
 - title: Inicio
   url: index.html
-- title: Download
+- title: Descargas
   url: https://github.com/monero-project/kovri#nightly-releases-bleeding-edge
-- title: Get Started
+- title: Comenzar
   subfolderitems:
-  - page: Building
+  - page: Compilando
     url: building.html
-  - page: User Guide
+  - page: Guia de usuario
     url: user_guide.html
-- title: Contributing
+- title: Contribuir
   subfolderitems:
     - page: General
       url: contributing.html
-    - page: Style
+    - page: Estilo
       url: style.html
-    - page: Quality
+    - page: Calidad
       url: quality_assurance.html
 - title: FAQ
-  url: faq.html
+  url: FAQ.html
   
 ru:
 - title: Главная

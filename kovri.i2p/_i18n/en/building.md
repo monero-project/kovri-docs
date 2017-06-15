@@ -181,14 +181,15 @@ $ make install-resources
 
 #### Notes
 - Doxygen output will be in ```doc``` directory
-- All other build output will be in the ``build``` directory
+- All other build output will be in the ```build``` directory
 
 ### Clang
 To build with clang, you **must** export the following:
 
 ```bash
-$ export CC=clang CXX=clang++  # replace ```clang``` with a clang version/path of your choosing
+$ export CC=clang CXX=clang++ 
 ```
+- Replace ```clang``` with a clang version/path of your choosing
 
 ### FreeBSD
 ```bash
