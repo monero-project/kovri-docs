@@ -62,7 +62,7 @@ ru:
     - page: Quality
       url: quality_assurance.html
 - title: FAQ
-  url: faq.html
+  url: FAQ.html
   
 fr:
 - title: Home
@@ -84,7 +84,7 @@ fr:
     - page: Quality
       url: quality_assurance.html
 - title: FAQ
-  url: faq.html
+  url: FAQ.html
 
   
 it:
@@ -107,4 +107,4 @@ it:
     - page: Qualità
       url: quality_assurance.html
 - title: FAQ
-  url: faq.html
+  url: FAQ.html
