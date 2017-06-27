@@ -1,18 +1,18 @@
-1. Read [Google's C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
-2. Run [cpplint](https://pypi.python.org/pypi/cpplint/)
+1. Leggi la [Google's C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
+2. Usa [cpplint](https://pypi.python.org/pypi/cpplint/)
 ```bash
 $ cpplint src/path/to/my/file
 ```
-3. Run [clang-format](http://llvm.org/releases/3.8.0/tools/clang/docs/ClangFormat.html) with ```-style=file``` using provided [.clang-format](https://github.com/monero-project/kovri/blob/master/.clang-format)
+3. Usa [clang-format](http://llvm.org/releases/3.8.0/tools/clang/docs/ClangFormat.html) con ```-style=file``` usando il [.clang-format](https://github.com/monero-project/kovri/blob/master/.clang-format) provvisto
 ```bash
 $ cd kovri/ && clang-format -i -style=file src/path/to/my/file
 ```
 
-## Here's what's currently not caught by clang-format and differs from Google's proposed C++ style
+## Qui c'è cos'è correntemente non preso da clang-format e differisce dallo style C++ di Google
 
-- Keep with codebase's present (vertical) style for consistency
-- Newline break all function parameters for consisentcy across codebase
-- When function args newline break, ensure that *every* arg indent is 4 spaces
+- continua ad utilizzare lo stile della code-base presente (verticale) per consistenza
+- Newline rompe tutti i parametri della funzione su tutto il database per consistenza
+- Quando la funzione args newline rompe, assicurati che ogni indentazione arg sia 4 spazi
 
 ```cpp
   /// @brief Constructs SSU header with pre-determined payload type
@@ -41,9 +41,9 @@ $ cd kovri/ && clang-format -i -style=file src/path/to/my/file
   std::uint8_t* GetMAC() const;
 ```
 
-- Expressions can be broken before operators if:
-  - The line is greater that 80 columns
-  - Doing so aids in better documentation
+- Le espressioini possono essere rote prima degli operatori se:
+  - La linea è più grande di 80 colonne
+  - facendolo migliori la documentazione
 
 ```cpp
 if (this is a very long expr1
@@ -60,9 +60,9 @@ return SSUPacket::GetSize()
        + m_SignatureSize;   // Signature size
 ```
 
-- Class member variables should be prepended with ```m_```
-- Don't use "cheap function" names; always use MixedCaseFunctions()
-- Avoid prepended mixed-case ```k``` and MACRO_TYPE for all constants
-- Use Doxygen three-slash ```/// C++ comments``` when documenting for Doxygen
-- Document all your work for Doxygen as you progress
-- If anonymity is a concern, try to blend in with a present contributor's style
+- Le variabili class member dovrebbero essere prefissate con ```m_```
+- Non usare nomi "cheap function"; usa sempre MixedCaseFunctions()
+- Evita prefissati mixed-case ```k``` e MACRO_TYPE per tutte le costanti
+- Usa il Doxygen three-slash ```/// C++ comments``` quando documenti per Doxygen
+- Documenta tutto il tuo lavoro per Doxygen mentre procedi
+- Se l'anonimità è una preoccupazione, prova a fonderti con lo stile di un altro contributore
