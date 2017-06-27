@@ -1,22 +1,22 @@
 ## Step 1. Requisiti minimi
 
-Nota: A causa di [#403](https://github.com/monero-project/kovri/issues/403), è richiesto almeno un minimo di 1 GiB di RAM per i seguenti ambienti di compilazione..
+Nota: Conseguentemente a [#403](https://github.com/monero-project/kovri/issues/403), è richiesto almeno un minimo di 1 GiB di RAM per i seguenti ambienti di compilazione..
 
 ### Linux / MacOSX / FreeBSD 10
 - [Git](https://git-scm.com/download) 1.9.1
 - [GCC](https://gcc.gnu.org/) 4.9.2
 - [CMake](https://cmake.org/) 2.8.12
 - [Boost](http://www.boost.org/) 1.58
-- [OpenSSL](https://openssl.org/) (always the latest stable version)
+- [OpenSSL](https://openssl.org/) (sempre l'ultima versione stabile disponibile)
 
 ### Windows
 - [MSYS2](https://msys2.github.io/)
 - [MinGW-w64](http://mingw-w64.org/doku.php)
 
-Optional:
+Opzionali:
 
-- [Clang](http://clang.llvm.org/) 3.5 ([3.6 on FreeBSD](https://llvm.org/bugs/show_bug.cgi?id=28887))
-- [MiniUPnP](https://github.com/miniupnp/miniupnp/releases) 1.6 (Recommeded if you are behind a NAT without access to it)
+- [Clang](http://clang.llvm.org/) 3.5 ([3.6 su FreeBSD](https://llvm.org/bugs/show_bug.cgi?id=28887))
+- [MiniUPnP](https://github.com/miniupnp/miniupnp/releases) 1.6 (Raccomandato se sei dietro ad un NAT senza potervi accedere)
 - [Doxygen](http://www.doxygen.org/) 1.8.6
 - [Graphviz](http://graphviz.org/) 2.36
 
@@ -28,13 +28,13 @@ Optional:
 ### Ubuntu Xenial (16.04)
 Dipendenze richieste:
 ```bash
-$ sudo apt-get install git cmake libboost-all-dev libssl-dev  # gcc/g++ and libssl installed by default
+$ sudo apt-get install git cmake libboost-all-dev libssl-dev  # gcc/g++ e libssl installate di default
 ```
 Dipendenze opzionali:
 ```bash
 $ sudo apt-get install clang
 $ sudo apt-get install doxygen graphviz
-$ sudo apt-get install libminiupnpc-dev #For users behind a restrictive NAT
+$ sudo apt-get install libminiupnpc-dev #Per utenti dietro un NAT restrittivo
 ```
 
 ### Ubuntu Trusty (14.04)
@@ -53,7 +53,7 @@ Dipendenze opzionali:
 ```bash
 $ sudo apt-get install clang-3.5
 $ sudo apt-get install doxygen graphviz
-$ sudo apt-get install libminiupnpc-dev #For users behind a restrictive NAT 
+$ sudo apt-get install libminiupnpc-dev #Per utenti dietro un NAT restrittivo 
 ```
 
 ### Debian (stabile)
@@ -90,104 +90,104 @@ Dipendenze opzionali:
 ```bash
 $ sudo apt-get -t testing install clang
 $ sudo apt-get -t testing install doxygen graphviz
-$ sudo apt-get -t testing install libminiupnpc-dev #For users behind a restrictive NAT 
+$ sudo apt-get -t testing install libminiupnpc-dev #Per utenti dietro un NAT restrittivo 
 ```
 
 ### Arch Linux
 Dipendenze richieste:
 ```bash
-$ sudo pacman -Syu cmake boost  # gcc/g++ and openssl installed by default
+$ sudo pacman -Syu cmake boost  # gcc/g++ e openssl installati di default
 ```
 Dipendenze opzionali:
 ```bash
 $ sudo pacman -S clang
 $ sudo pacman -S doxygen graphviz
-$ sudo pacman -S miniupnpc #For users behind a restrictive NAT 
+$ sudo pacman -S miniupnpc #Per utenti dietro un NAT restrittivo 
 ```
 
 ### Mac OSX
 Dipendenze richieste:
 ```bash
-$ brew install cmake boost openssl # clang installed by default
+$ brew install cmake boost openssl # clang installato di default
 ```
 Dipendenze opzionali:
 ```bash
 $ brew install doxygen graphviz
-$ brew install miniupnpc #For users behind a restrictive NAT 
+$ brew install miniupnpc #Per utenti dietro un NAT restrittivo 
 ```
 
 ### FreeBSD 10
 Dipendenze richieste:
 ```bash
 $ sudo pkg install git cmake gmake clang36 openssl
-# Build latest boost (1.58 minimum)
-$ wget [latest boost] -O latest_boost.tar.bz2
+# Build ultimo boost (minimo 1.58)
+$ wget [ultimo boost] -O latest_boost.tar.bz2
 $ tar xvjf latest_boost.tar.bz2 && cd latest_boost
-$ ./bootstrap.sh --with-toolset=clang  # OK to build with clang 3.5
+$ ./bootstrap.sh --with-toolset=clang  # Build with clang 3.5 OK
 $ sudo ./b2 --toolset=clang install
 ```
 Dipendenze opzionali:
 ```bash
 $ sudo pkg install doxygen graphviz
-$ sudo pkg install miniupnpc #For users behind a restrictive NAT 
+$ sudo pkg install miniupnpc #Per utenti dietro un NAT restrittivo 
 ```
 **Nota: guarda le istruzioni per la build FreeBSD qui sotto**
 
 ### Windows (MSYS2/MinGW-64)
-* Scarica [MSYS2 installer](http://msys2.github.io/), 64 bit o 32 bit, dipende dal tuo computer ed eseguilo..
-* Usa il collegamento associato con la tua architetura per lanciare l'ambiente MSYS2. Nota che se sei su Windows 64 bit, avrai tutti e due gli ambienti, 64 e 32 bit.
+* Scarica [MSYS2 installer](http://msys2.github.io/), 64 bit o 32 bit, dipendentemente dal tuo computer ed eseguilo..
+* Usa il collegamento associato con la tua architettura per lanciare l'ambiente MSYS2. Nota che se sei su Windows 64 bit, avrai tutti e due gli ambienti, 64 e 32 bit.
 * Aggiorna i pacchetti con i seguenti comandi:
 ```
 pacman -Sy
 pacman -Su --ignoregroup base
 pacman -Su
 ```
-* For those of you already familiar with pacman, you can run the normal ```pacman -Syu``` to update, but you may get errors and need to restart MSYS2 if pacman's dependencies are updated.
-* Install dependencies: ```pacman -S make mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-boost mingw-w64-x86_64-openssl```
-* Optional: ```mingw-w64-x86_64-doxygen```  (you'll need [Graphviz](http://graphviz.org/doc/winbuild.html) for doxygen)
-* Note: You'll need  ``` mingw-w64-x86_64-miniupnpc``` if you are behind a restrictive NAT firewall.
+* Chi di voi ha già familiarità con pacman può usare normalmente ```pacman -Syu``` per aggiornare, ma potresti ricevere degli errori e dover far ripartire MSYS2 se le dipendenze di pacman sono aggiornate.
+* Installa dipendenze: ```pacman -S make mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-boost mingw-w64-x86_64-openssl```
+* Opzionale: ```mingw-w64-x86_64-doxygen```  (you'll need [Graphviz](http://graphviz.org/doc/winbuild.html) for doxygen)
+* Nota: Avrai bisogno di  ``` mingw-w64-x86_64-miniupnpc``` se sei dietro un firewall NAT restrittivo.
 
 ## Step 3. Build   
 
-### 1. Clone the repository
+### 1. Clona la repository
 ```bash
 $ git clone --recursive https://github.com/monero-project/kovri
 ```
-### 2. Build kovri and submodule dependencies with one command
+### 2. Build kovri e le dipendenze dei submoduli con un comando
 ```bash
-$ make # to decrease build-time, run make -j [available CPU cores]
+$ make # per diminuire il tempo di build, usa make -j [CPU cores disponibili]
 ```
-### 3. Install resources (configuration files + package resources)
+### 3. Installa risorse (file di configurazione + risorse pacchetti)
 ```bash
 $ make install-resources
 ```
 
-- End-users MUST run ```make install-resources``` for new installations
-- Developers SHOULD run ```make install-resources``` after a fresh fetch
+- Gli utenti finali DEVONO usare ```make install-resources``` per nuove installazioni
+- Gli sviluppatori DOVREBBERO usare ```make install-resources``` dopo aver eseguito un fetch
 
-### Other options you can use in place of step 2:
+### Altre opzioni utilizzabili al posto di quelle in step 2:
 
-- ```make upnp``` produces vanilla binary with UPnP support (requires [MiniUPnP](https://github.com/miniupnp/miniupnp/releases))
-- ```make optimized-hardening``` produces optimized, hardened binary
-- ```make all-options``` produces optimized, hardened, UPnP enabled binary
-- ```make tests``` produces all unit-tests and benchmarks
-- ```make tests-optimized-hardening``` produces all unit-tests and benchmarks with optimized hardening
-- ```make static``` produces static binary
+- ```make upnp``` produce vanilla binary con supporto UPnP (richiede [MiniUPnP](https://github.com/miniupnp/miniupnp/releases))
+- ```make optimized-hardening``` produce ottimizzati, hardened file binari
+- ```make all-options``` produce ottimizzati, hardened, binari con UPnP abilitato
+- ```make tests``` produce tutti i test delle unità e benchmarks
+- ```make tests-optimized-hardening``` produce tutti i test delle unità e benchmarks con hardening ottimizzato
+- ```make static``` produce binari statici
 
-### Other available options
-- ```make doxygen``` produces Doxygen documentation
-- ```make clean``` cleans build directories and Doxygen output
-- ```make help``` shows available CMake build options
+### Altre opzioni disponibili
+- ```make doxygen``` produce documentazione Doxygen
+- ```make clean``` pulisce cartelle build e gli output Doxygen
+- ```make help``` mostra le opzioni di build CMake disponibili
 
-#### Notes
-- Doxygen output will be in ```doc``` directory
-- All other build output will be in the ``build``` directory
+#### Note
+- L'output di Doxygen sarà nella cartella```doc```
+- Tutti gli altri output di build saranno nella cartella ```build```
 
 ### Clang
-To build with clang, you **must** export the following:
+Per eseguire il build con clang, **devi** esportare i seguenti:
 
 ```bash
-$ export CC=clang CXX=clang++  # replace ```clang``` with a clang version/path of your choosing
+$ export CC=clang CXX=clang++  # rimpiazza ```clang``` con una versione/percorso di clang di tua scelta
 ```
 
 ### FreeBSD
@@ -195,21 +195,21 @@ $ export CC=clang CXX=clang++  # replace ```clang``` with a clang version/path o
 $ export CC=clang36 CXX=clang++36
 $ gmake && gmake install-resources
 ```
-- Replace ```make``` with ```gmake``` for all other build options
+- Rimpiazza ```make``` con ```gmake``` per tutte le altre opzioni di build
 
-### (Optional) Custom data path
-You can customize Kovri's data path to your liking. Simply export ```KOVRI_DATA_PATH```; example:
+### (Opzionale) percorso data personalizzato
+Puoi personalizzare il percorso dei dati di Kovri a tuo piacimento. Semplicemente esporta ```KOVRI_DATA_PATH```; esempio:
 
 ```bash
 $ export KOVRI_DATA_PATH=$HOME/.another-kovri-data-path && make && make install-resources
 ```
 
-## Step 4. Proceed to the user guide
-Read the [user guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md) to get started
+## Step 4. Procedi con la guida utente
+Leggi la [guida utente](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md) per iniziare
 
 ## Docker
 
-Alternatively, if you use Docker, the following will build the image for you.
+Alternativamente, se usi Docker, la stringa seguente eseguirà il build dell'immagine per te.
 
 ```bash
 $ docker build -t geti2p/kovri .
