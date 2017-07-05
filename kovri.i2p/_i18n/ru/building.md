@@ -1,36 +1,36 @@
-## Step 1. Minimum requirements
+## Шаг 1. Минимальные требования
 
-#### Note: Due to [#403](https://github.com/monero-project/kovri/issues/403), a minimum of 1 GiB of RAM is suggested for build environments.    
+#### Примечание: Из-за [#403](https://github.com/monero-project/kovri/issues/403), требуется как минимум 1 Gb ОЗУ.    
 
 ### Linux / MacOSX / FreeBSD 10
 - [Git](https://git-scm.com/download) 1.9.1
 - [GCC](https://gcc.gnu.org/) 4.9.2
 - [CMake](https://cmake.org/) 2.8.12
 - [Boost](http://www.boost.org/) 1.58
-- [OpenSSL](https://openssl.org/) (always the latest stable version)
+- [OpenSSL](https://openssl.org/) (всегда последняя стабильная версия)
 
 ### Windows
 - [MSYS2](https://msys2.github.io/)
 - [MinGW-w64](http://mingw-w64.org/doku.php)
 
-Optional:
+Выборочно:
 
 - [Clang](http://clang.llvm.org/) 3.5 ([3.6 on FreeBSD](https://llvm.org/bugs/show_bug.cgi?id=28887))
-- [MiniUPnP](https://github.com/miniupnp/miniupnp/releases) 1.6 (Recommeded if you are behind a NAT without access to it)
+- [MiniUPnP](https://github.com/miniupnp/miniupnp/releases) 1.6 (Рекомендуется, если вы находитесь за NAT и не имеете доступа к нему)
 - [Doxygen](http://www.doxygen.org/) 1.8.6
 - [Graphviz](http://graphviz.org/) 2.36
 
 ### MacOSX
 - [Homebrew](http://brew.sh/)
 
-## Step 2. Install dependencies
+## Шаг 2. Установить зависимости
 
 ### Ubuntu Xenial (16.04)
-Required dependencies:
+Требуемые зависимости:
 ```bash
 $ sudo apt-get install git cmake libboost-all-dev libssl-dev  # gcc/g++ and libssl installed by default
 ```
-Optional dependencies:
+Опциональные зависимости:
 ```bash
 $ sudo apt-get install clang
 $ sudo apt-get install doxygen graphviz
@@ -41,7 +41,7 @@ $ sudo apt-get install libminiupnpc-dev #For users behind a restrictive NAT
 You can either build Boost from source or use PPA
 Below are instructions for PPA:
 
-Required dependencies:
+Требуемые зависимости:
 ```bash
 $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 $ sudo add-apt-repository ppa:kojoley/boost
@@ -49,7 +49,7 @@ $ sudo apt-get update
 $ sudo apt-get install libboost-{chrono,log,program-options,date-time,thread,system,filesystem,regex,test}1.58-dev
 $ sudo apt-get install git g++-4.9 cmake libboost-all-dev libssl-dev libssl1.0.0
 ```
-Optional dependencies:
+Опциональные зависимости:
 ```bash
 $ sudo apt-get install clang-3.5
 $ sudo apt-get install doxygen graphviz
@@ -57,10 +57,10 @@ $ sudo apt-get install libminiupnpc-dev #For users behind a restrictive NAT
 ```
 
 ### Debian (stable)
-We'll need to pull from ```testing``` for ```Boost 1.58+``` and because of a [broken CMake](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656). For documentation's sake, we will pull all dependencies from ```testing```. If you're unfamiliar with apt-pinning, proceed with the following before installing dependencies:
+Нам нужно отвязать ```testing``` для ```Boost 1.58+``` из-за [сломанного CMake](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656). Согласно документации мы удаляем зависимости от ```testing```. Если вы не знакомы с apt-pinning, выполните следующие действия перед установкой зависимостей:
 
-- Create and edit ```/etc/apt/preferences.d/custom.pref```
-- Enter and save the following:
+- Создайте и отредактируйте ```/etc/apt/preferences.d/custom.pref```
+- Введите и сохраните следующее:
 
 ```
 Package: *
@@ -71,22 +71,22 @@ Package: *
 Pin: release a=testing
 Pin-Priority: 650
 ```
-- Create and edit ```/etc/apt/sources.list.d/custom.list```
+- Создайте и отредактируйте ```/etc/apt/sources.list.d/custom.list```
 ```
-# Stable
+# Стабильная
 deb [Enter your mirror here] stable main non-free contrib
-# Testing
+# Тестируемая
 deb [Enter your mirror here] testing main non-free contrib
 ```
-- Replace ```[Enter your mirror here]``` with your mirror (see ```/etc/apt/sources.list```)
-- Run ```$ sudo apt-get update```
-- Install dependencies with the ```-t testing``` switch:
+- Замените ```[Enter your mirror here]``` with your mirror (see ```/etc/apt/sources.list```)
+- Запустите ```$ sudo apt-get update```
+- Установите зависимости для ```-t testing``` переключения:
 
-Required dependencies:
+Требуемые зависимости:
 ```bash
 $ sudo apt-get -t testing install git g++ cmake libboost-all-dev libssl-dev libssl1.0.0
 ```
-Optional dependencies:
+Опциональные зависимости:
 ```bash
 $ sudo apt-get -t testing install clang
 $ sudo apt-get -t testing install doxygen graphviz
@@ -98,7 +98,7 @@ Required dependencies:
 ```bash
 $ sudo pacman -Syu cmake boost  # gcc/g++ and openssl installed by default
 ```
-Optional dependencies:
+Требуемые зависимости:
 ```bash
 $ sudo pacman -S clang
 $ sudo pacman -S doxygen graphviz
@@ -106,18 +106,18 @@ $ sudo pacman -S miniupnpc #For users behind a restrictive NAT
 ```
 
 ### Mac OSX
-Required dependencies:
+Требуемые зависимости:
 ```bash
 $ brew install cmake boost openssl # clang installed by default
 ```
-Optional dependencies:
+Опциональные зависимости:
 ```bash
 $ brew install doxygen graphviz
 $ brew install miniupnpc #For users behind a restrictive NAT 
 ```
 
 ### FreeBSD 10
-Required dependencies:
+Требуемые зависимости:
 ```bash
 $ sudo pkg install git cmake gmake clang36 openssl
 # Build latest boost (1.58 minimum)
@@ -126,65 +126,65 @@ $ tar xvjf latest_boost.tar.bz2 && cd latest_boost
 $ ./bootstrap.sh --with-toolset=clang  # OK to build with clang 3.5
 $ sudo ./b2 --toolset=clang install
 ```
-Optional dependencies:
+Опциональные зависимости:
 ```bash
 $ sudo pkg install doxygen graphviz
 $ sudo pkg install miniupnpc #For users behind a restrictive NAT 
 ```
-**Note: see FreeBSD build instructions below**
+**Примечание: см. инструкции по сборке FreeBSD ниже**
 
 ### Windows (MSYS2/MinGW-64)
-* Download the [MSYS2 installer](http://msys2.github.io/), 64-bit or 32-bit as needed, and run it.
-* Use the shortcut associated with your architecture to launch the MSYS2 environment. On 64-bit systems that would be the MinGW-w64 Win64 Shell shortcut. Note that if you are running 64-bit Windows, you will have both 64-bit and 32-bit environments.
-* Update the packages in your MSYS2 install:
+* загрузите [MSYS2 инсталлятор](http://msys2.github.io/), 64-bit или 32-bit в зависимости от вашей операционной системы, и запустите его.
+* Используйте ярлык, связанный с вашей архитектурой, для запуска среды MSYS2. В 64-битных системах ярлык MinGW-w64 Win64. Примечание: если вы используете 64-битную Windows, у вас будут 64-разрядная и 32-разрядная среды.
+* Обновите пакеты в вашем инсталляторе MSYS2:
 ```
 pacman -Sy
 pacman -Su --ignoregroup base
 pacman -Su
 ```
-* For those of you already familiar with pacman, you can run the normal ```pacman -Syu``` to update, but you may get errors and need to restart MSYS2 if pacman's dependencies are updated.
-* Install dependencies: ```pacman -S make mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-boost mingw-w64-x86_64-openssl```
+*  Для тех, кто уже знаком с pacman, вы можете запустить обычный ```pacman -Syu``` для обновления, но могут возникнуть ошибки и потребуется перезапуск MSYS2 если зависимости обновятся.
+* Установите зависимости: ```pacman -S make mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-boost mingw-w64-x86_64-openssl```
 * Optional: ```mingw-w64-x86_64-doxygen```  (you'll need [Graphviz](http://graphviz.org/doc/winbuild.html) for doxygen)
 * Note: You'll need  ``` mingw-w64-x86_64-miniupnpc``` if you are behind a restrictive NAT firewall.
 
-## Step 3. Build   
+## Шаг 3. Сборка   
 
-### 1. Clone the repository
+### 1. Скопируйте репозиторий
 ```bash
 $ git clone --recursive https://github.com/monero-project/kovri
 ```
-### 2. Build kovri and submodule dependencies with one command
+### 2. Соберите kovri и подмодули зависимостей одной командой
 ```bash
 $ make # to decrease build-time, run make -j [available CPU cores]
 ```
-### 3. Install resources (configuration files + package resources)
+### 3. Установите ресурсы (файлы конфигурации + ресурсы пакета)
 ```bash
 $ make install-resources
 ```
 
-- End-users MUST run ```make install-resources``` for new installations
-- Developers SHOULD run ```make install-resources``` after a fresh fetch
+- Пользователи ДОЛЖНЫ ЗАПУСКАТЬ ```make install-resources``` для новой установки
+- Разработчики ДОЛЖНЫ ЗАПУСКАТЬ ```make install-resources``` после fresh fetch
 
-### Other options you can use in place of step 2:
+### Другие варианты, которые вы можете использовать вместо шага 2:
 
-- ```make upnp``` produces vanilla binary with UPnP support (requires [MiniUPnP](https://github.com/miniupnp/miniupnp/releases))
-- ```make optimized-hardening``` produces optimized, hardened binary
-- ```make all-options``` produces optimized, hardened, UPnP enabled binary
-- ```make tests``` produces all unit-tests and benchmarks
-- ```make tests-optimized-hardening``` produces all unit-tests and benchmarks with optimized hardening
-- ```make static``` produces static binary
+- ```make upnp``` создает классическую двоичную систему с поддержкой UPnP (требует [MiniUPnP](https://github.com/miniupnp/miniupnp/releases))
+- ```make optimized-hardening``` создает жестко-оптимизированный бинарник
+- ```make all-options``` создает жестко-оптимизированный бинарник, с поддержкой UPnP
+- ```make tests``` производит все unit тесты и бэнчмарки
+- ```make tests-optimized-hardening``` производит все unit тесты и бэнчмарки с жесткой оптимизацией
+- ```make static``` создает статичный бинарник
 
-### Other available options
-- ```make doxygen``` produces Doxygen documentation
-- ```make clean``` cleans build directories and Doxygen output
-- ```make help``` shows available CMake build options
+### Другие доступные параметры
+- ```make doxygen``` создает Doxygen документацию
+- ```make clean``` очищает директорию сборки и вывод Doxygen
+- ```make help``` показывает доступные варианты сборки CMake
 
-#### Notes
-- Doxygen output will be in ```doc``` directory
-- All other build output will be in the ``build``` directory
+#### Примечание
+- Сборки Doxygen будут находиться в каталоге ```doc```
+- Все остальные сборки будут находиться в каталоге `` build```
 
 ### Clang
-To build with clang, you **must** export the following:
+Чтобы осуществить сборку с помощью clang, вы** должны** экспортировать следующее:
 
 ```bash
 $ export CC=clang CXX=clang++  # replace ```clang``` with a clang version/path of your choosing
@@ -195,21 +195,20 @@ $ export CC=clang CXX=clang++  # replace ```clang``` with a clang version/path o
 $ export CC=clang36 CXX=clang++36
 $ gmake && gmake install-resources
 ```
-- Replace ```make``` with ```gmake``` for all other build options
+- Заменить ```make``` with ```gmake``` для всех других вариантов сборки
 
-### (Optional) Custom data path
-You can customize Kovri's data path to your liking. Simply export ```KOVRI_DATA_PATH```; example:
+###(Необязательно) Пользовательская директория
+Вы можете настроить пользовательскую директорию Kovri по своему вкусу. Просто экспортируйте `` `KOVRI_DATA_PATH```; пример:
 
 ```bash
 $ export KOVRI_DATA_PATH=$HOME/.another-kovri-data-path && make && make install-resources
 ```
 
-## Step 4. Proceed to the user guide
-Read the [user guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md) to get started
-
+## Шаг 4. Перейдите к руководству пользователя
+Прочитайте [Руководство пользователя](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md) для начала работы
 ## Docker
 
-Alternatively, if you use Docker, the following will build the image for you.
+Кроме того, если вы используете Docker, следующее будет актуально для вас.
 
 ```bash
 $ docker build -t geti2p/kovri .
