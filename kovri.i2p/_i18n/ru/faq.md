@@ -68,5 +68,5 @@ Kovri можно использовать с тем функционалом, к
 Увидев, что такое неустойчивое поведение только вредит сети I2P и проекту в целом, остальные разработчики продолжили [обсуждение] (https://github.com/monero-project/kovri/issues/47) И заложили основу для Kovri.
 
 ## Я нашел уязвимость! Я нашел ошибку! Что мне делать?
-- Уязвимости: смотрите тут [README](https://github.com/monero-project/kovri/blob/master/README.md)
-- Ошибки: смотрите тут [Руководство для участников](https://github.com/monero-project/kovri/blob/master/doc/CONTRIBUTING.md)
+- Уязвимости: смотрите [README](https://github.com/monero-project/kovri/blob/master/README.md)
+- Ошибки: смотрите [Руководство для участников](https://github.com/monero-project/kovri/blob/master/doc/CONTRIBUTING.md)
