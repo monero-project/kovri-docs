@@ -1,81 +1,79 @@
-# So, you've installed Kovri. Now what?
+# Alors, vous avez installé Kovri. Et maintenant?
 
-## Step 1. Open your NAT/Firewall
-1. Choose a port between ```9111``` and ```30777```
-2. **Save this port to your configuration file** (`kovri.conf`)
-3. Poke a hole in your NAT/Firewall to allow incoming TCP/UDP connections to that port (See notes below if you don't have access)
+## Etape 1. Ouvrir votre NAT/Firewall
+1. Choisissez un port entre ```9111``` et ```30777```
+2. **Enregistrez ce port dans votre fichier de configuration** (`kovri.conf`)
+3. Créez une permission dans votre NAT/Firewall pour autoriser les connexions TCP/UDP entrantes sur ce port (Voir les notes ci-dessous si vous n'y avez pas accès)
 
 Notes:
 
-- **Don't share your port number with anyone as it will effect your anonymity!**
-- If you don't save the port, kovri will randomly generate a new one on each startup (you also have the choice to pass the port with the `--port` flag on each startup).
-- If you do not have access to your NAT, see instructions in [BUILDING](https://github.com/monero-project/kovri/blob/master/doc/BUILDING.md) for your OS. 
+- **Ne partagez pas votre numéro de port avec n'importe qui car cela affecterait votre anonymat!**
+- Si vous n'enregistrez pas votre port, kovri va aléatoirement en générer un nouveau à chaque démarrage (vous avez aussi le choix d'affecter le port de l'option `--port` à chaque démarrage).
+- Si vous n'avez pas accès à votre NAT, réferez vous aux instructions [BUILDING](https://github.com/monero-project/kovri/blob/master/doc/BUILDING.md) selon votre système d'exploitation.
 
-## Step 2. Configure Kovri
+## Etape 2. Configurer Kovri
 
-For a full list of options:
+Pour la liste de toutes les options possibles:
 
-```bash
+```bashfeature requests
 $ ./kovri --help
 ```
 
-For complete detailed options:
+Pour des précisions détaillées concernant chaque option:
 
-- `kovri.conf` configuration file for router and client
-- `tunnels.conf` configuration file for client/server tunnels
+- `kovri.conf` fichier de configuration concernant le routeur et le client
+- `tunnels.conf` fichier de configuration concernant les tunnels client/serveur
 
-## Step 3. Run Kovri
+## Etape 3. Exécuter Kovri
 ```bash
 $ cd build/ && ./kovri
 ```
 
-- Wait 5 minutes or so to get bootstrapped into the network before attempting to use services
+- Attendez environ 5 minutes pour être connecté au réseau avant de faire quoi que ce soit.
 
-## Step 4. Join us on IRC
-1. Startup your [IRC client](https://en.wikipedia.org/wiki/List_of_IRC_clients)
-2. Setup your client to connect to kovri's IRC port (default 6669). This will connect you to the Irc2P network (I2P's IRC network)
-3. Join `#kovri` and `#kovri-dev`
+## Etape 4. Nous rejoindre sur IRC
+1. Démarrez votre [client IRC](https://en.wikipedia.org/wiki/List_of_IRC_clients)
+2. Réglez votre client pour qu'il se connecte au port IRC de kovri (6669 par défaut). Cela vous connectera au réseau internet Irc2 (le réseau IRC de I2P).
+3. Rejoignez `#kovri` et `#kovri-dev`
 
-## Step 5. Browse an I2P website (garlic-site/eepsite)
-1. Startup a browser of your choosing (preferably a browser devoted to kovri usage)
-2. Configure your browser by reading [these instructions](https://geti2p.net/en/about/browser-config) **but instead of port 4444 and 4445** change HTTP proxy port to **4446** and SSL proxy port *also* to **4446**
-3. Visit http://check.kovri.i2p
+## Etape 5. Ouvrir le site internet de I2P (garlic-site/eepsite)
+1. Ouvrez le navigateur de votre choix (de préférence compatible avec kovri)
+2. Configurez votre navigateur en lisant [ces instructions](https://geti2p.net/en/about/browser-config) **mais à la place du port 4444 et 4445** changez le port proxy HHTP en **4446** et **également** le port proxy SSL en **4446**
+3. Rendez-vous sur http://check.kovri.i2p pour vérifier que cela fonctionne
 
 Notes:
 
-- **Just like with Tor, one doesn't need SSL to safely and securely use the network**
-- SSL site support and outproxy service is not currently implemented
-- If someone gives you a .i2p address that's not in your address book, use the `Jump` service at http://stats.i2p/i2p/lookup.html
-- Look through hosts.txt in your data directory to view a list of default sites you can easily visit
-- Overall, HTTP Proxy and address book implementation are in development and not yet feature-complete
+- **Exactement de la même façon que Tor, SSL n'est pas nécessaire pour utiliser sans risque et de façon sûre notre réseau**
+- Le protocole SSL et le paramètre outproxy ne sont pas implantés pour le moment
+- Si quelqu'un vous donne une adresse .i2p qui n'est pas dans votre carnet d'adresses, utilisez le service `Jump` à l'adresse http://stats.i2p/i2p/lookup.html
+- Jetez un oeil au fichier hosts.txt dans votre répertoire de données pour voir une liste de sites par défaut que vous pouvez visiter. The docker image comes with the defaults of kovri,
+- Enfin, le Proxy HTTP et l'implémentation de carnets d'adresses sont en cours de développemment et ne sont pas complètement terminés.
 
-## Step 6. Host your own garlic-service (garlic-site/eepsite)
-- Read `tunnels.conf` to learn how to set a server tunnel to point to the service you are hosting
+## Etape 6. Organiser votre propre service garlic (garlic-site/eepsite)
+- Lisez `tunnels.conf` pour apprendre comment définir un tunnel de serveur pour indiquer le service que vous hébergez.
 
-## Step 7. Enjoy!
-- Read more about Kovri in the [Moneropedia](https://getmonero.org/knowledge-base/moneropedia/kovri).
-- Open your feature requests or report bugs on our [issues tracker](https://github.com/monero-project/kovri/issues)
-- Learn more about the I2P network on the [java I2P website](https://geti2p.net/en/docs)
+## Etape 7. Eclatez-vous!enjoy
+- En savoir plus à propos de Kovri dans le [Moneropedia](https://getmonero.org/knowledge-base/moneropedia/kovri).
+- Ouvrez une requête de fonctionnalité ou rapportez un bug dans notre [issues tracker](https://github.com/monero-project/kovri/issues)
+- En savoir plus à propos du réseau I2P sur le [site java I2P](https://geti2p.net/en/docs)
 
 # Alternatively, Docker
 
-## Step 1. Install Docker
-Installing Docker is outside the scope of this document, please see the [docker documentation](https://docs.docker.com/engine/installation/)
+## Etape 1. Installer Docker
+Installer Docker est externe à ces instructions, veuillez vous réferer à la [documentation docker](https://docs.docker.com/engine/installation/)
 
-## Step 2. Configuring / Open Firewall
+## Etape 2. Configurer / Ouvrir Firewall
+Docker est fourni avec les valeurs par défaut de kovri, cependant il peut être configurer comme expliqué dans les sections précedentes.
+Vous devriez pouvoir choisir un port au hasard et l'ouvrir (voir sections précedentes).
 
-The docker image comes with the defaults of kovri, but can be configured as explained in earlier sections.
+## Etape 3. Fonctionnement
 
-You should choose a random port and open that port (see earlier sections).
-
-## Step 3. Running
-
-### Default Settings
+### Réglages par défaut
 ```bash
 KOVRI_PORT=42085 && sudo docker run -p 127.0.0.1:4446:4446 -p 127.0.0.1:6669:6669 -p $KOVRI_PORT --env KOVRI_PORT=$KOVRI_PORT geti2p/kovri
 ```
 
-### Custom Settings 
+### Réglages personalisés
 Where `./kovri-settings/` contains `kovri.conf` and `tunnels.conf`.
 ```bash
 KOVRI_PORT=42085 && sudo docker run -p 127.0.0.1:4446:4446 -p 127.0.0.1:6669:6669 -p $KOVRI_PORT --env KOVRI_PORT=$KOVRI_PORT -v kovri-settings:/home/kovri/.kovri/config:ro geti2p/kovri
