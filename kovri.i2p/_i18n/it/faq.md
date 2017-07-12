@@ -1,71 +1,70 @@
-# Frequently Asked Questions (and answers)
+# Domande Frequenti (e risposte)
 
-## What is Kovri?
-Kovri is a secure, private, untraceable C++ router implementation of the [I2P](https://geti2p.net) anonymous network. What was once a fork of i2pd, Kovri has become a unique, actively-developed, community-driven C++ I2P implementation with many improvements, security enhancements, and new features over its predecessor.
+## Cos'è Kovri?
+Kovri è una sicura, privata e intracciabile implementazione router in C++ della rete anonima I2P. Da un fork di i2pd, Kovri è diventato un'unica implementazione I2P, attivamente sviluppata e guidata dalla community, con tanti miglioramenti, fix di sicurezza e nuove caratteristiche rispetto al suo predecessore.
 
-Read more about Kovri in the [Moneropedia](https://getmonero.org/knowledge-base/moneropedia/kovri).
+Leggi di più su Kovri nella [Moneropedia](https://getmonero.org/knowledge-base/moneropedia/kovri).
 
-## What is the current state of Kovri?
-Kovri is in active development and currently pre-alpha. Kovri is *not* yet integrated with monero but, in addition to several core features, we are developing a [client](https://github.com/monero-project/kovri/issues/351) and [core](https://github.com/monero-project/kovri/issues/350) API for monero and other applications to use.
+## Qual è lo stato attuale di Kovri?
+Kovri è attivamente sviluppato e correntemente nella fase pre-alpha. Kovri *non* è ancora integrato con Monero ma, oltre a varie features principali, stiamo sviluppando un [client](https://github.com/monero-project/kovri/issues/351) e un [core](https://github.com/monero-project/kovri/issues/350) API da usare per Monero e altre applicazioni.
 
-Currently, you can use the Kovri to connect to (and partake in) the I2P network: browse eepsites, connect to IRC, and run client and server tunnels.
+Correntemente, puoi usare il Kovri per connetterti (e partecipare) al network I2P: naviga eepsites, connettiti a IRC, apri un client e tunnel servers.
 
-## When is your first release?
-An alpha release is in the works for early 2017. Once other essential quality-assurance has been resolved and an API has been fully implemented, we will bring-forth a beta release.
+## Quando sarà la vostra prima release?
+Una release alpha è prevista per inizio 2017. Quando la qualità avrà raggiunto un livello sufficente alto e l'API sarà completamente implementata, Kovri diventerà un beta software.
 
-## Why does my log show a date/time different from my timezone?
-Logs are recorded in UTC to protect your privacy. By using UTC, you are in a better position to upload log pastes to share with developers or the community without impacting your anonymity.
+## Perchè i miei log mostrano una data/ora diversa dalla mia timezone?
+I logs sono registrati in UTC per proteggere la tua privacy. Usando UTC, puoi caricare file di log da condividere con gli sviluppatori della community senza compromettere la tua anonimità.
 
-## What is the development team currently focusing on?
-Currently, we are focusing on everything listed in our [issues tracker](https://github.com/monero-project/kovri/issues/). They cover a bulk of what we need to finish before an official release (alpha, beta, or greater).
+## Su cosa si sta concentrando attualmente il team di sviluppatori?
+Correntemente, ci stiamo concentrando su tutto ciò che è listato nel nostro [issues tracker](https://github.com/monero-project/kovri/issues/). Coprono molto di quello che dobbiamo finire prima di una release ufficiale (alpha, beta o maggiore).
 
-## Is Kovri usable, partially usable, or recommended to not be used for actual privacy at the moment?
-Kovri is usable to the extent of what ```./kovri --help``` has to offer. Kovri currently has no interaction with Monero. With regard to privacy, we have fixed many security issues since inception but we are still in pre-alpha.
+## Kovri è usabile, parzialmente usabile o non è raccomandato l'utilizzo per forte privacy al momento?
+Kovri può essere utilizzato secondo quanto il comando ```./kovri --help``` ha da offire. Kovri non ha attualmente alcuna interazione con Monero. Riguardo alla privacy, abbiamo sistemato molti problemi di sicurezza fin dall'inizio ma siamo ancora in pre-alpha.
 
-There is still much code to cover so don't expect a strong guarantee of anonymity like with Tor or even java I2P. Those projects have 10+ years of research and implementation experience - and we are just getting started.
+C'è ancora molto codice da coprire quindi non aspettarti una forte garanzia d'anonimato come con tor o persino java I2P. Questi progetti hanno 10+ anni di ricerche e implementazioni - e noi abbiamo appena iniziato.
 
-Feel free to play the role of developer and experiment/play with Kovri but only if **not** being anonymous doesn't put you in danger - as there is always the risk of possible de-anonymization due to being in pre-alpha (this is not unique to Kovri).
+Sentiti libero di giocare il ruolo dello sviluppatore e sperimentare/giocare con kovri ma solo se **non** essere anonimo non ti mette in pericolo - c'è sempre il rischio di una possibile deanonimizzazione a causa dell'essere in pre-alpha (questo non vale solo per Kovri).
 
-## Kovri contact information?
-See our [README](https://github.com/monero-project/kovri/blob/master/README.md).
+## Informazioni per contattare Kovri?
+leggi il nostro [README](https://github.com/monero-project/kovri/blob/master/README.md).
 
-## Why should I use Kovri instead of i2pd?
+## Perchè dovrei usare Kovri invece di i2pd?
+- Sicurezza: il nostro obbiettivo è quello di rendere il nostro software sicuro; non di [fare le cose frettolosamente](https://github.com/monero-project/kovri/issues/65) solo per fare uscire una release
+- Qualità: stai supportando gli sforzi per assicurare un codebase di qualità che supererà il test del tempo. Questo include tutti gli aspetti della mantenibilità del codice
+- Monero: supporterai una cryptomoneta che fa della preservazione della privacy e dell'anonimità un vanto incrementandole entrambe
 
-- Security: our focus is on securing our software; not [rushing to get things done](https://github.com/monero-project/kovri/issues/65) for the sake of having a release
-- Quality: you're supporting efforts to ensure a quality codebase that will stand the test of time. This includes all aspects of code maintainability
-- Monero: you will be supporting a crypto-currency that prides itself on privacy-preservation and anonymity while increasing both your privacy and anonymity
+## Quali sono le più grandi differenze tra Kovri e i2pd?
 
-## What are the biggest differences between Kovri and i2pd?
+- Abbiamo un [Forum Funding System](https://forum.getmonero.org/8/funding-required) per features/sviluppo.
+- Siamo concentrati nella creazione di un I2P router ["sicuro di default"](http://www.openbsd.org/security.html), facilmente mantenibile con più possibilità di reviews. Questo a costo di abbandonare le funzionalità meno utilizzate in altri routers, ma le funzionalità principali e le API rimarranno pienamente intatte. Creando un router più piccolo, efficente ed essenziale, forniremo a sviluppatori e ricercatori più tempo per audit di sicurezza e per mettere in discussione il design I2P e le sue specifiche.
+- Siamo concentrati nell'implementare un'intuitiva, developer-friendly API per qualsiasi applicazione per connettersi e usare il network I2P; Questo include Monero.
+- Forniamo sia agli utenti finali che agli sviluppatori una [garanzia di qualità](https://github.com/monero-project/kovri/issues/58) e un [modello di sviluppo](https://github.com/monero-project/kovri/blob/master/doc/CONTRIBUTING.md) in modo da fornire un software migliore a tutti/e.
+- implementeremo un opzione di reseeding alternativa così gli utenti potranno utilizzare [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) invece di HTTPS per il reseeding.
+- Implementeremo funzionalità estese *(modalità nascosta + inbound disabilitato)* per fornire anonimità per coloro che vivono in nazioni con condizioni estreme o per chi è sotto firewall da carrier-grade NAT o DS-Lite.
+- Creeremo sempre un ambiente di collaborazione amichevole.
+- Daremo sempre ascolto ai tuoi feedback e faremo del nostro meglio per migliorare Kovri!
 
-- We provide a [Forum Funding System](https://forum.getmonero.org/8/funding-required) for features/development.
-- We focus on creating a ["secure by default"](http://www.openbsd.org/security.html), easily maintainable, more-likely-to-be-reviewed I2P router. This will come with the cost of dropping lesser-used features found in the other routers, but core functionality and an API will be fully intact. By creating a smaller, efficient, "bare-bones" router, we will provide developers and researchers more time for security auditing and more time to question the I2P design and specifications.
-- We focus on implementing an intuitive, developer-friendly API for any application to connect to and use the I2P network; this includes Monero.
-- We provide both end-users and developers a [quality assurance](https://github.com/monero-project/kovri/issues/58) and [development model](https://github.com/monero-project/kovri/blob/master/doc/CONTRIBUTING.md) in order to provide better software for everyone.
-- We will implement alternative reseeding options so users can use [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) instead of HTTPS for reseed.
-- We will implement extended functionality *(hidden mode + disabled inbound)* to provide anonymity for those who live in countries with extreme conditions or those firewalled by carrier-grade NAT or DS-Lite.
-- We will always create a welcome environment for collaboration.
-- We will always listen to your feedback and do our best to improve Kovri!
+## Perchè vi siete separati da i2pd?
 
-## Why did you fork from i2pd?
+Abbiamo eseguito una fork per almeno questi motivi:
 
-We forked for at least several reasons:
+- Volevamo una robusta, sicura e viabile implementazione C++ del network I2P; e i2pd non la forniva
+- Volevamo una community positiva in grado di incoraggiare collaborazione per il miglioramento del software; non negativa, narcisitica gloria
+- Volevamo un capo sviluppatore che sapesse comandare; non qualcuno che ignorasse richieste di divulgazione responsabile o che  rifiutail confronto in caso di conflitti con i collaboratori
 
-- We wanted a robust, secure, and viable C++ implementation of the I2P network; and i2pd was not delivering
-- We wanted a positive community that encouraged collaboration for the betterment of the software; not negative, narcissist glory
-- We wanted a lead developer who could lead; not someone who could ignore requests for responsible disclosure or tuck-tail-and-run when faced with collaborator conflict
+## Quali sono stati i motivi principali che hanno portato a "forkare" da i2ps (e perchè ci sono due repository: una su Bitbucket e l'altra su GitHub)?
 
-## What were the turning points that lead to forking from i2pd (and why are there two i2pd repositories: one on Bitbucket and one on GitHub)?
+*Così cominciò il dramma i2pd*.
 
-*So began the drama of i2pd*.
+A inizio/metà 2015, uno degli sviluppatori con privilegi nella repository di GitHub ha "spinto" un "commit" che non è piaciuto al primo autore di i2pd. Invece di lavorare insieme per risolvere il problema, detto autore trasferì i2pd su Bitbucket, eliminò **tutta** la cronologia di git, e si è nominato unico 'contributore' del software. Promise poi che non sarebbe mai tornato su Irc2P.
 
-In early/mid 2015, one of the developers with push privileges on GitHub pushed a commit(s) that i2pd's first author did not like. Instead of working together to resolve the issue, said author took i2pd to Bitbucket, deleted **all** existing git history, and made himself sole 'contributor' of the software. He then vowed to never return to Irc2P.
+Queste azioni hanno offeso molti nella community di I2P, inclusi gli sviluppatori, e quasi mise fine al progetto C++.
 
-These actions offended many in the I2P community, including the developers, and nearly ended the C++ project.
+Nella primavera del 2015 arrivò anonimal, che non volendo vedere il lavoro di tutti venir sprecato, ha ravvivato il progetto tramite contributi propri. Venne mandato un invito a tutti gli sviluppatori attivi rimasti per riunirsi e discutere il futuro di i2pd. Il primo autore di i2pd non si è mai presentato, ma l'atto di riunirsi ha scrollato la ruggine dalle ali di i2pd abbastanza da farlo [ritrattare](https://github.com/PurpleI2P/i2pd/issues/279) e ricominciare a collaborare di nuovo su GitHub - ma questa volta con un ramo ```openssl``` (che si è poi rivelato essere la repository di Bitbucket) invece del ramo ```master``` guidato dalla community.
 
-In the fall of 2015, along came anonimal who, not wanting to see everyone's work to go to waste, revived the project through contributions of their own and by reigning-in development. An open invitation for all remaining active developers to meet and discuss i2pd's future was then given. i2pd's first author never showed but the act of meeting apparently rustled i2pd's feathers to the point where he [retaliated](https://github.com/PurpleI2P/i2pd/issues/279) and began to work on GitHub again - but this time within an ```openssl``` branch (which turned out to be the Bitbucket repository) instead of the community-driven ```master``` branch.
+Capendo che questo comportamento avrebe solo fatto male al network I2P e all'intero progetto, gli sviluppatori rimasti hanno continuato ad avere [vari meeting importanti](https://github.com/monero-project/kovri/issues/47) costruendo le fondamenta di quello che adesso è Kovri.
 
-Seeing that this sort of erratic behavior would only hurt the I2P network and the project as a whole, the remaining developers continued to have [several important meetings](https://github.com/monero-project/kovri/issues/47) and set the foundation for what is now Kovri.
-
-## I found a vulnerability! I found a bug! What do I do?
-- Vulnerabilities: see our [README](https://github.com/monero-project/kovri/blob/master/README.md)
-- Bugs: see our [Contributing Guide](https://github.com/monero-project/kovri/blob/master/doc/CONTRIBUTING.md)
+## Ho trovato una vulnerabilità! Ho trovato un bug! Cosa devo fare?
+- Vulnerabilità: vedi il nostro [LEGGIMI](https://github.com/monero-project/kovri/blob/master/README.md)
+- Bugs: leggi la nostra [Contributing Guide](https://github.com/monero-project/kovri/blob/master/doc/CONTRIBUTING.md)
