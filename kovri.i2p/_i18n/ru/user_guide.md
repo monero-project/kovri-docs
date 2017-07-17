@@ -53,7 +53,7 @@ $ cd build/ && ./kovri
 - Прочитайте `tunnels.conf`, чтобы узнать, как настроить туннель сервера, указывающий на размещаемый вами сервис.
 
 ## Шаг 7. Наслаждайтесь!
-- Узнайте больше о Kovri в [Moneropedia] (https://getmonero.org/knowledge-base/moneropedia/kovri).
+- Узнайте больше о Kovri в [Moneropedia] (https://getmonero.org/resources/moneropedia/kovri.html).
 - Создайте запросы на новый функционал или сообщите об ошибках на нашем [трекере вопросов] (https://github.com/monero-project/kovri/issues)
 - Узнайте больше о сети I2P на [веб-сайте java I2P] (https://geti2p.net/ru/docs)
 
