@@ -60,7 +60,7 @@ If any further plugins are added to the website over time, this document will be
 
 #### 2.i.c GitHub
 
-Secondly, you'll need to fork the [Kovri website from GitHub](https://github.com/anonimal/kovri-site) be willing to work with your own repository. Yeah, that means you kind of have to know how GitHub and version control works too. Don't worry, if you have questions, the Kovri community is really happy to help out.
+Secondly, you'll need to fork the [Kovri website from GitHub](https://github.com/monero-project/kovri-site) be willing to work with your own repository. Yeah, that means you kind of have to know how GitHub and version control works too. Don't worry, if you have questions, the Kovri community is really happy to help out.
 
 You can test whether everything is building correctly before you get started. Once the website builds successfully, you've got a working environment ready to go. All that's left is a working knowledge of HTML and CSS, which, unfortunately, is outside the scope of this document.
 
@@ -71,7 +71,7 @@ You're still going to need the website files, because you're actually going to b
 
 #### 2.ii.a Of GitHub and Markdown 
 
-Go ahead and fork the Kovri website or download the [files from GitHub](https://github.com/anonimal/kovri-site). Don't worry, you won't need Jekyll or anything on your computer. You should be able to edit the files from within the GitHub website interface.
+Go ahead and fork the Kovri website or download the [files from GitHub](https://github.com/monero-project/kovri-site). Don't worry, you won't need Jekyll or anything on your computer. You should be able to edit the files from within the GitHub website interface.
 
 First things first, you're going to need to know how to use Markdown. It's basically a in-between language that enables people who don't know HTML to just write, and it will be compiled into HTML for you. You can find a great Markdown cheat sheet with examples [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links). IF you need more help, Google and YouTube are great resources.
 
@@ -169,7 +169,7 @@ Let's say that we're going to translate the [Building Page](https://getkovri.org
 
 #### 2.iii.a Fork that Code!
 
-The first step is to get the website files. You can do everything I'm going to show you from within the GitHub website, so you don't need any programs on your computer. Fork the Kovri website or download the [files](https://github.com/anonimal/kovri-site). 
+The first step is to get the website files. You can do everything I'm going to show you from within the GitHub website, so you don't need any programs on your computer. Fork the Kovri website or download the [files](https://github.com/monero-project/kovri-site).
 
 For this, you're going to need to know how to use Markdown. It's basically a in-between language that enables people who don't know HTML to just write, and it will be compiled into HTML for you. You can find a great Markdown cheat sheet with examples [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links). If you need more help, Google and YouTube are great resources.
 
