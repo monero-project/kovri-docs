@@ -153,7 +153,7 @@ pacman -Su
 ```bash
 $ git clone --recursive https://github.com/monero-project/kovri
 ```
-### 2. Соберите kovri и подмодули зависимостей одной командой
+### 2. Соберите Kovri и подмодули зависимостей одной командой
 ```bash
 $ make # to decrease build-time, run make -j [available CPU cores]
 ```

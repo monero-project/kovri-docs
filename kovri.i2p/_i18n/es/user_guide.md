@@ -64,7 +64,7 @@ Instalar Docker está fuera del propósito de este documento, por favor lee la [
 
 ## Paso 2. Configurar / Abrir Firewall
 
-La imagen de docker ya viene con la configuración por default de kovri, pero puedes configurarlo como se explica en secciones anteriores
+La imagen de docker ya viene con la configuración por default de Kovri, pero puedes configurarlo como se explica en secciones anteriores
 
 Deberías escoger un puerto aleatorio y abrir ese puerto
 

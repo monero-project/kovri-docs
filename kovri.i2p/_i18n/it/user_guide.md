@@ -33,11 +33,11 @@ $ cd build/ && ./kovri
 
 ## Step 4. Unisciti a noi su IRC
 1. Avvia il tuo [IRC client](https://en.wikipedia.org/wiki/List_of_IRC_clients)
-2. Imposta il tuo client per connettersi con la porta IRC di kovri (default 6669). Questo ti collegherà al network Irc2P (I2P's IRC network)
+2. Imposta il tuo client per connettersi con la porta IRC di Kovri (default 6669). Questo ti collegherà al network Irc2P (I2P's IRC network)
 3. Entra in  `#kovri` e `#kovri-dev`
 
 ## Step 5. Navigare su un sito I2P (garlic-site/eepsite)
-1. Apri un browser (preferibilmente un browser cha abbia il supporto per kovri)
+1. Apri un browser (preferibilmente un browser cha abbia il supporto per Kovri)
 2. Configura il browser usando [questa guida](https://geti2p.net/en/about/browser-config) **invece di usare la porta 4444 e 4445** cambia la porta HTTP proxy a **4446** e *anche* la porta SSL proxy a **4446**
 3. Se tutto è stato configurato correttamente, dovresti vedere un sito come [questo](http://check.kovri.i2p)
 

@@ -6,7 +6,7 @@ Kovri es una implementación del router [I2P](https://geti2p.net) en C++, segura
 Lee más de Kovri en la [Moneropedia](https://getmonero.org/resources/moneropedia/kovri.html).
 
 ## ¿Cuál es el estado actual de Kovri?
-Kovri está en desarrollo activo y actualmente en fase pre-alpha. Kovri aun *no* está integrada con monero pero, en adición a algunas funciones principales estamos desarrollando un [cliente](https://github.com/monero-project/kovri/issues/351) y [una API](https://github.com/monero-project/kovri/issues/350) principal para monero y otras App.
+Kovri está en desarrollo activo y actualmente en fase pre-alpha. Kovri aun *no* está integrada con Monero pero, en adición a algunas funciones principales estamos desarrollando un [cliente](https://github.com/monero-project/kovri/issues/351) y [una API](https://github.com/monero-project/kovri/issues/350) principal para Monero y otras App.
 
 Actualmente, puedes conectarte y (formar parte de) la red I2P: navegar eepsites, conectarte a IRC y correr túneles cliente y servidor.
 

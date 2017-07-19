@@ -11,7 +11,7 @@ $ cd kovri/ && clang-format -i -style=file src/path/to/my/file
 ## Here's what's currently not caught by clang-format and differs from Google's proposed C++ style
 
 - Keep with codebase's present (vertical) style for consistency
-- Newline break all function parameters for consisency across codebase
+- Newline break all function parameters for consistency across codebase
 - When function args newline break, ensure that *every* arg indent is 4 spaces
 
 ```cpp
