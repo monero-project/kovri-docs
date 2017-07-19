@@ -16,7 +16,7 @@ Note: Due to [#403](https://github.com/monero-project/kovri/issues/403), a minim
 Optional:
 
 - [Clang](http://clang.llvm.org/) 3.5 ([3.6 on FreeBSD](https://llvm.org/bugs/show_bug.cgi?id=28887))
-- [MiniUPnP](https://github.com/miniupnp/miniupnp/releases) 1.6 (Recommeded if you are behind a NAT without access to it)
+- [MiniUPnP](https://github.com/miniupnp/miniupnp/releases) 1.6 (Recommended if you are behind a NAT without access to it)
 - [Doxygen](http://www.doxygen.org/) 1.8.6
 - [Graphviz](http://graphviz.org/) 2.36
 
@@ -153,7 +153,7 @@ pacman -Su
 ```bash
 $ git clone --recursive https://github.com/monero-project/kovri
 ```
-### 2. Build kovri and submodule dependencies with one command
+### 2. Build Kovri and submodule dependencies with one command
 ```bash
 $ make # to decrease build-time, run make -j [available CPU cores]
 ```

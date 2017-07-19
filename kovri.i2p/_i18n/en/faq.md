@@ -6,12 +6,12 @@ Kovri is a secure, private, untraceable C++ router implementation of the [I2P](h
 Read more about Kovri in the [Moneropedia](https://getmonero.org/resources/moneropedia/kovri.html).
 
 ## What is the current state of Kovri?
-Kovri is in active development and currently pre-alpha. Kovri is *not* yet integrated with monero but, in addition to several core features, we are developing a [client](https://github.com/monero-project/kovri/issues/351) and [core](https://github.com/monero-project/kovri/issues/350) API for monero and other applications to use.
+Kovri is in active development and currently pre-alpha. Kovri is *not* yet integrated with Monero but, in addition to several core features, we are developing a [client](https://github.com/monero-project/kovri/issues/351) and [core](https://github.com/monero-project/kovri/issues/350) API for Monero and other applications to use.
 
 Currently, you can use the Kovri to connect to (and partake in) the I2P network: browse eepsites, connect to IRC, and run client and server tunnels.
 
 ## When is your first release?
-An alpha release is in the works for early 2017. Once other essential quality-assurance has been resolved and an API has been fully implemented, we will bring-forth a beta release.
+We plan to release an alpha version in the later half of 2017. Once other essential quality-assurance has been resolved and an API has been fully implemented, we will bring-forth a beta release.
 
 ## Why does my log show a date/time different from my timezone?
 Logs are recorded in UTC to protect your privacy. By using UTC, you are in a better position to upload log pastes to share with developers or the community without impacting your anonymity.

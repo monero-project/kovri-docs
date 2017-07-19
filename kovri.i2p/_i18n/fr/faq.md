@@ -5,12 +5,12 @@ Kovri est une application du réseau anonyme I2P en C++ qui est sécurisé, priv
 
 Lire la suite à [Moneropedia](https://getmonero.org/resources/moneropedia/kovri.html).
 
-## Qu'est-ce que c'est l'état de kovri actuallment?
-L'equipe de développment travaille activement sur une version pre-alpha. Kovri **n'est pas** intégré avec monero en ce moment mais, avec plusieurs d'autre fonctionnalité, nous développons un [client](https://github.com/monero-project/kovri/issues/351) et [core](https://github.com/monero-project/kovri/issues/350) API pour Monero et des autres applications.
+## Qu'est-ce que c'est l'état de Kovri actuallment?
+L'equipe de développment travaille activement sur une version pre-alpha. Kovri **n'est pas** intégré avec Monero en ce moment mais, avec plusieurs d'autre fonctionnalité, nous développons un [client](https://github.com/monero-project/kovri/issues/351) et [core](https://github.com/monero-project/kovri/issues/350) API pour Monero et des autres applications.
 
 Actuallment, on peut utiliser Kovri pour se connecter à (et participer au) réseau I2P: naviguer des eepsites, se connecter à IRC, et plus.
 
-## Quand est-ce que la première version de kovri va sortir?
+## Quand est-ce que la première version de Kovri va sortir?
 Nous allons essayer de sortir une version alpha pendant 2017. Après d'avoir confirmé le qualité du projet et d'avoir complètement implémenté un API, nous sortirons une version beta.
 
 ## Pourquoi est-ce que mes logs montre un fuseau horaire différent du fuseau horaire chez moi?
@@ -19,8 +19,8 @@ Logs sont enregistré en GMT pour que vous restez privé. Quand les logs sont en
 ## L'equipe de développment travaille sur quoi actuallment?
 Actuallment, nous travillons sur tous les problèms sur notre [issues tracker](https://github.com/monero-project/kovri/issues/). Ils sont sur tous ce qu'il faut être fini avant de sortir une version (alpha, beta, ou meilleur) officielle.
 
-## Est-ce qu'on peut vraiment utiliser kovri en ce moment?
-On peut utiliser ce que ```./kovri --help``` offre. Actuallment, kovri n'est pas intégré avec Monero. Nous avons réparé plusieurs de problèms de sécurité depuis le début, mais le projet est toujours une version pre-alpha.
+## Est-ce qu'on peut vraiment utiliser Kovri en ce moment?
+On peut utiliser ce que ```./kovri --help``` offre. Actuallment, Kovri n'est pas intégré avec Monero. Nous avons réparé plusieurs de problèms de sécurité depuis le début, mais le projet est toujours une version pre-alpha.
 
 Ce projet est encore en cours de développment, donc nous ne pouvons pas garantir qu'il y aura toujours du anonymat qui est aussi fort que Tor ou même java I2P. Ces projets ont été recherché depuis 10+ ans - Nous sommes en cours de commencer juste maintenant.
 
@@ -29,7 +29,7 @@ N'hésitez pas à expérimenter avec Kovri, mais seulement si vous **n'avez pas*
 ## Informations de contact?
 Visitez notre [README](https://github.com/monero-project/kovri/blob/master/README.md).
 
-## Pourquoi est-ce que je devrais utiliser kovri au lieu de i2pd?
+## Pourquoi est-ce que je devrais utiliser Kovri au lieu de i2pd?
 
 - La sécurité: Nous voulons un logicel sécurisé; nous ne voulons pas [précipiter](https://github.com/monero-project/kovri/issues/65) justement pour sortir un projet.
 - La qualité: Vous soutiendrez un projet qui va durer longtemps.
@@ -40,7 +40,7 @@ Visitez notre [README](https://github.com/monero-project/kovri/blob/master/READM
 - Nous fournissons un [Forum de financements](https://forum.getmonero.org/8/funding-required) pour le développement de nouvelles fonctionnalités.
 - Nous nous concentrons sur la création d'un logicel qui est ["secure by default"](http://www.openbsd.org/security.html), et plus à maintenir.
 - Nous nous concentrons sur l'application d'un API qui peut être utilisé par n'importe quel développeur pour que n'importe quelle application peut se connecter au réseau I2P; oui, Monero aussi.
-- Nous assurerons [la qualité de ce project à tous] (https://github.com/monero-project/kovri/issues/58) et nous présenterons [le but de ce projet](https://github.com/monero-project/kovri/blob/master/doc/CONTRIBUTING.md) à tous pour créer un bon logicel pour tout le monde.
+- Nous assurerons [la qualité de ce project à tous](https://github.com/monero-project/kovri/issues/58) et nous présenterons [le but de ce projet](https://github.com/monero-project/kovri/blob/master/doc/CONTRIBUTING.md) à tous pour créer un bon logicel pour tout le monde.
 - Nous appliquerons des options alternatives d'obtenir un nouveau graine pour qu'on peut utiliser [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) au lieu de HTTPS pour obtenir un nouveau graine.
 - Nous appliquerons plus de fonctionnalité *(hidden mode + disabled inbound)* pour donner l'anonymat à ceux qui habitent à des pays avec des conditions extrêmes ou ceux qui sont bloqués par un pare-feu qui utilise carrier-grade NAT ou DS-Lite.
 - Nous encouragerons toujours de la collaboration.

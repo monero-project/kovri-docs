@@ -24,7 +24,7 @@ Kovri può essere utilizzato secondo quanto il comando ```./kovri --help``` ha d
 
 C'è ancora molto codice da coprire quindi non aspettarti una forte garanzia d'anonimato come con tor o persino java I2P. Questi progetti hanno 10+ anni di ricerche e implementazioni - e noi abbiamo appena iniziato.
 
-Sentiti libero di giocare il ruolo dello sviluppatore e sperimentare/giocare con kovri ma solo se **non** essere anonimo non ti mette in pericolo - c'è sempre il rischio di una possibile deanonimizzazione a causa dell'essere in pre-alpha (questo non vale solo per Kovri).
+Sentiti libero di giocare il ruolo dello sviluppatore e sperimentare/giocare con Kovri ma solo se **non** essere anonimo non ti mette in pericolo - c'è sempre il rischio di una possibile deanonimizzazione a causa dell'essere in pre-alpha (questo non vale solo per Kovri).
 
 ## Informazioni per contattare Kovri?
 leggi il nostro [README](https://github.com/monero-project/kovri/blob/master/README.md).
