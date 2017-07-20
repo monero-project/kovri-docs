@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+        {% include head.html %}
+<body>
+    <div class="page-wrapper">
+        {% include navigation.html %}
+          <div class="site-wrap">
+              <article class="container full">
+                <div class="info-block">
+                    <div class="row center-xs">
+                        <div class="col"><h1 class="page-title">{%t page.title%}</h1></div>
+                    </div>
+                    <div class="row middle-xs info-block-row">
+                       <div class="col-xs-12">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+        </article>
+            </div>
+		{% include footer.html %}
+     </div>
+           
+</body>
+</html>
