@@ -205,7 +205,7 @@ $ export KOVRI_DATA_PATH=$HOME/.another-kovri-data-path && make && make install-
 ```
 
 ## Step 4. Procedi con la guida utente
-Leggi la [guida utente](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md) per iniziare
+Leggi la [guida utente](https://github.com/monero-project/kovri-docs/blob/master/i18n/it/user_guide.md) per iniziare
 
 ## Docker
 

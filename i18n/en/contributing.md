@@ -1,7 +1,7 @@
 # Contributing
 
 ## Quality Assurance
-- View our [Quality Assurance](https://github.com/anonimal/kovri-docs/blob/master/developer/QUALITY_ASSURANCE.md) guide to get an idea of proposed workflow
+- View our [Quality Assurance](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/quality.md) guide to get an idea of proposed workflow
 
 ## Compliance
 - We aim for complete C++11/14 compliance; feel free to use this to your advantage with your work
@@ -11,7 +11,7 @@
 To contribute your work, please proceed with the following:
 
 1. Fork Kovri
-2. Read our [style guide](https://github.com/anonimal/kovri-docs/blob/master/developer/STYLE.md)
+2. Read our [style guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/style.md)
 3. Create a [topic branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 4. [**Sign**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) your commit(s)
 5. Send a pull-request to branch ```master```

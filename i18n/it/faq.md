@@ -39,7 +39,7 @@ leggi il nostro [README](https://github.com/monero-project/kovri/blob/master/REA
 - Abbiamo un [Forum Funding System](https://forum.getmonero.org/8/funding-required) per features/sviluppo.
 - Siamo concentrati nella creazione di un I2P router ["sicuro di default"](http://www.openbsd.org/security.html), facilmente mantenibile con più possibilità di reviews. Questo a costo di abbandonare le funzionalità meno utilizzate in altri routers, ma le funzionalità principali e le API rimarranno pienamente intatte. Creando un router più piccolo, efficente ed essenziale, forniremo a sviluppatori e ricercatori più tempo per audit di sicurezza e per mettere in discussione il design I2P e le sue specifiche.
 - Siamo concentrati nell'implementare un'intuitiva, developer-friendly API per qualsiasi applicazione per connettersi e usare il network I2P; Questo include Monero.
-- Forniamo sia agli utenti finali che agli sviluppatori una [garanzia di qualità](https://github.com/monero-project/kovri/issues/58) e un [modello di sviluppo](https://github.com/monero-project/kovri/blob/master/doc/CONTRIBUTING.md) in modo da fornire un software migliore a tutti/e.
+- Forniamo sia agli utenti finali che agli sviluppatori una [garanzia di qualità](https://github.com/monero-project/kovri/issues/58) e un [modello di sviluppo](https://github.com/monero-project/kovri-docs/blob/master/i18n/it/contributing.md) in modo da fornire un software migliore a tutti/e.
 - implementeremo un opzione di reseeding alternativa così gli utenti potranno utilizzare [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) invece di HTTPS per il reseeding.
 - Implementeremo funzionalità estese *(modalità nascosta + inbound disabilitato)* per fornire anonimità per coloro che vivono in nazioni con condizioni estreme o per chi è sotto firewall da carrier-grade NAT o DS-Lite.
 - Creeremo sempre un ambiente di collaborazione amichevole.
@@ -67,4 +67,4 @@ Capendo che questo comportamento avrebe solo fatto male al network I2P e all'int
 
 ## Ho trovato una vulnerabilità! Ho trovato un bug! Cosa devo fare?
 - Vulnerabilità: vedi il nostro [LEGGIMI](https://github.com/monero-project/kovri/blob/master/README.md)
-- Bugs: leggi la nostra [Contributing Guide](https://github.com/monero-project/kovri/blob/master/doc/CONTRIBUTING.md)
+- Bugs: leggi la nostra [Contributing Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/it/contributing.md)
