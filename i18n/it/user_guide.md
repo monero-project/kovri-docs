@@ -9,7 +9,7 @@ Note:
 
 - **Non condividere il tuo numero di porta con nessuno altrimenti la tua anonimità sarà compromessa!**
 - Se non salvi la porta, Kovri ne rigenererà una nuova ad ogni avvio (hai anche la scelta di indicare la porta con `--port` ad ogni avvio).
-- Se non hai accesso al tuo NAT, segui le istruzioni in [BUILDING](https://github.com/monero-project/kovri/blob/master/doc/BUILDING.md) per il tuo SO. 
+- Se non hai accesso al tuo NAT, segui le istruzioni in [BUILDING](https://github.com/monero-project/kovri-docs/blob/master/i18n/it/building.md) per il tuo SO.
 
 ## Step 2. Configurare Kovri
 

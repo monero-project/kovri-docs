@@ -1,5 +1,5 @@
 ## Seguros de calidad
-- Mira nuestros [Seguros de calidad](https://github.com/monero-project/kovri/blob/master/doc/QUALITY_ASSURANCE.md) para tener una idea de nuestro flujo de trabajo
+- Mira nuestros [Seguros de calidad](https://github.com/monero-project/kovri-docs/blob/master/i18n/es/quality.md) para tener una idea de nuestro flujo de trabajo
 
 ## Conformidad
 - Nosotros apuntamos a usar las conformidades de C++11/14; siéntete libre de usar esto para mejorar tu trabajo
@@ -9,7 +9,7 @@
 Para contribuir tu trabajo, por favor procede con lo siguiente:
 
 1. Forkea Kovri
-2. Lee nuestra [guía de estilo](https://github.com/monero-project/kovri/blob/master/doc/STYLE.md)
+2. Lee nuestra [guía de estilo](https://github.com/monero-project/kovri-docs/blob/master/i18n/es/style.md)
 3. Crea una [branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) para trabajar
 4. [**Firma**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) tu(s) commit(s)
 5. envía tu pull-request a la branch ```master```

@@ -9,7 +9,7 @@ Notas:
 
 - **No compartas con nadie tu puerto, porque puede comprometer tu anonimato!!**
 - Si no guardas el puerto, Kovri va a generar uno de forma aleatorio cada vez que se inicie (también puedes elegir pasar el puerto con el parámetro `--port` en cada inicio).
-- Si no tienes acceso a tu NAT, mira las instrucciones en [Compilando](https://github.com/monero-project/kovri/blob/master/doc/BUILDING.md) para tu OS. 
+- Si no tienes acceso a tu NAT, mira las instrucciones en [Compilando](https://github.com/monero-project/kovri-docs/blob/master/i18n/es/building.md) para tu OS.
 
 ## Paso 2. Configurar Kovri
 

@@ -8,7 +8,7 @@
 Notes:
 
 - If you don't save the port, kovri will randomly generate a new one on each startup (you also have the choice to pass the port with the `--port` flag on each startup).
-- If you do not have access to your NAT, see instructions in [BUILDING](https://github.com/anonimal/kovri-docs/blob/master/end-user//BUILDING.md) for your OS.
+- If you do not have access to your NAT, see instructions in the [building guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/building.md) for your OS.
 - **Don't share your port number with anyone as it will effect your anonymity!**
 
 ## Step 2. (Recommended) Operational security
