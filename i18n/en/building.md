@@ -137,7 +137,7 @@ $ sudo pkg install miniupnpc #For users behind a restrictive NAT
 ### OpenBSD 6
 Required dependencies:
 ```bash
-$ sudo pkg_add bash git cmake gmake g++
+$ sudo pkg_add bash git cmake gmake g++ llvm
 ```
 Optional dependencies:
 ```bash
@@ -232,7 +232,7 @@ $ gmake && gmake install
 
 ### OpenBSD
 ```bash
-$ export CC=egcc CXX=eg++  # Clang optional
+$ export CC=clang CXX=clang++  # clang recommended, otherwise egcc/eg++
 $ gmake && gmake install
 ```
 - Replace ```make``` with ```gmake``` for all other build options
