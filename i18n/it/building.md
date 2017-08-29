@@ -159,11 +159,11 @@ $ make # per diminuire il tempo di build, usa make -j [CPU cores disponibili]
 ```
 ### 3. Installa risorse (file di configurazione + risorse pacchetti)
 ```bash
-$ make install-resources
+$ make install
 ```
 
-- Gli utenti finali DEVONO usare ```make install-resources``` per nuove installazioni
-- Gli sviluppatori DOVREBBERO usare ```make install-resources``` dopo aver eseguito un fetch
+- Gli utenti finali DEVONO usare ```make install``` per nuove installazioni
+- Gli sviluppatori DOVREBBERO usare ```make install``` dopo aver eseguito un fetch
 
 ### Altre opzioni utilizzabili al posto di quelle in step 2:
 
@@ -193,7 +193,7 @@ $ export CC=clang CXX=clang++  # rimpiazza ```clang``` con una versione/percorso
 ### FreeBSD
 ```bash
 $ export CC=clang36 CXX=clang++36
-$ gmake && gmake install-resources
+$ gmake && gmake install
 ```
 - Rimpiazza ```make``` con ```gmake``` per tutte le altre opzioni di build
 
@@ -201,7 +201,7 @@ $ gmake && gmake install-resources
 Puoi personalizzare il percorso dei dati di Kovri a tuo piacimento. Semplicemente esporta ```KOVRI_DATA_PATH```; esempio:
 
 ```bash
-$ export KOVRI_DATA_PATH=$HOME/.another-kovri-data-path && make && make install-resources
+$ export KOVRI_DATA_PATH=$HOME/.another-kovri-data-path && make && make install
 ```
 
 ## Step 4. Procedi con la guida utente
