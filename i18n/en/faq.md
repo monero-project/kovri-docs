@@ -1,9 +1,13 @@
 # Frequently Asked Questions (and answers)
 
 ## What is Kovri?
-Kovri provides users with the ability to run and access nodes that hide their geographic location and IP address. When used in conjunction with Kovri, the origin of Monero transactions is concealed to protect the privacy of the sender while mitigating network monitoring and other attacks. Under the hood, Kovri is a secure, private, untraceable C++ router implementation of the [I2P](https://geti2p.net) anonymous network. What was once a fork of i2pd, Kovri has become a unique, actively-developed, community-driven C++ I2P implementation with many improvements, security enhancements, and new features over its predecessor.
+[Kovri](https://getmonero.org/resources/moneropedia/kovri.html) is a free, decentralized, anonymity technology.
 
-Read more about Kovri in the [Moneropedia](https://getmonero.org/knowledge-base/moneropedia/kovri).
+Currently based on [I2P](https://getmonero.org/resources/moneropedia/i2p.html)'s open specifications, Kovri uses both [garlic encryption](https://getmonero.org/resources/moneropedia/garlic-encryption.html) and [garlic routing](https://getmonero.org/resources/moneropedia/garlic-routing.html) to create a private, protected overlay-network across the internet. This overlay-network provides users with the ability to *effectively* hide their geographical location and internet IP address.
+
+Essentially, Kovri *covers* an application's internet traffic to make it anonymous within the network.
+
+A lightweight and security-focused router, Kovri is fully compatible with the I2P network. An alpha version of Kovri is in the works.
 
 ## What does Kovri do/not do for you?
 |                        YES                       |                  WORK IN PROGRESS                |                       NO                         |
@@ -40,6 +44,8 @@ Feel free to play the role of developer and experiment/play with Kovri but only 
 See our [README](https://github.com/monero-project/kovri/blob/master/README.md).
 
 ## Why should I use Kovri instead of i2pd?
+
+What was once a fork of i2pd, Kovri has become a unique, actively-developed, community-driven C++ I2P implementation with many improvements, security enhancements, and new features over its predecessor.
 
 - Security: our focus is on securing our software; not [rushing to get things done](https://github.com/monero-project/kovri/issues/65) for the sake of having a release
 - Quality: you're supporting efforts to ensure a quality codebase that will stand the test of time. This includes all aspects of code maintainability
