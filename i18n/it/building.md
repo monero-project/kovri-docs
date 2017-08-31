@@ -1,12 +1,14 @@
-## Step 1. Requisiti minimi
+## Step 0. (opzionale) Salta la compilazione e utilizza i file binari rilasciati
 
-Nota: Conseguentemente a [#403](https://github.com/monero-project/kovri/issues/403), è richiesto almeno un minimo di 1 GiB di RAM per i seguenti ambienti di compilazione..
+Vedi il [README](https://github.com/monero-project/kovri/blob/master/README.md) per scaricare kovri pre-costruito e il file di checksum. Semplicemente installa e fai partire kovri. Pronti per partire!
 
-### Linux / MacOSX / FreeBSD 10
+## Step 1. Se stai costruendo, requisiti minimi
+
+### Linux / MacOSX / FreeBSD 11 / OpenBSD 6
 - [Git](https://git-scm.com/download) 1.9.1
 - [GCC](https://gcc.gnu.org/) 4.9.2
 - [CMake](https://cmake.org/) 2.8.12
-- [Boost](http://www.boost.org/) 1.58
+- [Boost](http://www.boost.org/) 1.58 (guarda la versione specifica della piattaforma)
 - [OpenSSL](https://openssl.org/) (sempre l'ultima versione stabile disponibile)
 
 ### Windows
@@ -15,7 +17,7 @@ Nota: Conseguentemente a [#403](https://github.com/monero-project/kovri/issues/4
 
 Opzionali:
 
-- [Clang](http://clang.llvm.org/) 3.5 ([3.6 su FreeBSD](https://llvm.org/bugs/show_bug.cgi?id=28887))
+- [Clang](http://clang.llvm.org/) 3.5 ([3.6 o superiore su FreeBSD](https://llvm.org/bugs/show_bug.cgi?id=28887))
 - [MiniUPnP](https://github.com/miniupnp/miniupnp/releases) 1.6 (Raccomandato se sei dietro ad un NAT senza potervi accedere)
 - [Doxygen](http://www.doxygen.org/) 1.8.6
 - [Graphviz](http://graphviz.org/) 2.36
@@ -23,7 +25,11 @@ Opzionali:
 ### MacOSX
 - [Homebrew](http://brew.sh/)
 
+#### Note: suggeriamo un minimo di 1 Gb di RAM per ambienti di compilazione (guarda [#403](https://github.com/monero-project/kovri/issues/403) per dettagli)
+
 ## Step 2. Installa le dipendenze
+
+#### Nota: per le opzioni dei contenitori (come Docker e snapcraft), leggi la [Guida utente](https://github.com/monero-project/kovri-docs/blob/master/i18n/it/user_guide.md)
 
 ### Ubuntu Xenial (16.04)
 Dipendenze richieste:
@@ -57,7 +63,7 @@ $ sudo apt-get install libminiupnpc-dev #Per utenti dietro un NAT restrittivo
 ```
 
 ### Debian (stabile)
-Dovremo togliere  ```testing``` per ```Boost 1.58+``` e per [broken CMake](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656). Per motivi di documentazione, toglieremo tutte le dipendenze da  ```testing```. Se non hai esperienza con apt-pinning, procedi con le seguenti istruzioni prima di installare le dipendenze:
+Dovremo togliere da```testing``` per ```Boost 1.58+``` e a causa di [broken CMake](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656). Per motivi di documentazione, toglieremo tutte le dipendenze da  ```testing```. Se non hai esperienza con apt-pinning, procedi con le seguenti istruzioni prima di installare le dipendenze:
 
 - Crea e modifica ```/etc/apt/preferences.d/custom.pref```
 - Salva il file con il seguente testo:
@@ -116,15 +122,10 @@ $ brew install doxygen graphviz
 $ brew install miniupnpc #Per utenti dietro un NAT restrittivo 
 ```
 
-### FreeBSD 10
+### FreeBSD 11
 Dipendenze richieste:
 ```bash
-$ sudo pkg install git cmake gmake clang36 openssl
-# Build ultimo boost (minimo 1.58)
-$ wget [ultimo boost] -O latest_boost.tar.bz2
-$ tar xvjf latest_boost.tar.bz2 && cd latest_boost
-$ ./bootstrap.sh --with-toolset=clang  # Build with clang 3.5 OK
-$ sudo ./b2 --toolset=clang install
+$ sudo pkg install git cmake gmake clang36 boost-libs openssl
 ```
 Dipendenze opzionali:
 ```bash
@@ -133,8 +134,38 @@ $ sudo pkg install miniupnpc #Per utenti dietro un NAT restrittivo
 ```
 **Nota: guarda le istruzioni per la build FreeBSD qui sotto**
 
+### OpenBSD 6
+RDipendenze richieste:
+```bash
+$ sudo pkg_add bash git cmake gmake g++ llvm
+```
+Dipendenze opzionali:
+```bash
+$ sudo pkg_add miniupnpc #For users behind a restrictive NAT
+$ sudo pkg_add doxygen graphviz
+
+# Compilazione ultimo boost
+```bash
+# procurati ultimo boost
+$ wget [latest boost] -O latest_boost.tar.bz2
+$ tar xvjf latest_boost.tar.bz2 && cd latest_boost/
+
+# Scarica e applica le patch
+# https://svn.boost.org/trac/boost/attachment/ticket/12575/boost-1.62-asio-libressl.patch
+# https://gist.githubusercontent.com/laanwj/bf359281dc319b8ff2e1/raw/92250de8404b97bb99d72ab898f4a8cb35ae1ea3/patch-boost_test_impl_execution_monitor_ipp.patch
+
+# Compilazione boost
+$ echo 'using gcc : : eg++ : "-fvisibility=hidden -fPIC" "" "ar" "strip"  "ranlib" "" : ;' > user-config.jam
+$ config_opts="runtime-link=shared threadapi=pthread threading=multi link=static variant=release --layout=tagged --build-type=complete --user-config=user-config.jam -sNO_BZIP2=1"
+$ ./bootstrap.sh --without-icu --with-libraries=chrono,log,program_options,date_time,thread,system,filesystem,regex,test
+$ sudo ./b2 -d2 -d1 ${config_opts} --prefix=${BOOST_PREFIX} stage
+$ sudo ./b2 -d0 ${config_opts} --prefix=${BOOST_PREFIX} install
+```
+**Note: see OpenBSD build instructions below**
+
+
 ### Windows (MSYS2/MinGW-64)
-* Scarica [MSYS2 installer](http://msys2.github.io/), 64 bit o 32 bit, dipendentemente dal tuo computer ed eseguilo..
+* Scarica [MSYS2 installer](http://msys2.github.io/), 64 bit o 32 bit, dipendentemente dal tuo computer ed eseguilo.
 * Usa il collegamento associato con la tua architettura per lanciare l'ambiente MSYS2. Nota che se sei su Windows 64 bit, avrai tutti e due gli ambienti, 64 e 32 bit.
 * Aggiorna i pacchetti con i seguenti comandi:
 ```
@@ -144,7 +175,7 @@ pacman -Su
 ```
 * Chi di voi ha già familiarità con pacman può usare normalmente ```pacman -Syu``` per aggiornare, ma potresti ricevere degli errori e dover far ripartire MSYS2 se le dipendenze di pacman sono aggiornate.
 * Installa dipendenze: ```pacman -S make mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-boost mingw-w64-x86_64-openssl```
-* Opzionale: ```mingw-w64-x86_64-doxygen```  (you'll need [Graphviz](http://graphviz.org/doc/winbuild.html) for doxygen)
+* Opzionale: ```mingw-w64-x86_64-doxygen```  (avrai bisogno di[Graphviz](http://graphviz.org/doc/winbuild.html) per doxygen)
 * Nota: Avrai bisogno di  ``` mingw-w64-x86_64-miniupnpc``` se sei dietro un firewall NAT restrittivo.
 
 ## Step 3. Build   
@@ -157,7 +188,7 @@ $ git clone --recursive https://github.com/monero-project/kovri
 ```bash
 $ make # per diminuire il tempo di build, usa make -j [CPU cores disponibili]
 ```
-### 3. Installa risorse (file di configurazione + risorse pacchetti)
+### 3. Installa
 ```bash
 $ make install
 ```
@@ -178,30 +209,39 @@ $ make install
 - ```make doxygen``` produce documentazione Doxygen
 - ```make clean``` pulisce cartelle build e gli output Doxygen
 - ```make help``` mostra le opzioni di build CMake disponibili
+- ```make uninstall``` uninstall Kovri
 
 #### Note
 - L'output di Doxygen sarà nella cartella```doc```
-- Tutti gli altri output di build saranno nella cartella ```build```
+- Tutti gli altri output di compilazione saranno nella cartella ```build```
 
 ### Clang
 Per eseguire il build con clang, **devi** esportare i seguenti:
 
 ```bash
-$ export CC=clang CXX=clang++  # rimpiazza ```clang``` con una versione/percorso di clang di tua scelta
+$ export CC=clang CXX=clang++  # rimpiazza ```clang``` con una versione/percorso di clang a tua scelta
 ```
 
 ### FreeBSD
 ```bash
-$ export CC=clang36 CXX=clang++36
+$ export CC=clang36 CXX=clang++36 #o una versione di clang più recente
 $ gmake && gmake install
 ```
-- Rimpiazza ```make``` con ```gmake``` per tutte le altre opzioni di build
+- Rimpiazza ```make``` con ```gmake``` per tutte le altre opzioni di compilazione
+
+### OpenBSD
+```bash
+$ export CC=clang CXX=clang++  # clang raccomandato, altrimenti egcc/eg++
+$ gmake && gmake install
+```
+- Rimpiazza ```make``` with ```gmake``` per tutte le altre opzioni di compilazione
+
 
 ### (Opzionale) percorso data personalizzato
 Puoi personalizzare il percorso dei dati di Kovri a tuo piacimento. Semplicemente esporta ```KOVRI_DATA_PATH```; esempio:
 
 ```bash
-$ export KOVRI_DATA_PATH=$HOME/.another-kovri-data-path && make && make install
+$ export KOVRI_DATA_PATH=$HOME/.un-altro-percorso-per-kovri && make && make install
 ```
 
 ## Step 4. Procedi con la guida utente
@@ -213,4 +253,37 @@ Alternativamente, se usi Docker, la stringa seguente eseguirà il build dell'imm
 
 ```bash
 $ docker build -t geti2p/kovri .
+```
+
+## Fuzz testing
+
+Da [reference](http://llvm.org/docs/LibFuzzer.html) : "Libfuzzer è sotto attivo sviluppo, avrai bisogno della versione corrente (o almeno molto recente) del compilatore Clang"
+
+Procurati una versione recente di clang:
+
+```bash
+$ cd ~/ && mkdir TMP_CLANG && git clone https://chromium.googlesource.com/chromium/src/tools/clang TMP_CLANG/clang
+$ ./TMP_CLANG/clang/scripts/update.py
+$ cd --
+```
+
+procurati libFuzzer:
+
+```bash
+$ git clone https://chromium.googlesource.com/chromium/llvm-project/llvm/lib/Fuzzer contrib/Fuzzer
+```
+
+Costruisci kovri con fuzz testing abilitato:
+
+```bash
+$ PATH="~/third_party/llvm-build/Release+Asserts/bin:$PATH" CC=clang CXX=clang++ make fuzz-tests
+```
+
+utilizzo (Esempio per RouterInfo):
+
+```bash
+mkdir RI_CORPUS MIN_RI_CORPUS
+find ~/.kovri/core/network_database/ -name "router_info*" -exec cp {} RI_CORPUS \;
+./build/kovri-util fuzz --target=routerinfo -merge=1 MIN_RI_CORPUS RI_CORPUS
+./build/kovri-util fuzz --target=routerinfo -jobs=2 -workers=2 MIN_RI_CORPUS
 ```
