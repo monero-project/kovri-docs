@@ -1,7 +1,9 @@
-Kovri is a secure, private, untraceable C++ router implementation of the I2P anonymous network. What was once a fork of i2pd, Kovri has become a unique, actively-developed, community-driven C++ I2P implementation with many improvements, security enhancements, and new features over its predecessor.
+[Kovri](https://getmonero.org/resources/moneropedia/kovri.html) is a free, decentralized, anonymity technology.
 
-Kovri is in active development and currently pre-alpha. Kovri is not yet integrated with Monero but, in addition to several core features, we are developing a client and core API for Monero and other applications to use.
+Currently based on [I2P](https://getmonero.org/resources/moneropedia/i2p.html)'s open specifications, Kovri uses both [garlic encryption](https://getmonero.org/resources/moneropedia/garlic-encryption.html) and [garlic routing](https://getmonero.org/resources/moneropedia/garlic-routing.html) to create a private, protected overlay-network across the internet. This overlay-network provides users with the ability to *effectively* hide their geographical location and internet IP address.
 
-Currently, you can use the Kovri to connect to (and partake in) the I2P network: browse eepsites, connect to IRC, and run client and server tunnels.
+Essentially, Kovri *covers* an application's internet traffic to make it anonymous within the network.
 
-We plan to release an alpha version in the later half of 2017. Once other essential quality-assurance has been resolved and an API has been fully implemented, we will bring-forth a beta release.
+A lightweight and security-focused router, Kovri is fully compatible with the I2P network. An alpha version of Kovri is in the works.
+
+Watch development via the [Kovri repo](https://github.com/monero-project/kovri#downloads) and [join the community](https://github.com/monero-project/kovri#contact).
