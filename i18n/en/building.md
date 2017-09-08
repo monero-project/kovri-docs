@@ -184,36 +184,26 @@ pacman -Su
 ```bash
 $ git clone --recursive https://github.com/monero-project/kovri
 ```
+
 ### 2. Build kovri and submodule dependencies with one command
 ```bash
-$ make # to decrease build-time, run make -j [available CPU cores]
+$ make  # to decrease build-time, run `make -j <available CPU cores>`. Example: `make -j4`
 ```
+
 ### 3. Install
 ```bash
 $ make install
 ```
 
-- End-users MUST run ```make install``` for new installations
-- Developers SHOULD run ```make install``` after a fresh fetch
+- End-users MUST run `make install` for new installations
+- Developers SHOULD run `make install` after a fresh build
 
 ### Other options you can use in place of step 2:
 
-- ```make upnp``` produces vanilla binary with UPnP support (requires [MiniUPnP](https://github.com/miniupnp/miniupnp/releases))
-- ```make optimized-hardening``` produces optimized, hardened binary
-- ```make all-options``` produces optimized, hardened, UPnP enabled binary
-- ```make tests``` produces all unit-tests and benchmarks
-- ```make tests-optimized-hardening``` produces all unit-tests and benchmarks with optimized hardening
-- ```make static``` produces static binary
-
-### Other available options
-- ```make doxygen``` produces Doxygen documentation
-- ```make clean``` cleans build directories and Doxygen output
-- ```make help``` shows available CMake build options
-- ```make uninstall``` uninstall Kovri
+For an accurate and complete list of options, see the targets in the [Makefile](https://github.com/monero-project/kovri/blob/master/Makefile).
 
 #### Notes
-- Doxygen output will be in ```doc``` directory
-- All other build output will be in the ``build``` directory
+- All build output (including Doxygen) will be in the build output directory
 
 ### Clang
 To build with clang, you **must** export the following:
