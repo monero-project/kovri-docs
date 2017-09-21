@@ -1,7 +1,21 @@
-# La FAQ (et des reponses)
+# Foire Aux Qestions
 
 ## Qu'est-ce que Kovri?
-[Kovri](https://getmonero.org/resources/moneropedia/kovri.html) est une technologie gratuite, decentralisée, et anonyme.
+[Kovri](https://getmonero.org/resources/moneropedia/kovri.html) est une technologie gratuite et decentralisée pour garantir l'anonymat sur internet. Elle est développée par [Monero](https://getmonero.org).
+
+Basé sur les spécifications d'[I2P](https://getmonero.org/resources/moneropedia/i2p.html), Kovri utilise les technologies [garlic encryption](https://getmonero.org/resources/moneropedia/garlic-encryption.html) et [garlic routing](https://getmonero.org/resources/moneropedia/garlic-routing.html) pour créer une surcouche à internet à la fois privée et protégée.
+
+Kovri *recouvre* le trafic internet d'une application pour le rendre anonyme sur le réseau.
+
+Kovri est un routeur léger et axé sur la sécurité. Il est totalement compatible avec le réseau I2P. La version alpha de Kovri est en cours de développement.
+
+## Qu'est-ce que Kovri permet ?
+
+* 
+
+## Qu'est-ce que Kovri permettra ?
+
+## Qu'est-ce que Kovri ne permet pas ?
 
 ## Qu'est-ce que c'est l'état de Kovri actuallment?
 L'equipe de développment travaille activement sur une version pre-alpha. Kovri **n'est pas** intégré avec Monero en ce moment mais, avec plusieurs d'autre fonctionnalité, nous développons un [client](https://github.com/monero-project/kovri/issues/351) et [core](https://github.com/monero-project/kovri/issues/350) API pour Monero et des autres applications.
