@@ -34,14 +34,14 @@ Essentially, Kovri *covers* an application's internet traffic to make it anonymo
 A lightweight and security-focused router, Kovri is fully compatible with the I2P network. An alpha version of Kovri is in the works.
 
 ### Who is developing Kovri?
-Kovri is an open-source project, which means that it depends on the community for contributions. The lead developer on the project is [anonimal](https://github.com/anonimal), who you can reach with questions on the Kovri IRC channels [#kovri](irc://chat.freenode.net/#kovri) and [#kovri-dev](irc://chat.freenode.net/#kovri).
+Kovri is an open-source project, which means that it depends on the community for contributions. The lead developer on the project is [anonimal](https://github.com/anonimal), who you can reach with questions on the Kovri IRC channels [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri), and his [Twitter account](https://twitter.com/0x914409F1).
 
 Kovri is being developed under the umbrella of [The Monero Project](https://github.com/monero-project), which is another open-source project that develops the [Monero coin](https://getmonero.org) and [Open Alias](https://openalias.org). The relationship between The Monero Project and Kovri is a mutually beneficial one, with Kovri looking to integrate into the Monero network, and Monero providing a stream of developers and resources for Kovri development.
 
 ### How will Kovri help Monero?
 Monero is a secure, private, untraceable, and fungible cryptocurrency that has privacy on by default, and utilizes such technologies as stealth addresses, RingCT, and ring signatures to hide the receiver, amounts, and sender respectively. Some potential weaknesses in Monero are leaking the IP address that broadcasts a transaction and correlation attacks.
 
-Enter Kovri. Kovri will be implemented into the official Monero wallet, so all transactions will be routed through the I2P network, hiding the IP address from which the transaction originated. In the future, all transactions will be routed through Kovri by default, although downloading the blockchain will still be through the clearnet for efficiency.
+Enter Kovri. Kovri will be implemented into the official Monero wallet, so all transactions will be routed through the Kovri anonymous network, hiding the IP address from which the transaction originated. In the future, all transactions will be routed through Kovri by default, although downloading the blockchain will still be through the clearnet for efficiency.
 
 ### Why should I get Kovri instead of I2P?
 [I2P](https://geti2p.net) is a great project, but there were a few things that we felt needed tweaking to integrate the technology into Monero. First, I2P is developed in Java, and we thought that developing a router in C++ would help the code be fast and lightweight.
