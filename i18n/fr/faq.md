@@ -1,14 +1,12 @@
 # La FAQ (et des reponses)
 
 ## Qu'est-ce que Kovri?
-Kovri est une application du réseau anonyme I2P en C++ qui est sécurisé, privée, et inretrouvable. C'était un fork de i2pd au début, mais Kovri est devenu un projet unique qui est développé activement par la communauté. Ce nouveu projet a beaucoup d'améliorations. Il y a surtout des améliorations de sécurité et aussi des nouvelles fonctionnalités.
-
-Lire la suite à [Moneropedia](https://getmonero.org/resources/moneropedia/kovri.html).
+[Kovri](https://getmonero.org/resources/moneropedia/kovri.html) est une technologie gratuite, decentralisée, et anonyme.
 
 ## Qu'est-ce que c'est l'état de Kovri actuallment?
 L'equipe de développment travaille activement sur une version pre-alpha. Kovri **n'est pas** intégré avec Monero en ce moment mais, avec plusieurs d'autre fonctionnalité, nous développons un [client](https://github.com/monero-project/kovri/issues/351) et [core](https://github.com/monero-project/kovri/issues/350) API pour Monero et des autres applications.
 
-Actuallment, on peut utiliser Kovri pour se connecter à (et participer au) réseau I2P: naviguer des eepsites, se connecter à IRC, et plus.
+Kovri est actuallment basé sur les spécifications de [I2P](https://getmonero.org/resources/moneropedia/i2p.html), et il utilise [garlic encryption](https://getmonero.org/resources/moneropedia/garlic-encryption.html) avec [garlic routing](https://getmonero.org/resources/moneropedia/garlic-routing.html) pour créer un réseau privé et protegé sur internet. Ce reseau permets ses utlisateurs à se cacher *effectivement* leur emplacement geographique et addresse internet.
 
 ## Quand est-ce que la première version de Kovri va sortir?
 Nous allons essayer de sortir une version alpha pendant 2017. Après d'avoir confirmé le qualité du projet et d'avoir complètement implémenté un API, nous sortirons une version beta.
