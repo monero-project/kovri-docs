@@ -48,15 +48,29 @@ Enter Kovri. Kovri will be implemented into the official Monero wallet, so all t
 
 Secondly, while the Java implementation of I2P is great, it comes with a lot of extra features that we don't feel are necessary for the Monero application to use. So, we decided to start from scratch, and make a router that is JUST the router. This bare-bones approach is perfect for Monero, and is also good news for others that want to make I2P applications. They have the option to use a lightweight router without all the excess bloat, while other users who have a use for those extra features will be able to use the Java implementation. It's a win-win for everybody.
 
-### What does Kovri do/not do for you?
-|                        YES                       |                  WORK IN PROGRESS                |                       NO                         |
-|:------------------------------------------------:|:------------------------------------------------:|:------------------------------------------------:|
-| Allows you to become a node on the I2P network   | Commits Monero transactions over I2P             | Sacrifices your security for ulterior motives    |
-| Hides your physical location from sites you visit| GUI for improved configuration and usability     | Provides a convoluted, painful web user interface|
-| Anonymizes you on IRC and allows anonymous Email | Library API and bindings for external apps/libs  | Requires authorities for network consensus       |
-| Allows you to host anonymous websites or services| Firefox extension to easily access eepsites      | Access to internet websites via an "outproxy"    |
-| Provides funding to developers, hackers, researchers via the FFS and HackerOne | Website Development (getkovri.org / kovri.i2p) | Requires a performance-killing Java VM |
-| Aims for rigorous code-quality and dev standards | Extensive documentation from ELI5 to developer   | Walks your dog or favorite pet, pays your taxes  |
+### What does Kovri do now?
+- Allows you to become a node on the I2P network
+- Hides your physical location from the sites you visit
+- Anonymizes you on IRC and allows anonymous Email
+- Allows you to host anonymous websites or services
+- Provides funding to developers, hackers, researchers via the FFS and HackerOne
+- Aims for rigorous code-quality and dev standards
+
+### What developments does Kovri have in store for the future?
+- Commits Monero transactions over I2P
+- GUI for improved configuration and usability
+- Library API and bindings for external apps/libs
+- Firefox extension to easily access eepsites
+- Website Development (getkovri.org / kovri.i2p)
+- Extensive documentation from ELI5 to developer
+
+### What will Kovri not do for you?
+- Sacrifice your security for ulterior motives
+- Provide a convoluted, painful web user interface
+- Require authorities for network consensus
+- Access to internet websites via an "outproxy"
+- Require a performance-killing Java VM
+- Walk your dog or favorite pet, pay your taxes
 
 ### What is the current state of Kovri?
 Kovri is in active development and currently is in a pre-alpha phase. It's *not* yet integrated with Monero, but, in addition to several core features, we are developing a [client](https://github.com/monero-project/kovri/issues/351) and [core](https://github.com/monero-project/kovri/issues/350) API for monero, and other applications, to use.
