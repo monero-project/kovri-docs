@@ -114,7 +114,7 @@ In early/mid 2015, one of the developers with push privileges on GitHub pushed a
 
 These actions offended many in the I2P community, including the developers, and nearly ended the C++ project.
 
-In the fall of 2015, along came anonimal who, not wanting to see everyone's work to go to waste, revived the project through contributions of their own and by reigning-in development. An open invitation for all remaining active developers to meet and discuss i2pd's future was then given. i2pd's first author never showed but the act of meeting apparently rustled i2pd's feathers to the point where he [retaliated](https://github.com/PurpleI2P/i2pd/issues/279) and began to work on GitHub again - but this time within an ```openssl``` branch (which turned out to be the Bitbucket repository) instead of the community-driven ```master``` branch.
+In the fall of 2015, along came anonimal who, not wanting to see everyone's work go to waste, revived the project through contributions of their own and by reigning-in development. An open invitation for all remaining active developers to meet and discuss i2pd's future was then given. i2pd's first author never showed but the act of meeting apparently rustled i2pd's feathers to the point where he [retaliated](https://github.com/PurpleI2P/i2pd/issues/279) and began to work on GitHub again - but this time within an ```openssl``` branch (which turned out to be the Bitbucket repository) instead of the community-driven ```master``` branch.
 
 Seeing that this sort of erratic behavior would only hurt the I2P network and the project as a whole, the remaining developers continued to have [several important meetings](https://github.com/monero-project/kovri/issues/47) and set the foundation for what is now Kovri.
 

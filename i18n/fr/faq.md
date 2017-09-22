@@ -59,6 +59,15 @@ Deuxièmement, malgré que l'implémentation en Java soit bonne, elle s'accompag
 
 ### Qu'est-ce que Kovri permet déjà ?
 
+| Permet | En cours de développement | Ne permet pas |
+|:-:|:-:|:-:|
+| De devenir un nœud sur le réseau I2P | Émettre des transactions Monero à travers I2P | De sacrifier votre sécurité et vie privée pour des arrière-pensées |
+| De cacher votre localisation physique pour les sites que vous visitez | Une GUI pour une utilisation et une configuration améliorées | De fournir une interface web compliquée et pénible |
+| De vous anonymiser sur IRC et vous permet d'envoyer des e-mails de manière anonyme | Une bibliothèque d'APIs pour des apps/libs externes | D'avoir besoin des autorités pour arriver à un consensus sur le réseau |
+| D'héberger des sites et services anonymes | Une extension Firefox pour accéder facilement aux eepsites (les websites hébergés sur le réseau I2P) | D'accéder à des sites internet via un "outproxy" |
+| De fournir du financement à des développeurs, hackers et chercheurs via FFS et HackerOne | Le site internet de Kovri ([getkovri.org](getkovri.org) / [kovri.i2p](kovri.i2p)) | D'avoir besoin d'une machine virtuelle Java ultra-performante |
+| Il vise les standards les plus rigoureux en terme de développement et qualité de code | Une documentation ehaustive | De promener votre chien et de payer vos taxes |
+
 - De devenir un nœud sur le réseau I2P
 - De cacher votre localisation physique pour les sites que vous visitez
 - De vous anonymiser sur IRC et vous permet d'envoyer des e-mails de manière anonyme
@@ -122,44 +131,40 @@ Visitez notre [README](https://github.com/monero-project/kovri/blob/master/READM
 
 - Nous avons un [Forum de financements](https://forum.getmonero.org/8/funding-required) pour le développement et l'ajout de fonctionnalités.
 - Nous nous focalisons sur la création d'un routeur I2P qui est [sécurisé par défaut](http://www.openbsd.org/security.html), facile à maintenir et qui a de grandes chances d'être examiné et vérifié par la communauté. Cela a le désavantage que nous supprimons les fonctionnalités les moins utilisées par rapport aux autres routeurs, mais les fonctionnalités principales et l'API seront complètes et intactes. En créant un routeur plus léger, simple et efficace, les développeurs et chercheurs auront plus de temps pour auditer la sécurité et pour questionner le design I2P et les spécifications.
-
-
-
-
-- Nous nous concentrons sur l'application d'un API qui peut être utilisé par n'importe quel développeur pour que n'importe quelle application peut se connecter au réseau I2P; oui, Monero aussi.
-- Nous assurerons [la qualité de ce project à tous](https://github.com/monero-project/kovri/issues/58) et nous présenterons [le but de ce projet](https://github.com/monero-project/kovri-docs/blob/master/i18n/fr/contributing.md) à tous pour créer un bon logicel pour tout le monde.
-- Nous appliquerons des options alternatives d'obtenir un nouveau graine pour qu'on peut utiliser [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) au lieu de HTTPS pour obtenir un nouveau graine.
-- Nous appliquerons plus de fonctionnalité *(hidden mode + disabled inbound)* pour donner l'anonymat à ceux qui habitent à des pays avec des conditions extrêmes ou ceux qui sont bloqués par un pare-feu qui utilise carrier-grade NAT ou DS-Lite.
-- Nous encouragerons toujours de la collaboration.
-- Nous écouterons toujours à vos avis pour améliorer Kovri!
+- Nous implémentons une API intuitive et facile à utiliser pour n'importe quelle application qui veut se connecter et utiliser le réseau I2P. C'est notamment le cas pour Monero.
+- Nous fournissons à la fois aux utilisateurs et aux développeurs une [assurance qualité](https://github.com/monero-project/kovri/issues/58) et un [modèle de développement](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/contributing.md) dans le but de fournir des meilleurs logiciels pour tout le monde.
+- Nous allons implémenter des options alternatives de *reseeding* pour que les utilisateurs puissent utiliser les [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) au lieu d'HTTPS pour le *reseed*.
+- Nous comptons implémenter des fonctionnalités avancées (*mode caché* et *trafic entrant désactivé*) pour fournir l'anonymat à ceux qui vivent dans des pays aux conditions extrêmes ou ceux qui sont derrière un firewall de type NAT ou DS-Lite.
+- Nous créerons toujours un environnement prône à la collaboration.
+- Nous écouterons toujours vos retours et nous ferons de notre mieux pour améliorer Kovri !
 
 ### Pourquoi avez-vous forké à partir d'i2pd ?
 
-Nous avons forké à cause de plusieurs de raisons:
+Nous avons forké pour plusieurs raisons :
 
-- Nous voulions application du réseau I2P en C++ qui est sécurisé et viable; Malheureusement, i2pd ne faisait plus ça.
-- Nous voulions une communauté positif qui encourage de la collaboration pour améliorer le projet.
-- Nous voulions un chef développeur qui peut vraiment mener.
+- Nous souhaitions une implémentation C++ d'I2P qui soit à la fois robuste, sécurisée et fiable ; et i2pd ne répondait pas à ces exigences ou ne fournissait pas ce qu'attendu.
+- Nous voulions une communauté positive qui encourage la collaboration, pas une communauté négative et narcissique.
+- Nous voulions un lead développeur avec une vision, et pas quelqu'un qui ignore les demandes de divulgation ou qui s'encourt au moindre conflit entre contributeurs.
 
 ### Quels sont les principaux facteurs qui ont amené à forker i2pd ? (Et pourquoi y a-t-il deux repos i2pd, un sur Bitbucker et un sur GitHub ?)
 
-*Alors, les drames ont commencé*.
+*Voici comment ont commencé les drames autour d'i2pd*.
 
-Au début de 2015  un développeur qui avait le droite de pusher avait pushé un commit qui le développeur original de i2pd n'a pas aimé. Ces développeurs n'int pas travaillé ensemble pour résoudre ce problème. Le développeur original avait décidé à déménager i2pd à BitBucket, et puis il a supprimé toute l'histoire sur GitHub, pour qu'il serait le seul 'contributor' du logiciel. Après ça, il disait qu'il reviendrait jamais à IRC2P.
+Début 2015, un des développeurs d'i2pd avec les privilèges *push* sur Github a poussé un *commit* que l'auteur initial d'i2pd n'a pas apprécié. Au lieu de travailler ensemble pour résoudre le problème, l'auteur initial à déplacé i2pd sur Bitbucket, a supprimé **tous** l'historique git et s'est mis comme seul contributeur. Il a ensuite proclamé qu'il ne retournerait plus jamais sur Irc2P.
 
-Ces action ont offensé beaucoup de personnes de la communauté de I2P, des développeurs inclus. Ces drames ont presque terminé le projet.
+Ces actions ont offensé de nombreuses personnes dans la communauté I2P, y compris les développeurs, et cela a presque mis fin au projet C++.
 
-En automne 2015, anonimal ne voulait pas voir que le travail de tout le monde est devenu gaspillé. Du coup, anonimal a sauvé le projet après avoir fait plusieurs de contributions et par mené le projet. Un invitaton à se rencontrer et discuter l'avenir de i2pd a été donné aux développeurs qui ont été encore actifs. Le développeur original de i2pd n'était jamais venu, mais cette réunion a apperement fait peur au développeur original de i2pd au point qu'il a [riposté](https://github.com/PurpleI2P/i2pd/issues/279) et a recommencé de travailler sur GitHub - mais avec un branche ```openssl``` (c'était simplement un dépôt BitBucket) plutôt qu'avoir utilisé le branche ```master``` qui est le branche original.
+À l'automne 2015, anominal est arrivé et, ne voulant pas voir le travail de tout le monde gaspillé, il a relancé le projet en contribuant et en le reprenant en main. Une invitaion ouverte pour se rencontrer a été envoyée à tous les développeurs encore actifs pour discuter du futur d'i2pd. L'auteur initial d'i2pd ne s'est pas présenté mais le fait de se réunir lui a tellement déplu qu'il a [riposté](https://github.com/PurpleI2P/i2pd/issues/279) et recommencé à travailler sur GitHub - mais cette fois sur une branche ```openssl``` (qui s'est avérée être le repo Bitbucket) au lieu de la branche ```master``` sur laquelle le reste de la communauté travaillait.
 
-Cette genre de conduite ne fairait que mal au projet I2P. Il ne restait que quelques développeurs qui ont continué d'avoir [plusieurs de réunions](https://github.com/monero-project/kovri/issues/47). Ces réunions ont fait la fondation pour ce qui est maintenant connu comme Kovri.
+En se rendant compte que ce type de comportement ne ferait que nuire au réseau I2P et au projet, les autres développeurs ont continué à tenir des [réunions importantes](https://github.com/monero-project/kovri/issues/47) et à mettre en place les fondements de ce qu'est maintenant Kovri.
 
 ## Utiliser Kovri
 
 ### J'ai trouvé une vulnérabilité, j'ai trouvé un bug, que dois-je faire ?
 
-- Vulnérabilité: visitez notre [README](https://github.com/monero-project/kovri/blob/master/README.md)
-- Bugs : visitez notre [Contributing Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/fr/contributing.md)
+- Vulnérabilité : visitez notre [README](https://github.com/monero-project/kovri/blob/master/README.md)
+- Bugs : visitez notre [Guide de contribution](https://github.com/monero-project/kovri-docs/blob/master/i18n/fr/contributing.md)
 
 ### Pourquoi mes logs montrent une heure différente de mon fuseau horaire ?
 
-Logs sont enregistré en GMT pour que vous restez privé. Quand les logs sont enregistré comme ça, on peut partager ces logs sans perdre l'anonymat.
+Les logs sont enregistrés en UTC pour protéger votre anonymat. En utilisant UTC, vous êtes dans une meilleure position pour uploader vos logs et les partager avec les développeurs et la communauté sans porter atteinter à votre anonymat.
