@@ -6,8 +6,8 @@
     - Qui développe Kovri ?
     - En quoi Kovri va-t-il aider Monero ?
     - Pourquoi devrais-je utiliser Kovri plutôt que I2P ?
-    - Qu'est-ce que Kovri permet / ne permet pas ?
-    - Qu'est-ce qui est en cours de développement ?
+    - Qu'est-ce que Kovri permet ?
+    - Qu'est-ce que Kovri permettra dans le futur ?
     - Qu'est-ce que Kovri ne permettra pas ?
     - Quel est l'état actuel de développement de Kovri ?
     - Quand sera disponible la version alpha ?
@@ -57,16 +57,32 @@ Premièrement, I2P est développé en Java et nous pensions que développer un r
 
 Deuxièmement, malgré que l'implémentation en Java soit bonne, elle s'accompagne de nombreuses fonctionnalités qui ne nous semblaient pas nécessaires pour l'application Monero. Nous avons donc décidé de recommencer à partir de zéro et de faire un routeur qui est JUSTE un routeur. Cette approche simplifiée est parfaite pour Monero et représente aussi une bonne nouvelle pour tous les autres qui veulent développer des applications I2P. Ils ont la possibilité d'utiliser un routeur léger sans le superflu. Et pour ceux qui ont besoin des fonctionnalités supplémentaires, ils peuvent utiliser l'implémentation Java. C'est gagnant-gagnant pour tout le monde.
 
-### Qu'est-ce que Kovri permet / ne permet pas ?
+### Qu'est-ce que Kovri permet ?
 
-| Permet | En cours de développement | Ne permet pas |
-|:-:|:-:|:-:|
-| De devenir un nœud sur le réseau I2P | Émettre des transactions Monero à travers I2P | De sacrifier votre sécurité et vie privée pour des arrière-pensées |
-| De cacher votre localisation physique pour les sites que vous visitez | Une GUI pour une utilisation et une configuration améliorées | De fournir une interface web compliquée et pénible |
-| De vous anonymiser sur IRC et vous permet d'envoyer des e-mails de manière anonyme | Une bibliothèque d'APIs pour des apps/libs externes | D'avoir besoin des autorités pour arriver à un consensus sur le réseau |
-| D'héberger des sites et services anonymes | Une extension Firefox pour accéder facilement aux eepsites (les websites hébergés sur le réseau I2P) | D'accéder à des sites internet via un "outproxy" |
-| De fournir du financement à des développeurs, hackers et chercheurs via FFS et HackerOne | Le site internet de Kovri ([getkovri.org](getkovri.org) / [kovri.i2p](kovri.i2p)) | D'avoir besoin d'une machine virtuelle Java ultra-performante |
-| Il vise les standards les plus rigoureux en terme de développement et qualité de code | Une documentation ehaustive | De promener votre chien et de payer vos taxes |
+- De devenir un nœud sur le réseau I2P 
+- De cacher votre localisation physique pour les sites que vous visitez 
+- De vous anonymiser sur IRC et vous permet d'envoyer des e-mails de manière anonyme 
+- D'héberger des sites et services anonymes 
+- De fournir du financement à des développeurs, hackers et chercheurs via FFS et HackerOne 
+- Il vise les standards les plus rigoureux en terme de développement et qualité de code 
+ 
+### Qu'est-ce que Kovri permettra dans le futur ?
+ 
+- Émettre des transactions Monero à travers I2P 
+- Une GUI pour une utilisation et une configuration améliorées 
+- Une bibliothèque d'APIs pour des apps/libs externes 
+- Une extension Firefox pour accéder facilement aux *eepsites* (les websites hébergés sur le réseau I2P) 
+- Le site internet de Kovri ([getkovri.org](getkovri.org) / [kovri.i2p](kovri.i2p)) 
+- Une documentation ehaustive 
+ 
+### Qu'est-ce que Kovri ne permettra pas ?
+ 
+- De sacrifier votre sécurité et vie privée pour des arrière-pensées 
+- De fournir une interface web compliquée et pénible 
+- D'avoir besoin des autorités pour arriver à un consensus sur le réseau 
+- D'accéder à des sites internet via un "outproxy" 
+- D'avoir besoin d'une machine virtuelle Java ultra-performante 
+- De promener votre chien et de payer vos taxes 
 
 ### Quel est l'état actuel de développement de Kovri ?
 
