@@ -1,7 +1,7 @@
 ## Acknowledgements
 In addition to all Boost and OpenSSL contributors, and all coders since time-immemorial who have made this project possible, we would like to acknowledge the following:
 
-- Wei Dai, Jeffrey Walton, and all the developers at Crypto++ for proving an influential, free C++ library of cryptographical library
+- Wei Dai, Jeffrey Walton, and all the developers at Crypto++ for providing an influential and free C++ cryptographical library
 - Dean Michael Berris, Glyn Matthews, and all the developers at cpp-netlib for providing an actively developed cross-platform networking library
 - All developers involved in the [ref10 implementation from SUPERCOP](http://bench.cr.yp.to/supercop.html) from which we base our Ed25519 implementation
 - zzz, str4d, and all Java I2P developers both past and present who have set the standard for all other I2P implementations to follow
