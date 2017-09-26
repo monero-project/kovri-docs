@@ -1,72 +1,73 @@
-## Quality Assurance
-- View our [Quality Assurance](https://github.com/monero-project/kovri-docs/blob/master/i18n/fr/quality.md) guide to get an idea of proposed workflow
+## Assurance qualité
+- Voir notre guide d'[Assurance Qualité](https://github.com/monero-project/kovri/blob/master/doc/QUALITY_ASSURANCE.md) pour en savoir plus.
 
-## Compliance
-- We aim for complete C++11/14 compliance; feel free to use this to your advantage with your work
-- It is also highly recommended to use the standard library and dependency libraries when possible
 
-## Sending your work
-To contribute your work, please proceed with the following:
+
+## Conformité
+- Nous ésperons compléter la conformité C++11/14; n'hésitez pas à l'utiliser pour vous faciliter la tâche dans votre travail
+- Il est aussi vivement recommandé d'utiliser la librairie standard et les bibliothèques de dépendances si vous le pouvez
+
+## Envoyer votre travail
+Pour mettre à contribution votre travail, veuillez procéder de la façon suivante:
 
 1. Fork Kovri
-2. Read our [style guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/fr/style.md)
-3. Create a [topic branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
-4. [**Sign**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) your commit(s)
-5. Send a pull-request to branch ```master```
-   - We currently do not have any tags as we are in pre-alpha. For now, you can base your work off of master.
-   - Commit messages should be verbose by default, consisting of a short subject line (50 chars max), a blank line, and detailed explanatory text as separate paragraph(s) - unless the title alone is self-explanatory.
-   - Commit title should prepend class or aspect of project. For example, "HTTPProxy: implement User-Agent scrubber. Fixes #193." or "Garlic: fix uninitialized padding in ElGamalBlock".
-   - If a particular commit references another issue, please add a reference. For example "See #123", or "Fixes #123". This will help us resolve tickets when we merge into ```master```.
-   - In general, commits should be [atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) and diffs should be easy to read. For this reason, please try to not mix formatting fixes with non-formatting commits.
-   - The body of the pull request should contain an accurate description of what the patch does and provide justification/reasoning for the patch (when appropriate). You should include references to any discussions such as other tickets or chats on IRC.
+2. Lisez notre [style guide](https://github.com/monero-project/kovri/blob/master/doc/STYLE.md)
+3. Creez une [branche pour le sujet concerné](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+4. [**Signez**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) votre ou vos commit(s)
+5. Envoyez une pull-request à la branche ```master```
+   - Nous n'avons pas encore de tags du au fait que nous soyons en pré-alpha. Donc pour l'instant vous pouvez directement travailler dans la branche master.
+   - Les messages de commmit doivent être détaillés par défaut, accompagné d'un message court d'environ 50 caractères à propos du sujet, une ligne blanche, et d'un texte détaillé expliquatoire constitué d'un ou plusieurs paragraphe(s) séparés - à moins que le titre explique à lui même le commit.
+   - Le titre du commit doit préciser la class ou l'aspect du projet concerné. Par exemple, "HTTPProxy: implement User-Agent scrubber. Fixes #193." ou "Garlic: fix uninitialized padding in ElGamalBlock".
+   - Si un commit particulier se réfère à un autre problème, veuillez dans ce cas ajouter une réference. Par exemple "Voir #123", ou "#123 résolu". Cela nous aidera à résoudre les tickets quand nous mergerons dans ```master```.
+   - En géneral, les commits doivent être [atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) et les différences doivent être facile à distinguer. C'est pour cette raison que je vous demande d'essayer de ne pas mélanger les problèmes totalement résolus des commits qui ne résolvent pas totalement l'erreur.
+   - Le corps de la pull request doit contenir une description précise de ce que le patch fait and fournir une justifcation/ un raisonnement pour le patch (si nécessaire). Vous devez inclure les réferences aux discussions telles que les autres tickets ou chats sur IRC. 
 
-## Proposals
-To contribute a proposal, please review our [open issues](https://github.com/monero-project/kovri/issues) for existing proposals. If what you propose is not there, then [open a new issue](https://github.com/monero-project/kovri/issues/new).
+## Propositions
+Pour contribuer à une proposition, veuillez vérifier sur nos [problèmes existants](https://github.com/monero-project/kovri/issues) pour les problèmes déjà évoqués. Si ce que vous proposez n'est pas déjà évoqué ici, alors [Ouvez un nouveau problème](https://github.com/monero-project/kovri/issues/new).
 
-Even though our C4 dictates that we merge everything, we ask that you open a proposal for the following reasons:
+Même si notre C4 dit que nous mergeons tout, nous demandions que vous ouvriez une proposition pour les raisons suivantes:
 
-1. A proposal open up communication
-2. A proposal show that the contributor respects the input of all project collaborators
-3. A proposal allows seamless collaborator input in an open forum
-4. A proposal saves time if a collaborator is working on a similar feature/issue
-5. A proposal prevents catasrophes and mishaps or allows collaborators to prepare for catasrophes and mishaps
+1. Une proposition permet une communication
+2. Une proposition montre que le contributeur respecte les potentielles aides des autres collaborateurs du projet
+3. Une proposition permet l'aide facile d'un collaborateur dans un forum ouvert
+4. Une proposition économise du temps si un collaborateur est entrain de travailler sur la même fonctionnalité ou le même problème
+5. Une proposition évite les catrastophes et les mésaventures ou permet aux collaborateurs de les prévoir et de les éviter
 
-*Not* opening a proposal will *not* prevent you from contributing; we will merge what you PR - but a proposal is highly recommended.
+Ne *pas* ouvrir une proposition ne va *pas* vous empêcher d'y contribuer; nous mergerons votre pull request - mais une proposition est fortement recommandée.
 
-## TODO's
-- Do a quick search in the codebase for ```TODO(unassigned):``` and/or pick a ticket and start patching!
-- If you create a TODO, assign it to yourself or write in ```TODO(unassigned):```
+## A faire
+- Faire une recherche rapide dans le codebase pour  ```TODO(unassigned):``` and/ou prendre un ticket and commencer à patcher!
+- Si vous créez une TODO, assignez là à vous même ou écrivez dans ```TODO(unassigned):```
 
-# [Code of Conduct (22/C4.1)](http://rfc.zeromq.org/spec:22)
+# [Code de Conduite (22/C4.1)](http://rfc.zeromq.org/spec:22)
 
-## License
+## Licence
 
-Copyright (c) 2009-2015 Pieter Hintjens.
+Droits d'auteur (c) 2009-2015 Pieter Hintjens.
 
-This Specification is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+Cette Spécification est un logiciel gratuit; vous pouvez la redistribuer et/ou la modifier sous les  termes de la Licence génerale publique GNU comme publiée par la Fondation de Logiciel Gratuit; ou la 3ème version de la Licence, ou autre version ultérieures.
 
-This Specification is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+Cette Specification est distribuée dans l'espoir qu'elle sera utile, but SANS AUCUNES GARANTIE; sans même l'implicite garantie d'être COMMERCIALISABLE or qu'elle ait une APTITUDE A UN USAGE PARTICULIER. Voir la Licence génerale publique GNU pour plus de détails.
 
-You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses>.
+## Langues
+Les mots clés "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" dans ce document doivent être interprétés comme décrit dans RFC 2119.
 
-## Language
+## Buts
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
+C4 is  a reusable optimal collaboration model for open source software projects. It has these specific goals:
+C4 is déstiné à fournir un modèle de collaboration optimale réutilisable pour d'autre projets open source. Il a pour but:
 
-## Goals
+- De maximiser la taille et la diversité de la communité autour du projet, en réduisant les fictions for les nouveaux contributeurs et en créant un modèle de participation à l'échelle avec de forts retours positifs.
+- De soulager les bibliothèques sur des personnes clés en séparant les différents sets de compétences de sorte qu'il y ait un plus large choix de compétences disponibles dans les domaines choisis.
+- De permettre au projet de se développer plus vite and plus précisément, en augmentant la diversité du processus de prise de décision.
+- De soutenir le cycle naturel de vie des versions de projets, de l'expérimental au stable, en permettant des expériences sans risque, des échecs rapides, et l'isolation du code stable.
+- De réduire la complexité interne  des dépôts de projet, permettant ainsi aux contributeurs de participer and réduisant ainsi la portée des erreurs possibles.
+- De renforcer la proprieté collective du projet, qui augmente l'incitation économique des contributeurs and réduit le risque de détournement par des entités hostiles. 
 
-C4 is meant to provide a reusable optimal collaboration model for open source software projects. It has these specific goals:
-
-- To maximize the scale and diversity of the community around a project, by reducing the friction for new Contributors and creating a scaled participation model with strong positive feedbacks;
-- To relieve dependencies on key individuals by separating different skill sets so that there is a larger pool of competence in any required domain;
-- To allow the project to develop faster and more accurately, by increasing the diversity of the decision making process;
-- To support the natural life cycle of project versions from experimental through to stable, by allowing safe experimentation, rapid failure, and isolation of stable code;
-- To reduce the internal complexity of project repositories, thus making it easier for Contributors to participate and reducing the scope for error;
-- To enforce collective ownership of the project, which increases economic incentive to Contributors and reduces the risk of hijack by hostile entities.
 
 ## Design
 
-### Preliminaries
+### Préliminaires
 
 - The project SHALL use the git distributed revision control system.
 - The project SHALL be hosted on github.com or equivalent, herein called the "Platform".
@@ -78,69 +79,82 @@ C4 is meant to provide a reusable optimal collaboration model for open source so
 - Maintainers SHALL have commit access to the repository.
 - Everyone, without distinction or discrimination, SHALL have an equal right to become a Contributor under the terms of this contract.
 
-### Licensing and Ownership
+- Le projet UTILISE le système de révision de contrôle fourni par GIT.
+- Le projet EST HERBERGÉ par github.com ou l'équivalent, ci-après appelé la "Plateforme".
+- Le projet UTILISE le tracker de problème fourni pour la Platerforme.
+- Le projet doit avoir documenté clairmement l'éthique pour le style de code (codestyle).
+- Un "Contributeur" est une personne qui souhaiterait fournir un patch, étant un ensemble de commits résolvent des problèmes clairement identifiés.
+- Un "Mainteneur" est une personne qui merge les patchs pour le projet. Les mainteneurs ne sont pas des développeurs; leur travail consiste à mettre en vigueur le processus.
+- Les contributeurs ne PEUVENT PAS commit le répertoire à moins d'être aussi Mainteneurs.
+- Les mainteneurs PEUVENT commit le répertoire.
+- Tout le monde, sans distinction ou discrimination, ONT un droit égal de devenir un Contributeur sous les termes de ce contrat.
 
-- The project SHALL use a share-alike license, such as the GPLv3 or a variant thereof (LGPL, AGPL), or the MPLv2.
-- All contributions to the project source code ("patches") SHALL use the same license as the project.
-- All patches are owned by their authors. There SHALL NOT be any copyright assignment process.
-- The copyrights in the project SHALL be owned collectively by all its Contributors.
-- Each Contributor SHALL be responsible for identifying themselves in the project Contributor list.
+### Licences et Possessions
+
+- Le projet UTILISE une licence partagée, comme GPLv3 ou une variante de celui-ci (LGPL, AGPL), ou MPLv2.
+- Toutes les contributions au code source du projet ("patchs") UTILISENT la même licence que le projet.
+- Toutes les patchs appartiennent à leur auteur. Il n'Y A PAS de processus d'attribution du droit d'auteur
+- Les droits d'auteurs de ce projet SONT détenus collectivement par tout ses Contributeurs.
+- Chaque Contributeur EST responsable de leur identification dans la liste des Contributeur du projet.
 
 ### Patch Requirements
 
-- Maintainers and Contributors MUST have a Platform account and SHOULD use their real names or a well-known alias.
-- A patch SHOULD be a minimal and accurate answer to exactly one identified and agreed problem.
-- A patch MUST adhere to the code style guidelines of the project if these are defined.
-- A patch MUST adhere to the "Evolution of Public Contracts" guidelines defined below.
-- A patch SHALL NOT include non-trivial code from other projects unless the Contributor is the original author of that code.
-- A patch MUST compile cleanly and pass project self-tests on at least the principle target platform.
-- A patch commit message SHOULD consist of a single short (less than 50 character) line summarizing the change, optionally followed by a blank line and then a more thorough description.
-- A "Correct Patch" is one that satisfies the above requirements.
+- Les mainteneurs and les Contributeurs ONT un compte Plateforme and doivent utiliser leur vrais noms ou un alias habituel.
+- Un patch EST une réponse minîme et précise à précisement un problème identifié et défini.
+- Un patch ADHERE au code de style du projet si celui-ci est défini.
+- Un patch ADHERE à l'"Evolution de contrats publiques" défini ci-dessous.
+- Un patch n'INCLUT PAS du code non-trivial d'autres projets à moins que le Contributeur est l'auteur original de ce code.
+- Un patch COMPILE proprement and réussit les tests déstinés à celui-ci pour au moins la platerforme cible principale.
+- Un message de commit d'un patch doit consister en un résumé bref (moins de 50 caractères) des changements, pouvant être suivi d'une ligne blanche et ensuite d'un descriptif plus détaillé.
+- Un "Patch correcte" remplit les conditions énnoncées ci-dessus.
 
-### Development Process
+### Procédure de développement
 
-- Change on the project SHALL be governed by the pattern of accurately identifying problems and applying minimal, accurate solutions to these problems.
-- To request changes, a user SHOULD log an issue on the project Platform issue tracker.
-- The user or Contributor SHOULD write the issue by describing the problem they face or observe.
-- The user or Contributor SHOULD seek consensus on the accuracy of their observation, and the value of solving the problem.
-- Users SHALL NOT log feature requests, ideas, suggestions, or any solutions to problems that are not explicitly documented and provable.
-- Thus, the release history of the project SHALL be a list of meaningful issues logged and solved.
-- To work on an issue, a Contributor SHALL fork the project repository and then work on their forked repository.
-- To submit a patch, a Contributor SHALL create a Platform pull request back to the project.
-- A Contributor SHALL NOT commit changes directly to the project.
-- If the Platform implements pull requests as issues, a Contributor MAY directly send a pull request without logging a separate issue.
-- To discuss a patch, people MAY comment on the Platform pull request, on the commit, or elsewhere.
-- To accept or reject a patch, a Maintainer SHALL use the Platform interface.
-- Maintainers SHOULD NOT merge their own patches except in exceptional cases, such as non-responsiveness from other Maintainers for an extended period (more than 1-2 days).
-- Maintainers SHALL NOT make value judgments on correct patches.
-- Maintainers SHALL merge correct patches from other Contributors rapidly.
-- The Contributor MAY tag an issue as "Ready" after making a pull request for the issue.
-- The user who created an issue SHOULD close the issue after checking the patch is successful.
-- Maintainers SHOULD ask for improvements to incorrect patches and SHOULD reject incorrect patches if the Contributor does not respond constructively.
-- Any Contributor who has value judgments on a correct patch SHOULD express these via their own patches.
-- Maintainers MAY commit changes to non-source documentation directly to the project.
+- Les changements du projet SONT GOURVERNÉS par le principe d'identifier précisement les problèmes et d'y appliquer des solutions minimales et précises.
+- Pour proposer des changements, un utilisateur doit créer une issue dans le tracker de problèmes du projet Plateforme.
+- L'utilisateur ou le Contributeur doit écrire l'issue en décrivant le problème observé.
+- L'utilisateur ou le Contributeur doit estimer la précision de leur observation et la valeur de la résolution de leur problème.
+- Les utilisateurs ne CRÉENT PAS de requêtes de fonctionnalités, idées, suggestions ou quelconque solutions aux problèmes qui ne sont pas explicitement documentés et founis.
+- Ainsi, la sortie finale du projet EST une liste de problèmes observés puis fixés.
+- Pour travailler sur un problème, un Contributeur FORK le répertoire du projet and travaille ensuite sur leur répertoire fork.
+- Pour soumettre un patch, un Contributeur CRÉE une requête Plateforme pour le projet.
+- Un contributeur ne COMMIT PAS directement les changements sur le projet.
+- Si Platerforme intérpréte les requêtes comme des problèmes, alors un Contributer peut directement envoyé une requête sans crée un problème séparé.
+- Pour discuter à propos d'un patch, les gens doivent commenter la requête Plateforme, sur le commit ou autre part.
+- Pour accepter ou rejeter un patch, un Mainteneur UTILISE l'interface Platerforme.
+- Les mainteneurs ne doivent pas merge leur propre patchs excepté dans des cas spéciaux, comme une non réaction de la part des autre Mainteneurs pendant une période supérieur à un ou deux jours.
+- Mainteneurs ne FONT PAS de jugement de valeur sur les patchs corrects.
+- Mainteneurs MERGENT les patchs corrects des autres Contributeurs rapidement.
+- Le Contributeur est prié de taggé le problème comme "Prêt" après avoir fait une requête le concernant.
+- L'utilisateur qui a crée le problème doit fermé le problème après avoir verifié que le patch a bien corrigé celui-ci.
+- Les mainteneurs doivent demander des améliorations pour les patchs incorrects and doivent rejeter les patchs incorrects si le Contributeur ne répond pas de façon constructive.
+- N'importe quel Contributeur qui a un jugement de valeur sur un patch correct devrait s'exprimer en créant son propre patch.
+- Les mainteneurs sont priés de commit les changements appliqués aux documentations non-sourcé directement au projet.
+- 
 
-### Creating Stable Releases
+### Créer des sorties stables
 
-- The project SHALL have one branch ("master") that always holds the latest in-progress version and SHOULD always build.
-- The project SHALL NOT use topic branches for any reason. Personal forks MAY use topic branches.
-- To make a stable release someone SHALL fork the repository by copying it and thus become maintainer of this repository.
-- Forking a project for stabilization MAY be done unilaterally and without agreement of project maintainers.
-- A stabilization project SHOULD be maintained by the same process as the main project.
-- A patch to a stabilization project declared "stable" SHALL be accompanied by a reproducible test case.
+- Le projet POSSEDE une branche ("master") qui possède toujours la dernière version en progrès and doit l'avoir build.
+- Le projet n'UTILISE PAS les branches de sujet pour n'importe quelle raison. Les forks personnels doivent utilisés ces branches de sujet.
+- Pour faire une sortie stable quelqu'un FORK le répertoire en le copiant and ainsi devient mainteneur de ce répertoire.
+- Fork un projet pour le stabiliser doit être fait unilatéralement and sans accord des mainteneurs du projet.
+- Un projet stable doit être maintenu par le même processus que le projet principal.
+- Un patch appliqué à un projet stabilisé, déclaré "stable", EST ACCOMPAGNÉ d'un cas de test reproductible.
 
-### Evolution of Public Contracts
 
-- All Public Contracts (APIs or protocols) SHALL be documented.
-- All Public Contracts SHOULD have space for extensibility and experimentation.
-- A patch that modifies a stable Public Contract SHOULD not break existing applications unless there is overriding consensus on the value of doing this.
-- A patch that introduces new features to a Public Contract SHOULD do so using new names.
-- Old names SHOULD be deprecated in a systematic fashion by marking new names as "experimental" until they are stable, then marking the old names as "deprecated".
-- When sufficient time has passed, old deprecated names SHOULD be marked "legacy" and eventually removed.
-- Old names SHALL NOT be reused by new features.
-- When old names are removed, their implementations MUST provoke an exception (assertion) if used by applications.
 
-### Project Administration
+### Evolution des contrats publiques
+
+- Tous les contrats publiques (APIs ou protocoles) SONT DOCUMENTÉS.
+- Tous les contrats publiques doivent avoir un espace pour une extension et pour des expérimentations.
+- Un patch qui modifie un contrat publique stable ne doit pas faire disfonctionner les applications existantes à moins que qu'il y ait un consensus d'effacement pour faire ça.
+- Un patch qui introduit de nouvelles fonctionnalitées pour un contrat publique doit utiliser de nouveau noms.
+- Les vieux noms doivent être dépréciés de façon systématique en marquants ces nouveau noms du terme "expérimental" jusqu'à ce qu'ils soient stables, pour ensuite marquer les vieux noms du termes "déprécié".
+- Quand suffisamment de temps a passé, les vieux noms doivent être marqués "héritage" et éventuellement supprimés.
+- Les vieux noms ne SONT PAS RÉUTILISÉS par des nouvelles fonctionnalités.
+- Quand les vieux noms sont supprimés, leur implémentaions PROVOQUENT une exception si ils sont utilisés par les applications.
+
+### Administration du projet
 
 - The project founders SHALL act as Administrators to manage the set of project Maintainers.
 - The Administrators SHALL ensure their own succession over time by promoting the most effective Maintainers.
@@ -148,6 +162,13 @@ C4 is meant to provide a reusable optimal collaboration model for open source so
 - Administrators MAY remove Maintainers who are inactive for an extended period of time, or who repeatedly fail to apply this process accurately.
 - Administrators SHOULD block or ban "bad actors" who cause stress and pain to others in the project. This should be done after public discussion, with a chance for all parties to speak. A bad actor is someone who repeatedly ignores the rules and culture of the project, who is needlessly argumentative or hostile, or who is offensive, and who is unable to self-correct their behavior when asked to do so by others.
 
-# Governance Process
+- Les fondateurs du projet SE COMPORTENT comme des Admin pour gérer l'ensemble des Mainteneurs du projet.
+- Les Admins ASSURENT leur propre succession en promouvant les Mainteneurs les plus efficaces.
+- Un nouveau contributeur qui fait un patch correct EST INVITÉ à devenir Mainteneur.
+- Les admins sont priés de supprimer les Mainteneurs qui sont inactifs pendant une période trop longue, ou n'appliquent pas le processus répétivement.
+- Les admins doivent blocker ou bannir "les mauvais acteurs" qui causent du stress et de la douleur aux autres dans le projet. Cela doit être fait après une discussion génerale, avec une chance pour tous les partis de parler. Un mauvais acteur est quelqu'un qui ignore plusieurs fois les règlent and la culture du projet, qui est sans arguments ou hostile, ou qui est offensant, and qui est incapable de se comporter de façon correct quand les autres lui demandent.
 
-![Governance Process](https://getmonero.org/blog/assets/2015-year-in-review/governance-process.jpg)
+
+# Processus de gouvernance.
+
+![Processus de gouvernance](https://getmonero.org/blog/assets/2015-year-in-review/governance-process.jpg)
