@@ -1,7 +1,11 @@
+# Quality Assurance
+
 The following is a proposed model for QA workflow. While linear in nature, any phase can be worked on individually if needed - as long as all phases are eventually addressed.
 
 ## Phase 1: Basic Review
 
+- Review open issues on our [Issue Tracker](https://github.com/monero-project/kovri/issues/)
+- Review our [Vulnerability Response Process](https://github.com/anonimal/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md)
 - All code must adhere to our contributing guidelines
 - Note areas that need improving (mentally or in code)
 - Create TODO's and assign if possible
