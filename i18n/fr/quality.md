@@ -1,54 +1,54 @@
-# Quality Assurance
+# Assurance Qualité (QA)
 
-The following is a proposed model for QA workflow. While linear in nature, any phase can be worked on individually if needed - as long as all phases are eventually addressed.
+Ce qui suit est une proposition de procédure pour la QA. Bien que linéaire de nature, chaque étape peut être effectuée de manière individuelle si besoin - à condition que chaque étape soit abordée au final.
 
-## Phase 1: Basic Review
+## Étape 1 : Revue de base
 
-- Review open issues on our [Issue Tracker](https://github.com/monero-project/kovri/issues/)
-- Review our [Vulnerability Response Process](https://github.com/anonimal/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md)
-- All code must adhere to our contributing guidelines
-- Note areas that need improving (mentally or in code)
-- Create TODO's and assign if possible
+- Passez en revue les *open issues* sur notre [*Tracker d'Issues*](https://github.com/monero-project/kovri/issues/)
+- Lisez notre [Processus de Réponse à toute Vulnerabilité](https://github.com/anonimal/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md)
+- Le code doit respecter nos lignes directrices de contribution
+- Notez les domaines qui doivent être améliorés (mentalement ou dans le code)
+- Créez des TODOs et assignez-les dans la mesure du possible
 
-## Phase 2: Specification Review /  Implementation / Code Documentation
+## Étape 2 : Revue de specs / Implémentation / Documentation du code
 
-- Complete specification review on a per module basis; e.g., Streaming, I2PControl, etc.
-  - Code must be in-line with essential parts of the specification that will maintain the same (or better) level of anonymity that java I2P provides
-  - Refactor/implement/patch when/where needed
-- Ensure C++11/14 compliant implementation
-  - Review phase 2 if needed
-- Resolve all related TODO's
-- Document code as much as possible with inline comments and Doxygen
-  - Code should be understood by novice to experienced coders
-  - Code should guide the reader to a better understanding of I2P
-    - I2P is very complex so our code should act as sovereign replacement of spec documentation and not simply as a supplement (this can be a tedious objective but very rewarding in terms of maintenance and software lifespan)
+- Faites une revue de specs complète par module, p.ex. Streaming, I2PControl, etc.
+  - Le code doit être en ligne avec les parties essentielles des specs qui vont garantir le même (ou un meilleur) niveau d'anonymat que proposé par java I2P
+  - Refactorez/implémentez/patchez quand et où c'est nécessaire
+- Garantissez une implémentation conforme à C++11/14
+  - Revoyez l'étape 2 si besoin
+- Résolvez tous les TODOs liés
+- Documentez le code autant que possible avec des commentaires dans le code et Doxygen
+  - Le code doit être compréhensible pour les codeurs novices autant qu'expérimentés
+  - Le code devrait amener le lecteur à mieux comprendre I2P
+    - I2P est très complexe donc le code devrait se substituer à la doc et pas seulement la compléter (ça peut sembler être un objectif fastidieux mais il s'avérera gratifiant en terme de maintenance et de durée de vie)
 
-## Phase 3: Crypto Review / Security auditing
+## Étape 3 : Revue de la crypto / Audit de sécurité
 
-- Ensure that crypto is up-to-date and properly implemented
-- Establish every vector for known exploitation
-  - Keep these vectors in mind when writing tests
-- Break Kovri every which-way possible
-  - Fix what you break
-- Always use trustworthy, well-written libraries when possible
-  - Avoid homebrewed, ad-hoc, *I'm sure I know better than the community* type of code
-- Seek a 2nd (or more) opinion(s) from colleagues before proceeding to next phase
+- Garantissez que la crypto est à jour et bien implémentée
+- Listez tous les vecteurs d'attaques connues
+  - Gardez ces attaques en tête pendant que vous écrivez les tests
+- Cassez Kovri par tous les moyens possibles
+  - Résolvez ce que vous avez cassez
+- Utilisez toujours des bibliothèques bien écrites et dignes de confiance
+  - Évitez les types de code *homebrewed*, *ad-hoc* et *"Je suis sûr que je m'y connais plus que la communauté"*
+- Essayez d'avoir l'opinion d'un collègue (ou plus) avant d'avancer à la phase suivante
 
-## Phase 4: Bug squashing / Tests / Profiling
+## Étape 4 : Résolution de bugs / Tests / Performance
 
-- Resolve priority bugs/issues
-- Write unit-tests tests for every module
-  - Run tests. Run them again
-  - Full review of test results. Patch if needed. Refactor as necessary
-- Ensure that automation is running on a regular basis
+- Résolvez les bugs/*issues* prioritaires
+- Écrivez des tests unitaires pour tous les modules
+  - Lancez les tests. Lancez-les de nouveau
+  - Faites une revue complète des résultats des tests. Patchez si nécessaire. Refactorez si nécessaire
+- Assurez-vous régulièrement que l'automatisation fonctionne 
   - valgrind, doxygen, clang-format
-  - Patch if needed, refactor as necessary
+  - Patchez si nécessaire, refactorez si nécessaire
 
-## Phase 5: Confer
+## Étape 5 : Discussion
 
-- Confer with colleagues and the community
-  - Conferring should be done publicly via ticket, meetings, and/or IRC
-- Accept all feedback and, in response, produce tangible results
-- If satisfied, proceed with next phase, else repeat this phase (or start from a previous phase)
+- Conversez avec des collègues de la communauté
+  - Les discussions doivent se faire de manière publique via des *tickets*, des réunions, et/ou par chat sur IRC
+- Acceptez tous les feedbacks et, en réponse, produisez des résultats tangibles
+- Si c'est satisfaisant, avancez à l'étape suivante, ou bien répétez cette étape-ci (ou repartez d'une étape précédente)
 
-## Phase 6: Repeat the cycle from the beginning
+## Étape 6 : Répétez le cycle depuis le début
