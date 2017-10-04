@@ -19,7 +19,7 @@ Ce qui suit est une proposition de procédure pour la QA. Bien que linéaire de 
   - Revoyez l'étape 2 si besoin
 - Résolvez tous les TODOs liés
 - Documentez le code autant que possible avec des commentaires dans le code et Doxygen
-  - Le code doit être compréhensible pour les codeurs novices autant qu'expérimentés
+  - Le code devrait être compréhensible pour les codeurs novices autant qu'expérimentés
   - Le code devrait amener le lecteur à mieux comprendre I2P
     - I2P est très complexe donc le code devrait se substituer à la doc et pas seulement la compléter (ça peut sembler être un objectif fastidieux mais il s'avérera gratifiant en terme de maintenance et de durée de vie)
 
@@ -39,15 +39,15 @@ Ce qui suit est une proposition de procédure pour la QA. Bien que linéaire de 
 - Résolvez les bugs/*issues* prioritaires
 - Écrivez des tests unitaires pour tous les modules
   - Lancez les tests. Lancez-les de nouveau
-  - Faites une revue complète des résultats des tests. Patchez si nécessaire. Refactorez si nécessaire
+  - Faites une revue complète des résultats des tests. Patchez si besoin. Refactorez si nécessaire
 - Assurez-vous régulièrement que l'automatisation fonctionne 
   - valgrind, doxygen, clang-format
-  - Patchez si nécessaire, refactorez si nécessaire
+  - Patchez si besoin, refactorez si nécessaire
 
 ## Étape 5 : Discussion
 
 - Conversez avec des collègues de la communauté
-  - Les discussions doivent se faire de manière publique via des *tickets*, des réunions, et/ou par chat sur IRC
+  - Les discussions devraient se faire de manière publique via des *tickets*, des réunions, et/ou par chat sur IRC
 - Acceptez tous les feedbacks et, en réponse, produisez des résultats tangibles
 - Si c'est satisfaisant, avancez à l'étape suivante, ou bien répétez cette étape-ci (ou repartez d'une étape précédente)
 
