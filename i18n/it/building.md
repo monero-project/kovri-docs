@@ -1,8 +1,8 @@
 ## Step 0. (opzionale) Salta la compilazione e utilizza i file binari rilasciati
 
-Vedi il [README](https://github.com/monero-project/kovri/blob/master/README.md) per scaricare kovri pre-costruito e il file di checksum. Semplicemente installa e fai partire kovri. Pronti per partire!
+Vedi il [README](https://github.com/monero-project/kovri/blob/master/README.md) per scaricare kovri pre-compilato e il file di checksum. Semplicemente installa e avvia kovri. Pronti per partire!
 
-## Step 1. Se stai costruendo, requisiti minimi
+## Step 1. Se stai compilando, requisiti minimi
 
 ### Linux / MacOSX / FreeBSD 11 / OpenBSD 6
 - [Git](https://git-scm.com/download) 1.9.1
@@ -44,7 +44,7 @@ $ sudo apt-get install libminiupnpc-dev #Per utenti dietro un NAT restrittivo
 ```
 
 ### Ubuntu Trusty (14.04)
-Puoi costruire Boost dal codice sorgente oppure usando PPA
+Puoi compilare Boost dal codice sorgente oppure usando PPA
 Istruzioni per PPA:
 
 Dipendenze richieste:
@@ -63,7 +63,7 @@ $ sudo apt-get install libminiupnpc-dev #Per utenti dietro un NAT restrittivo
 ```
 
 ### Debian (stabile)
-Dovremo togliere da```testing``` per ```Boost 1.58+``` e a causa di [broken CMake](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656). Per motivi di documentazione, toglieremo tutte le dipendenze da  ```testing```. Se non hai esperienza con apt-pinning, procedi con le seguenti istruzioni prima di installare le dipendenze:
+Dovremo togliere da```testing``` per ```Boost 1.58+```  a causa di [broken CMake](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656). Per motivi di documentazione, toglieremo tutte le dipendenze da  ```testing```. Se non hai esperienza con apt-pinning, procedi con le seguenti istruzioni prima di installare le dipendenze:
 
 - Crea e modifica ```/etc/apt/preferences.d/custom.pref```
 - Salva il file con il seguente testo:
@@ -78,12 +78,12 @@ Pin: release a=testing
 Pin-Priority: 650
 ```
 - Crea e modifica ```/etc/apt/sources.list.d/custom.list```
-```
-# Stable
+
+# Stabile
 deb [Enter your mirror here] stable main non-free contrib
-# Testing
+# In test
 deb [Enter your mirror here] testing main non-free contrib
-```
+
 - Sostituisci ```[Enter your mirror here]``` con il tuo mirror (guarda ```/etc/apt/sources.list```)
 - Esegui ```$ sudo apt-get update```
 - Installa le dipendenze con ```-t testing```:
@@ -143,11 +143,12 @@ Dipendenze opzionali:
 ```bash
 $ sudo pkg_add miniupnpc #For users behind a restrictive NAT
 $ sudo pkg_add doxygen graphviz
+```
 
 # Compilazione ultimo boost
 ```bash
 # procurati ultimo boost
-$ wget [latest boost] -O latest_boost.tar.bz2
+$ wget [ultimo boost] -O latest_boost.tar.bz2
 $ tar xvjf latest_boost.tar.bz2 && cd latest_boost/
 
 # Scarica e applica le patch
@@ -155,13 +156,14 @@ $ tar xvjf latest_boost.tar.bz2 && cd latest_boost/
 # https://gist.githubusercontent.com/laanwj/bf359281dc319b8ff2e1/raw/92250de8404b97bb99d72ab898f4a8cb35ae1ea3/patch-boost_test_impl_execution_monitor_ipp.patch
 
 # Compilazione boost
+```
 $ echo 'using gcc : : eg++ : "-fvisibility=hidden -fPIC" "" "ar" "strip"  "ranlib" "" : ;' > user-config.jam
 $ config_opts="runtime-link=shared threadapi=pthread threading=multi link=static variant=release --layout=tagged --build-type=complete --user-config=user-config.jam -sNO_BZIP2=1"
 $ ./bootstrap.sh --without-icu --with-libraries=chrono,log,program_options,date_time,thread,system,filesystem,regex,test
 $ sudo ./b2 -d2 -d1 ${config_opts} --prefix=${BOOST_PREFIX} stage
 $ sudo ./b2 -d0 ${config_opts} --prefix=${BOOST_PREFIX} install
 ```
-**Note: see OpenBSD build instructions below**
+**Nota: vedi sotto istruzioni per compilare OpenBSD**
 
 
 ### Windows (MSYS2/MinGW-64)
@@ -175,10 +177,10 @@ pacman -Su
 ```
 * Chi di voi ha già familiarità con pacman può usare normalmente ```pacman -Syu``` per aggiornare, ma potresti ricevere degli errori e dover far ripartire MSYS2 se le dipendenze di pacman sono aggiornate.
 * Installa dipendenze: ```pacman -S make mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-boost mingw-w64-x86_64-openssl```
-* Opzionale: ```mingw-w64-x86_64-doxygen```  (avrai bisogno di[Graphviz](http://graphviz.org/doc/winbuild.html) per doxygen)
+* Opzionale: ```mingw-w64-x86_64-doxygen```  (avrai bisogno di [Graphviz](http://graphviz.org/doc/winbuild.html) per doxygen)
 * Nota: Avrai bisogno di  ``` mingw-w64-x86_64-miniupnpc``` se sei dietro un firewall NAT restrittivo.
 
-## Step 3. Build   
+## Step 3. Compilazione   
 
 ### 1. Clona la repository
 ```bash
@@ -209,14 +211,14 @@ $ make install
 - ```make doxygen``` produce documentazione Doxygen
 - ```make clean``` pulisce cartelle build e gli output Doxygen
 - ```make help``` mostra le opzioni di build CMake disponibili
-- ```make uninstall``` uninstall Kovri
+- ```make uninstall``` disinstalla Kovri
 
 #### Note
 - L'output di Doxygen sarà nella cartella```doc```
 - Tutti gli altri output di compilazione saranno nella cartella ```build```
 
 ### Clang
-Per eseguire il build con clang, **devi** esportare i seguenti:
+Per compilare con clang, **devi** esportare i seguenti:
 
 ```bash
 $ export CC=clang CXX=clang++  # rimpiazza ```clang``` con una versione/percorso di clang a tua scelta
@@ -234,10 +236,10 @@ $ gmake && gmake install
 $ export CC=clang CXX=clang++  # clang raccomandato, altrimenti egcc/eg++
 $ gmake && gmake install
 ```
-- Rimpiazza ```make``` with ```gmake``` per tutte le altre opzioni di compilazione
+- Rimpiazza ```make``` con ```gmake``` per tutte le altre opzioni di compilazione
 
 
-### (Opzionale) percorso data personalizzato
+### (Opzionale) percorso personalizzato
 Puoi personalizzare il percorso dei dati di Kovri a tuo piacimento. Semplicemente esporta ```KOVRI_DATA_PATH```; esempio:
 
 ```bash
@@ -273,7 +275,7 @@ procurati libFuzzer:
 $ git clone https://chromium.googlesource.com/chromium/llvm-project/llvm/lib/Fuzzer contrib/Fuzzer
 ```
 
-Costruisci kovri con fuzz testing abilitato:
+Compila kovri con fuzz testing abilitato:
 
 ```bash
 $ PATH="~/third_party/llvm-build/Release+Asserts/bin:$PATH" CC=clang CXX=clang++ make fuzz-tests
