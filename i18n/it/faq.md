@@ -50,7 +50,7 @@ leggi il nostro [README](https://github.com/monero-project/kovri/blob/master/REA
 Abbiamo eseguito una fork per almeno questi motivi:
 
 - Volevamo una robusta, sicura e viabile implementazione C++ del network I2P; e i2pd non la forniva
-- Volevamo una community positiva in grado di incoraggiare collaborazione per il miglioramento del software; non negativa, narcisitica, in cerca gloria
+- Volevamo una community positiva in grado di incoraggiare collaborazione per il miglioramento del software; non negativa, narcisitica, in cerca di gloria
 - Volevamo un capo sviluppatore che sapesse comandare; non qualcuno che ignorasse richieste di divulgazione responsabile o che  rifiuti il confronto in caso di conflitti con i collaboratori
 
 ## Quali sono stati i motivi principali che hanno portato a "forkare" da i2ps (e perchè ci sono due repository: una su Bitbucket e l'altra su GitHub)?
