@@ -41,16 +41,16 @@ By default, you will have client tunnels setup for IRC (Irc2P) and email (i2pmai
 
 When creating server tunnel(s), you'll need to create *persistent private keys*. To do so, uncomment or create `keys = your-keys.dat` and replace `your-keys` with an appropriate name. **Do not share your private `.dat` file with anyone, and be sure to make a backup!**
 
-Once setup, your [Base32 address](https://getmonero.org/knowledge-base/moneropedia/base32-address) will be shown in your log after you start kovri. You can also find the address in a text file along with the private keys file in your kovri data path in the `client/keys` directory. The address inside this `.txt` text file is safe to distribute so other people can connect to your service.
+Once setup, your [Base32 address](https://getmonero.org/resources/moneropedia/base32-address) will be shown in your log after you start kovri. You can also find the address in a text file along with the private keys file in your kovri data path in the `client/keys` directory. The address inside this `.txt` text file is safe to distribute so other people can connect to your service.
 
 Example:
 
 - Private keys file: `client/keys/your-keys.dat`
-- Public [Base32](https://getmonero.org/knowledge-base/moneropedia/base32-address)/[Base64](https://getmonero.org/knowledge-base/moneropedia/base64-address) address: `client/keys/your-keys.dat.txt`
+- Public [Base32](https://getmonero.org/resources/moneropedia/base32-address)/[Base64](https://getmonero.org/resources/moneropedia/base64-address) address: `client/keys/your-keys.dat.txt`
 
 **Note: see kovri.conf to find your data path for Linux/OSX/Windows**
 
-## Step 5. (Optional) Register your new [eepsite](https://getmonero.org/knowledge-base/moneropedia/eepsite)
+## Step 5. (Optional) Register your new [eepsite](https://getmonero.org/resources/moneropedia/eepsite)
 
 **Stop! Until [#498](https://github.com/monero-project/kovri/issues/498) is resolved, consider only registering your service with Kovri and *not* stats.i2p!**
 
@@ -84,7 +84,7 @@ Notes:
 - Overall, HTTP Proxy and address book implementation are in development and not yet feature-complete
 
 ## Step 9. Enjoy!
-- Read more about Kovri in the [Moneropedia](https://getmonero.org/knowledge-base/moneropedia/kovri).
+- Read more about Kovri in the [Moneropedia](https://getmonero.org/resources/moneropedia/kovri).
 - Open your feature requests or report bugs on our [issues tracker](https://github.com/monero-project/kovri/issues)
 - Learn more about the I2P network on the [java I2P website](https://geti2p.net/en/docs)
 
