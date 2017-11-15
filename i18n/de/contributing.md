@@ -1,3 +1,5 @@
+# Mitwirken
+
 ## Qualitätssicherung
 - Sehen Sie sich unseren Leitfaden zur [Qualitätssicherung](https://github.com/monero-project/kovri-docs/blob/master/i18n/de/quality.md) an, um eine Vorstellung vom vorgeschlagenen Workflow zu bekommen.
 
