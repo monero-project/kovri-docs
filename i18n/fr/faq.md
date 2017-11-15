@@ -39,7 +39,7 @@ Kovri est un routeur léger et axé sur la sécurité. Il est totalement compati
 
 Kovri est un projet open-source, ce qui veut dire qu'il est entièrement dépendant des contributions de la communauté.
 
-Le lead développeur du projet est [anonimal](https://github.com/anonimal), que vous pouvez contacter via les channels IRC [#kovri](irc://chat.freenode.net/#kovri) et [#kovri-dev](irc://chat.freenode.net/#kovri), et via son [compte Twitter](https://twitter.com/0x914409F1).
+Le lead développeur du projet est [anonimal](https://github.com/anonimal), que vous pouvez contacter via les channels IRC [#kovri](irc://chat.freenode.net/#kovri) et [#kovri-dev](irc://chat.freenode.net/#kovri-dev), et via son [compte Twitter](https://twitter.com/0x914409F1).
 
 Kovri est développé sous l'égide du [Monero Project](https://github.com/monero-project). C'est un autre projet open-source, qui développé le [Monero coin](https://getmonero.org) et [Open Alias](https://openalias.org). La relation entre le Monero Project et Kovri est mutuellement bénéfique dans le sens où Kovri va s'intégrer dans le réseau Monero et Monero contribue au projet Kovri en fournissant des développeurs et des ressources.
 
