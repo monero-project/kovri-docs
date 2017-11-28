@@ -30,14 +30,14 @@ Valgfri:
 
 ## Trin 2. Installer afhængigheder 
 
-#### Note: for container muligheder (som Docker og snapcraft), kig i [User Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/da/user_guide.md)
+#### Note: for container muligheder (som Docker og snapcraft), kig i [Bruger Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/da/bruger_guide.md)
 
 ### Ubuntu Xenial (16.04)
-Påkrævet afhængigheder:
+Påkrævede afhængigheder:
 ```bash
 $ sudo apt-get install git cmake libboost-all-dev libssl-dev  # gcc/g++ and libssl installed by default
 ```
-Valgfri afhængigheder:
+Valgfrie afhængigheder:
 ```bash
 $ sudo apt-get install clang
 $ sudo apt-get install doxygen graphviz
@@ -48,7 +48,7 @@ $ sudo apt-get install libminiupnpc-dev #For brugere bag en begrænsende NAT
 Du kan enten bygge Boost fra kildekode eller bruge PPA 
 Nedenunder er instruktioner til PPA:
 
-Påkrævet afhængigheder:
+Påkrævede afhængigheder:
 ```bash
 $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 $ sudo add-apt-repository ppa:kojoley/boost
@@ -56,7 +56,7 @@ $ sudo apt-get update
 $ sudo apt-get install libboost-{chrono,log,program-options,date-time,thread,system,filesystem,regex,test}1.58-dev
 $ sudo apt-get install git g++-4.9 cmake libboost-all-dev libssl-dev libssl1.0.0
 ```
-Valgfri afhængigheder:
+Valgfrie afhængigheder:
 ```bash
 $ sudo apt-get install clang-3.5
 $ sudo apt-get install doxygen graphviz
@@ -89,11 +89,11 @@ deb [Skriv dit spejlbillede her] testing main non-free contrib
 - Kør ```$ sudo apt-get update```
 - Installer afhængigheder med  ```-t testing``` skift:
 
-Påkrævet afhængigheder:
+Påkrævede afhængigheder:
 ```bash
 $ sudo apt-get -t testing install git g++ cmake libboost-all-dev libssl-dev libssl1.0.0
 ```
-Valgfri afhængigheder:
+Valgfrie afhængigheder:
 ```bash
 $ sudo apt-get -t testing install clang
 $ sudo apt-get -t testing install doxygen graphviz
@@ -101,11 +101,11 @@ $ sudo apt-get -t testing install libminiupnpc-dev #For brugere bag en begrænse
 ```
 
 ### Arch Linux
-Påkrævet afhængigheder:
+Påkrævede afhængigheder:
 ```bash
 $ sudo pacman -Syu cmake boost  # gcc/g++ and openssl installed by default
 ```
-Valgfri afhængigheder:
+Valgfrie afhængigheder:
 ```bash
 $ sudo pacman -S clang
 $ sudo pacman -S doxygen graphviz
@@ -113,22 +113,22 @@ $ sudo pacman -S miniupnpc #For brugere bag en begrænsende NAT
 ```
 
 ### Mac OSX
-Påkrævet afhængigheder:
+Påkrævede afhængigheder:
 ```bash
 $ brew install cmake boost openssl # clang installed by default
 ```
-Valgfri afhængigheder:
+Valgfrie afhængigheder:
 ```bash
 $ brew install doxygen graphviz
 $ brew install miniupnpc #For brugere bag en begrænsende NAT
 ```
 
 ### FreeBSD 11
-Påkrævet afhængigheder:
+Påkrævede afhængigheder:
 ```bash
 $ sudo pkg install git cmake gmake clang36 boost-libs openssl
 ```
-Valgfri afhængigheder:
+Valgfrie afhængigheder:
 ```bash
 $ sudo pkg install doxygen graphviz
 $ sudo pkg install miniupnpc #For brugere bag en begrænsende NAT
@@ -136,11 +136,11 @@ $ sudo pkg install miniupnpc #For brugere bag en begrænsende NAT
 **Note: kig i FreeBSD bygge instruktioner nedenunder**
 
 ### OpenBSD 6
-Påkrævet afhængigheder:
+Påkrævede afhængigheder:
 ```bash
 $ sudo pkg_add bash git cmake gmake g++ llvm
 ```
-Valgfri afhængigheder:
+Valgfrie afhængigheder:
 ```bash
 $ sudo pkg_add miniupnpc #For brugere bag en begrænsende NAT
 $ sudo pkg_add doxygen graphviz
@@ -152,7 +152,7 @@ $ sudo pkg_add doxygen graphviz
 $ wget [seneste boost] -O latest_boost.tar.bz2
 $ tar xvjf latest_boost.tar.bz2 && cd seneste_boost/
 
-# Download og anvend opdatering
+# Download og anvend opdateringer
 # https://svn.boost.org/trac/boost/attachment/ticket/12575/boost-1.62-asio-libressl.patch
 # https://gist.githubusercontent.com/laanwj/bf359281dc319b8ff2e1/raw/92250de8404b97bb99d72ab898f4a8cb35ae1ea3/patch-boost_test_impl_execution_monitor_ipp.patch
 
@@ -186,7 +186,7 @@ pacman -Su
 $ git clone --recursive https://github.com/monero-project/kovri
 ```
 
-### 2. Byg Kovri og undermoduler afhængigheder med en kommando
+### 2. Byg Kovri og undermodul afhængigheder med en kommando
 ```bash
 $ make  # for at formindske bygge-tiden, kør `make -j <tilgængelige CPU kerner>`. Eksempel: `make -j4`
 ```
@@ -201,7 +201,7 @@ $ make install
 
 ### Andre muligheder du kan bruge i stedet for trin 2:
 
-For en akkurat og komplet list af muligheder, se targets i [Makefile](https://github.com/monero-project/kovri/blob/master/Makefile).
+For en akkurat og komplet liste af muligheder, se targets i [Makefile](https://github.com/monero-project/kovri/blob/master/Makefile).
 
 #### Noter
 - Alle bygge resultater (inkluderet Doxygen) ville være i bygge resultatets mappe
@@ -238,7 +238,7 @@ $ export KOVRI_DATA_PATH=$HOME/.another-
 kovri-data-path && make && make install
 ```
 
-## Trin 4. Fortsæt til bruger guiden Læs [bruge guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/da/user_guide.md) for at starte
+## Trin 4. Fortsæt til bruger guiden Læs [bruge guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/da/bruger_guide.md) for at starte
 
 ## Docker
 

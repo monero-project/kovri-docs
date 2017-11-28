@@ -82,4 +82,75 @@ C4 er ment til at give en genbrugelig optimal samarbejdsmodel til open source so
 - Alle, uden forskel eller diskrimination , SKAL have lige rettigheder til at blive en bidragsyder under betingelserne af denne kontrakt.
 
 ### Licens og Ejerskab
-- Projektet SKAL bruge en 
+- Projektet SKAL bruge en share-alike licens, dette kunne være nogle ligesom GPLv3 eller en variant deraf (LGPL, AGPL), eller MPlv2. 
+- Alle bidrag til projektets source kode ("patches") SKAL bruge den samme licens som projektet.
+- Alle patches er ejet af deres forfattere. Der SKALL IKKE være nogle som helst ophavsret tildeling proces.
+- Ophavsretten i projektet SKAL ejes kollektivt af alle dens bidragydere.
+- Hver bidragyder skal være ansvarlig for at identificere sig i projektbidragslisten.
+
+### Patch krav
+
+- Vedligeholdere og bidragydere SKAL have en Platform konto og skal bruge deres rigtige navne eller et velkendt alias.
+- En patch skal være et minimalt og præcist svar på nøjagtigt et identificeret og aftalt problem.
+- En patch skal overholde koden stil retningslinjer af projektet, hvis disse er defineret.
+- En patch skal overholde retningslinjerne "Evolution of Public Contracts" som defineret nedenfor.
+- En patch SKAL IKKE indeholde ikke-trivial kode fra andre projekter, medmindre bidraggiveren er den oprindelige forfatter af den pågældende kode.
+En patch SKAL compile rent og bestå projektets selvtest på i det mindste principmålplattformen.
+- En patch commit besked BURDE bestå af en enkelt kort (mindre end 50 tegn) linje der opsummerer ændringen, eventuelt efterfulgt af en tom linje og derefter en mere grundig beskrivelse.
+En "Correct Patch" er en der opfylder overstående krav.
+
+### Udviklingsproces
+
+- Ændring af projektet SKAL styres af mønsteret for nøjagtigt at identificere problemer og anvende minimal, præcise løsninger på disse problemer.
+- For at anmode om ændringer, skal en bruger logge et problem på projektet Platform issue tracker.
+- Brugeren eller bidragsgiveren SKAL skrive problemet ved at beskrive det problem, de står over for eller observerer.
+- Brugeren eller bidragsgiveren SKAL søge konsensus om nøjagtigheden af deres observation og værdien af at løse problemet.
+- Brugere MÅ IKKE logge funktionsanmodninger, ideer, forslag eller løsninger til problemer, der ikke er eksplicit dokumenteret og bevisligt.
+- Således SKAL projektets udgivelseshistorik være en liste over meningsfulde problemer, der er logget og løst.
+- For at arbejde på et problem, SKAL en bidragsyder forke projektets depot og arbejde på deres eget forkede depot.
+- For at indsende en patch skal en bidragyder oprette en platformsforespørgsel tilbage til projektet.
+- En bidragsyder SKAL IKKE commite ændringer direkte til projektet.
+- Hvis platformen implementerer pull request som problemer, kan en bidragsyder sende en pull request direkte uden at logge på et særskilt problem.
+- For at diskutere en patch kan folk kommentere på Platform pull request, på commit eller et andet sted.
+- For at acceptere eller afvise en patch, skal en vedligeholder bruge platformens interface.
+- Vedligeholdere BURDE IKKE merge deres egne patches undtagen i usædvanlige tilfælde, som f.eks. Ikke-respons fra andre vedligeholdere i længere tid (mere end 1-2 dage).
+- Vedligeholdere SKAL IKKE foretage værdidomme på korrekte patches.
+- Vedligeholdere SKAL merge correct patches fra andre bidragsydere hurtigt.
+- Bidragsyderen MÅ tagge et problem som "ready" efter han har lavet en pull request for problemet.
+- Den bruger, der oprettede et problem, skal lukke problemet efter at have kontrolleret patchen, lykkes.
+- Vedligeholdere SKAL bede om forbedringer af ukorrekte patches og BURDE afvise ukorrekte patches, hvis bidragsyderen ikke reagerer konstruktivt.
+- Enhver bidragyder, der har værdiafgørelser på en korrekt patch, BURDE udtrykke disse via deres egne patches.
+- Vedligeholdere MÅ begå ændringer til non-source dokumentation direkte til projektet
+
+### Oprettelse af stabile udgivelser
+
+- Projektet SKAL have en branch ("master") der altid indeholder den seneste in-progress version og altid BURDE kunne bygges.
+- Projektet SKAL IKKE bruge topic branches for nogen som helst grund. Personlige forks MÅ bruge topic branches.
+-For at lave en stabil udgivelse SKAL nogle forke depotet ved at kopiere det og blive vedligeholdere af dette depot.
+- Forking af et projekt for stabilisering MÅ ske ensidigt og uden samtykke fra projektansvarlige.
+- Et stabiliseringsprojekt SKAL opretholdes i samme proces som hovedprojektet.
+- En patch til et stabiliseringsprojekt der er deklarerert "stable" SKAL være ledsaget af en reproducerbar tesst sag.
+
+### Evolution af offentlige kontrakter
+
+- Alle offentlige kontrakter (API'er eller protokoller) SKAL dokumenteres.
+- Alle offentlige kontrakter BURDE have plads til udvidelse og eksperimentering.
+- En patch, der ændrer en stabil offentlig kontrakt, må ikke bryde eksisterende applikationer, medmindre der er tvingende konsensus om værdien af 
+at gøre dette.
+- Et program, der introducerer nye funktioner til en offentlig kontrakt, BURDE gøre det ved at bruge nye navne.
+- Gamle navne SKAL udlægges systematisk, ved at markere nye navne som "eksperimentelle" indtil de er stabile og derefter markere de gamle navne som "afskrevet".
+- Når der er tilstrækkelig tid, skal gamle udskrevne navne mærkes "arv" og fjernes efterhånden.
+- Gamle navne MÅ IKKE genbruges af nye funktioner.
+- Når gamle navne fjernes, skal deres implementeringer fremkalde en undtagelse (påstand), hvis de anvendes af applikationer.
+
+### Projekt Administration
+
+- Projekt grundlæggerne SKAL opføre sig som administratorer for at styre sæt af projekt vedligeholdere.
+- Administratorer SKAL sikre deres egen succession over tid ved at fremme de mest effektive vedligeholdere.
+- En ny bidragsyder der laver en correct patch SKAL være inviteret til at blive en vedligeholder.
+- Administratorer KAN fjerne vedligeholdere, der er inaktive i længere tid, eller som gentagne gange undlader at anvende denne proces nøjagtigt.
+- Administratorer skal blokere eller forbyde "dårlige aktører", der forårsager stress og smerte for andre i projektet. Dette skal ske efter offentlig diskussion, med en chance for alle parter at tale. En dårlig skuespiller er en person, der gentagne gange ignorerer projektets regler og kultur, som er unødvendigt argumenterende eller fjendtligt, eller som er offensiv, og som ikke er i stand til selvkorrekt deres adfærd, når de bliver bedt om det af andre.
+
+# Governance Process
+
+![Governance Process](https://getmonero.org/blog/assets/2015-year-in-review/governance-process.jpg)
