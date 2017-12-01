@@ -33,5 +33,3 @@ $ cd kovri/ && cpplint src/path/to/my/file && [edit file manually to apply fixes
 2. [cppcheck](https://github.com/danmar/cppcheck/) for statisk analyse
    (komplementær til Coverity).
 3. [lizard](https://github.com/terryyin/lizard) for kodekompleksitetskontrol.
-
-  

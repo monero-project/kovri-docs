@@ -67,7 +67,7 @@ $ sudo apt-get install libminiupnpc-dev #For brugere bag en begrænsende NAT
 Vi bliver nødt til at hente fra ```testing``` for ```Boost 1.58+``` og på grund af [broken CMake](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656). Af hensyn til dokumentation ville vi hente alle afhængigheder fra ```testing```. Hvis du ikke er bekendt med apt-pinning, fortsæt med følgende før du installere afhængigheder:
 
 - Opret og rediger ```/etc/apt/preferences.d/custom.pref```
-- Enter and gem følgende:
+- Indsæt and gem følgende:
 
 ```
 Package: *
@@ -176,7 +176,7 @@ pacman -Su
 ```
 * For dem af jer der allerede har kendskab til pacman, kan i køre den normale ```pacman -Syu``` for at opdatere, men du kan få fejl og være nødt til at genstarte MSYS2 hvis pacman's afhængigheder er opdateret.
 * Installer afhængigheder: ```pacman -S make mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-boost mingw-w64-x86_64-openssl```
-* Valgfri: ```mingw-w64-x86_64-doxygen```  (Du får brug for [Graphviz](http://graphviz.org/doc/winbuild.html) for doxygen)
+* Valgfri: ```mingw-w64-x86_64-doxygen```  (Du får brug for [Graphviz](http://graphviz.org/doc/winbuild.html) til doxygen)
 * Note: Du får brug for  ``` mingw-w64-x86_64-miniupnpc``` hvis du er bag en begrænsende NAT firewall.
 
 ## Trin 3. Byg
@@ -230,12 +230,12 @@ $ gmake && gmake install
 
 
 ### (Valgfri) brugdefineret data sti
-Du kan brugerdefinere Kovri's data sti efter dine behov. Bare eksporter
+Du kan brugerdefinere Kovri's datasti efter dine behov. Bare eksporter
 ```KOVRI_DATA_PATH```; eksempel:
 
 ```bash
-$ export KOVRI_DATA_PATH=$HOME/.another-
-kovri-data-path && make && make install
+$ export KOVRI_DATASTI=$HOME/.another-
+kovri-data-sti && make && make install
 ```
 
 ## Trin 4. Fortsæt til bruger guiden Læs [bruge guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/da/bruger_guide.md) for at starte

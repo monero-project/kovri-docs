@@ -15,7 +15,7 @@ Noter:
 
 - Overvej at oprette en `kovri` bruger og kør kun kovri ved brug af brugeren.
 - Hvis du bruger Linux, overvej en hardened kernel (så som [grsec](https://en.wikibooks.org/wiki/Grsecurity) med RBAC)
-- Efter du har installeret de passende ressourcer i din kovri datasti, overvej%%%%%%%%%%%
+- Efter du har installeret de passende ressourcer i din kovri datasti, overvej at indstille passende adgangskontrol med [setfacl](https://linux.die.net/man/1/setfacl), [umask](https://en.wikipedia.org/wiki/Umask), eller hvad dit OS nu bruger til ACL
 - Del aldrig dit port nummer med nogen da det ville påvirke din anonymitet!
 
 **Note: Se kovri.conf for at finde din datasti til Linux/OSX/Windows**
@@ -54,8 +54,8 @@ Eksempel:
 
 **Stop! indtil [#498](https://github.com/monero-project/kovri/issues/498) er løst, og overvej kun at registrere dit service med Kovri og *ikke* stats.i2p!** 
 
-- Open en request med `[Subscription Request] your-host.i2p` (Erstat your-host.i2p med dit ønskede hostnavn) på [Kovri issue tracker](https://github.com/monero-project/kovri/issues)
-- I request body, indsæt indholdet af din offentlige `.txt` fil der blev nævnt in de tidligere skridt
+- Åben en request med `[Subscription Request] your-host.i2p` (Erstat your-host.i2p med dit ønskede hostnavn) på [Kovri issue tracker](https://github.com/monero-project/kovri/issues)
+- I request body, indsæt indholdet af din offentlige `.txt` fil der blev nævnt i det tidligere skridt
 - Efter gennemgang, ville vi tilføje din host og tilmelde abonnomentet
 - Færdig!
 
@@ -133,7 +133,18 @@ Docker billedet kommer med standarderne af Kovri, men kan blive konfigureret som
 
 Du burde vælge en tilfældig port og åbne den port (Se tidligere sektioner).
 
-### Trin 3. At køre Kovri
+### Trin 3. Kørsel
+
+### Standard indstillinger
+```bash
+KOVRI_PORT=42085 && sudo docker run -p 127.0.0.1:4446:4446 -p 127.0.0.1:6669:6669 -p $KOVRI_PORT --env KOVRI_PORT=$KOVRI_PORT geti2p/kovri
+```
+
+#### Brugerdefinerede indstillinger
+Hvor `./kovri-settings/` indeholder `kovri.conf` og `tunnels.conf`.
+```bash
+KOVRI_PORT=42085 && sudo docker run -p 127.0.0.1:4446:4446 -p 127.0.0.1:6669:6669 -p $KOVRI_PORT --env KOVRI_PORT=$KOVRI_PORT -v kovri-settings:/home/kovri/.kovri/config:ro geti2p/kovri
+```
 
 #### Standardindstillinger
 ```bash
