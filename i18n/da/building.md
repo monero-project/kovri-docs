@@ -207,7 +207,7 @@ For en akkurat og komplet liste af muligheder, se targets i [Makefile](https://g
 - Alle bygge resultater (inkluderet Doxygen) ville være i bygge resultatets mappe
 
 ### Clang
-For at bygge med clang, **skal* du eksportere følgende:
+For at bygge med clang, **skal** du eksportere følgende:
 
 ```bash
 $ export CC=clang CXX=clang++  # erstat ```clang``` med en clang version/sti efter eget valg
