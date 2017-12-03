@@ -62,41 +62,16 @@ $ sudo apt-get install doxygen graphviz
 $ sudo apt-get install libminiupnpc-dev #For users behind a restrictive NAT
 ```
 
-### Debian (stable)
-We'll need to pull from ```testing``` for ```Boost 1.58+``` and because of a [broken CMake](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=826656). For documentation's sake, we will pull all dependencies from ```testing```. If you're unfamiliar with apt-pinning, proceed with the following before installing dependencies:
-
-- Create and edit ```/etc/apt/preferences.d/custom.pref```
-- Enter and save the following:
-
-```
-Package: *
-Pin: release a=stable
-Pin-Priority: 700
-
-Package: *
-Pin: release a=testing
-Pin-Priority: 650
-```
-- Create and edit ```/etc/apt/sources.list.d/custom.list```
-```
-# Stable
-deb [Enter your mirror here] stable main non-free contrib
-# Testing
-deb [Enter your mirror here] testing main non-free contrib
-```
-- Replace ```[Enter your mirror here]``` with your mirror (see ```/etc/apt/sources.list```)
-- Run ```$ sudo apt-get update```
-- Install dependencies with the ```-t testing``` switch:
-
+### Debian-9 (stretch/stable)
 Required dependencies:
 ```bash
-$ sudo apt-get -t testing install git g++ cmake libboost-all-dev libssl-dev libssl1.0.0
+$ sudo apt-get install git g++ cmake libboost-all-dev libssl-dev libssl1.0.0
 ```
 Optional dependencies:
 ```bash
-$ sudo apt-get -t testing install clang
-$ sudo apt-get -t testing install doxygen graphviz
-$ sudo apt-get -t testing install libminiupnpc-dev #For users behind a restrictive NAT
+$ sudo apt-get install clang
+$ sudo apt-get install doxygen graphviz
+$ sudo apt-get install libminiupnpc-dev #For users behind a restrictive NAT
 ```
 
 ### Arch Linux
