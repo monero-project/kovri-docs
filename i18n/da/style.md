@@ -1,4 +1,4 @@
-# Style
+# Stil
 1. Læs [Google's C++ Style Guide](https://google.github.io/styleguide/cppguide.html) (%%%%%%%%%%%%%%%%%)
    - Hvis du programmerer i bash, læs [Google's Shell Style Guide](https://github.com/google/styleguide/blob/gh-pages/shell.xml)
 2. Kør [clang-format](http://clang.llvm.org/docs/ClangFormat.html) med ```-style=file``` (som bruger den vi har udleveret [.clang-format](https://github.com/monero-project/kovri/blob/master/.clang-format))

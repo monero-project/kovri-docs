@@ -145,13 +145,3 @@ Hvor `./kovri-settings/` indeholder `kovri.conf` og `tunnels.conf`.
 ```bash
 KOVRI_PORT=42085 && sudo docker run -p 127.0.0.1:4446:4446 -p 127.0.0.1:6669:6669 -p $KOVRI_PORT --env KOVRI_PORT=$KOVRI_PORT -v kovri-settings:/home/kovri/.kovri/config:ro geti2p/kovri
 ```
-
-#### Standardindstillinger
-```bash
-KOVRI_PORT=42085 && sudo docker run -p 127.0.0.1:4446:4446 -p 127.0.0.1:6669:6669 -p $KOVRI_PORT --env KOVRI_PORT=$KOVRI_PORT geti2p/kovri
-```
-
-#### Brugerdefinerede indstillinger
-Hvor `./kovri-settings/` indeholder `kovri.conf` og `tunnels.conf`.
-```bash
-KOVRI_PORT=
