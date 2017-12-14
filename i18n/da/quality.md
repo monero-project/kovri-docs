@@ -47,7 +47,7 @@ Følgende er en foreslået model for QA-workflow. Selvom det er lineært i natur
   
 ## Fase 5: Konferere
 
-- Konference med kolleger og samfundet
+- Konference med kolleger og fællesskabet
   - Konferencen skal ske offentligt via ticket, møder og / eller IRC
 - Accepter alle tilbagemeldinger og som reaktion producere konkrete resultater
 - Hvis du er tilfreds, fortsæt med næste fase, gentag denne fase (eller start fra en tidligere fase)

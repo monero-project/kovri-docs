@@ -1,4 +1,4 @@
-## Bidragelse
+## Bidrag
 
 ## Kvalitets sikring
 - Se vores [Kvalitets sikring](https://github.com/monero-project/kovri-docs/blob/master/i18n/da/quality.md) 
@@ -23,7 +23,7 @@ For at bidrage med dit arbejde, venligst fortsæt med følgende:
 - Generelt burde commits være [atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) og diffs burde være nemme at læse. Prøv derfor ikke at blande formateringsrettelser med ikke-formateret commits.
 - Kroppen af pull requesten burde indeholde en akkurat beskrivelse af hvad opdatering gør og giv begrundelse for denne opdatering (når passende). Du burde inkludere referencer til hvilken som helst diskussion som andre tickets eller chatte på IRC.
 
-## oplæg
+## Oplæg
 For at bidrage med oplæg, venligst gennemgå vores [open issues](https://github.com/monero-project/kovri/issues) for eksisterende oplæg. Hvis hvad du foreslår ikke er der, så [open a new issue](https://github.com/monero-project/kovri/issues/new).
 
 Selvom vores C4 dikterer at vi merger alting, så spørge vi om du åbner et oplæg for følgende grunde:
