@@ -1,9 +1,10 @@
-In addition to all Boost and OpenSSL contributors, and all coders since time-immemorial who have made this project possible, we would like to acknowledge the following:
+## Благодарности
+В дополнение ко всем контрибьютерам Boost и OpenSSL, а также к программистам всех времен, благодоря которым этот проект стал возможен, мы хотели бы отметить следующих:
 
-- Wei Dai, Jeffrey Walton, and all the developers at Crypto++ for proving an influential, free C++ library of cryptographical library
-- Dean Michael Berris, Glyn Matthews, and all the developers at cpp-netlib for providing an actively developed cross-platform networking library
-- All developers involved in the [ref10 implementation from SUPERCOP](http://bench.cr.yp.to/supercop.html) from which we base our Ed25519 implementation
-- zzz, str4d, and all Java I2P developers both past and present who have set the standard for all other I2P implementations to follow
-- orion for providing ```i2pcpp```: the [original](http://git.repo.i2p.xyz/w/i2pcpp.git) C++ implementation of I2P
-- orignal for providing ```i2pd```: the most feature-complete C++ implementation of I2P for [us to fork from](https://github.com/purplei2p/i2pd/commit/45d27f8ddc43e220a9eea42de41cb67d5627a7d3)
-- EinMByte for improving all C++ I2P implementations (including Kovri)
+- Wei Dai, Jeffrey Walton, и всех разработчиков Crypto++ за предоставление очень важной и бесплатной криптографической библиотеки на C++
+- Dean Michael Berris, Glyn Matthews, и всех разработчиков cpp-netlib за предоставление активно развивающейся кроссплатформенной сетевой библиотеки
+- Всех разработчиков учавствующих в [ref10 реализацию из SUPERCOP](http://bench.cr.yp.to/supercop.html) на основе которой мы создали нашу Ed25519 реализацию
+- zzz, str4d, и всех Java I2P разработчиков прошлых и текущих, которые установили стандарт для всех других реализаций I2P
+- orion за предоставление ```i2pcpp```: [исходной](http://git.repo.i2p.xyz/w/i2pcpp.git) C++ реализации I2P
+- orignal за предоставление ```i2pd```: наиболее функционально полную C++ реализацию I2P [взятую нами из](https://github.com/purplei2p/i2pd/commit/45d27f8ddc43e220a9eea42de41cb67d5627a7d3)
+- EinMByte за совершенствование всех C++ I2P реализаций (включая Kovri)
