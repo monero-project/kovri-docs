@@ -1,10 +1,11 @@
-## Шаг 0. (Необязательный) Пропустить сборку и использовать готовые релизы
+## Шаг 0. (Необязательный) Пропустить сборку и использовать готовые выпуски
 
-Смотри [README](https://github.com/monero-project/kovri/blob/master/README.md) как скачать предварительно собранный kovri и checksum файла. Просто установи и запусти kovri, и прочь отсюда!
+Смотри в [README](https://github.com/monero-project/kovri/blob/master/README.md) как скачать предварительно собранный kovri и checksum файла. Просто установи, запусти kovri и прочь отсюда!
 
-## Шаг 1. Если собираешь, то минимальные требования
+## Шаг 1. Если собирать, то минимальные требования
 
 ### Linux / MacOSX / FreeBSD 11 / OpenBSD 6
+
 - [Git](https://git-scm.com/download) 1.9.1
 - [GCC](https://gcc.gnu.org/) 4.9.2
 - [CMake](https://cmake.org/) 2.8.12
@@ -29,12 +30,12 @@
 
 ## Шаг 2. Установить зависимости
 
-#### Примечание: в случае использования контейнеров (таких как Docker и snapcraft), смотри [Руководство пользователя](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/user_guide.md)
+#### Примечание: в случае использования контейнеров (таких как Docker и Snapcraft), смотри [Руководство пользователя](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/user_guide.md)
 
 ### Ubuntu Xenial (16.04)
 Требуемые зависимости:
 ```bash
-$ sudo apt-get install git cmake libboost-all-dev libssl-dev  # gcc/g++ and libssl installed by default
+$ sudo apt-get install git cmake libboost-all-dev libssl-dev  # gcc/g++ и libssl установлены по умолчанию
 ```
 Опциональные зависимости:
 ```bash
@@ -59,7 +60,7 @@ $ sudo apt-get install git g++-4.9 cmake libboost-all-dev libssl-dev libssl1.0.0
 ```bash
 $ sudo apt-get install clang-3.5
 $ sudo apt-get install doxygen graphviz
-$ sudo apt-get install libminiupnpc-dev #For users behind a restrictive NAT
+$ sudo apt-get install libminiupnpc-dev #для пользователей за ограничительным NAT
 ```
 
 ### Debian-9 (stretch/stable)
@@ -71,30 +72,30 @@ $ sudo apt-get install git g++ cmake libboost-all-dev libssl-dev libssl1.0.0
 ```bash
 $ sudo apt-get install clang
 $ sudo apt-get install doxygen graphviz
-$ sudo apt-get install libminiupnpc-dev #For users behind a restrictive NAT
+$ sudo apt-get install libminiupnpc-dev #для пользователей за ограничительным NAT
 ```
 
 ### Arch Linux
 Требуемые зависимости:
 ```bash
-$ sudo pacman -Syu cmake boost  # gcc/g++ and openssl installed by default
+$ sudo pacman -Syu cmake boost  # gcc/g++ и openssl установлены по умолчанию
 ```
 Опциональные зависимости:
 ```bash
 $ sudo pacman -S clang
 $ sudo pacman -S doxygen graphviz
-$ sudo pacman -S miniupnpc #For users behind a restrictive NAT
+$ sudo pacman -S miniupnpc #для пользователей за ограничительным NAT
 ```
 
 ### Mac OSX
 Требуемые зависимости:
 ```bash
-$ brew install cmake boost openssl # clang installed by default
+$ brew install cmake boost openssl # clang установлен по умолчанию
 ```
 Опциональные зависимости:
 ```bash
 $ brew install doxygen graphviz
-$ brew install miniupnpc #For users behind a restrictive NAT
+$ brew install miniupnpc #для пользователей за ограничительным NAT
 ```
 
 ### FreeBSD 11
@@ -105,7 +106,7 @@ $ sudo pkg install git cmake gmake clang36 boost-libs openssl
 Опциональные зависимости:
 ```bash
 $ sudo pkg install doxygen graphviz
-$ sudo pkg install miniupnpc #For users behind a restrictive NAT
+$ sudo pkg install miniupnpc #для пользователей за ограничительным NAT
 ```
 **Примечание: см. инструкции по сборке для FreeBSD ниже**
 
@@ -116,7 +117,7 @@ $ sudo pkg_add bash git cmake gmake g++ llvm
 ```
 Опциональные зависимости:
 ```bash
-$ sudo pkg_add miniupnpc #For users behind a restrictive NAT
+$ sudo pkg_add miniupnpc #для пользователей за ограничительным NAT
 $ sudo pkg_add doxygen graphviz
 ```
 
@@ -141,7 +142,7 @@ $ sudo ./b2 -d0 ${config_opts} --prefix=${BOOST_PREFIX} install
 
 ### Windows (MSYS2/MinGW-64)
 * загрузите [MSYS2 инсталлятор](http://msys2.github.io/), 64-bit или 32-bit в зависимости от вашей операционной системы, и запустите его.
-* Используйте ярлык, связанный с вашей архитектурой, для запуска среды MSYS2. В 64-битных системах ярлык MinGW-w64 Win64 Shell. Примечание: если вы используете 64-битную Windows, у вас будут 64-разрядное и 32-разрядное окружение.
+* Используйте ярлык, соответствующий вашей архитектуре, для запуска среды MSYS2. В 64-битных системах ярлык MinGW-w64 Win64 Shell. Примечание: если вы используете 64-битную Windows, у вас будут 64-разрядное и 32-разрядное окружение.
 * Обновите пакеты в вашем установленном MSYS2:
 ```
 pacman -Sy
@@ -184,7 +185,7 @@ $ make install
 Чтобы осуществить сборку с помощью clang, вам **необходимо** выполнить следующее:
 
 ```bash
-$ export CC=clang CXX=clang++  # замените ```clang``` на версию\путь к clang, который вы выбрали
+$ export CC=clang CXX=clang++  # замените ```clang``` на версию\путь к clang, который вам нужен
 ```
 
 ### FreeBSD
@@ -196,7 +197,7 @@ $ gmake && gmake install
 
 ### OpenBSD
 ```bash
-$ export CC=clang CXX=clang++  # clang recommended, otherwise egcc/eg++
+$ export CC=clang CXX=clang++  # clang рекомендуется, иначе egcc/eg++
 $ gmake && gmake install
 ```
 - Замените ```make``` на ```gmake``` для всех других параметров сборки
