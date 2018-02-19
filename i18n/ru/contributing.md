@@ -1,3 +1,5 @@
+(от переводчика. Смысл может быть передан не совсем корректно, т.к. переводчик не обладает практическим опытом совместной разработки. Все желающие прилашаются к редактированию)
+
 ## Гарантия качества
 - Смотрите наше руководство [Quality Assurance](https://github.com/monero-project/kovri-docs/blob/master/i18n/ru/quality.md), чтобы получить представление о предлагаемом процессе работы.
 
@@ -16,7 +18,7 @@
    - На данный момент у нас нет никаких тегов, поскольку мы находимся в стадии pre-alpha. Пока вы можете работать с веткой master
    - Комментарии к commit должны быть подробными, состоящими и короткой строки темы (50  символов максимум), пустой строки и детального пояснительного текста разбитого на абзацы - в случае если тема не является достаточным и очевидным объяснением.
    - Заголовок commit'а должен включать класс или аспект проекта. Например, "HTTPProxy: implement User-Agent scrubber. Fixes #193." или "Garlic: fix uninitialized padding in ElGamalBlock".
-   - Если конкретный commit связан с проблемой(issue), пожалуйста добавьте ссылку. Например "See #123", или "Fixes #123". Это поможет нам решить тикеты(tickets) при объединение в  ```master```.
+   - Если конкретный commit связан с проблемой(issue), пожалуйста добавьте ссылку. Например "See #123", или "Fixes #123". Это поможет нам решить тикеты(tickets) при объединение(merge) в  ```master```.
    - В общем, commit'ы должны быть [atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) и отличия (diffs) должны быть легко читаемые. Поэтому постарайтесь не смешивать исправления форматирования с другими commit'ами.
    - Содержание pull request должно содержать точное описание того, что делает исправление и предоставлять обоснование\доводы этого исправления (при необходимости). Вы должны включить ссылки на любые обсуждения, такие как другие тикеты (tickets) или чаты в IRC.
 
@@ -27,7 +29,7 @@
 
 1. Предложение начинает диалог
 2. Предложение показывает, что контрибьютор уважает вклад всех участников проекта
-3. Предложение позволяет участнику безшовно войти в открытый форум
+3. Предложение позволяет участнику прозрачно войти в открытое публичное обсуждение
 4. Предложение сберегает время, если участник работает над похожей фукцией\проблемой
 5. Предложение предотвращает катастрофы и казусы или позволяет участникам подготовится к катастрофам и казусам.
 
@@ -55,98 +57,98 @@ You should have received a copy of the GNU General Public License along with thi
 
 ## Цели
 
-C4 означает предоставление многоразовой оптимальнйо модели взаимодействия для проектов с открытым исходным кодом. И имеет следующие специфичные цели:
+C4 означает предоставление многоразовой оптимальной модели взаимодействия для проектов с открытым исходным кодом. И имеет следующие специфичные цели:
 
-- Максимально маштабировать и разнообразить сообщество вокруг проекта, уменьшив сложность для новых Контрибьютеров и расширив модель участия с положительными отзывами;
-- To relieve dependencies on key individuals by separating different skill sets so that there is a larger pool of competence in any required domain;
-- To allow the project to develop faster and more accurately, by increasing the diversity of the decision making process;
-- To support the natural life cycle of project versions from experimental through to stable, by allowing safe experimentation, rapid failure, and isolation of stable code;
-- To reduce the internal complexity of project repositories, thus making it easier for Contributors to participate and reducing the scope for error;
-- To enforce collective ownership of the project, which increases economic incentive to Contributors and reduces the risk of hijack by hostile entities.
+- Максимально маштабировать и разнообразить сообщество вокруг проекта, уменьшив сложность для новых контрибьюторов и расширив модель участия с положительными отзывами;
+- Освободить зависимости от ключевых лиц, выделив разные наборы навыков, чтобы в любой требуемой области существовал более широкий круг компетенций;
+- Позволить проекту развиваться быстрее и точнее, увеличивая разнообразие процесса принятия решений;
+- Поддерживать естественный жизненный цикл версий проекта от экспериментального до стабильного, позволяя безопасное экспериментирование, быстрый сбой и изоляцию стабильного кода;
+- Уменьшить внутреннюю сложность репозиториев проекта, тем самым облегчая участие контрибьюторов и уменьшая область для ошибок; 
+- Обеспечить коллективное владение проектом, что увеличивает экономический стимул для контрибьюторов и снижает риск похищения со стороны враждебных организаций.
 
-## Design
+## Дизайн
 
-### Preliminaries
+### Предварительные замечания
 
-- The project SHALL use the git distributed revision control system.
-- The project SHALL be hosted on github.com or equivalent, herein called the "Platform".
-- The project SHALL use the Platform issue tracker.
-- The project SHOULD have clearly documented guidelines for code style.
-- A "Contributor" is a person who wishes to provide a patch, being a set of commits that solve some clearly identified problem.
-- A "Maintainer" is a person who merges patches to the project. Maintainers are not developers; their job is to enforce process.
-- Contributors SHALL NOT have commit access to the repository unless they are also Maintainers.
-- Maintainers SHALL have commit access to the repository.
-- Everyone, without distinction or discrimination, SHALL have an equal right to become a Contributor under the terms of this contract.
+- Проект ДОЛЖЕН использовать систему управления распределенными версиями git.
+- Проект ДОЛЖЕН быть размещен на github.com или его эквиваленте, называемом здесь «Платформа».
+- Проект ДОЛЖЕН использовать  issue tracker платформы.
+- Проект ДОЛЖЕН иметь четко документированные рекомендации по стилю кода.
+- «Участник(контрибьютор)» - это человек, который хочет предоставить патч, являющийся набором коммитов, которые решают некоторые четко определенные проблемы.
+- "Сопровождающий(Maintainer)" - это человек, который объединяет(merge) патчи в проекте. Сопровождающие не являются разработчиками; их работа заключается в обеспечении соблюдения процесса.
+- Участники(контрибьюторы) НЕ ДОЛЖНЫ иметь commit доступ к репозиторию, если они не являются также Сопровождающими(Maintainers). 
+- Сопровождающие(Maintainers) ДОЛЖНЫ иметь commit доступ к репозиторию
+- Любой, без различия или дискриминации, ДОЛЖЕН иметь равное право стать Участником(контрибьютором) в соответствии с условиями этого контракта.
 
-### Licensing and Ownership
+### Лицензирование и собственность
 
-- The project SHALL use a share-alike license, such as the GPLv3 or a variant thereof (LGPL, AGPL), or the MPLv2.
-- All contributions to the project source code ("patches") SHALL use the same license as the project.
-- All patches are owned by their authors. There SHALL NOT be any copyright assignment process.
-- The copyrights in the project SHALL be owned collectively by all its Contributors.
-- Each Contributor SHALL be responsible for identifying themselves in the project Contributor list.
+- Проект ДОЛЖЕН использовать лицензию на основе общего доступа, такую как GPLv3 или ее вариант (LGPL, AGPL) или MPLv2.
+- Все вклады в исходный код проекта («патчи») ДОЛЖНЫ использовать ту же лицензию, что и проект.
+- Все патчи принадлежат их авторам. Там НЕ будет никакого процесса назначения авторских прав.
+- Авторские права в проекте ДОЛЖНЫ принадлежать всем его контрибьюторам.
+- Каждый участник ДОЛЖЕН быть ответственным за идентификацию себя в списке участников проекта.
 
-### Patch Requirements
+### Требования к патчу
 
-- Maintainers and Contributors MUST have a Platform account and SHOULD use their real names or a well-known alias.
-- A patch SHOULD be a minimal and accurate answer to exactly one identified and agreed problem.
-- A patch MUST adhere to the code style guidelines of the project if these are defined.
-- A patch MUST adhere to the "Evolution of Public Contracts" guidelines defined below.
-- A patch SHALL NOT include non-trivial code from other projects unless the Contributor is the original author of that code.
-- A patch MUST compile cleanly and pass project self-tests on at least the principle target platform.
-- A patch commit message SHOULD consist of a single short (less than 50 character) line summarizing the change, optionally followed by a blank line and then a more thorough description.
-- A "Correct Patch" is one that satisfies the above requirements.
+- Сопровождающие и участники должны иметь учетную запись платформы и ДОЛЖНЫ использовать свои настоящие имена или известный псевдоним.
+- Патч ДОЛЖЕН быть минимальным и точным ответом ровно на одну идентифицированную и согласованную проблему.
+- Патч ДОЛЖЕН придерживаться правил стиля кода проекта, если они определены.
+- Патч ДОЛЖЕН придерживаться руководящих принципов «Эволюция общественных контрактов», определенных ниже.
+- Патч НЕ ДОЛЖЕН включать нетривиальный код из других проектов, если только контрибьютор не является изначальным автором этого кода.
+- Патч ДОЛЖЕН компилироваться и проходить самотестирование проекта, по крайней мере, на основной целевой платформе.
+- Комментарию commit'а патча СЛЕДУЕТ состоять из одной короткой (менее 50 символов) строки, суммирующей изменение, опционально сопровождаемую пустой строкой, а затем более подробным описанием.
+- «Правильный патч» - это тот, который удовлетворяет вышеуказанным требованиям.
 
-### Development Process
+### Процесс разработки
 
-- Change on the project SHALL be governed by the pattern of accurately identifying problems and applying minimal, accurate solutions to these problems.
-- To request changes, a user SHOULD log an issue on the project Platform issue tracker.
-- The user or Contributor SHOULD write the issue by describing the problem they face or observe.
-- The user or Contributor SHOULD seek consensus on the accuracy of their observation, and the value of solving the problem.
-- Users SHALL NOT log feature requests, ideas, suggestions, or any solutions to problems that are not explicitly documented and provable.
-- Thus, the release history of the project SHALL be a list of meaningful issues logged and solved.
-- To work on an issue, a Contributor SHALL fork the project repository and then work on their forked repository.
-- To submit a patch, a Contributor SHALL create a Platform pull request back to the project.
-- A Contributor SHALL NOT commit changes directly to the project.
-- If the Platform implements pull requests as issues, a Contributor MAY directly send a pull request without logging a separate issue.
-- To discuss a patch, people MAY comment on the Platform pull request, on the commit, or elsewhere.
-- To accept or reject a patch, a Maintainer SHALL use the Platform interface.
-- Maintainers SHOULD NOT merge their own patches except in exceptional cases, such as non-responsiveness from other Maintainers for an extended period (more than 1-2 days).
-- Maintainers SHALL NOT make value judgments on correct patches.
-- Maintainers SHALL merge correct patches from other Contributors rapidly.
-- The Contributor MAY tag an issue as "Ready" after making a pull request for the issue.
-- The user who created an issue SHOULD close the issue after checking the patch is successful.
-- Maintainers SHOULD ask for improvements to incorrect patches and SHOULD reject incorrect patches if the Contributor does not respond constructively.
-- Any Contributor who has value judgments on a correct patch SHOULD express these via their own patches.
-- Maintainers MAY commit changes to non-source documentation directly to the project.
+- Изменения в проекте ДОЛЖНЫ регулироваться шаблоном точной идентификации проблем и применения минимальных точных решений этих проблем.
+- Чтобы запросить изменения, пользователь ДОЛЖЕН зарегистрировать проблему в трее на платформе.
+- Пользователь или Контрибьютор ДОЛЖНЫ написать проблему, описав проблему, с которой они сталкиваются или наблюдают.
+- Пользователь или контрибьютор ДОЛЖНЫ стремиться к консенсусу относительно точности их наблюдения и ценности решения проблемы.
+- Пользователи НЕ СЛЕДУЕТ регистрировать запросы функций, идеи, предложения или любые решения проблем, которые явно не документированы и не доказуемы.
+- Таким образом, история выпуска проекта ДОЛЖНА быть списком значимых проблем, регистрируемых и решаемых.
+- Чтобы работать над проблемой, участник ДОЛЖЕН скопировать(fork) репозиторий проекта, а затем работать в своей копии репозитория.
+- Чтобы отправить патч, участник ДОЛЖЕН создать pull request Платформы обратно в проект.
+- Участник не должен вносить изменения непосредственно в проект.
+- Если Платформа реализует  pull requests в качестве проблем(issues), Участник МОЖЕТ непосредственно отправить pull request без регистрации отдельной проблемы(issue).
+- Чтобы обсудить патч, люди МОГУТ комментировать pull request платформы, commit или в любом другом месте.
+- Чтобы принять или отклонить патч, Maintainer ДОЛЖЕН использовать интерфейс платформы.
+- Сопровождающие НЕ ДОЛЖНЫ объединять(merge) свои собственные исправления, за исключением особых случаев, таких как невосприимчивость других Сопровождающих в течение длительного периода (более 1-2 дней).
+- Сопровождающие НЕ ДОЛЖНЫ делать оценочные суждения относительно правильных патчей.
+- Сопровождающим СЛЕДУЕТ быстро объединять(merge) исправления от других участников.
+- Участник может отметить проблему как «Готовую» после pull request для этой проблемы.
+- Пользователь, создавший проблему, ДОЛЖЕН закрыть проблему после проверки исправления.
+- Сопровождающим СЛЕДУЕТ просить исправлять неправильные патчи и СЛЕДУЕТ отклонять неправильные патчи, если Участник не отвечает конструктивно.
+- Любой участник, у которого есть оценочные суждения на правильном патче, ДОЛЖЕН выражать их через свои собственные патчи.
+- Сопровождающие МОГУТ вносить изменения в документацию, не являющуюся исходным кодом, непосредственно в проект.
 
-### Creating Stable Releases
+### Создание стабильных выпусков
 
-- The project SHALL have one branch ("master") that always holds the latest in-progress version and SHOULD always build.
-- The project SHALL NOT use topic branches for any reason. Personal forks MAY use topic branches.
-- To make a stable release someone SHALL fork the repository by copying it and thus become maintainer of this repository.
-- Forking a project for stabilization MAY be done unilaterally and without agreement of project maintainers.
-- A stabilization project SHOULD be maintained by the same process as the main project.
-- A patch to a stabilization project declared "stable" SHALL be accompanied by a reproducible test case.
+- Проект ДОЛЖЕН иметь одну ветку ("master"), которая всегда содержит последнюю версию, и которая всегда ДОЛЖНА собираться без ошибок.
+- Проект НЕ ДОЛЖЕН использовать тему(topic) веток по какой-либо причине. Личные копии(fork) МОГУТ использовать тему веток.
+- Чтобы сделать стабильную версию, кто-то ДОЛЖЕН скопировать(fork) репозиторий, скопировав его и тем самым став обслуживающим(maintainer) этого репозитория. 
+- Копирование проекта для стабилизации МОЖЕТ быть сделано в одностороннем порядке и без согласования с разработчиками проекта
+- Проект стабилизации ДОЛЖЕН поддерживаться таким же процессом, что и основной проект.
+- Патч к проекту стабилизации, объявленный "stable", ДОЛЖЕН сопровождаться воспроизводимым тестовым вариантом.
 
-### Evolution of Public Contracts
+### Изменение общественных контрактов
 
-- All Public Contracts (APIs or protocols) SHALL be documented.
-- All Public Contracts SHOULD have space for extensibility and experimentation.
-- A patch that modifies a stable Public Contract SHOULD not break existing applications unless there is overriding consensus on the value of doing this.
-- A patch that introduces new features to a Public Contract SHOULD do so using new names.
-- Old names SHOULD be deprecated in a systematic fashion by marking new names as "experimental" until they are stable, then marking the old names as "deprecated".
-- When sufficient time has passed, old deprecated names SHOULD be marked "legacy" and eventually removed.
-- Old names SHALL NOT be reused by new features.
-- When old names are removed, their implementations MUST provoke an exception (assertion) if used by applications.
+- Все публичные контракты (API или протоколы) ДОЛЖНЫ документироваться.
+- Все публичные контракты ДОЛЖНЫ иметь место для расширяемости и экспериментов.
+- Патч, который изменяет стабильный публичный контракт, НЕ ДОЛЖЕН нарушать существующие приложения, если не будет преобладающего консенсуса относительно ценности этого.
+- Патч, который вводит новые функции в открытый контракт, ДОЛЖЕН делать это с использованием новых имен.
+- Старые имена ДОЛЖНЫ устаревать систематически, отмечая новые имена как "experimental", пока они не станут стабильными, а затем отмечают старые имена как "deprecated".
+- Когда прошло достаточно времени, старые устаревшие имена ДОЛЖНЫ быть отмечены  "legacy" и в конечном итоге удалены.
+- Старые имена НЕ ДОЛЖНЫ повторно использоваться новыми функциями.
+- Когда старые имена удаляются, их реализации ДОЛЖНЫ провоцировать исключение (утверждение), если оно используется приложениями.
 
 ### Управление проектами
 
-- The project founders SHALL act as Administrators to manage the set of project Maintainers.
-- The Administrators SHALL ensure their own succession over time by promoting the most effective Maintainers.
-- A new Contributor who makes a correct patch SHALL be invited to become a Maintainer.
-- Administrators MAY remove Maintainers who are inactive for an extended period of time, or who repeatedly fail to apply this process accurately.
-- Administrators SHOULD block or ban "bad actors" who cause stress and pain to others in the project. This should be done after public discussion, with a chance for all parties to speak. A bad actor is someone who repeatedly ignores the rules and culture of the project, who is needlessly argumentative or hostile, or who is offensive, and who is unable to self-correct their behavior when asked to do so by others.
+- Учредители проекта ДОЛЖНЫ выступать в качестве Администраторов для управления составом Сопровождающих(Maintainers)
+- Администраторы ДОЛЖНЫ обеспечить свою собственную преемственность в течении времени, продвигая наиболее эффективных Сопровождающих(Maintainers).
+- Новый Котрибьютор, который делает правильный патч, должен быть приглашен стать Сопровождающим(Maintainer).
+- Администраторы МОГУТ удалять Сопровождающих(Maintainers), которые неактивны в течение длительного периода времени, или которые неоднократно не соблюдали строго этот процесс.
+- Администраторы ДОЛЖНЫ блокировать или банить «плохих актеров», которые вызывают стресс и боль у других в проекте. Это должно быть сделано после публичного обсуждения, с возможностью для всех сторон высказаться. Плохой актер - это тот, кто неоднократно игнорирует правила и культуру проекта, который бесполезно аргументирует или враждебен, или кто оскорбителен, и который не может самостоятельно исправлять свое поведение, когда его просят сделать это другие.
 
 # Процесс управления
 
