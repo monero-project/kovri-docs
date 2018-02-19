@@ -30,7 +30,7 @@
 
 ## Шаг 2. Установить зависимости
 
-#### Примечание: в случае использования контейнеров (таких как Docker и Snapcraft), смотри [Руководство пользователя](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/user_guide.md)
+#### Примечание: в случае использования контейнеров (таких как Docker и Snapcraft), смотри [Руководство пользователя](https://github.com/monero-project/kovri-docs/blob/master/i18n/ru/user_guide.md)
 
 ### Ubuntu Xenial (16.04)
 Требуемые зависимости:
