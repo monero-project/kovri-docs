@@ -1,45 +1,45 @@
-## Quality Assurance
-- View our [Quality Assurance](https://github.com/monero-project/kovri-docs/blob/master/i18n/ru/quality.md) guide to get an idea of proposed workflow
+## Гарантия качества
+- Смотрите наше руководство [Quality Assurance](https://github.com/monero-project/kovri-docs/blob/master/i18n/ru/quality.md), чтобы получить представление о предлагаемом процессе работы.
 
-## Compliance
-- We aim for complete C++11/14 compliance; feel free to use this to your advantage with your work
-- It is also highly recommended to use the standard library and dependency libraries when possible
+## Соглашение
+- Мы стремимся к полному соблюдению соглашений C++11/14; без колебаний используйте их в своей работе
+- Также крайне рекомендуется использование стандартной библиотеки и библиотек зависимости, когда это возможно
 
-## Sending your work
-To contribute your work, please proceed with the following:
+## Отправка вашей работы
+Чтобы внести свой вклад выполните следующее:
 
-1. Fork Kovri
-2. Read our [style guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/ru/style.md)
-3. Create a [topic branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
-4. [**Sign**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) your commit(s)
-5. Send a pull-request to branch ```master```
-   - We currently do not have any tags as we are in pre-alpha. For now, you can base your work off of master.
-   - Commit messages should be verbose by default, consisting of a short subject line (50 chars max), a blank line, and detailed explanatory text as separate paragraph(s) - unless the title alone is self-explanatory.
-   - Commit title should prepend class or aspect of project. For example, "HTTPProxy: implement User-Agent scrubber. Fixes #193." or "Garlic: fix uninitialized padding in ElGamalBlock".
-   - If a particular commit references another issue, please add a reference. For example "See #123", or "Fixes #123". This will help us resolve tickets when we merge into ```master```.
-   - In general, commits should be [atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) and diffs should be easy to read. For this reason, please try to not mix formatting fixes with non-formatting commits.
-   - The body of the pull request should contain an accurate description of what the patch does and provide justification/reasoning for the patch (when appropriate). You should include references to any discussions such as other tickets or chats on IRC.
+1. Скопируйте (fork) Kovri
+2. Прочтите наше [руководство по стилю](https://github.com/monero-project/kovri-docs/blob/master/i18n/ru/style.md)
+3. Создайте [topic branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+4. [**Подпишите**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) ваш(и) commit
+5. Отправьте pull-request в ветку ```master```
+   - На данный момент у нас нет никаких тегов, поскольку мы находимся в стадии pre-alpha. Пока вы можете работать с веткой master
+   - Комментарии к commit должны быть подробными, состоящими и короткой строки темы (50  символов максимум), пустой строки и детального пояснительного текста разбитого на абзацы - в случае если тема не является достаточным и очевидным объяснением.
+   - Заголовок commit'а должен включать класс или аспект проекта. Например, "HTTPProxy: implement User-Agent scrubber. Fixes #193." или "Garlic: fix uninitialized padding in ElGamalBlock".
+   - Если конкретный commit связан с проблемой(issue), пожалуйста добавьте ссылку. Например "See #123", или "Fixes #123". Это поможет нам решить тикеты(tickets) при объединение в  ```master```.
+   - В общем, commit'ы должны быть [atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) и отличия (diffs) должны быть легко читаемые. Поэтому постарайтесь не смешивать исправления форматирования с другими commit'ами.
+   - Содержание pull request должно содержать точное описание того, что делает исправление и предоставлять обоснование\доводы этого исправления (при необходимости). Вы должны включить ссылки на любые обсуждения, такие как другие тикеты (tickets) или чаты в IRC.
 
-## Proposals
-To contribute a proposal, please review our [open issues](https://github.com/monero-project/kovri/issues) for existing proposals. If what you propose is not there, then [open a new issue](https://github.com/monero-project/kovri/issues/new).
+## Предложения (Proposals)
+Перед внесением предложения, пожалуйста просмотрите [open issues](https://github.com/monero-project/kovri/issues) на предмет существующих предложений. Если вашего предложения там нет, то [создайте новое](https://github.com/monero-project/kovri/issues/new).
 
-Even though our C4 dictates that we merge everything, we ask that you open a proposal for the following reasons:
+Несмотря на то что наш C4 диктует нам объединять(merge) все, мы просим вас создать предложение по следующим причинам:
 
-1. A proposal open up communication
-2. A proposal show that the contributor respects the input of all project collaborators
-3. A proposal allows seamless collaborator input in an open forum
-4. A proposal saves time if a collaborator is working on a similar feature/issue
-5. A proposal prevents catasrophes and mishaps or allows collaborators to prepare for catasrophes and mishaps
+1. Предложение начинает диалог
+2. Предложение показывает, что контрибьютор уважает вклад всех участников проекта
+3. Предложение позволяет участнику безшовно войти в открытый форум
+4. Предложение сберегает время, если участник работает над похожей фукцией\проблемой
+5. Предложение предотвращает катастрофы и казусы или позволяет участникам подготовится к катастрофам и казусам.
 
-*Not* opening a proposal will *not* prevent you from contributing; we will merge what you PR - but a proposal is highly recommended.
+*Не* открытие предложения(proposal) *не* помешает вам внести вклад; мы объеденим(merge) ваш PR - но предложение настоятельно рекомендуется.
 
 ## TODO's
-- Do a quick search in the codebase for ```TODO(unassigned):``` and/or pick a ticket and start patching!
-- If you create a TODO, assign it to yourself or write in ```TODO(unassigned):```
+- Сделай беглый поиск в кодовой базе ```TODO(unassigned):``` и\или возьми тикет в работу и начни исправление!
+- Если создаешь TODO, назначь его себе или напиши ```TODO(unassigned):```
 
-# [Code of Conduct (22/C4.1)](http://rfc.zeromq.org/spec:22)
+# [Правила поведения (22/C4.1)](http://rfc.zeromq.org/spec:22)
 
-## License
+## Лицензия
 
 Copyright (c) 2009-2015 Pieter Hintjens.
 
@@ -49,15 +49,15 @@ This Specification is distributed in the hope that it will be useful, but WITHOU
 
 You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses>.
 
-## Language
+## Язык
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
+Слова "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", и "OPTIONAL" в этом документе должны быть интерпретированы как описано в RFC 2119.
 
-## Goals
+## Цели
 
-C4 is meant to provide a reusable optimal collaboration model for open source software projects. It has these specific goals:
+C4 означает предоставление многоразовой оптимальнйо модели взаимодействия для проектов с открытым исходным кодом. И имеет следующие специфичные цели:
 
-- To maximize the scale and diversity of the community around a project, by reducing the friction for new Contributors and creating a scaled participation model with strong positive feedbacks;
+- Максимально маштабировать и разнообразить сообщество вокруг проекта, уменьшив сложность для новых Контрибьютеров и расширив модель участия с положительными отзывами;
 - To relieve dependencies on key individuals by separating different skill sets so that there is a larger pool of competence in any required domain;
 - To allow the project to develop faster and more accurately, by increasing the diversity of the decision making process;
 - To support the natural life cycle of project versions from experimental through to stable, by allowing safe experimentation, rapid failure, and isolation of stable code;
@@ -140,7 +140,7 @@ C4 is meant to provide a reusable optimal collaboration model for open source so
 - Old names SHALL NOT be reused by new features.
 - When old names are removed, their implementations MUST provoke an exception (assertion) if used by applications.
 
-### Project Administration
+### Управление проектами
 
 - The project founders SHALL act as Administrators to manage the set of project Maintainers.
 - The Administrators SHALL ensure their own succession over time by promoting the most effective Maintainers.
@@ -148,6 +148,6 @@ C4 is meant to provide a reusable optimal collaboration model for open source so
 - Administrators MAY remove Maintainers who are inactive for an extended period of time, or who repeatedly fail to apply this process accurately.
 - Administrators SHOULD block or ban "bad actors" who cause stress and pain to others in the project. This should be done after public discussion, with a chance for all parties to speak. A bad actor is someone who repeatedly ignores the rules and culture of the project, who is needlessly argumentative or hostile, or who is offensive, and who is unable to self-correct their behavior when asked to do so by others.
 
-# Governance Process
+# Процесс управления
 
 ![Governance Process](https://getmonero.org/blog/assets/2015-year-in-review/governance-process.jpg)
