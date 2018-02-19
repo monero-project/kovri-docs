@@ -1,6 +1,6 @@
 # Стиль
 1. Прочтите [Руководство по стилю C++ от Google](https://google.github.io/styleguide/cppguide.html) (в частности о не-форматированном стиле)
-   - Если програмируете на bash, прочтите [Google's Shell Style Guide](https://github.com/google/styleguide/blob/gh-pages/shell.xml)
+   - Если программируете на bash, прочтите [Google's Shell Style Guide](https://github.com/google/styleguide/blob/gh-pages/shell.xml)
 2. Выполните [clang-format](http://clang.llvm.org/docs/ClangFormat.html) с ```-style=file``` (который использует предоставленные нами [.clang-format](https://github.com/monero-project/kovri/blob/master/.clang-format))
 ```bash
 $ cd kovri/ && clang-format -i -style=file src/path/to/my/file
@@ -24,8 +24,8 @@ $ cd kovri/ && cpplint src/path/to/my/file && [edit file manually to apply fixes
 
 - Избегайте предварение в смешанном случае (mixed-case) ```k``` и MACRO_TYPE для всех констант
 - Используйте три слеша ```/// C++ comments``` при документировании для Doxygen
-- Пробуйте документировать всю работу для Doxygen по мере выполнения
-- Если анонимность вызывает беспокойство, попробуйте имитировать стилем исходного автора
+- Старайтесь документировать всю работу для Doxygen по мере выполнения
+- Если анонимность вызывает беспокойство, попробуйте имитировать стиль изначального автора
 
 ## Дополнительные проверки
 1. [cppdep](https://github.com/rakhimov/cppdep)
