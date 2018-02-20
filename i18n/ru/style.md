@@ -1,68 +1,35 @@
-1. Read [Google's C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
-2. Run [cpplint](https://pypi.python.org/pypi/cpplint/)
-```bash
-$ cpplint src/path/to/my/file
-```
-3. Run [clang-format](http://llvm.org/releases/3.8.0/tools/clang/docs/ClangFormat.html) with ```-style=file``` using provided [.clang-format](https://github.com/monero-project/kovri/blob/master/.clang-format)
+# Стиль
+1. Прочтите [Руководство по стилю C++ от Google](https://google.github.io/styleguide/cppguide.html) (в частности о не-форматированном стиле)
+   - Если программируете на bash, прочтите [Google's Shell Style Guide](https://github.com/google/styleguide/blob/gh-pages/shell.xml)
+2. Выполните [clang-format](http://clang.llvm.org/docs/ClangFormat.html) с ```-style=file``` (который использует предоставленные нами [.clang-format](https://github.com/monero-project/kovri/blob/master/.clang-format))
 ```bash
 $ cd kovri/ && clang-format -i -style=file src/path/to/my/file
 ```
-
-## Here's what's currently not caught by clang-format and differs from Google's proposed C++ style
-
-- Keep with codebase's present (vertical) style for consistency
-- Newline break all function parameters for consistency across codebase
-- When function args newline break, ensure that *every* arg indent is 4 spaces
-
-```cpp
-  /// @brief Constructs SSU header with pre-determined payload type
-  explicit SSUHeader(
-      SSUPayloadType type);
-
-  /// @brief Constructs SSU header with pre-determined payload type and content
-  /// @note Assumes content is valid
-  /// @param SSUPayloadType SSU payload type
-  /// @param mac Pointer to header's MAC material
-  /// @param iv Pointer to header's IV material
-  /// @param time Header's timestamp
-  SSUHeader(
-      SSUPayloadType type,
-      std::uint8_t* mac,
-      std::uint8_t* iv,
-      std::uint32_t time);
-
-  /// @brief Sets MAC from appointed position within header
-  /// @note Assumes content is valid (based on position)
-  void SetMAC(
-      std::uint8_t* mac);
-
-  /// @brief Gets acquired MAC after it has been set when parsed
-  /// @return Pointer to MAC material
-  std::uint8_t* GetMAC() const;
+3. Выполните [cpplint](https://github.com/google/styleguide/tree/gh-pages/cpplint) (который использует предоставленные нами [CPPLINT.cfg](https://github.com/monero-project/kovri/blob/master/CPPLINT.cfg)) чтобы отловить любые проблемы пропущенные clang-format
+```bash
+$ cd kovri/ && cpplint src/path/to/my/file && [edit file manually to apply fixes]
 ```
 
-- Expressions can be broken before operators if:
-  - The line is greater that 80 columns
-  - Doing so aids in better documentation
+### Plugins
 
-```cpp
-if (this is a very long expr1
-    && this is a very long expr2
-    && this is also a very long expr3)
-  DoSomeThing();
-```
+- Vim интеграция
+  - [clang-format](http://clang.llvm.org/docs/ClangFormat.html#vim-integration)
+  - [clang-format ubuntu 16.04 vim workaround](http://stackoverflow.com/questions/39490082/clang-format-not-working-under-gvim)
+  - [cpplint.vim](https://github.com/vim-syntastic/syntastic/blob/master/syntax_checkers/cpp/cpplint.vim)
+- Emacs интеграция
+  - [clang-format](http://clang.llvm.org/docs/ClangFormat.html#emacs-integration) + [clang-format.el](https://llvm.org/svn/llvm-project/cfe/trunk/tools/clang-format/clang-format.el)
+  - [flycheck-google-cpplint.el](https://github.com/flycheck/flycheck-google-cpplint)
 
-```cpp
-return SSUPacket::GetSize()
-       + static_cast<std::size_t>(SSUSize::DHPublic)  // Y to complete the DH agreement
-       + 1 + m_AddressSize  // 1 byte address size, address size,
-       + 2 + 4 + 4          // Port size (2 bytes), relay tag size, time size
-       + m_SignatureSize;   // Signature size
-```
+## Вот то, что в настоящее время не попало в clang-format и отличается от предлагаемого C ++ стиля Google
 
-- Class member variables should be prepended with ```m_```
-- Don't use "cheap function" names; always use MixedCaseFunctions()
-- Avoid prepended mixed-case ```k``` and MACRO_TYPE for all constants
-- Use Doxygen three-slash ```/// C++ comments``` when documenting for Doxygen
-- Document all your work for Doxygen as you progress
-- If anonymity is a concern, try to blend in with a present contributor's style
+- Избегайте предварение в смешанном случае (mixed-case) ```k``` и MACRO_TYPE для всех констант
+- Используйте три слеша ```/// C++ comments``` при документировании для Doxygen
+- Старайтесь документировать всю работу для Doxygen по мере выполнения
+- Если анонимность вызывает беспокойство, попробуйте имитировать стиль изначального автора
+
+## Дополнительные проверки
+1. [cppdep](https://github.com/rakhimov/cppdep)
+   для зависимости компонентов, физической изоляции и включения проверок.
+2. [cppcheck](https://github.com/danmar/cppcheck/) для статического анализа
+   (в дополнение к Coverity).
+3. [lizard](https://github.com/terryyin/lizard) для проверки сложности кода.
