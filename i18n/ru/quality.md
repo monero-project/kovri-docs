@@ -1,50 +1,54 @@
-The following is a proposed model for QA workflow. While linear in nature, any phase can be worked on individually if needed - as long as all phases are eventually addressed.
+# Гаранития качества
 
-## Phase 1: Basic Review
+Ниже представлена предполагаемя модель рабочего процесса для QA. Поскольку процесс носит линейный характер любая фаза может быть обработана отдельно при необходимости - при условии, что все фазы в итоге будут пройдены.
 
-- All code must adhere to our contributing guidelines
-- Note areas that need improving (mentally or in code)
-- Create TODO's and assign if possible
+## Фаза 1: Базовый обзор (review)
 
-## Phase 2: Specification Review /  Implementation / Code Documentation
+- Просмотрите открытые проблемы в нашем [Issue Tracker](https://github.com/monero-project/kovri/issues/)
+- Просмотрите наш [Vulnerability Response Process](https://github.com/anonimal/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md)
+- Весь код должен соответствовать нашим рекомендациям
+- Обратите внимание на области, которые нуждаются в улучшении (умственно или в коде)
+- Создайте TODO и назначьте его, если возможно
 
-- Complete specification review on a per module basis; e.g., Streaming, I2PControl, etc.
-  - Code must be in-line with essential parts of the specification that will maintain the same (or better) level of anonymity that java I2P provides
-  - Refactor/implement/patch when/where needed
-- Ensure C++11/14 compliant implementation
-  - Review phase 2 if needed
-- Resolve all related TODO's
-- Document code as much as possible with inline comments and Doxygen
-  - Code should be understood by novice to experienced coders
-  - Code should guide the reader to a better understanding of I2P
-    - I2P is very complex so our code should act as sovereign replacement of spec documentation and not simply as a supplement (this can be a tedious objective but very rewarding in terms of maintenance and software lifespan)
+## Фаза 2: Обзор спецификации /  Реализации / Документации кода
 
-## Phase 3: Crypto Review / Security auditing
+- Полный обзор спецификации для каждого модуля; например, Streaming, I2PControl и т.д.
+  - Код должен быть в соответствии с основными частями спецификации, которые будут поддерживать тот же (или лучший) уровень анонимности, который предоставляет java I2P
+  - Рефакторинг/реализация/патч, когда/где это необходимо
+- Обеспечьте совместимость с C++ 11/14
+  - Просмотрите фазу 2, если необходимо
+- Решите все связанные TODO
+- Документируйте код настолько, насколько это возможно с встроенными комментариями и Doxygen
+  - Код должен быть понятен начинающим и опытным программистам
+  - Код должен помочь читателю лучше понять I2P
+    - I2P очень сложен, поэтому наш код должен выступать в качестве превосходной замены документации спецификации, а не быть просто в качестве дополнения (это может быть утомительно, но очень полезно с точки зрения обслуживания и времени жизни програмного обеспечения)
 
-- Ensure that crypto is up-to-date and properly implemented
-- Establish every vector for known exploitation
-  - Keep these vectors in mind when writing tests
-- Break Kovri every which-way possible
-  - Fix what you break
-- Always use trustworthy, well-written libraries when possible
-  - Avoid homebrewed, ad-hoc, *I'm sure I know better than the community* type of code
-- Seek a 2nd (or more) opinion(s) from colleagues before proceeding to next phase
+## Фаза 3: Криптоанализ / Аудит безопасности
 
-## Phase 4: Bug squashing / Tests / Profiling
+- Убедитесь, что криптография обновлена и правильно реализована
+- Обоснуйте каждый вектор для известной эксплуатации
+  - Учитывайте эти векторы при написании тестов
+- Нарушьте работу Kovri всеми возможными путями
+  - Исправьте то, что вы сломаете
+- Всегда используйте надежные, хорошо написанные библиотеки, если это возможно.
+  - Избегайте доморощенного, необоснованного, *Я уверен, что знаю лучше, чем сообщество* варианта кода
+- Ищите 2 (или более) мнения от коллег, прежде чем переходить к следующему этапу
 
-- Resolve priority bugs/issues
-- Write unit-tests tests for every module
-  - Run tests. Run them again
-  - Full review of test results. Patch if needed. Refactor as necessary
-- Ensure that automation is running on a regular basis
+## Фаза 4: Bug squashing / Тесты / Профилирование
+
+- Устранение приоритетных ошибок/проблем
+- Пишите unit-tests тесты для каждого модуля
+  - Запустите тесты. Еще раз
+  - Полный обзор результатов испытаний. При необходимости пропатчить (patch). Рефакторинг по мере необходимости
+- Убедитесь, что автоматизация работает на регулярной основе
   - valgrind, doxygen, clang-format
-  - Patch if needed, refactor as necessary
+  - При необходимости пропатчить (patch). Рефакторинг по мере необходимости
 
-## Phase 5: Confer
+## Фаза 5: Обсуждения
 
-- Confer with colleagues and the community
-  - Conferring should be done publicly via ticket, meetings, and/or IRC
-- Accept all feedback and, in response, produce tangible results
-- If satisfied, proceed with next phase, else repeat this phase (or start from a previous phase)
+- Консультируйтесь с коллегами и сообществом
+  - Совещание должно быть публичным, через тикет, встречу и\или IRC
+- Примите все отзывы и дайте вразумительный ответ
+- Если это выполнено, выполните следующую фазу, иначе повторите эту фазу (или начните с предыдущей фазы)
 
-## Phase 6: Repeat the cycle from the beginning
+## Фаза 6: Повторите цикл с самого начала
