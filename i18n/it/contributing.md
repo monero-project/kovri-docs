@@ -15,13 +15,13 @@ Per inviare i tuoi contributi, ti chiediamo di procedere con la seguente modalit
 5. Invia una pull-request al branch ```master```
    - Poichè siamo in una fase pre-alfa non abbiamo tag. Per il momento, puoi sviluppare il tuo lavoro al di fuori del master.
    - I commit devono essere verbose di default, costituiti da una breve spiegazione (50 caratteri al massimo), una riga vuota, e una spiegazione dettagliata in paragrafi separati, a meno che il titolo stesso non sia già chiaro di per sé.
-   - Il titolo del commit dovrebbe iniziare con la categoria o l'aspetto del progetto. Ad esempio, "HTTPProxy: implemento dello User-Agent scrubber. Fixes #193." oppure "Garlic: fix dell'errore di avvio del padding nel ElGamalBlock".
-   - Aggiungi un riferimento nel caso in cui un commit faccia riferimento ad un altro problema. Ad esempio "Vedi #123", or "Fixe #123". Questo ci aiuterà a risolvere i ticket quando arriveranno in ```master```.
+   - Il titolo del commit dovrebbe iniziare con la categoria o l'aspetto del progetto. Ad esempio, "HTTPProxy: implementazione dello User-Agent scrubber. Fixes #193." oppure "Garlic: fix dell'errore di avvio del padding nel ElGamalBlock".
+   - Aggiungi un riferimento nel caso in cui un commit faccia riferimento ad un altro problema. Ad esempio "Vedi #123", or "Fix #123". Questo ci aiuterà a risolvere i ticket quando arriveranno in ```master```.
    - In generale, i commits devono essere [atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) e i diffs devono essere di facile lettura. Per questo motivo, ti chiediamo di non mischiare fix formattati con commit non formattati.
    - Il corpo della richiesta pull dovrebbe contenere una descrizione dettagliata del funzionamento della specifica patch e della motivazione/giustificazione per la sua introduzione (se necessaria). Dovresti includere i riferimenti relativi a qualsiasi discussione come altri ticket o chat in IRC.
 
 ## Proposte
-Prima di inviare una proposta fai riferimento a [open issues](https://github.com/monero-project/kovri/issues) per controllare se sia già presente. Nel caso in cui non ci sia procedi pure ad [open a new issue](https://github.com/monero-project/kovri/issues/new).
+Prima di inviare una proposta fai riferimento a [issue aperte](https://github.com/monero-project/kovri/issues) per controllare se sia già presente. Nel caso in cui non ci sia procedi pure ad [aprirne una nuova](https://github.com/monero-project/kovri/issues/new).
 
 Nonostante i nostri dettami C4 che prevedono di unificare il tutto, ti chiediamo di iviare una proposta per i motivi seguenti:
 
@@ -67,85 +67,85 @@ C4 ha lo scopo di fornire un modello di collaborazione ottimale utilizzabile nei
 
 ### Preliminari
 
-- Il progetto deve utilizzare il git distributed revision control system.
-- Il progetto deve essere caricato su github.com o equivalenti, chiamati "Platform".
-- Il progetto deve utilizzare il Platform issue tracker.
-- Il progetto deve avere chiaramente espresse le linee guida del codice.
+- Il progetto DEVE utilizzare il sistema di revisione di git.
+- Il progetto DEVE essere caricato su github, o altra piattaforma equivalente.
+- Il progetto DEVE utilizzare il Platform issue tracker.
+- Il progetto DEVE avere chiaramente espresse le linee guida del codice.
 - Il "Contributore" è una persona che vuole inviare una patch, un set di commit volti a risolvere un problema chiaramente identificato.
 - Un "Manutentore" è una persona che si occupa del merge delle patch. I Manutentori non sono sviluppatori; il loro compito è di rafforzare il processo.
-- I Contributori non devono avere accesso alle repository, a meno che non siano anche Manutentori.
-- I Manutentori hanno il commit di accesso alle repository.
+- I Contributori NON DEVONO avere accesso alle repository, a meno che non siano anche Manutentori.
+- I Manutentori DEVONO avere il commit di accesso alle repository.
 - Tutti, senza alcuna discriminazione o distinzione, hanno uguale diritto di diventare Contributori secondo i termini di questo contratto.
 
 ### Licenza e proprietà
 
-- Il progetto deve utilizzare una share-alike license, come la GPLv3 o una variante di questa (LGPL, AGPL), oppure la MPLv2.
-- Tutti i Contributori operanti sul codice sorgente del progetto devono utilizzare la medesima licenza.
-- Tutte le patch sono di proprietà degli autori. Non deve esserci alcuna assegnazione di copyright.
-- I copyright del progetto devono essere posseduti da tutti i contributori in maniera collettiva.
-- E' dovere di ogni contributore identificarsi all'interno della lista Contributori.
+- Il progetto DEVE utilizzare una share-alike license, come la GPLv3 o una variante di questa (LGPL, AGPL), oppure la MPLv2.
+- Tutti i Contributori operanti sul codice sorgente del progetto DEVONO utilizzare la medesima licenza.
+- Tutte le patch sono di proprietà degli autori. NON DEVE esserci alcuna assegnazione di copyright.
+- I copyright del progetto DEVONO essere posseduti da tutti i contributori in maniera collettiva.
+- Ogni contributore DEVE identificarsi all'interno della lista Contributori.
 
 ### Requisiti delle patch
 
-- Mantenitori e Contributori devono avere una account Platform e devono utilizzare i loro nomi reali oppure degli alias ben conosciuti.
-- La patch deve essere una risposta minimale ed accurata al problema identificato.
-- Il codice della patch deve attenersi alle linee guida del progetto, nel caso queste siano espresse.
-- La patch deve attenersi alle linee guida dell'"Evoluzione dei Public Contract" definite qui sotto.
-- La patch non deve contenere porzioni di codice di altri progetti, eccezione fatta nel caso il Contributore ne sia l'autore originale.
-- La patch deve compilarsi in maniera pulita e superare il project self-tests almeno nella target-platform principale.
-- Il messaggio del commit deve essere costituito da un breve commento (massimo di 50 caratteri) che riassume la modifica, con la possibilità di aggiungere una spiegazione più approfondita preceduta da una linea vuota. 
+- Mantenitori e Contributori DEVONO avere una account Platform e devono utilizzare i loro nomi reali oppure degli alias ben conosciuti.
+- La patch DEVE essere una risposta minimale ed accurata al problema identificato.
+- Il codice della patch DEVE attenersi alle linee guida del progetto, nel caso queste siano espresse.
+- La patch DEVE attenersi alle linee guida dell'"Evoluzione dei Public Contract" definite qui sotto.
+- La patch NON DEVE contenere porzioni di codice di altri progetti, eccezione fatta nel caso il Contributore ne sia l'autore originale.
+- La patch DEVE compilarsi in maniera pulita e superare il project self-tests almeno nella target-platform principale.
+- Il messaggio del commit DEVE essere costituito da un breve commento (massimo di 50 caratteri) che riassume la modifica, con la possibilità di aggiungere una spiegazione più approfondita preceduta da una linea vuota. 
 - La "patch perfetta" è quella che risponde a tutti i requisiti precedenti.
 
 ### Processo di sviluppo
 
-- I cambiamenti al progetto devono essere guidati con l'obiettivo di una precisa identificazione dei problemi e con la scelta di soluzioni minimali ed accurate.
-- Per richiedere un cambiamento, l'utente deve aprire un log del problema nell'apposita Platform.
-- L'utente o il Contributore deve cercare il consenso altrui attraverso una accurata osservazione e valutazione della modalità di risoluzione del problema.
-- L'utente o il Contributore devono descrivere il problema che hanno osservato.
-- Gli utenti non devono aprire log per richieste di funzionalità, suggerimenti, idee o soluzioni a problemi che non sono esplicitamente documentati e provati.
-- In questo modo la release history deve essere una lista di log giustificati e risolti.
-- Per lavorare alla risoluzione di un problema, il Contributore deve fare un fork alla repository e quindi lavorare su quella repository.
-- Per inviare una patch, il Contributore deve creare una Platform pull request verso il progetto principale.
-- Il Contributore non deve inviare commit di cambiamento direttamente nel progetto principale.
-- Se la Platform implementa una richiesta di pull riguardo ad un problema, il Contributore può avere la possibilità di lavorarci senza aprire un log separato.
-- Per discutere riguardo ad una patch, le persone possono commentare sulla richiesta di pull nella Platform, nel commit o in qualunque altro posto.
-- Per accettare o respingere una patch, il Manutentore deve utilizzare l'interfaccia della Platform.
-- Il Manutentore non deve fare il merge delle sue stesse patch se non in casi eccezionali, come il non ricevere alcuna risposta dagli altri Manutentori per un lungo periodo di tempo (più di 1-2 giorni).
-- I Manutentori non devono fare valutazioni alle le patch corrette.
-- I Manutentori devono fare il merge delle patch degli altri Contributori rapidamente.
-- Il Contributore può usare il tag "ready" dopo aver fatto la richiesta di pull per un problema.
-- L'utente che ha aperto un problema deve provvedere a chiuderlo dopo aver controllato che la patch sia risolutiva.
-- I Manutentori devono chiedere miglioramenti per le patch non corrette e respingerle completamente nel caso in cui il Contributore non abbia un atteggiamento costruttivo.
-- Qualunque Contributore abbia ricevuto commenti di valutazione alla sua patch corretta deve aggiungerli alla sua stessa patch.
-- I Manutentori possono inviare commit di cambiamento direttamente nel progetto.
+- I cambiamenti al progetto DEVONO essere guidati con l'obiettivo di una precisa identificazione dei problemi e con la scelta di soluzioni minimali ed accurate.
+- Per richiedere un cambiamento, l'utente DEVE aprire un log del problema nell'apposita Platform.
+- L'utente o il Contributore DEVE cercare il consenso altrui attraverso una accurata osservazione e valutazione della modalità di risoluzione del problema.
+- L'utente o il Contributore DEVONO descrivere il problema che hanno osservato.
+- Gli utenti NON DEVONO aprire log per richieste di funzionalità, suggerimenti, idee o soluzioni a problemi che non sono esplicitamente documentati e provati.
+- In questo modo la release history DEVE essere una lista di log giustificati e risolti.
+- Per lavorare alla risoluzione di un problema, il Contributore DEVE fare un fork alla repository e quindi lavorare su quella repository.
+- Per inviare una patch, il Contributore DEVE creare una Platform pull request verso il progetto principale.
+- Il Contributore NON DEVE inviare commit di cambiamento direttamente nel progetto principale.
+- Se la Platform implementa una richiesta di pull riguardo ad un problema, il Contributore PUO' avere la possibilità di lavorarci senza aprire un log separato.
+- Per discutere riguardo ad una patch, le persone POSSONO commentare sulla richiesta di pull nella Platform, nel commit o in qualunque altro posto.
+- Per accettare o respingere una patch, il Manutentore DEVE utilizzare l'interfaccia della Platform.
+- Il Manutentore NON DEVE fare il merge delle sue stesse patch se non in casi eccezionali, come il non ricevere alcuna risposta dagli altri Manutentori per un lungo periodo di tempo (più di 1-2 giorni).
+- I Manutentori NON DEVONO fare valutazioni alle le patch corrette.
+- I Manutentori DEVONO fare il merge delle patch degli altri Contributori rapidamente.
+- Il Contributore PUO' usare il tag "ready" dopo aver fatto la richiesta di pull per un problema.
+- L'utente che ha aperto un problema DEVE provvedere a chiuderlo dopo aver controllato che la patch sia risolutiva.
+- I Manutentori DEVONO chiedere miglioramenti per le patch non corrette e respingerle completamente nel caso in cui il Contributore non abbia un atteggiamento costruttivo.
+- Qualunque Contributore abbia ricevuto commenti di valutazione alla sua patch corretta DEVE aggiungerli alla sua stessa patch.
+- I Manutentori POSSONO inviare commit di cambiamento direttamente nel progetto.
 
 ### Creazione della Release Stabile
 
-- Il progetto deve avere un branch ("master") che deve incorporare tutte le versioni più recenti in fase di sviluppo e deve essere sempre build.
-- Il progetto non deve utilizzare branch topic per nessuna ragione.Fork personali possono utilizzare i topic branch.
-- Per produrre una release stabile l'utente deve fare un fork della repository copiandola e diventandone un manutentore.
-- Fare un fork del progetto per stabilizzarlo può essere effettuato in maniera unilaterale senza il consenso dei Manutentori di esso.
-- Un progetto di stabilizzazione deve essere condotto secondo lo stesso processo del progetto principale.
-- Una patch per un progetto di stabilizzazione deve essere dichiarata "stabile" e correlata da un test riproducibile.
+- Il progetto DEVE avere un branch ("master") che deve incorporare tutte le versioni più recenti in fase di sviluppo e deve essere sempre build.
+- Il progetto NON DEVE utilizzare branch topic per nessuna ragione.Fork personali possono utilizzare i topic branch.
+- Per produrre una release stabile l'utente DEVE fare un fork della repository copiandola e diventandone un manutentore.
+- Fare un fork del progetto per stabilizzarlo PUO' essere effettuato in maniera unilaterale senza il consenso dei Manutentori di esso.
+- Un progetto di stabilizzazione DEVE essere condotto secondo lo stesso processo del progetto principale.
+- Una patch per un progetto di stabilizzazione DEVE essere dichiarata "stabile" e correlata da un test riproducibile.
 
 ### Evoluzione dei Public Contract
 
-- Tutti i Public Contract (APIs o protocolli) devono essere documentati.
-- Tutti i Public Contract devono poter essere sviluppati e testati.
-- Una patch che modifica un Public Contract stabile non deve compromettere il funzionamento di altre applicazioni a meno che non ci sia un forte consenso nel fare ciò.
-- Una patch che introduce nuove funzionalità ad un Public Contract deve utilizzare un nuovo nome.
-- Le vecchie nomenclature devono essere deprecate in maniera sistematica aggiungendo espressioni come "sperimentale (experimental)" finchè non sono stabili, di conseguenza le nomenclature deprecate dovranno essere aggiornate con "deprecato (deprecated)".
-- Trascorso un sufficiente periodo di tempo, le vecchie nomenclature devono essere aggiornate a "legacy" ed eventualmente eliminate.
-- Le vecchie nomenclature non devono essere riutilizzate.
-- Quando le vecchie nomenclature sono state rimosse, la loro implementazione deve generare una eccezione (assertion) se utilizzato dalle applicazioni.
+- Tutti i Public Contract (APIs o protocolli) DEVONO essere documentati.
+- Tutti i Public Contract DEVONO poter essere sviluppati e testati.
+- Una patch che modifica un Public Contract stabile NON DEVE compromettere il funzionamento di altre applicazioni a meno che non ci sia un forte consenso nel fare ciò.
+- Una patch che introduce nuove funzionalità ad un Public Contract DOVREBBE utilizzare un nuovo nome.
+- Le vecchie nomenclature DOVREBBERO essere deprecate in maniera sistematica aggiungendo espressioni come "sperimentale (experimental)" finchè non sono stabili, di conseguenza le nomenclature deprecate dovranno essere aggiornate con "deprecato (deprecated)".
+- Trascorso un sufficiente periodo di tempo, le vecchie nomenclature DOVREBBERO essere aggiornate a "legacy" ed eventualmente eliminate.
+- Le vecchie nomenclature NON DEVONO essere riutilizzate.
+- Quando le vecchie nomenclature sono state rimosse, la loro implementazione DEVE generare una eccezione (assertion) se utilizzato dalle applicazioni.
 
 ### Project Administration
 
-- I fondatori del progetto devono agire come Amministratori nella gestione il set di progetto dei Manutentori.
-- Gli Amministratori dovrebbero assicurare che avvenga un ricambio promuovendo i Manutentori migliori.
-- Un nuovo Contributore che produce una patch risolutiva dovrebbe essere invitato a diventare Manutentore.
-- Gli Amministratori possono rimuovere Manutentori inattivi per lunghi periodi di tempo o che falliscono ripetutamente nell'applicare questo processo in maniera accurata.
-- Gli Amministratori devono bloccare o bannare coloro che provocano stress o sentimenti negativi negli altri partecipanti al progetto. Questo deve essere fatto dopo una discussione pubblica, in cui viene data la possibilità di esprimersi a tutte le parti coinvolte. Un cattivo collaboratore è colui che ignora ripetutamente le regole e lo spirito del progetto, che è inutilmente aggressivo e offensivo durante le discussioni e che è incapace di modificare e migliorare il proprio comportamento nonostante le richieste altrui.
+- I fondatori del progetto DEVONO agire come Amministratori nella gestione dei Manutentori.
+- Gli Amministratori DOVREBBERO assicurare che avvenga un ricambio promuovendo i Manutentori migliori.
+- Un nuovo Contributore che produce una patch risolutiva DOVREBBE essere invitato a diventare Manutentore.
+- Gli Amministratori POSSONO rimuovere Manutentori inattivi per lunghi periodi di tempo o che falliscono ripetutamente nell'applicare questo processo in maniera accurata.
+- Gli Amministratori DOVREBBERO bloccare o bannare coloro che provocano stress o sentimenti negativi negli altri partecipanti al progetto. Questo DEVE essere fatto dopo una discussione pubblica, in cui viene data la possibilità di esprimersi a tutte le parti coinvolte. Un cattivo collaboratore è colui che ignora ripetutamente le regole e lo spirito del progetto, che è inutilmente aggressivo e offensivo durante le discussioni e che è incapace di modificare e migliorare il proprio comportamento nonostante le richieste altrui.
 
 # Processo di Governance
 
