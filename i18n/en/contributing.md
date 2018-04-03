@@ -22,7 +22,7 @@ To contribute your work, please proceed with the following:
    - Commit messages should be verbose by default, consisting of a short subject line (50 chars max), a blank line, and detailed explanatory text as separate paragraph(s) - unless the title alone is self-explanatory
    - If a particular commit references another issue, please add a reference. For example; *See #123*, or *Fixes #123*. This will help us resolve tickets when we merge into `master`
    - If a particular commit is rebased after collaboration within a pull-request, please reference the pull-request number within the commit message. For example; *References #123*
-6. [**Sign**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) your commit(s)
+6. [**Sign**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) your commit(s) and, if you are a new contributor, open a new pull-request which adds your PGP key to our repository (see contrib)
 7. Send a pull-request to branch `master`
    - The body of the pull request should contain an accurate description of what the patch does and should also provide justification/reasoning for the patch (when appropriate). You should include references to any discussions such as other tickets or chats on IRC
 
