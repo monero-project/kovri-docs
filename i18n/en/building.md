@@ -152,6 +152,7 @@ pacman -Su
 * Install dependencies: ```pacman -S make mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-boost mingw-w64-x86_64-openssl```
 * Optional: ```mingw-w64-x86_64-doxygen```  (you'll need [Graphviz](http://graphviz.org/doc/winbuild.html) for doxygen)
 * Note: You'll need  ``` mingw-w64-x86_64-miniupnpc``` if you are behind a restrictive NAT firewall.
+* Note: Ensure ```C:\<path-to>\msys64\mingw64\bin``` (or mingw32) is on your environment path when running MSYS2 bash from PowerShell
 
 ## Step 3. Build
 
@@ -162,7 +163,7 @@ $ git clone --recursive https://github.com/monero-project/kovri
 
 ### 2. Build kovri and submodule dependencies with one command
 ```bash
-$ make  # to decrease build-time, run `make -j <available CPU cores>`. Example: `make -j4`
+$ make release-static # to decrease build-time, run `make -j <available CPU cores>`. Example: `make -j4`
 ```
 
 ### 3. Install
