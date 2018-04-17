@@ -162,7 +162,7 @@ $ git clone --recursive https://github.com/monero-project/kovri
 
 ### 2. Build kovri and submodule dependencies with one command
 ```bash
-$ make  # to decrease build-time, run `make -j <available CPU cores>`. Example: `make -j4`
+$ make release-static # to decrease build-time, run `make -j <available CPU cores>`. Example: `make -j4`
 ```
 
 ### 3. Install
