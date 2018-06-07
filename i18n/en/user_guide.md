@@ -1,4 +1,9 @@
-# So, you've installed Kovri. Now what?
+# Quickstart
+
+1. Download or [Build](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/building.md) Kovri
+2. Open port between ```9111``` and ```30777``` and save it in `kovri.conf`
+3. Configure tunnels in `tunnels.conf`
+4. Run Kovri
 
 ## Step 1. Open your NAT/Firewall
 1. Choose a port between ```9111``` and ```30777```
