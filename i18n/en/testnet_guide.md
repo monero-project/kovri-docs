@@ -1,5 +1,10 @@
 # Getting started with the Kovri testnet
 
+## Preamble
+
+Kovri's testnet currently resides within a series of Docker containers and images which all communicating over a single Docker network.
+This allows for private network testing and monitoring without the need to connect to the public kovri network.
+
 ## Prerequisites
 
 1. `kovri` and `kovri-util` binaries in a local Kovri repository
