@@ -47,20 +47,12 @@ $ ./kovri/contrib/testnet/testnet.sh stop
 - You should be prompted to set a container timeout interval (if env not set)
    - This is useful in case of hanging routers
 
-## Destroying the Kovri testnet
+## Step 4: Destroy the testnet
 
-After all testing is done for this Kovri build, it's time to destroy the testnet.
-
-1. Navigate to the Kovri repo
-   * Ex: `cd /home/testuser/kovri`
-2. Run the destruction script
-   * Ex: `./contrib/testnet/testnet.sh destroy`
-3. You will be prompted for a testnet working directory to destroy
-   * Ex: `/home/testuser/testnet`
-4. All of the Docker containers and network will begin shutting down
-5. All of the Docker containers will be removed
-6. You will be prompted for a Kovri testnet network to destroy
-   * `kovri-testnet` is the default testnet network
+```bash
+$ ./kovri/contrib/testnet/testnet.sh destroy
+```
+- You should be prompted to set the testnet directory to destroy (if env not set)
 
 ## Running custom commands on the Kovri testnet
 
