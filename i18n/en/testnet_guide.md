@@ -39,17 +39,13 @@ $ ./kovri/contrib/testnet/testnet.sh start
 ```
 For monitoring options, run the `help` for details on how to monitor.
 
-## Step 3: Stopping the Kovri testnet
+## Step 3: Stop the testnet
 
-When the current round of testing is done, it's time to stop the testnet.
-
-1. Navigate to the Kovri repo
-   * Ex: `cd /home/testuser/kovri`
-2. Run the shutdown script
-   * Ex: `./contrib/testnet/testnet.sh stop`
-3. You will be prompted to set a timeout interval
-   * This is useful for allowing participating tunnels extra time to close
-4. All of the Docker containers and network will begin shutting down
+```bash
+$ ./kovri/contrib/testnet/testnet.sh stop
+```
+- You should be prompted to set a container timeout interval (if env not set)
+   - This is useful in case of hanging routers
 
 ## Destroying the Kovri testnet
 
