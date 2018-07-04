@@ -31,7 +31,7 @@ Essentielt, *dækker* Kovri en applikations internet traffik for at gøre det an
 Kovri er en sikkerheds-fokuseret router, der er fuldt kompatibel med I2P netværket. En alpha version af Kovri er i udvikling.
 
 ### Hvem udvikler Kovri?
-Kovri er et open-source projekt, som betyder at det afhænger af fælleskabets bidrag. De ledende udviklere på dette projekt er [anonimal](https://github.com/anonimal), som du kan stille spørgsmål til via Kovri IRC kanalerne [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev), og hans [Twitter konto](https://twitter.com/0x914409F1).
+Kovri er et open-source projekt, som betyder at det afhænger af fælleskabets bidrag. De ledende udviklere på dette projekt er [anonimal](https://github.com/anonimal), som du kan stille spørgsmål til via Kovri IRC kanalerne [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev), og hans [Twitter konto](https://twitter.com/whoisanonimal).
 
 Kovri bliver udviklet under paraplyen af  [The Monero Project](https://github.com/monero-project), hvilket er et andet open-source projekt der udvikler [Monero mønten](https://getmonero.org) og [Open Alias](https://openalias.org). Forholdet mellem The Monero Project og Kovri er en gensidig fordel, hvor Kovri søger at integrere sig i Monero-netværket, og Monero leverer en strøm af udviklere og ressourcer til Kovri-udvikling.
 

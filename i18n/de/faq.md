@@ -34,7 +34,7 @@ Im Wesentlichen *ummantelt* Kovri den Internetverkehr einer Anwendung mit dem Zi
 Als schlanker und sicherheitsorientierter Router ist Kovri vollständig mit dem I2P-Netzwerk kompatibel. Eine Alpha-Version von Kovri ist in Arbeit.
 
 ### Wer entwickelt Kovri?
-Kovri ist ein Open-Source-Projekt, was heißt, dass es von Beiträgen der Community abhängt. Der Chefentwickler des Projekts ist [anonimal](https://github.com/anonimal), dem Sie über die Kovri-IRC-Channels [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev) und seinen [Twitter-Account](https://twitter.com/0x914409F1) Fragen stellen können.
+Kovri ist ein Open-Source-Projekt, was heißt, dass es von Beiträgen der Community abhängt. Der Chefentwickler des Projekts ist [anonimal](https://github.com/anonimal), dem Sie über die Kovri-IRC-Channels [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev) und seinen [Twitter-Account](https://twitter.com/whoisanonimal) Fragen stellen können.
 
 Kovri wird unter dem Dach des [Monero-Projekts](https://github.com/monero-project) entwickelt, ein weiteres Open-Source-Projekt, das den [Monero-Coin](https://getmonero.org) und [Open Alias](https://openalias.org) entwickelt. Die Beziehung zwischen dem Monero-Projekt und Kovri ist zum beiderseitigen Vorteil, dadurch dass einerseits Kovri ins Monero-Netzwerk integriert werden soll und andererseits Monero Kovris Entwicklung einen Zustrom an Entwicklern und Ressourcen verschafft.
 

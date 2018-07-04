@@ -34,7 +34,7 @@ Essentially, Kovri *covers* an application's internet traffic to make it anonymo
 A lightweight and security-focused router, Kovri is fully compatible with the I2P network. An alpha version of Kovri is in the works.
 
 ### Who is developing Kovri?
-Kovri is an open-source project, which means that it depends on the community for contributions. The lead developer on the project is [anonimal](https://github.com/anonimal), who you can reach with questions on the Kovri IRC channels [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev), and his [Twitter account](https://twitter.com/0x914409F1).
+Kovri is an open-source project, which means that it depends on the community for contributions. The lead developer on the project is [anonimal](https://github.com/anonimal), who you can reach with questions on the Kovri IRC channels [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev), and his [Twitter account](https://twitter.com/whoisanonimal).
 
 Kovri is being developed under the umbrella of [The Monero Project](https://github.com/monero-project), which is another open-source project that develops the [Monero coin](https://getmonero.org) and [Open Alias](https://openalias.org). The relationship between The Monero Project and Kovri is a mutually beneficial one, with Kovri looking to integrate into the Monero network, and Monero providing a stream of developers and resources for Kovri development.
 
