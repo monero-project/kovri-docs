@@ -7,10 +7,14 @@ This allows for private network testing and monitoring without the need to conne
 
 ## Prerequisites
 
-1. `kovri` and `kovri-util` binaries in a local Kovri repository
-2. Docker, with a user permissioned to create containers and networks
-3. A Linux system
-   * testnet may work on other platforms, but only Linux is supported currently
+- Linux development environment (Linux is currently supported)
+   - See the kovri [README](https://github.com/monero-project/kovri#building) for a list of build dependencies
+- [Docker](https://www.docker.com/)
+   - The build user must have permissions to use Docker (added to the docker group, for example)
+- A cloned repository
+```bash
+$ git clone --recursive https://github.com/monero-project/kovri
+```
 
 ## Step 1: Creating the testnet
 
