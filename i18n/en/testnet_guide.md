@@ -32,12 +32,23 @@ $ ./kovri/contrib/testnet/testnet.sh create
 - See the Dockerfiles directory for available Dockerfiles to build during setup
 - To keep the Kovri repo clean, choose a directory outside the repo
 
-## Step 2: Start the testnet
+## Step 2a: Start the testnet
 
 ```bash
 $ ./kovri/contrib/testnet/testnet.sh start
 ```
 For monitoring options, run the `help` for details on how to monitor.
+
+## Step 2b: Run custom commands
+
+**TODO(unassigned): improve this section**
+
+To execute commands from within a container, see Docker documentation.
+
+You can also try:
+```bash
+$ ./contrib/testnet/testnet.sh exec "bash"
+```
 
 ## Step 3: Stop the testnet
 
@@ -53,19 +64,3 @@ $ ./kovri/contrib/testnet/testnet.sh stop
 $ ./kovri/contrib/testnet/testnet.sh destroy
 ```
 - You should be prompted to set the testnet directory to destroy (if env not set)
-
-## Running custom commands on the Kovri testnet
-
-Sometimes, it may be useful to run a specific command within a Kovri Docker container.
-
-Luckily, there's an option for that.
-
-1. Navigate to the Kovri repo
-   * Ex: `cd /home/testuser/kovri`
-2. Run the execution script
-   * For instance, let's say you need a bash shell
-   * Ex: `./contrib/testnet/testnet.sh exec "bash"`
-   * Other possibilities exist, and are left as an exploration for the reader
-3. The Kovri repo is loaded into the temporary container, so one also has access to the Kovri binaries
-   * Ex: From within the container: `./build/kovri` and `./build/kovri-util`
-   * Note: It may be necessary to enter a bash shell, and rebuild the binaries
