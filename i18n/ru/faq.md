@@ -31,7 +31,7 @@
 Легкий ориентированный на безопасность маршрутизатор Kovri полностью совместим с I2P сетью. Alpha версия Kovri находится в работе.
 
 ### Кто разрабатывает Kovri?
-Kovri проект с открытым исходным кодом, это означает, что он зависит от вклада сообщества. Основной разработчик проекта [anonimal](https://github.com/anonimal), которому можно задать вопросы на Kovri IRC  каналах [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev), или в его [Twitter'e](https://twitter.com/0x914409F1).
+Kovri проект с открытым исходным кодом, это означает, что он зависит от вклада сообщества. Основной разработчик проекта [anonimal](https://github.com/anonimal), которому можно задать вопросы на Kovri IRC  каналах [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev), или в его [Twitter'e](https://twitter.com/whoisanonimal).
 
 Kovri разрабатывается под эгидой [The Monero Project](https://github.com/monero-project), являющимся другим проектом с открытым исходным кодом, который разарбатывает монету [Monero](https://getmonero.org) и [Open Alias](https://openalias.org). Отношения между The Monero Project и Kovri взаимовыгодные, Kovri планируется для интеграции в сеть Monero, а Monero обеспечивает поток разработчиков и ресурсов для разработки Kovri.
 
