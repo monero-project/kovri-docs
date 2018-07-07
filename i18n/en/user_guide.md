@@ -16,7 +16,7 @@ Notes:
 - Consider creating a designated `kovri` user and run kovri only using that user
 - If using Linux, consider using a hardened kernel (such as [grsec](https://en.wikibooks.org/wiki/Grsecurity) with RBAC)
 - After installing the appropriate resources in your kovri data path, considering setting appropriate access control with [setfacl](https://linux.die.net/man/1/setfacl), [umask](https://en.wikipedia.org/wiki/Umask), or whatever your OS uses for ACL
-- Never share your port number with anyone as it will effect your anonymity!
+- Never share your port number with anyone as it will affect your anonymity!
 
 **Note: see kovri.conf to find your data path for Linux/OSX/Windows**
 
