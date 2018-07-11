@@ -57,11 +57,11 @@ To contribute your work, please proceed with the following:
 5. Be courteous of the git-log
    - Commit title should prepend class or aspect of project. For example, "HTTPProxy: implement User-Agent scrubber. Fixes #193." or "Garlic: fix uninitialized padding in ElGamalBlock"
    - Commit messages should be verbose by default, consisting of a short subject line (50 chars max), a blank line, and detailed explanatory text as separate paragraph(s) - unless the title alone is self-explanatory
-   - If a particular commit references another issue, please add a reference. For example; *See #123*, or *Fixes #123*. This will help us resolve tickets when we merge into `master`
+   - If a particular commit references another issue, please add a reference. For example; *See #123*, or *Fixes #123*. This will help us resolve issues when we merge into `master`
    - If a particular commit is rebased after collaboration within a pull-request, please reference the pull-request number within the commit message. For example; *References #123*
 6. [**Sign**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) your commit(s) and, if you are a new contributor, open a new pull-request which adds your PGP key to our repository (see contrib)
 7. Send a pull-request to branch `master`
-   - The body of the pull request should contain an accurate description of what the patch does and should also provide justification/reasoning for the patch (when appropriate). You should include references to any discussions such as other tickets or chats on IRC
+   - The body of the pull request should contain an accurate description of what the patch does and should also provide justification/reasoning for the patch (when appropriate). You should include references to any discussions such as other issues or chats on IRC
 
 ## Proposals
 To contribute a proposal, please review our [open issues](https://github.com/monero-project/kovri/issues) for existing proposals. If what you propose is not there, then [open a new issue](https://github.com/monero-project/kovri/issues/new).
@@ -77,7 +77,7 @@ Even though our C4 dictates that we merge everything, we ask that you open a pro
 *Not* opening a proposal will *not* prevent you from contributing; we will merge what you PR - but a proposal is highly recommended.
 
 ## TODO's
-- Do a quick search in the codebase for ```TODO(unassigned):``` and/or pick a ticket and start patching!
+- Do a quick search in the codebase for ```TODO(unassigned):``` and/or pick an issue and start patching!
 - If you create a TODO, assign it to yourself or write in ```TODO(unassigned):```
 
 ## Fuzz testing
@@ -162,7 +162,7 @@ The following is a proposed model for QA workflow. While linear in nature, any p
 ## Phase 5: Confer
 
 - Confer with colleagues and the community
-  - Conferring should be done publicly via ticket, meetings, and/or IRC
+  - Conferring should be done publicly via issues, meetings, and/or IRC
 - Accept all feedback and, in response, produce tangible results
 - If satisfied, proceed with next phase, else repeat this phase (or start from a previous phase)
 
