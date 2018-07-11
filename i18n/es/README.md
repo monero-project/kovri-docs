@@ -1,28 +1,28 @@
 [<img width="300" src="https://static.getmonero.org/images/kovri/logo.png" alt="ˈKoʊvriː" />](https://github.com/monero-project/kovri)
 
-1. [To cover, veil, wrap](https://en.wikipedia.org/wiki/Esperanto)
-2. A free, decentralized, anonymity technology based on [I2P](https://getmonero.org/resources/moneropedia/i2p.html)'s open specifications
+1. [Cubrir, Tapar, Envolver](https://en.wikipedia.org/wiki/Esperanto)
+2. Una tecnología  libre, descentralizada y anónima basada en especificaciones de  [I2P](https://getmonero.org/resources/moneropedia/i2p.html)
 
-## Disclaimer
-- Currently **pre-alpha** software; under heavy development (and not yet integrated with monero)
+## Exclusión de garantías y limitación de responsabilidad
+- Software actualmente en **pre-alfa**; bajo desarrollo extensivo (y aun no integrado con Monero)
 
-## Quickstart
+## Guía Rápida
 
-- Want pre-built binaries? [Download below](#downloads)
-- Want to build and install yourself? [Build instructions below](#building)
+- Quieres binarios pre-compilados? [Descarga abajo](#Descargas)
+- Quieres compilar e instalar tú mismo? [Instrucciones de compilado abajo](#Compilando)
 
-## Multilingual README
-This is a translated version of the Kovri README, the original (in english) is available at: https://github.com/monero-project/kovri/blob/master/README.md
+## Léeme multi-lenguaje
+Esta es una versión del archivo Léeme de Kovri, traducido al español, el original en Ingles está disponible en: https://github.com/monero-project/kovri/blob/master/README.md
 
-## Downloads
+## Descargas
 
-### Releases
+### Lanzamientos
 
-Alpha release coming soon
+Lanzamientos en Alfa muy pronto
 
-### [Nightly Releases (bleeding edge)](https://build.getmonero.org/waterfall)
+### [Lanzamientos Nocturnos (la más reciente)](https://build.getmonero.org/waterfall)
 
-| Download | Checksum | Status |
+| Descarga | Checksum | Estado |
 | -------- | -------- | ------ |
 | [Linux (x86-64)](https://build.getmonero.org/downloads/kovri-latest-linux-amd64.tar.bz2) | [Linux (x86-64)](https://build.getmonero.org/downloads/kovri-latest-linux-amd64.tar.bz2.sha256sum.txt) | [![Linux (x86-64)](https://build.getmonero.org/png?builder=kovri-static-ubuntu-amd64)](https://build.getmonero.org/builders/kovri-static-ubuntu-amd64) |
 | [Linux (i686)](https://build.getmonero.org/downloads/kovri-latest-linux-i686.tar.bz2) | [Linux (i686)](https://build.getmonero.org/downloads/kovri-latest-linux-i686.tar.bz2.sha256sum.txt) | [![Linux (i686)](https://build.getmonero.org/png?builder=kovri-static-ubuntu-i686)](https://build.getmonero.org/builders/kovri-static-ubuntu-i686) |
@@ -37,33 +37,33 @@ Alpha release coming soon
 
 ## Coverage
 
-| Type      | Status |
+| Tipo      | Estado |
 |-----------|--------|
-| Coverity  | [![Coverity Status](https://scan.coverity.com/projects/7621/badge.svg)](https://scan.coverity.com/projects/7621/)
-| Coveralls | [![Coveralls Status](https://coveralls.io/repos/github/monero-project/kovri/badge.svg?branch=master)](https://coveralls.io/github/monero-project/kovri?branch=master)
-| License   | [![License](https://img.shields.io/badge/license-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+| Coverity  | [![Estado de Coverity](https://scan.coverity.com/projects/7621/badge.svg)](https://scan.coverity.com/projects/7621/)
+| Coveralls | [![Estado de Coveralls](https://coveralls.io/repos/github/monero-project/kovri/badge.svg?branch=master)](https://coveralls.io/github/monero-project/kovri?branch=master)
+| Licencia   | [![Licencia](https://img.shields.io/badge/license-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-## Building
+## Compilando
 
-### Dependencies and environment
+### Dependencias y entorno
 
-| Dependency          | Minimum version              | Optional | Arch Linux  | Ubuntu/Debian    | macOS (Homebrew) | FreeBSD       | OpenBSD     |
+| Dependencia          | Versiones mínimas           | Opcional | Arch Linux  | Ubuntu/Debian    | macOS (Homebrew) | FreeBSD       | OpenBSD     |
 | ------------------- | ---------------------------- |:--------:| ----------- | ---------------- | ---------------- | ------------- | ----------- |
 | git                 | 1.9.1                        |          | git         | git              | git              | git           | git         |
 | gcc                 | 4.9.2                        |          | gcc         | gcc              |                  |               |             |
-| clang               | 3.5 (3.6 on FreeBSD)         |          | clang       | clang            | clang (Apple)    | clang36       | llvm        |
+| clang               | 3.5 (3.6 en FreeBSD)         |          | clang       | clang            | clang (Apple)    | clang36       | llvm        |
 | CMake               | 3.5.1                        |          | cmake       | cmake            | cmake            | cmake         | cmake       |
 | gmake (BSD)         | 4.2.1                        |          |             |                  |                  | gmake         | gmake       |
 | Boost               | 1.58                         |          | boost       | libboost-all-dev | boost            | boost-libs    | boost       |
-| OpenSSL             | Always latest stable version |          | openssl     | libssl-dev       | openssl          | openssl       | openssl     |
+| OpenSSL             | Siempre la última versión estable |          | openssl     | libssl-dev       | openssl          | openssl       | openssl     |
 | Doxygen             | 1.8.6                        |    X     | doxygen     | doxygen          | doxygen          | doxygen       | doxygen     |
 | Graphviz            | 2.36                         |    X     | graphviz    | graphviz         | graphviz         | graphviz      | graphviz    |
-| Docker              | Always latest stable version |    X     | See website | See website      | See website      | See website   | See website |
+| Docker              | Siempre la última versión estable |    X     | Ver sitio web | Ver sitio web      | Ver sitio web      | Ver sitio web   | Ver sitio web |
 
 #### Windows (MSYS2/MinGW-64)
-* Download the [MSYS2 installer](http://msys2.github.io/), 64-bit or 32-bit as needed
-* Use the shortcut associated with your architecture to launch the MSYS2 environment. On 64-bit systems that would be the `MinGW-w64 Win64 Shell` shortcut. Note: if you are running 64-bit Windows, you'll have both 64-bit and 32-bit environments
-* Update the packages in your MSYS2 install:
+* Descarga el instalador de [MSYS2](http://msys2.github.io/), 64-bit o 32-bit
+* Usa el acceso directo asociado con tu arquitectura, para abrir el entorno MSYS2. En sistemas 64-bit  seria `MinGW-w64 Win64 Shell`. Nota: si estas en 64-bit Windows, vas a necesitar ambos entornos 64-bit y 32-bit
+* Actualiza los paquetes en tu instalación de MSYS2:
 
 ```shell
 $ pacman -Sy
@@ -71,66 +71,66 @@ $ pacman -Su --ignoregroup base
 $ pacman -Syu
 ```
 
-#### Install packages
+#### Instala los paquetes
 
-Note: For i686 builds, replace `mingw-w64-x86_64` with `mingw-w64-i686`
+Nota: Para instalaciones i686, reemplaza `mingw-w64-x86_64` con `mingw-w64-i686`
 
 `$ pacman -S make mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-boost mingw-w64-x86_64-openssl`
 
-Optional:
+Opcional:
 
 `$ pacman -S mingw-w64-x86_64-doxygen mingw-w64-x86_64-graphviz`
 
-### Make and install
+### Make e install
 
-**Do *not* use the zip file from github: do a recursive clone only**
+** *No* uses el archivo zip de github: haz un clonado recursivo**
 
 ```bash
 $ git clone --recursive https://github.com/monero-project/kovri
-$ cd kovri && make  # see the Makefile for all build options
+$ cd kovri && make release # lee el archivo Makefile para más opciones
 $ make install
 ```
 
-- End-users MUST run `make install` for new installations
-- Developers SHOULD run `make install` after a fresh build
+- Usuarios finales DEBEN correr el comando `make install` para instalaciones nuevas
+- Desarrolladores DEBERÍAN correr `make install` después de cada compilado
 
 ### Docker
 
-Or build locally with Docker
+O compila localmente con Docker
 
 ```bash
 $ docker build -t kovri:latest .
 ```
 
-## Documentation and Development
-- A [User Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/user_guide.md) is available for all users
-- A [Developer Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/developer_guide.md) is available for developers (please read before opening a pull request)
-- More documentation can be found in your language of choice within the [kovri-docs](https://github.com/monero-project/kovri-docs/) repository
-- [Moneropedia](https://getmonero.org/knowledge-base/moneropedia/kovri) is recommended for all users and developers
-- [Forum Funding System](https://forum.getmonero.org/8/funding-required) to get funded for your work, [submit a proposal](https://forum.getmonero.org/7/open-tasks/2379/forum-funding-system-ffs-sticky)
-- [build.getmonero.org](https://build.getmonero.org/) or monero-build.i2p for detailed build information
-- [repo.getmonero.org](https://repo.getmonero.org/monero-project/kovri) or monero-repo.i2p are alternatives to GitHub for non-push repository access
-- See also [kovri-site](https://github.com/monero-project/kovri-site) and [monero/kovri meta](https://github.com/monero-project/meta)
+## Documentación y desarrollo
+- Una [Guía de usuario](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/user_guide.md) esta disponible para todos los usuarios
+- Una [Guía de desarrolladores](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/developer_guide.md) esta disponible para los desarrolladores (por favor, leer antes de abrir un nuevo pull request)
+- Hay más documentación en tu idioma en el repositorio de [kovri-docs](https://github.com/monero-project/kovri-docs/)
+- [Moneropedia](https://getmonero.org/knowledge-base/moneropedia/kovri) es recomendado para todos los usuarios y desarrolladores
+- [Forum Funding System](https://forum.getmonero.org/8/funding-required) para obtener fondos para tu trabajo, [envía una propuesta](https://forum.getmonero.org/7/open-tasks/2379/forum-funding-system-ffs-sticky)
+- [build.getmonero.org](https://build.getmonero.org/) o monero-build.i2p para información detallada de los archivos compilados
+- [repo.getmonero.org](https://repo.getmonero.org/monero-project/kovri) o monero-repo.i2p son alternativas a github para repositorios de acceso sin push
+- Ve tambien [kovri-site](https://github.com/monero-project/kovri-site) y [monero/kovri meta](https://github.com/monero-project/meta)
 
-## Vulnerability Response
-- Our [Vulnerability Response Process](https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md) encourages responsible disclosure
-- We are also available via [HackerOne](https://hackerone.com/monero)
+## Respuesta vulnerabilidades
+- Nuestro [Proceso de respuesta de Vulnerabilidades](https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md) alienta la divulgación responsable
+- También estamos en [HackerOne](https://hackerone.com/monero)
 
-## Contact and Support
-- IRC: [Freenode](https://webchat.freenode.net/) | Irc2P with Kovri
-  - `#kovri` | Community & Support Channel
-  - `#kovri-dev` | Development Channel
+## Contacto y Soporte
+- IRC: [Freenode](https://webchat.freenode.net/) | Irc2P con Kovri
+  - `#kovri` | Canal de la comunidad y soporte
+  - `#kovri-dev` | Canal de desarrollo
 - [Monero Mattermost](https://mattermost.getmonero.org/)
-- [Monero Slack](https://monero.slack.com/) (ask for an invite on IRC)
+- [Monero Slack](https://monero.slack.com/) (pide una invitación en el IRC)
 - [Monero StackExchange](https://monero.stackexchange.com/)
 - [Reddit /r/Kovri](https://www.reddit.com/r/Kovri/)
 - Twitter: [@getkovri](https://twitter.com/getkovri)
 - Email:
-  - General Purpose / Media Contact
+  - Propósito general / contacto con los medios
     - dev [at] getmonero.org
-  - All other contact
+  - Otros contactos
     - anonimal [at] getmonero.org
-    - PGP Key fingerprint: 1218 6272 CD48 E253 9E2D  D29B 66A7 6ECF 9144 09F1
+    - Huella de PGP: 1218 6272 CD48 E253 9E2D  D29B 66A7 6ECF 9144 09F1
 
-## Donations
-- Visit our [Donations Page](https://getmonero.org/getting-started/donate/) to help Kovri with your donations
+## Donaciones
+- Visita nuestra [Pagina de Donaciones](https://getmonero.org/getting-started/donate/) para ayudar a Kovri con tus donaciones
