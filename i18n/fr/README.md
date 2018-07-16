@@ -83,7 +83,7 @@ Optionnellement :
 
 ### Make et install
 
-** *Ne pas* utiliser le fichier zip de github : faites uniquement un clone récursif**
+***Ne pas* utiliser le fichier zip de github : faites uniquement un clone récursif**
 
 ```bash
 $ git clone --recursive https://github.com/monero-project/kovri
