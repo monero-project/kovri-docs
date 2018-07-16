@@ -110,7 +110,7 @@ $ docker build -t kovri:latest .
 - En [Användarhandledning](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/user_guide.md) finns tillgänglig för alla användare
 - En [Utvecklarhandledning](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/developer_guide.md) finns tillgänglig för utveckling (läs den innan du öppnar ett 'pull request')
 - Ytterligare dokumentation hittar du på ditt favoritspråk i kodförrådet [kovri-docs](https://github.com/monero-project/kovri-docs/)
-- [Moneropedia](https://getmonero.org/knowledge-base/moneropedia/kovri) rekommenderas för alla användare och utvecklare
+- [Moneropedia](https://getmonero.org/resources/moneropedia/kovri.html) rekommenderas för alla användare och utvecklare
 - [Forum Funding System](https://forum.getmonero.org/8/funding-required) för att få ersättning för ditt arbete, [skicka in ett förslag](https://forum.getmonero.org/7/open-tasks/2379/forum-funding-system-ffs-sticky)
 - [build.getmonero.org](https://build.getmonero.org/) eller monero-build.i2p för detaljerad information om byggen
 - [repo.getmonero.org](https://repo.getmonero.org/monero-project/kovri) eller monero-repo.i2p är alternativ till GitHub för icke-push åtkomst till kodförråd
@@ -141,4 +141,3 @@ $ docker build -t kovri:latest .
 ## Donationer
 
 - Besök vår [Donationssida](https://getmonero.org/getting-started/donate/) för att hjälpa Kovri med dina donationer
-
