@@ -84,7 +84,7 @@ Opzionale:
 
 ### Make e installa
 
-** *Non* utilizzare il file zip su github: clona esclusivamente recursivamente**
+***Non* utilizzare il file zip su github: clona esclusivamente recursivamente**
 
 ```bash
 $ git clone --recursive https://github.com/monero-project/kovri
