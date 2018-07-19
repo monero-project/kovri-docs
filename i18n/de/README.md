@@ -4,7 +4,7 @@
 2. Eine freie, dezentrale Anonymitätstechnologie, die auf [I2P](https://getmonero.org/resources/moneropedia/i2p.html)s offenen Spezifikationen beruht
 
 ## Disclaimer
-- Derzeit **Pre-Alpha**-Software; unter starker Entwicklung (und noch nicht in Monero integriert)
+- Derzeit **Alpha**-Software; unter starker Entwicklung (und noch nicht in Monero integriert)
 
 ## Schnellstart
 
@@ -22,8 +22,8 @@ Die Veröffentlichung der Alpha-Version steht kurz bevor.
 
 ### [Nightly Releases (bleeding edge)](https://build.getmonero.org/waterfall)
 
-| Download | Prüfsumme | Status |
-| -------- | -------- | ------ |
+| Installer | Prüfsumme | Status |
+| --------- | --------- | ------ |
 | [Linux (x86-64)](https://build.getmonero.org/downloads/kovri-latest-linux-amd64.tar.bz2) | [Linux (x86-64)](https://build.getmonero.org/downloads/kovri-latest-linux-amd64.tar.bz2.sha256sum.txt) | [![Linux (x86-64)](https://build.getmonero.org/png?builder=kovri-static-ubuntu-amd64)](https://build.getmonero.org/builders/kovri-static-ubuntu-amd64) |
 | [Linux (i686)](https://build.getmonero.org/downloads/kovri-latest-linux-i686.tar.bz2) | [Linux (i686)](https://build.getmonero.org/downloads/kovri-latest-linux-i686.tar.bz2.sha256sum.txt) | [![Linux (i686)](https://build.getmonero.org/png?builder=kovri-static-ubuntu-i686)](https://build.getmonero.org/builders/kovri-static-ubuntu-i686) |
 | [Linux (ARMv8)](https://build.getmonero.org/downloads/kovri-latest-linux-armv8.tar.bz2) | [Linux (ARMv8)](https://build.getmonero.org/downloads/kovri-latest-linux-armv8.tar.bz2.sha256sum.txt) | [![Linux (ARMv8)](https://build.getmonero.org/png?builder=kovri-static-debian-arm8)](https://build.getmonero.org/builders/kovri-static-debian-arm8) |
