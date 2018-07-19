@@ -6,7 +6,7 @@
   - Wer entwickelt Kovri?
   - Wie wird Kovri Monero helfen?
   - Warum sollte ich mir Kovri anstelle von I2P holen?
-  - Was bietet Ihnen Kovri (nicht)?
+  - Was bietet dir Kovri (nicht)?
   - Was ist der aktuelle Stand von Kovri?
   - Wann gibt es die Alpha-Version?
   - Worauf richtet das Entwicklerteam momentan sein Augenmerk?
@@ -25,7 +25,7 @@
 
 ### Was ist Kovri?
 
-[Kovri](https://getmonero.org/resources/moneropedia/kovri.html) ist eine kostenlose, dezentrale Anonymitätstechnologie entwickelt von [Monero](https://getmonero.org).
+[Kovri](https://getmonero.org/resources/moneropedia/kovri.html) ist eine freie, dezentrale Anonymitätstechnologie entwickelt von [Monero](https://getmonero.org).
 
 Kovri basiert momentan auf den offenen Spezifikationen von [I2P](https://getmonero.org/resources/moneropedia/i2p.html) und nutzt sowohl [Garlic-Verschlüsselung](https://getmonero.org/resources/moneropedia/garlic-encryption.html) als auch [Garlic-Routing](https://getmonero.org/resources/moneropedia/garlic-routing.html), um ein privates, geschütztes Overlay-Netz über das Internet aufzubauen. Dieses Overlay-Netz ermöglicht es Benutzern, *wirksam* ihre geografische Lage und Internet-IP-Adresse zu verbergen.
 
@@ -34,7 +34,7 @@ Im Wesentlichen *ummantelt* Kovri den Internetverkehr einer Anwendung mit dem Zi
 Als schlanker und sicherheitsorientierter Router ist Kovri vollständig mit dem I2P-Netzwerk kompatibel. Eine Alpha-Version von Kovri ist in Arbeit.
 
 ### Wer entwickelt Kovri?
-Kovri ist ein Open-Source-Projekt, was heißt, dass es von Beiträgen der Community abhängt. Der Chefentwickler des Projekts ist [anonimal](https://github.com/anonimal), dem Sie über die Kovri-IRC-Channels [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev) und seinen [Twitter-Account](https://twitter.com/whoisanonimal) Fragen stellen können.
+Kovri ist ein Open-Source-Projekt, was heißt, dass es von Beiträgen der Community abhängt. Der Chefentwickler des Projekts ist [anonimal](https://github.com/anonimal), dem du über die Kovri-IRC-Channels [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev) und seinen [Twitter-Account](https://twitter.com/whoisanonimal) Fragen stellen kannst.
 
 Kovri wird unter dem Dach des [Monero-Projekts](https://github.com/monero-project) entwickelt, ein weiteres Open-Source-Projekt, das den [Monero-Coin](https://getmonero.org) und [Open Alias](https://openalias.org) entwickelt. Die Beziehung zwischen dem Monero-Projekt und Kovri ist zum beiderseitigen Vorteil, dadurch dass einerseits Kovri ins Monero-Netzwerk integriert werden soll und andererseits Monero Kovris Entwicklung einen Zustrom an Entwicklern und Ressourcen verschafft.
 
@@ -49,10 +49,10 @@ Auftritt Kovri. Kovri wird in die offizielle Monero-Wallet implementiert, sodass
 Zweitens, während die Java-Implementierung von I2P großartig ist, kommt sie mit einer Menge zusätzlicher Funktionen, die wir bei der Monero-Anwendung nicht für notwendig halten. Also haben wir uns entschieden, ganz von vorne anzufangen und einen Router zu erstellen, der NUR der Router ist. Dieser Minimalansatz ist perfekt für Monero und ist auch eine gute Nachricht für andere, die I2P-Anwendungen entwickeln wollen. Sie haben die Möglichkeit, einen schlanken Router ohne den aufgeblähten Überschuss zu nutzen, während andere Benutzer, die Verwendung für diese zusätzlichen Funktionen haben, die Java-Implementierung nutzen können. Es ist eine Win-win-Situation für alle.
 
 ### Was bietet Kovri jetzt schon?
-- Ermöglicht Ihnen, ein Knoten im I2P-Netzwerk zu werden
-- Verbirgt Ihren Standort vor den besuchten Websites
-- Anonymisiert Sie auf IRC und ermöglicht anonyme E-Mails
-- Ermöglicht Ihnen anonyme Websites oder Dienste zu hosten
+- Ermöglicht dir, ein Knoten im I2P-Netzwerk zu werden
+- Verbirgt deinen Standort vor den besuchten Websites
+- Anonymisiert dich auf IRC und ermöglicht anonyme E-Mails
+- Ermöglicht dir, anonyme Websites oder Dienste zu hosten
 - Stellt Finanzierung für Entwickler, Hacker, Forscher via FFS und HackerOne bereit
 - Strebt rigorose Codequalität und Entwicklungsstandards an
 
@@ -64,13 +64,13 @@ Zweitens, während die Java-Implementierung von I2P großartig ist, kommt sie mi
 - Website-Entwicklung (getkovri.org / kovri.i2p)
 - Umfangreiche Dokumentation von ELI5 bis Entwickler
 
-### Was wird Kovri Ihnen nicht bieten?
-- Opferung Ihrer Sicherheit für irgendwelche Hintergedanken
+### Was wird Kovri dir nicht bieten?
+- Opferung deiner Sicherheit für irgendwelche Hintergedanken
 - Bereitstellung einer komplizierten, unangenehmen Web-Benutzeroberfläche
 - Notwendigkeit von Autoritäten für Netzwerk-Konsens
 - Zugriff auf Internetseiten über einen Outproxy
 - Notwendigkeit einer leistungsvernichtenden Java VM
-- Ausführen Ihres Hundes oder Lieblingstieres, Zahlen Ihrer Steuern
+- Ausführen deines Hundes oder Lieblingstieres, Zahlen deiner Steuern
 
 ### Was ist der aktuelle Stand von Kovri?
 Kovri befindet sich in aktiver Entwicklung und ist derzeit in einem Pre-Alpha-Stadium. Es ist noch *nicht* in Monero integriert, aber neben einigen Kernfunktionen entwickeln wir eine [Client](https://github.com/monero-project/kovri/issues/351)- und eine [Core](https://github.com/monero-project/kovri/issues/350)-API, die Monero und andere Anwendungen nutzen können.
@@ -84,11 +84,11 @@ Eine Alpha-Version ist in Arbeit und wird (hoffentlich!!) vor Ende 2017 veröffe
 Derzeit konzentrieren wir uns auf alles, was in unserem [Issue-Tracker](https://github.com/monero-project/kovri/issues/) aufgeführt ist. Das deckt einen Großteil dessen ab, was wir vor der offiziellen Alpha-Version fertigstellen müssen.
 
 ### Wie einsatzfähig sind Kovri und die Privatsphäre, die es bietet, zurzeit?
-Kovri ist im Rahmen dessen, was `./kovri --help` zu bieten hat, verwendbar. Kovri hat gegenwärtig keine Interaktion mit Monero. Im Hinblick auf den Schutz der Privatsphäre haben wir seit der Einführung viele Sicherheitsprobleme behoben, aber wir möchten Sie daran erinnern, dass wir uns noch immer in der Pre-Alpha-Phase befinden.
+Kovri ist im Rahmen dessen, was `./kovri --help` zu bieten hat, verwendbar. Kovri hat gegenwärtig keine Interaktion mit Monero. Im Hinblick auf den Schutz der Privatsphäre haben wir seit der Einführung viele Sicherheitsprobleme behoben, aber wir möchten dich daran erinnern, dass wir uns noch immer in der Pre-Alpha-Phase befinden.
 
-Es gibt immer noch viel Code zu schreiben, erwarten Sie also keine starke Anonymitätsgarantie wie mit Tor oder selbst Java-I2P. Diese Projekte haben mehr als 10 Jahre Erfahrung in der Forschung und Implementierung, und wir fangen gerade erst an.
+Es gibt immer noch viel Code zu schreiben, erwarte also keine starke Anonymitätsgarantie wie mit Tor oder selbst Java-I2P. Diese Projekte haben mehr als 10 Jahre Erfahrung in der Forschung und Implementierung, und wir fangen gerade erst an.
 
-Sie können gerne die Rolle des Entwicklers spielen und mit Kovri experimentieren, aber nur, wenn Sie die Tatsache, dass Sie **nicht** anonym sind, nicht in Gefahr bringt, da immer das Risiko einer möglichen Deanonymisierung besteht, weil wir uns noch in Pre-Alpha befinden (das ist nicht Kovri-spezifisch).
+Du kannst gerne die Rolle des Entwicklers spielen und mit Kovri experimentieren, aber nur, wenn dich die Tatsache, dass du **nicht** anonym bist, nicht in Gefahr bringt, da immer das Risiko einer möglichen Deanonymisierung besteht, weil wir uns noch in Pre-Alpha befinden (das ist nicht Kovri-spezifisch).
 
 
 ### Wie kann ich die Kovri-Entwickler erreichen?
@@ -99,8 +99,8 @@ Siehe unser [README](https://github.com/monero-project/kovri/blob/master/README.
 ### Warum sollte ich Kovri anstelle von i2pd verwenden?
 
 - Sicherheit: Unser Fokus liegt auf der Sicherung unserer Software; nicht darauf, [überstürzt Dinge fertigzustellen](https://github.com/monero-project/kovri/issues/65), um einen Release zu haben.
-- Qualität: Sie unterstützen Bemühungen, eine qualitativ hochwertige Codebase, die langfristig Bestand hat, zu gewährleisten. Dies beinhaltet alle Aspekte der Wartbarkeit des Codes.
-- Monero: Sie unterstützen eine Kryptowährung, die sich mit der Wahrung der Privatsphäre und Anonymität rühmt und gleichzeitig ihre Privatsphäre und Anonymität erhöht.
+- Qualität: Du unterstützt Bemühungen, eine qualitativ hochwertige Codebase, die langfristig Bestand hat, zu gewährleisten. Dies beinhaltet alle Aspekte der Wartbarkeit des Codes.
+- Monero: Du unterstützt eine Kryptowährung, die sich mit der Wahrung der Privatsphäre und Anonymität rühmt und gleichzeitig deine Privatsphäre und Anonymität erhöht.
 
 ### Was sind die größten Unterschiede zwischen Kovri und i2pd?
 
@@ -111,7 +111,7 @@ Siehe unser [README](https://github.com/monero-project/kovri/blob/master/README.
 - Wir werden alternative Reseeding-Optionen implementieren, damit Benutzer [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) anstelle von HTTPS zum Reseeding verwenden können.
 - Wir werden erweiterte Funktionen *(versteckter Modus + deaktiviertes Inbound)* implementieren, um Anonymität für diejenigen bereitszustellen, die in Ländern mit extremen Bedingungen leben oder sich hinter Firewalls mit Carrier-Grade-NAT oder DS-Lite befinden.
 - Wir werden immer eine willkommene Umgebung für Zusammenarbeit schaffen.
-- Wir werden immer auf Ihr Feedback hören und unser Bestes geben, um Kovri zu verbessern!
+- Wir werden immer auf dein Feedback hören und unser Bestes geben, um Kovri zu verbessern!
 
 ### Warum gab es den Fork von i2pd?
 
@@ -140,4 +140,4 @@ Da die restlichen Entwickler erkannten, dass ein solch erratisches Verhalten nur
 - Bugs: siehe unseren [Beitragsleitfaden](https://github.com/monero-project/kovri-docs/blob/master/i18n/de/contributing.md)
 
 ### Warum zeigt mein Log ein anderes Datum/eine andere Uhrzeit als meine Zeitzone?
-Logs werden in UTC aufgezeichnet, um Ihre Privatsphäre zu schützen. Durch die Verwendung von UTC können Sie Logs besser hochladen, um sie mit anderen Entwicklern oder der Community zu teilen, ohne Ihre Anonymität zu beeinträchtigen.
+Logs werden in UTC aufgezeichnet, um deine Privatsphäre zu schützen. Durch die Verwendung von UTC kannst du Logs besser hochladen, um sie mit anderen Entwicklern oder der Community zu teilen, ohne deine Anonymität zu beeinträchtigen.
