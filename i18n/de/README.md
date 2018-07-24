@@ -4,7 +4,7 @@
 2. Eine freie, dezentrale Anonymitätstechnologie, die auf [I2P](https://getmonero.org/resources/moneropedia/i2p.html)s offenen Spezifikationen beruht
 
 ## Disclaimer
-- Derzeit **Pre-Alpha**-Software; unter starker Entwicklung (und noch nicht in Monero integriert)
+- Derzeit **Alpha**-Software; unter starker Entwicklung (und noch nicht in Monero integriert)
 
 ## Schnellstart
 
@@ -22,8 +22,8 @@ Die Veröffentlichung der Alpha-Version steht kurz bevor.
 
 ### [Nightly Releases (bleeding edge)](https://build.getmonero.org/waterfall)
 
-| Download | Prüfsumme | Status |
-| -------- | -------- | ------ |
+| Installer | Prüfsumme | Status |
+| --------- | --------- | ------ |
 | [Linux (x86-64)](https://build.getmonero.org/downloads/kovri-latest-linux-amd64.tar.bz2) | [Linux (x86-64)](https://build.getmonero.org/downloads/kovri-latest-linux-amd64.tar.bz2.sha256sum.txt) | [![Linux (x86-64)](https://build.getmonero.org/png?builder=kovri-static-ubuntu-amd64)](https://build.getmonero.org/builders/kovri-static-ubuntu-amd64) |
 | [Linux (i686)](https://build.getmonero.org/downloads/kovri-latest-linux-i686.tar.bz2) | [Linux (i686)](https://build.getmonero.org/downloads/kovri-latest-linux-i686.tar.bz2.sha256sum.txt) | [![Linux (i686)](https://build.getmonero.org/png?builder=kovri-static-ubuntu-i686)](https://build.getmonero.org/builders/kovri-static-ubuntu-i686) |
 | [Linux (ARMv8)](https://build.getmonero.org/downloads/kovri-latest-linux-armv8.tar.bz2) | [Linux (ARMv8)](https://build.getmonero.org/downloads/kovri-latest-linux-armv8.tar.bz2.sha256sum.txt) | [![Linux (ARMv8)](https://build.getmonero.org/png?builder=kovri-static-debian-arm8)](https://build.getmonero.org/builders/kovri-static-debian-arm8) |
@@ -104,7 +104,7 @@ $ docker build -t kovri:latest .
 
 ## Dokumentation und Entwicklung
 - Ein [Benutzerhandbuch](https://github.com/monero-project/kovri-docs/blob/master/i18n/de/user_guide.md) steht allen Nutzern zur Verfügung
-- Ein [Entwicklerhandbuch](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/developer_guide.md) steht allen Entwicklern zur Verfügung (bitte vor dem Öffnen eines Pull-Requests lesen)
+- Ein [Entwicklerhandbuch](https://github.com/monero-project/kovri-docs/blob/master/i18n/de/developer_guide.md) steht allen Entwicklern zur Verfügung (bitte vor dem Öffnen eines Pull-Requests lesen)
 - Weitere Dokumentationen in der Sprache deiner Wahl sind im [kovri-docs](https://github.com/monero-project/kovri-docs/)-Repository zu finden
 - [Moneropedia](https://getmonero.org/resources/moneropedia/kovri.html) wird allen Nutzern und Entwicklern empfohlen
 - [Forum Funding System](https://forum.getmonero.org/8/funding-required) zur Finanzierung deiner Arbeit, [reiche einen Antrag ein](https://forum.getmonero.org/7/open-tasks/2379/forum-funding-system-ffs-sticky)
