@@ -18,8 +18,6 @@ This is a translated version of the Kovri README, the original (in english) is a
 
 ### Releases
 
-Alpha release coming soon
-
 ### [Nightly Releases (bleeding edge)](https://build.getmonero.org/waterfall)
 
 | Download | Checksum | Status |
