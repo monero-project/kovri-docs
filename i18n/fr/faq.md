@@ -75,9 +75,9 @@ Deuxièmement, bien que l'implémentation en Java soit bonne, elle s'accompagne 
 - De promener votre chien et de payer vos impôts
 
 ### Quel est l'état actuel de développement de Kovri ?
-Nous travaillons activement sur le développement de Kovri et celui-ci est en phase pre-alpha. Kovri *n'est pas encore* intégré dans Monero, mais, en plus de certaines fonctionnalités de base, nous sommes en train de développer un [client](https://github.com/monero-project/kovri/issues/351) et une [API cœur](https://github.com/monero-project/kovri/issues/350) visant à être utilisés par Monero ou d'autres applications.
+Nous travaillons activement sur le développement de Kovri et celui-ci est en phase Alpha. Kovri *n'est pas encore* intégré dans Monero, mais, en plus de certaines fonctionnalités de base, nous sommes en train de développer un [client](https://github.com/monero-project/kovri/issues/351) et une [API cœur](https://github.com/monero-project/kovri/issues/350) visant à être utilisés par Monero ou d'autres applications.
 
-Mais le fait que nous soyons en pre-alpha ne veut pas dire que vous ne pouvez pas utiliser Kovri. Vous pouvez déjà utiliser Kovri pour vous connecter au réseau I2P, surfer sur les *eepsites*, vous connecter sur IRC et faire tourner des *tunnels client* et *tunnels serveur*.
+Mais le fait que nous soyons en Alpha ne veut pas dire que vous ne pouvez pas utiliser Kovri. Vous pouvez déjà utiliser Kovri pour vous connecter au réseau I2P, surfer sur les *eepsites*, vous connecter sur IRC et faire tourner des *tunnels client* et *tunnels serveur*.
 
 ### Quand sera disponible la version alpha ?
 La version alpha sera disponible (nous l'espérons !!) avant fin 2017. Une fois que nous serons en alpha, le travail commencera immédiatement sur la version beta, qui nécessitera : une API complètement implémentée, la résolution des problèmes principaux d'assurance qualité et la résolution des différents bugs.
@@ -86,11 +86,11 @@ La version alpha sera disponible (nous l'espérons !!) avant fin 2017. Une fois 
 Nous travaillons actuellement sur tous les points listés sur notre [système de suivi](https://github.com/monero-project/kovri/issues/). La plupart de ce qui doit être achevé avant de sortir la version alpha officielle y est listé.
 
 ### Kovri est-il déjà utilisable et quel niveau de vie privée propose-t-il actuellement ?
-Kovri est utilisable. Sur `./kovri --help`, vous pouvez voir tout ce que Kovri offre actuellement. Kovri n'a pour le moment aucune interaction avec Monero. En ce qui concerne la vie privée, nous avons résolu de nombreux problèmes depuis le début, mais nous vous demandons de garder en tête que nous ne sommes qu'en pre-alpha.
+Kovri est utilisable. Sur `./kovri --help`, vous pouvez voir tout ce que Kovri offre actuellement. Kovri n'a pour le moment aucune interaction avec Monero. En ce qui concerne la vie privée, nous avons résolu de nombreux problèmes depuis le début, mais nous vous demandons de garder en tête que nous ne sommes qu'en Alpha.
 
 Il y a encore beaucoup de code à écrire et à tester, donc ne vous attendez pas encore à une garantie d'anonymité telle qu'offerte par Tor ou par I2P Java. Ces projets ont plus de 10 ans derrière eux de recherche, d'implémentation et d'utilisation. A contrario, nous n'en sommes qu'au début.
 
-N'hésitez pas à vous mettre dans le rôle d'un développeur et à jouer avec Kovri, mais seulement si *ne pas* être anonyme ne peut pas vous mettre en danger, étant donné que le risque de ne pas être complètement anonyme existe comme nous ne sommes qu'en pre-alpha (ce n'est pas unique à Kovri).
+N'hésitez pas à vous mettre dans le rôle d'un développeur et à jouer avec Kovri, mais seulement si *ne pas* être anonyme ne peut pas vous mettre en danger, étant donné que le risque de ne pas être complètement anonyme existe comme nous ne sommes qu'en Alpha (ce n'est pas unique à Kovri).
 
 ### Comment puis-je contacter les développeurs de Kovri ?
 Visitez notre [README](https://github.com/monero-project/kovri/blob/master/README.md).
