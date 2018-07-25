@@ -136,7 +136,7 @@ Seeing that this sort of erratic behavior would only hurt the I2P network and th
 
 ### I found a vulnerability! I found a bug! What do I do?
 - Vulnerabilities: see our [README](https://github.com/monero-project/kovri/blob/master/README.md)
-- Bugs: see our [Contributing Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/contributing.md)
+- Bugs: see our [Developer Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/developer_guide.md)
 
 ### Why does my log show a date/time different from my timezone?
 Logs are recorded in UTC to protect your privacy. By using UTC, you are in a better position to upload log pastes to share with developers or the community without impacting your anonymity.
