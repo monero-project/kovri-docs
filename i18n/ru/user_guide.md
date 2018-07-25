@@ -25,7 +25,13 @@
 Для получения полного списка опций выполните:
 
 ```bash
-$ ./kovri --help
+# Linux / macOS / *BSD
+$ cd ~/bin && ./kovri --help
+```
+
+```bash
+# Windows (PowerShell / MSYS2)
+$ cd "C:\Program Files\Kovri" ; ./kovri.exe --help
 ```
 
 Полный список параметров с описанием:
