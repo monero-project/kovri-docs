@@ -50,7 +50,7 @@ To contribute your work, please proceed with the following:
 1. [Fork](https://help.github.com/articles/fork-a-repo/) Kovri
 2. Review the style section of this document
 3. Create a [topic branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
-   - We currently do not have any tags as we are in pre-alpha. For now, you can base your work off of master
+   - We currently do not have any tags as we are in Alpha. For now, you can base your work off of master
 4. Make changes
    - Commits should be [atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) when possible and diffs should be easy to read
    - Please try to not mix formatting fixes with non-formatting commits

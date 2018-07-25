@@ -5,7 +5,7 @@
 2. Una libera, decentralizzata, tecnologia di anonimizzazione basata sulle specifiche aperte di [I2P](https://getmonero.org/it/resources/moneropedia/i2p.html)
 
 ## Disclaimer
-- Correntemente in **pre-alpha**; in intensivo sviluppo (e non ancora integrato con monero)
+- Correntemente in **Alpha**; in intensivo sviluppo (e non ancora integrato con monero)
 
 ## Quickstart
 
