@@ -13,7 +13,7 @@ Para contribuir tu trabajo, por favor procede con lo siguiente:
 3. Crea una [branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) para trabajar
 4. [**Firma**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) tu(s) commit(s)
 5. envía tu pull-request a la branch ```master```
-   - Actualmente no tenemos ningún tag por estar en pre-alpha. Por ahora, puedes basar tu trabajo desde la rama master.
+   - Actualmente no tenemos ningún tag por estar en Alpha. Por ahora, puedes basar tu trabajo desde la rama master.
    - Los mensajes del Commit deben ser verbose por default, considerando una línea de asunto de (50 caracteres máximo), una línea en blanco y una explicación detallada como párrafo(s) separado(s) - a menos que el titulo se auto-explique.
    - El título de commit debe preponer class u otro aspecto del proyecto. Por ejemplo, "HTTPProxy: implementado depurador de User-Agent. Arregla #193." o "Garlic: arregla padding no inicializado en ElGamalBlock".
    - Si un commit en particular referencia otro issue, por favor agrega una referencia. Por ejemplo, "Leer #123", o "Arregla #123". Esto ayudara a resolver tickets cuando se mezclen con ```master```.

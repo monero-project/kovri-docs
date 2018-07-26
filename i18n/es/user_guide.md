@@ -16,7 +16,13 @@ Notas:
 Para una lista completa de opciones:
 
 ```bash
-$ ./kovri --help
+# Linux / macOS / *BSD
+$ cd ~/bin && ./kovri --help
+```
+
+```bash
+# Windows (PowerShell / MSYS2)
+$ cd "C:\Program Files\Kovri" ; ./kovri.exe --help
 ```
 
 Para una lista completa detallada:

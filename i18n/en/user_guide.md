@@ -8,15 +8,15 @@
 Notes:
 
 - If you don't save the port, kovri will randomly generate a new one on each startup (you also have the choice to pass the port with the `--port` flag on each startup).
-- If you do not have access to your NAT, see instructions in the [building guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/building.md) for your OS.
-- **Don't share your port number with anyone as it will effect your anonymity!**
+- If you don't have access to your NAT, use the `--enable-upnp` runtime option or enable the option in `kovri.conf`
+- **Don't share your port number with anyone as it will affect your anonymity!**
 
 ## Step 2. (Recommended) Operational security
 
 - Consider creating a designated `kovri` user and run kovri only using that user
 - If using Linux, consider using a hardened kernel (such as [grsec](https://en.wikibooks.org/wiki/Grsecurity) with RBAC)
 - After installing the appropriate resources in your kovri data path, considering setting appropriate access control with [setfacl](https://linux.die.net/man/1/setfacl), [umask](https://en.wikipedia.org/wiki/Umask), or whatever your OS uses for ACL
-- Never share your port number with anyone as it will effect your anonymity!
+- Never share your port number with anyone as it will affect your anonymity!
 
 **Note: see kovri.conf to find your data path for Linux/OSX/Windows**
 
@@ -25,7 +25,13 @@ Notes:
 For a full list of options:
 
 ```bash
-$ ./kovri --help
+# Linux / macOS / *BSD
+$ cd ~/bin && ./kovri --help
+```
+
+```bash
+# Windows (PowerShell / MSYS2)
+$ cd "C:\Program Files\Kovri" ; ./kovri.exe --help
 ```
 
 For complete options with details:

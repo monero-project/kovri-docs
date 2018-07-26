@@ -6,7 +6,7 @@ Kovri è una sicura, privata e intracciabile implementazione router in C++ della
 Leggi di più su Kovri nella [Moneropedia](https://getmonero.org/resources/moneropedia/kovri).
 
 ## Qual è lo stato attuale di Kovri?
-Kovri è attivamente sviluppato e correntemente nella fase pre-alpha. Kovri *non* è ancora integrato con Monero ma, oltre a varie features principali, stiamo sviluppando un [client](https://github.com/monero-project/kovri/issues/351) e un [core](https://github.com/monero-project/kovri/issues/350) API da usare per Monero e altre applicazioni.
+Kovri è attivamente sviluppato e correntemente nella fase Alpha. Kovri *non* è ancora integrato con Monero ma, oltre a varie features principali, stiamo sviluppando un [client](https://github.com/monero-project/kovri/issues/351) e un [core](https://github.com/monero-project/kovri/issues/350) API da usare per Monero e altre applicazioni.
 
 Correntemente, puoi usare Kovri per connetterti (e partecipare) al network I2P: naviga eepsites, connettiti a IRC, apri un client e tunnel servers.
 
@@ -20,11 +20,11 @@ I logs sono registrati in UTC per proteggere la tua privacy. Usando UTC, puoi ca
 Correntemente, ci stiamo concentrando su tutto ciò che è listato nel nostro [issues tracker](https://github.com/monero-project/kovri/issues/). Copre molto di quello che dobbiamo finire prima di una release ufficiale (alpha, beta o maggiore).
 
 ## Kovri è usabile, parzialmente usabile o non è raccomandato l'utilizzo per forte privacy al momento?
-Kovri può essere utilizzato secondo quanto il comando ```./kovri --help``` ha da offire. Kovri non ha attualmente alcuna interazione con Monero. Riguardo alla privacy, abbiamo sistemato molti problemi di sicurezza fin dall'inizio ma siamo ancora in pre-alpha.
+Kovri può essere utilizzato secondo quanto il comando ```./kovri --help``` ha da offire. Kovri non ha attualmente alcuna interazione con Monero. Riguardo alla privacy, abbiamo sistemato molti problemi di sicurezza fin dall'inizio ma siamo ancora in Alpha.
 
 C'è ancora molto codice da coprire quindi non aspettarti una forte garanzia d'anonimato come con tor o persino java I2P. Questi progetti hanno 10+ anni di ricerche e implementazioni - e noi abbiamo appena iniziato.
 
-Sentiti libero di giocare il ruolo dello sviluppatore e sperimentare/giocare con Kovri ma solo se **non** essere anonimo non ti mette in pericolo - c'è sempre il rischio di una possibile deanonimizzazione a causa dell'essere in pre-alpha (questo non vale solo per Kovri).
+Sentiti libero di giocare il ruolo dello sviluppatore e sperimentare/giocare con Kovri ma solo se **non** essere anonimo non ti mette in pericolo - c'è sempre il rischio di una possibile deanonimizzazione a causa dell'essere in Alpha (questo non vale solo per Kovri).
 
 ## Informazioni per contattare Kovri?
 leggi il nostro [README](https://github.com/monero-project/kovri/blob/master/README.md).
@@ -67,4 +67,4 @@ Capendo che questo comportamento avrebe solo fatto male al network I2P e all'int
 
 ## Ho trovato una vulnerabilità! Ho trovato un bug! Cosa devo fare?
 - Vulnerabilità: vedi il nostro [LEGGIMI](https://github.com/monero-project/kovri/blob/master/README.md)
-- Bugs: leggi la nostra [Contributing Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/it/contributing.md)
+- Bugs: leggi la nostra [Developer Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/it/developer_guide.md)

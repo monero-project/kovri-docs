@@ -16,7 +16,7 @@ For at bidrage med dit arbejde, venligst fortsæt med følgende:
 3. Opret en [topic branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 4. [**Signer**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) dine commit(s)
 5. Send en pull-request til branch ```master```
-- På nuværende tidspunkt har vi ingen tags eftersom vi er i pre-alpha. For nu, kan du basere dit arbejde ud fra master.
+- På nuværende tidspunkt har vi ingen tags eftersom vi er i Alpha. For nu, kan du basere dit arbejde ud fra master.
 - Commit beskeder burde være ordrige som standard, bestående af en kort emne linje (max 50 tegn), en blank linje, og detaljeret forklarende tekst som et seperat afsnit - med mindre titlen alene er forklarende nok. 
 - Commit titel burde indeholde data eller et aspekt af projektet. F.eks. "HTTPProxy: implement User-Agent scrubber. Fixes #193." or "Garlic: fix uninitialized padding in ElGamalBlock".
 - Hvis en særlig commit referere til et andet problem, venligst tilføj en reference. F.eks. "See #123", eller "Fixes #123". Dette ville hjælpe os med at løse tickets når vi merger ind i  ```master```.

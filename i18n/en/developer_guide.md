@@ -1,26 +1,67 @@
-# Contributing
+# Guidelines
+- We aim for complete C++11/14 compliance; please use this to your advantage
+- Please use the standard library and dependency libraries whenever possible
 
-## Quality Assurance
-- View our [Quality Assurance](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/quality.md) guide to get an idea of proposed workflow
+## Vulnerability Response
+- Our [Vulnerability Response Process](https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md) encourages responsible disclosure
+- We are also available via [HackerOne](https://hackerone.com/monero)
 
-## Compliance
-- We aim for complete C++11/14 compliance; feel free to use this to your advantage with your work
-- It is also highly recommended to use the standard library and dependency libraries when possible
+## Style
+1. Read [Google's C++ Style Guide](https://google.github.io/styleguide/cppguide.html) (particularly for non-formatting style reference)
+   - If bash programming, read [Google's Shell Style Guide](https://github.com/google/styleguide/blob/gh-pages/shell.xml)
+2. For files containing only new work, run [clang-format](http://clang.llvm.org/docs/ClangFormat.html) with ```-style=file``` (which uses our provided [.clang-format](https://github.com/monero-project/kovri/blob/master/.clang-format))
+```bash
+$ cd kovri/ && clang-format -i -style=file src/path/to/my/file
+```
+3. For files with mixed (existing + new) work, run [clang-format](http://clang.llvm.org/docs/ClangFormat.html) selectively over only lines directly related to the new work.
+   - See [vim](http://clang.llvm.org/docs/ClangFormat.html#vim-integration) and [emacs](http://clang.llvm.org/docs/ClangFormat.html#emacs-integration) documentation for examples of configuring keybindings for `clang-format` plugins.
+4. Run [cpplint](https://github.com/google/styleguide/tree/gh-pages/cpplint) (which uses our provided [CPPLINT.cfg](https://github.com/monero-project/kovri/blob/master/CPPLINT.cfg)) to catch any issues that were missed by clang-format
+```bash
+$ cd kovri/ && cpplint src/path/to/my/file && [edit file manually to apply fixes]
+```
+
+### Plugins
+
+- Vim integration
+  - [clang-format](http://clang.llvm.org/docs/ClangFormat.html#vim-integration)
+  - [clang-format ubuntu 16.04 vim workaround](http://stackoverflow.com/questions/39490082/clang-format-not-working-under-gvim)
+  - [cpplint.vim](https://github.com/vim-syntastic/syntastic/blob/master/syntax_checkers/cpp/cpplint.vim)
+- Emacs integration
+  - [clang-format](http://clang.llvm.org/docs/ClangFormat.html#emacs-integration) + [clang-format.el](https://llvm.org/svn/llvm-project/cfe/trunk/tools/clang-format/clang-format.el)
+  - [flycheck-google-cpplint.el](https://github.com/flycheck/flycheck-google-cpplint)
+
+### Amendments to Google's proposed C++ style
+
+- Avoid prepended mixed-case ```k``` and MACRO_TYPE for all constants
+- Use Doxygen three-slash ```/// C++ comments``` when documenting for Doxygen
+- Try to document all your work for Doxygen as you progress
+- If anonymity is a concern, try to blend in with a present contributor's style
+
+### Optional Checks
+1. [cppdep](https://github.com/rakhimov/cppdep)
+   for component dependency, physical insulation, and include checks.
+2. [cppcheck](https://github.com/danmar/cppcheck/) for static analysis
+   (complementary to Coverity).
+3. [lizard](https://github.com/terryyin/lizard) for code complexity checks.
 
 ## Sending your work
 To contribute your work, please proceed with the following:
 
-1. Fork Kovri
-2. Read our [style guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/style.md)
+1. [Fork](https://help.github.com/articles/fork-a-repo/) Kovri
+2. Review the style section of this document
 3. Create a [topic branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
-4. [**Sign**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) your commit(s)
-5. Send a pull-request to branch ```master```
-   - We currently do not have any tags as we are in pre-alpha. For now, you can base your work off of master.
-   - Commit messages should be verbose by default, consisting of a short subject line (50 chars max), a blank line, and detailed explanatory text as separate paragraph(s) - unless the title alone is self-explanatory.
-   - Commit title should prepend class or aspect of project. For example, "HTTPProxy: implement User-Agent scrubber. Fixes #193." or "Garlic: fix uninitialized padding in ElGamalBlock".
-   - If a particular commit references another issue, please add a reference. For example "See #123", or "Fixes #123". This will help us resolve tickets when we merge into ```master```.
-   - In general, commits should be [atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) and diffs should be easy to read. For this reason, please try to not mix formatting fixes with non-formatting commits.
-   - The body of the pull request should contain an accurate description of what the patch does and provide justification/reasoning for the patch (when appropriate). You should include references to any discussions such as other tickets or chats on IRC.
+   - We currently do not have any tags as we are in Alpha. For now, you can base your work off of master
+4. Make changes
+   - Commits should be [atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) when possible and diffs should be easy to read
+   - Please try to not mix formatting fixes with non-formatting commits
+5. Be courteous of the git-log
+   - Commit title should prepend class or aspect of project. For example, "HTTPProxy: implement User-Agent scrubber. Fixes #193." or "Garlic: fix uninitialized padding in ElGamalBlock"
+   - Commit messages should be verbose by default, consisting of a short subject line (50 chars max), a blank line, and detailed explanatory text as separate paragraph(s) - unless the title alone is self-explanatory
+   - If a particular commit references another issue, please add a reference. For example; *See #123*, or *Fixes #123*. This will help us resolve issues when we merge into `master`
+   - If a particular commit is rebased after collaboration within a pull-request, please reference the pull-request number within the commit message. For example; *References #123*
+6. [**Sign**](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) your commit(s) and, if you are a new contributor, open a new pull-request which adds your PGP key to our repository (see contrib)
+7. Send a pull-request to branch `master`
+   - The body of the pull request should contain an accurate description of what the patch does and should also provide justification/reasoning for the patch (when appropriate). You should include references to any discussions such as other issues or chats on IRC
 
 ## Proposals
 To contribute a proposal, please review our [open issues](https://github.com/monero-project/kovri/issues) for existing proposals. If what you propose is not there, then [open a new issue](https://github.com/monero-project/kovri/issues/new).
@@ -36,8 +77,96 @@ Even though our C4 dictates that we merge everything, we ask that you open a pro
 *Not* opening a proposal will *not* prevent you from contributing; we will merge what you PR - but a proposal is highly recommended.
 
 ## TODO's
-- Do a quick search in the codebase for ```TODO(unassigned):``` and/or pick a ticket and start patching!
+- Do a quick search in the codebase for ```TODO(unassigned):``` and/or pick an issue and start patching!
 - If you create a TODO, assign it to yourself or write in ```TODO(unassigned):```
+
+## Fuzz testing
+
+From [reference](http://llvm.org/docs/LibFuzzer.html) : "LibFuzzer is under active development so you will need the current (or at least a very recent) version of the Clang compiler"
+
+Get a recent version of clang:
+
+```bash
+$ cd ~/ && mkdir TMP_CLANG && git clone https://chromium.googlesource.com/chromium/src/tools/clang TMP_CLANG/clang
+$ ./TMP_CLANG/clang/scripts/update.py
+$ cd --
+```
+
+Get libFuzzer:
+
+```bash
+$ git clone https://chromium.googlesource.com/chromium/llvm-project/llvm/lib/Fuzzer contrib/Fuzzer
+```
+
+Build kovri with fuzz testing enabled:
+
+```bash
+$ PATH="~/third_party/llvm-build/Release+Asserts/bin:$PATH" CC=clang CXX=clang++ make fuzz-tests
+```
+
+Usage (Example for RouterInfo):
+
+```bash
+mkdir RI_CORPUS MIN_RI_CORPUS
+find ~/.kovri/core/network_database/ -name "router_info*" -exec cp {} RI_CORPUS \;
+./build/kovri-util fuzz --target=routerinfo -merge=1 MIN_RI_CORPUS RI_CORPUS
+./build/kovri-util fuzz --target=routerinfo -jobs=2 -workers=2 MIN_RI_CORPUS
+```
+
+# Quality Assurance
+
+The following is a proposed model for QA workflow. While linear in nature, any phase can be worked on individually if needed - as long as all phases are eventually addressed.
+
+## Phase 1: Basic Review
+
+- Review open issues on our [Issue Tracker](https://github.com/monero-project/kovri/issues/)
+- Review our [Vulnerability Response Process](https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md)
+- All code must adhere to our contributing guidelines
+- Note areas that need improving (mentally or in code)
+- Create TODO's and assign if possible
+
+## Phase 2: Specification Review /  Implementation / Code Documentation
+
+- Complete specification review on a per module basis; e.g., Streaming, I2PControl, etc.
+  - Code must be in-line with essential parts of the specification that will maintain the same (or better) level of anonymity that java I2P provides
+  - Refactor/implement/patch when/where needed
+- Ensure C++11/14 compliant implementation
+  - Review phase 2 if needed
+- Resolve all related TODO's
+- Document code as much as possible with inline comments and Doxygen
+  - Code should be understood by novice to experienced coders
+  - Code should guide the reader to a better understanding of I2P
+    - I2P is very complex so our code should act as sovereign replacement of spec documentation and not simply as a supplement (this can be a tedious objective but very rewarding in terms of maintenance and software lifespan)
+
+## Phase 3: Crypto Review / Security auditing
+
+- Ensure that crypto is up-to-date and properly implemented
+- Establish every vector for known exploitation
+  - Keep these vectors in mind when writing tests
+- Break Kovri every which-way possible
+  - Fix what you break
+- Always use trustworthy, well-written libraries when possible
+  - Avoid homebrewed, ad-hoc, *I'm sure I know better than the community* type of code
+- Seek a 2nd (or more) opinion(s) from colleagues before proceeding to next phase
+
+## Phase 4: Bug squashing / Tests / Profiling
+
+- Resolve priority bugs/issues
+- Write unit-tests tests for every module
+  - Run tests. Run them again
+  - Full review of test results. Patch if needed. Refactor as necessary
+- Ensure that automation is running on a regular basis
+  - valgrind, doxygen, clang-format
+  - Patch if needed, refactor as necessary
+
+## Phase 5: Confer
+
+- Confer with colleagues and the community
+  - Conferring should be done publicly via issues, meetings, and/or IRC
+- Accept all feedback and, in response, produce tangible results
+- If satisfied, proceed with next phase, else repeat this phase (or start from a previous phase)
+
+## Phase 6: Repeat the cycle from the beginning
 
 # [Code of Conduct (22/C4.1)](http://rfc.zeromq.org/spec:22)
 

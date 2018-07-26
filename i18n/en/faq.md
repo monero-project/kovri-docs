@@ -34,7 +34,7 @@ Essentially, Kovri *covers* an application's internet traffic to make it anonymo
 A lightweight and security-focused router, Kovri is fully compatible with the I2P network. An alpha version of Kovri is in the works.
 
 ### Who is developing Kovri?
-Kovri is an open-source project, which means that it depends on the community for contributions. The lead developer on the project is [anonimal](https://github.com/anonimal), who you can reach with questions on the Kovri IRC channels [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev), and his [Twitter account](https://twitter.com/0x914409F1).
+Kovri is an open-source project, which means that it depends on the community for contributions. The lead developer on the project is [anonimal](https://github.com/anonimal), who you can reach with questions on the Kovri IRC channels [#kovri](irc://chat.freenode.net/#kovri), [#kovri-dev](irc://chat.freenode.net/#kovri-dev), and his [Twitter account](https://twitter.com/whoisanonimal).
 
 Kovri is being developed under the umbrella of [The Monero Project](https://github.com/monero-project), which is another open-source project that develops the [Monero coin](https://getmonero.org) and [Open Alias](https://openalias.org). The relationship between The Monero Project and Kovri is a mutually beneficial one, with Kovri looking to integrate into the Monero network, and Monero providing a stream of developers and resources for Kovri development.
 
@@ -73,9 +73,9 @@ Secondly, while the Java implementation of I2P is great, it comes with a lot of 
 - Walk your dog or favorite pet, pay your taxes
 
 ### What is the current state of Kovri?
-Kovri is in active development and currently is in a pre-alpha phase. It's *not* yet integrated with Monero, but, in addition to several core features, we are developing a [client](https://github.com/monero-project/kovri/issues/351) and [core](https://github.com/monero-project/kovri/issues/350) API for monero, and other applications, to use.
+Kovri is in active development and currently is in a Alpha phase. It's *not* yet integrated with Monero, but, in addition to several core features, we are developing a [client](https://github.com/monero-project/kovri/issues/351) and [core](https://github.com/monero-project/kovri/issues/350) API for monero, and other applications, to use.
 
-But just because we're in pre-alpha doesn't mean you can't use Kovri. Currently, you can use Kovri to connect to (and partake in) the I2P network, browse eepsites, connect to IRC, and run client and server tunnels.
+But just because we're in Alpha doesn't mean you can't use Kovri. Currently, you can use Kovri to connect to (and partake in) the I2P network, browse eepsites, connect to IRC, and run client and server tunnels.
 
 ### When is the alpha?
 An alpha release is in the works to be released (we hope!!) before the end of 2017. Once we're in alpha, work immediately begins on the beta release, which will require: a fully implemented API, resolution to essential quality assurance issues, and various bug fixes.
@@ -84,11 +84,11 @@ An alpha release is in the works to be released (we hope!!) before the end of 20
 Currently, we are focusing on everything listed in our [issues tracker](https://github.com/monero-project/kovri/issues/). They cover a bulk of what we need to finish before the official alpha release.
 
 ### What is the current usability of Kovri and the level of privacy it offers?
-Kovri is usable to the extent of what `./kovri --help` has to offer. Kovri currently has no interaction with Monero. With regard to privacy, we have fixed many security issues since inception, but we ask you to keep in mind that we are still in pre-alpha.
+Kovri is usable to the extent of what `./kovri --help` has to offer. Kovri currently has no interaction with Monero. With regard to privacy, we have fixed many security issues since inception, but we ask you to keep in mind that we are still in Alpha.
 
 There is still much code to cover, so don't expect a strong guarantee of anonymity like with Tor, or even Java I2P. Those projects have 10+ years of research and implementation experience, and we're just getting started.
 
-Feel free to play the role of developer and experiment with Kovri, but only if **not** being anonymous doesn't put you in danger, as there is always the risk of possible de-anonymization due to being in pre-alpha (this is not unique to Kovri).
+Feel free to play the role of developer and experiment with Kovri, but only if **not** being anonymous doesn't put you in danger, as there is always the risk of possible de-anonymization due to being in Alpha (this is not unique to Kovri).
 
 ### How can I get a hold of the Kovri developers?
 See our [README](https://github.com/monero-project/kovri/blob/master/README.md).
@@ -136,7 +136,7 @@ Seeing that this sort of erratic behavior would only hurt the I2P network and th
 
 ### I found a vulnerability! I found a bug! What do I do?
 - Vulnerabilities: see our [README](https://github.com/monero-project/kovri/blob/master/README.md)
-- Bugs: see our [Contributing Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/contributing.md)
+- Bugs: see our [Developer Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/developer_guide.md)
 
 ### Why does my log show a date/time different from my timezone?
 Logs are recorded in UTC to protect your privacy. By using UTC, you are in a better position to upload log pastes to share with developers or the community without impacting your anonymity.
