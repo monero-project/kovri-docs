@@ -1,50 +1,50 @@
-The following is a proposed model for QA workflow. While linear in nature, any phase can be worked on individually if needed - as long as all phases are eventually addressed.
+Il seguente modello riguarda il flusso di lavoro sul controllo di qualità. Posto che tutte le fasi devono essere, in ultima istanza, portate a termine, è possibile lavorare individualmente a ciascuna di esse.
 
-## Phase 1: Basic Review
+## Prima fase: Revisione di base
 
-- All code must adhere to our contributing guidelines
-- Note areas that need improving (mentally or in code)
-- Create TODO's and assign if possible
+- Tutto il codice deve rispettare le linee guida per i collaboratori
+- Evidenziare le aree che necessitano di un miglioramento, sia esso concettuale o a livello di codice
+- Creare liste di cose da fare, e, ove possibile, distribuire i compiti
 
-## Phase 2: Specification Review /  Implementation / Code Documentation
+## Seconda fase: Revisione della specifica /  Implementazione / Documentazione del codice
 
-- Complete specification review on a per module basis; e.g., Streaming, I2PControl, etc.
-  - Code must be in-line with essential parts of the specification that will maintain the same (or better) level of anonymity that java I2P provides
-  - Refactor/implement/patch when/where needed
-- Ensure C++11/14 compliant implementation
-  - Review phase 2 if needed
-- Resolve all related TODO's
-- Document code as much as possible with inline comments and Doxygen
-  - Code should be understood by novice to experienced coders
-  - Code should guide the reader to a better understanding of I2P
-    - I2P is very complex so our code should act as sovereign replacement of spec documentation and not simply as a supplement (this can be a tedious objective but very rewarding in terms of maintenance and software lifespan)
+- Revisionare completamente la specifica per ogni modulo (Streaming, I2PControl, etc.)
+  - Il codice deve essere in-line; ogni parte della specifica deve mantenere lo stesso livello di anonimato fornito da java I2P, o raggiungere un livello superiore
+  - Rifattorizzare/implementare/correggere quando/dove necessario
+- Assicurarsi che l'implementazione sia conforme a C++11/14
+  - Rivedere la seconda fase in caso di bisogno
+- Risolvere tutti i punti presenti nelle liste di cose da fare
+- Ove possibile, annotare il codice con commenti in-line e doxygen
+  - Il codice dovrebbe essere compreso tanto da programmatori esperti che da programmatori principianti
+  - Il codice dovrebbe guidare il lettore a una migliore comprensione di I2P
+    - Data la complessità di I2P, il nostro codice dovrebbe essere non tanto un supplemento, quanto una versione autonoma della documentazione (questo potrebbe sembrare ridondante, ma comporta dei notevoli vantaggi in termini di manutenzione e durata del software)
 
-## Phase 3: Crypto Review / Security auditing
+## Terza fase: Revisione crittografica / Ispezione della sicurezza
 
-- Ensure that crypto is up-to-date and properly implemented
-- Establish every vector for known exploitation
-  - Keep these vectors in mind when writing tests
-- Break Kovri every which-way possible
-  - Fix what you break
-- Always use trustworthy, well-written libraries when possible
-  - Avoid homebrewed, ad-hoc, *I'm sure I know better than the community* type of code
-- Seek a 2nd (or more) opinion(s) from colleagues before proceeding to next phase
+- Assicurarsi che la crittografia sia aggiornata e propriamente implementata
+- Stabilire quali sono i vettori di attacco conosciuti
+  - Tenere questi vettori a mente mentre si scrivono i test di sicurezza
+- Cercare di violare Kovri in ogni modo possibile
+  - Riparare i danni apportati
+- Utilizzare, ove possibile, librerie ben scritte e di fiducia
+  - Astenersi dallo scrivere codici artigianali, ad hoc, nello stile "Sono sicuro che ne so molto di più della comunità"
+- Chiedere una seconda opinione a uno o più colleghi prima di passare alla fase successiva
 
-## Phase 4: Bug squashing / Tests / Profiling
+## Quarta fase: Risoluzione dei bug / Test / Profiling
 
-- Resolve priority bugs/issues
-- Write unit-tests tests for every module
-  - Run tests. Run them again
-  - Full review of test results. Patch if needed. Refactor as necessary
-- Ensure that automation is running on a regular basis
+- Risolvere i bug e i problemi principali
+- Scrivere unità di test per ogni modulo
+  - Eseguire i test. Eseguirli di nuovo
+  - Revisionare i risultati dei test. Correggere o rifattorizzare ove necessario
+- Assicurarsi che l'automazione venga eseguita su base regolare
   - valgrind, doxygen, clang-format
-  - Patch if needed, refactor as necessary
+  - Correggere o rifattorizzare ove necessario
 
-## Phase 5: Confer
+## Quinta fase: Consultazioni
 
-- Confer with colleagues and the community
-  - Conferring should be done publicly via ticket, meetings, and/or IRC
-- Accept all feedback and, in response, produce tangible results
-- If satisfied, proceed with next phase, else repeat this phase (or start from a previous phase)
+- Consultarsi con i colleghi e con la comunità
+  - Le consultazioni dovrebbero tenersi pubblicamente per mezzo di incontri, ticket, e/o IRC
+- Accettare tutti i feedback, e, in risposta, produrre risultati tangibili
+- Se soddisfatti, procedere alla fase successiva, altrimenti ripetere questa fase (o ripartire da una fase precedente)
 
-## Phase 6: Repeat the cycle from the beginning
+## Sesta fase: Ripetere il ciclo dall'inizio
