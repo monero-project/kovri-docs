@@ -20,7 +20,7 @@ Notes:
 
 **Note: see kovri.conf to find your data path for Linux/OSX/Windows**
 
-## Step 3. Configure Kovri, setup tunnels
+## Step 3. Configure Kovri
 
 For a full list of options:
 
@@ -41,18 +41,19 @@ For complete options with details:
 
 ## Step 4. (Optional) Setup tunnels
 
-In short, *client tunnels* are tunnels which you use to connect to other services and *server tunnels* are used for when you host service(s) (and other people connect to your service).
+In short, *client tunnels* are tunnels which you use to connect to other services and *server tunnels* are used for when you host service(s) so other people can connect to your service (website, SSH, etc).
 
 By default, you will have client tunnels setup for IRC (Irc2P) and email (i2pmail). To add/remove client tunnels, see `tunnels.conf`.
 
-When creating server tunnel(s), you'll need to create *persistent private keys*. To do so, uncomment or create `keys = your-keys.dat` and replace `your-keys` with an appropriate name. **Do not share your private `.dat` file with anyone, and be sure to make a backup!**
+When creating server tunnel(s), you'll need to create *persistent private keys* which are used for your destination. To do so, uncomment or create `keys = your-keys.dat` and replace `your-keys` with an appropriate name. **Do not share your private `.dat` file with anyone (the only exception being if you wish to deploy multi-homing), and be sure to make a backup of the file!**
 
-Once setup, your [Base32 address](https://getmonero.org/resources/moneropedia/base32-address) will be shown in your log after you start kovri. You can also find the address in a text file along with the private keys file in your kovri data path in the `client/keys` directory. The address inside this `.txt` text file is safe to distribute so other people can connect to your service.
+Once setup, your [Base32](https://getmonero.org/resources/moneropedia/base32-address) and [Base64](https://getmonero.org/resources/moneropedia/base64-address) encoded destination will be shown in your log after you start kovri. You can also find these encodings in a text file along with the `.dat` file in your kovri data path in the `client/keys` directory. The encoded destination inside the **text files** `.dat.b32.txt` and `.dat.b64.txt` are safe to distribute to others so they can connect to your service.
 
 Example:
 
 - Private keys file: `client/keys/your-keys.dat`
-- Public [Base32](https://getmonero.org/resources/moneropedia/base32-address)/[Base64](https://getmonero.org/resources/moneropedia/base64-address) address: `client/keys/your-keys.dat.txt`
+- Public [Base32](https://getmonero.org/resources/moneropedia/base32-address): `client/keys/your-keys.dat.b32.txt`
+- Public [Base64](https://getmonero.org/resources/moneropedia/base64-address): `client/keys/your-keys.dat.b64.txt`
 
 **Note: see kovri.conf to find your data path for Linux/OSX/Windows**
 
