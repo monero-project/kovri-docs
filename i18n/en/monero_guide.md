@@ -2,44 +2,39 @@
 
 ## Getting Started
 
-Follow the instructions for building and/or installing Kovri & Monero.
-
-Configure server and client tunnels in Kovri to connect `monerod` nodes over the I2P network.
+1. Follow the instructions for building and/or installing [Kovri](https://github.com/monero-project/kovri) & [Monero](https://github.com/monero-project/monero)
+2. Review the [User Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/user_guide.md) in your language of choice
+3. Configure Kovri server and client tunnels to connect to `monerod` nodes over the I2P network
 
 ## Kovri server tunnel
 
 First, configure a server tunnel on one node.
 
-For example, add this to the server node's `kovri-data-dir/config/tunnels.conf`:
+To setup a server tunnel, see `tunnels.conf` located in your data directory. To locate your data directory, see `kovri.conf`.
 
 ```
-[XMRP2PServer]
+[XMR_P2P_Server]
 type = server
 address = 127.0.0.1
 port = 28080
-in_port =
+in_port = 28080
 keys = xmr-p2p-keys.dat
-white_list =
-black_list =
+;white_list =
+;black_list =
 ```
 
-This configuration will open a Kovri listener on `monerod`'s default testnet P2P port.
+This configuration will open a Kovri listener on `monerod`'s default testnet P2P port. Next, read the [User Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/en/user_guide.md) for how to obtain the base32 destination address.
 
-After configuring the server tunnel, start Kovri to get the node's destination address:
-
-```bash
-kovri # press ^C to kill Kovri
-cat kovri-data-dir/client/keys/xmr-p2p-keys.dat.b32.txt
-```
+If you have already started your kovri router, run `$ pkill -HUP kovri` to load the new tunnel. More drastically, you can also do a hard restart by stopping and starting kovri.
 
 ## Kovri client tunnel
 
-Copy the Base32-encoded destination, including the trailing `.b32.i2p`, to the tunnel configuration on the client node.
+Now that the server tunnel is setup, begin the client tunnel setup by pointing to the server tunnel.
 
-For example, add this to the client node's `kovri-data-dir/config/tunnels.conf`:
+Example:
 
 ```
-[XMRClient]
+[XMR_Client]
 type = client
 address = 127.0.0.1
 port = 24040
@@ -48,9 +43,9 @@ dest_port = 28080
 keys = xmr-client-keys.dat
 ```
 
-Restart the Kovri node to load the new tunnel configuration.
-
 Repeat the process for each node you would like to connect using Kovri.
+
+If you have already started your kovri router, run `$ pkill -HUP kovri` to load the new tunnel. More drastically, you can also do a hard restart by stopping and starting kovri.
 
 ## Monero P2P via Kovri
 
@@ -71,26 +66,21 @@ Exposing Monero's RPC service via Kovri is a similar process.
 Configure a server tunnel on your Kovri node:
 
 ```
-[XMRRPCServer]
+[XMR_RPC_Server]
 type = server
 address = 127.0.0.1
 port = 28081
-in_port =
+in_port = 28081
 keys = xmr-rpc-keys.dat
-white_list =
-black_list =
+;white_list =
+;black_list =
 ```
 
 This will generate a new set of keys, and a new destination address.
 
 To use the same destination address as P2P, simply replace `xmr-rpc-keys.dat` with `xmr-p2p-keys.dat` in the above configuration.
 
-Start Kovri, and copy your RPC server tunnel keys:
-
-```bash
-kovri # press ^C to kill Kovri
-cat kovri-data-dir/client/keys/xmr-rpc-keys.dat.b32.txt
-```
+If you have already started your kovri router, run `$ pkill -HUP kovri` to load the new tunnel. More drastically, you can also do a hard restart by stopping and starting kovri.
 
 This tunnel exposes `monerod`'s default testnet JSON RPC, and one can use Kovri's HTTP client tunnel to connect.
 
