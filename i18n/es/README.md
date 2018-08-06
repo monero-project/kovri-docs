@@ -18,8 +18,6 @@ Esta es una versión del archivo Léeme de Kovri, traducido al español, el orig
 
 ### Lanzamientos
 
-Lanzamientos en Alfa muy pronto
-
 ### [Lanzamientos Nocturnos (la más reciente)](https://build.getmonero.org/waterfall)
 
 | Descarga | Checksum | Estado |

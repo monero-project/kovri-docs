@@ -18,8 +18,6 @@ Ceci est une version traduite du README Kovri, la version originale (en anglais)
 
 ### Versions
 
-Version Alpha à venir
-
 ### [Version Nocturnes (bleeding edge)](https://build.getmonero.org/waterfall)
 
 | Téléchargement | Checksum | Etat |

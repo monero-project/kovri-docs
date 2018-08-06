@@ -18,8 +18,6 @@ Dies ist eine Übersetzung der Kovri-Readme-Datei, das (englischsprachige) Origi
 
 ### Versionen
 
-Die Veröffentlichung der Alpha-Version steht kurz bevor.
-
 ### [Nightly Releases (bleeding edge)](https://build.getmonero.org/waterfall)
 
 | Installer | Prüfsumme | Status |

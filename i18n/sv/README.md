@@ -20,8 +20,6 @@ Detta är en översättning av Kovris README-fil. Originalet (på engelska) finn
 
 ### Releaser
 
-Alfaversion kommer snart
-
 ### [Nattliga byggen ("bleeding edge")](https://build.getmonero.org/waterfall)
 
 | Nedladdning | Checksumma | Status |
