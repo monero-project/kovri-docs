@@ -50,7 +50,7 @@ Um deine Arbeit beizusteuern, gehe bitte wie folgt vor:
 1. [Forke](https://help.github.com/articles/fork-a-repo/) Kovri
 2. Gehe nochmals den Stil-Abschnitt dieses Dokuments durch
 3. Erstelle einen [themenspezifischen Branch](https://git-scm.com/book/de/v1/Git-Branching-Einfaches-Branching-und-Merging)
-   - Wir haben momentan keine Tags, da da wir uns noch im Pre-Alpha-Stadium befinden. Du kannst deine Arbeit fürs Erste auf dem master-Branch aufbauen
+   - Wir haben momentan keine Tags, da da wir uns noch im Alpha-Stadium befinden. Du kannst deine Arbeit fürs Erste auf dem master-Branch aufbauen
 4. Nimm Änderungen vor
    - Commits sollten wann immer möglich [atomar (*atomic*)](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) und Diffs einfach zu lesen sein
    - Versuche bitte, keine Ausbesserungen der Formatierung mit Nicht-Formatierungs-Commits zu vermischen
