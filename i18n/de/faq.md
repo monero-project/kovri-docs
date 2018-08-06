@@ -137,7 +137,7 @@ Da die restlichen Entwickler erkannten, dass ein solch erratisches Verhalten nur
 
 ### Ich habe eine Schwachstelle gefunden! Ich habe einen Bug gefunden! Was soll ich tun?
 - Schwachstellen: siehe unser [README](https://github.com/monero-project/kovri/blob/master/README.md)
-- Bugs: siehe unseren [Beitragsleitfaden](https://github.com/monero-project/kovri-docs/blob/master/i18n/de/developer_guide.md)
+- Bugs: siehe unser [Entwicklerhandbuch](https://github.com/monero-project/kovri-docs/blob/master/i18n/de/developer_guide.md)
 
 ### Warum zeigt mein Log ein anderes Datum/eine andere Uhrzeit als meine Zeitzone?
 Logs werden in UTC aufgezeichnet, um deine Privatsphäre zu schützen. Durch die Verwendung von UTC kannst du Logs besser hochladen, um sie mit anderen Entwicklern oder der Community zu teilen, ohne deine Anonymität zu beeinträchtigen.
