@@ -1,7 +1,9 @@
-Kovri es una implementación router de la red anónima I2P, segura, privada e intraceable. Lo que una vez fue un fork de i2pd, Kovri se ha convertido en una única y activamente desarrollada, implementación en C++ de I2P, llevada por la comunidad con muchas mejoras en seguridad, y nuevas características sobre su predecesor.
+[Kovri](https://getmonero.org/resources/moneropedia/kovri.html) es una tecnología gratuita, descentralizada y anónima desarrollada por [Monero](https://getmonero.org).
 
-Kovri está en activo desarrollo, y se encuentra en Alpha. Kovri aún no está integrado con Monero pero, en adición a algunas características principales, estamos desarrollando un cliente, y un API principal para usarse en Monero y otras aplicaciones
+Actualmente basado en las especificaciones abiertas de [I2P](https://getmonero.org/resources/moneropedia/i2p.html), Kovri usa ambos [encriptación de ajo (Garlic)](https://getmonero.org/resources/moneropedia/garlic-encryption.html) y [routing de ajo (Garlic)](https://getmonero.org/resources/moneropedia/garlic-routing.html) para crear una red privada superpuesta protegida a través de Internet. Esta superposición de red proporciona a los usuarios la capacidad de *ocultar* de manera efectiva su ubicación geográfica y su dirección IP de Internet.
 
-Actualmente, puedes usar Kovri para conectarte a (y formar parte en) la red I2P: navegar en eepsites, conectarte a IRC, y correr túneles cliente y servidor.
+Esencialmente, Kovri *cubre* el tráfico de Internet de una aplicación para que sea anónimo dentro de la red.
 
-Un lanzamiento alpha está previsto para comienzos del 2017. Una vez que todos los seguros de calidad estén resueltos y una API haya sido completamente implementada, se lanzara una versión beta.
+Un enrutador ligero y centrado en la seguridad, Kovri es totalmente compatible con la red I2P. Una versión alfa de Kovri está en proceso.
+
+Mire el desarrollo a través del repo de [Kovri](https://github.com/monero-project/kovri#downloads) y [únase a la comunidad](https://github.com/monero-project/kovri#contact).
