@@ -20,7 +20,7 @@
 
 ### [Ночные сборки (самая свежая версия)](https://build.getmonero.org/waterfall)
 
-| Download | Checksum | Status |
+| Скачать | Контрольная сумма | Статус |
 | -------- | -------- | ------ |
 | [Linux (x86-64)](https://build.getmonero.org/downloads/kovri-latest-linux-amd64.tar.bz2) | [Linux (x86-64)](https://build.getmonero.org/downloads/kovri-latest-linux-amd64.tar.bz2.sha256sum.txt) | [![Linux (x86-64)](https://build.getmonero.org/png?builder=kovri-static-ubuntu-amd64)](https://build.getmonero.org/builders/kovri-static-ubuntu-amd64) |
 | [Linux (i686)](https://build.getmonero.org/downloads/kovri-latest-linux-i686.tar.bz2) | [Linux (i686)](https://build.getmonero.org/downloads/kovri-latest-linux-i686.tar.bz2.sha256sum.txt) | [![Linux (i686)](https://build.getmonero.org/png?builder=kovri-static-ubuntu-i686)](https://build.getmonero.org/builders/kovri-static-ubuntu-i686) |
@@ -56,7 +56,7 @@
 | OpenSSL             | Любая из последних стабильных версий |            | openssl     | libssl-dev       | openssl          | openssl       | openssl     |
 | Doxygen             | 1.8.6                              |      X     | doxygen     | doxygen          | doxygen          | doxygen       | doxygen     |
 | Graphviz            | 2.36                               |      X     | graphviz    | graphviz         | graphviz         | graphviz      | graphviz    |
-| Docker              | Любая из последних стабильных версий |      X     | See website | See website      | See website      | See website   | See website |
+| Docker              | Любая из последних стабильных версий |      X     | Смотрите на сайте | Смотрите на сайте      | Смотрите на сайте      | Смотрите на сайте   | Смотрите на сайте |
 
 #### Windows (MSYS2/MinGW-64)
 * Скачайте [MSYS2 installer](http://msys2.github.io/), 64-bit или 32-bit по необходимости
