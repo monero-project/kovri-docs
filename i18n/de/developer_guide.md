@@ -7,7 +7,7 @@
 - Wir sind auch via [HackerOne](https://hackerone.com/monero) erreichbar
 
 ## Stil
-1. Lies dir [Googles C++-Stilhandbuch](https://google.github.io/styleguide/cppguide.html) durch (insbesondere für nicht formattierende Stilverweise)
+1. Lies dir [Googles C++-Stilhandbuch](https://google.github.io/styleguide/cppguide.html) durch (insbesondere für nicht formatierende Stilverweise)
     - Bei Bash-Programmierung, lies [Googles Shell-Stilhandbuch](https://github.com/google/styleguide/blob/gh-pages/shell.xml)
 2. Bei Dateien, die nur Neues enthalten, lasse [clang-format](http://clang.llvm.org/docs/ClangFormat.html) mit ```-style=file``` (das unser bereitgestelltes [.clang-format](https://github.com/monero-project/kovri/blob/master/.clang-format) nutzt) laufen
 ```bash
