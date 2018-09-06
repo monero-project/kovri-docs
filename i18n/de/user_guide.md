@@ -11,16 +11,16 @@ Hinweise:
 - Wenn du keinen Zugang zu deinem NAT hast, verwende die Laufzeitoption `--enable-upnp` oder schalte die Option in `kovri.conf` ein.
 - **Teile deine Portnummer mit niemandem, da dies deine Anonymität beeinträchtigen wird!**
 
-## Schritt 2. (Empfohlen) Betriebssicherheit (Opsec)
+## Schritt 2. (Empfohlen) Operative Sicherheit (Opsec)
 
-- Erwäge, einen festgelegten `kovri`-Benutzer zu erstellen und führe kovri nur mit diesem Benutzer aus
+- Erwäge, einen eigenen `kovri`-Benutzer zu erstellen und führe kovri nur mit diesem Benutzer aus
 - Wenn du Linux nutzt, denke über die Verwendung eines gehärteten Kernels nach (wie etwa [grsec](https://en.wikibooks.org/wiki/Grsecurity) mit RBAC)
 - Nachdem du die entsprechenden Ressourcen in deinem kovri-Datenpfad installiert hast, solltest du eine angemessene Zugriffssteuerung (Access Control) einstellen mit [setfacl](https://linux.die.net/man/1/setfacl), [umask](https://en.wikipedia.org/wiki/Umask) oder was auch immer dein Betriebssystem als ACL (Access Control List) verwendet
 - Teile deine Portnummer mit niemandem, da dies deine Anonymität beeinträchtigen wird!
 
 **Hinweis: Deinen Datenpfad für Linux/OSX/Windows findest du in kovri.conf**
 
-## Schritt 3. Kovri konfigurieren, Tunnel einrichten
+## Schritt 3. Kovri konfigurieren
 
 Für eine vollständige Liste der Optionen:
 
@@ -41,18 +41,19 @@ Für vollständige Optionen mit Details:
 
 ## Schritt 4. (Optional) Tunnel einrichten
 
-Kurz gesagt, *Client-Tunnel* sind Tunnel, über die du Verbindungen zu anderen Diensten herstellst, und *Server-Tunnel* werden verwendet, wenn du Dienste hostest (und andere Personen sich mit deinem Dienst verbinden).
+Kurz gesagt, *Client-Tunnel* sind Tunnel, über die du Verbindungen zu anderen Diensten herstellst. *Server-Tunnel* werden verwendet, wenn du Dienste hostest, sodass sich andere Personen mit deinem Dienst (Website, SSH, etc.) verbinden können.
 
 Du hast standardmäßig Client-Tunnel für IRC (Irc2P) und E-Mail (i2pmail) eingerichtet. Zum Hinzufügen/Entfernen von Client-Tunneln, siehe `tunnels.conf`.
 
-Beim Erstellen von Server-Tunneln musst du *persistente private Schlüssel* erzeugen. Entferne dafür das Kommentarzeichen bei bzw. schreibe `keys = your-keys.dat` und ersetze `your-keys` mit einem geeigneten Namen. **Teile deine private `.dat`-Datei mit niemandem und stelle sicher, dass du eine Sicherungskopie erstellst!**
+Beim Erstellen von Server-Tunneln musst du *dauerhafte private Schlüssel* erzeugen, die für dein Ziel verwendet werden. Entferne dafür das Kommentarzeichen bei bzw. schreibe `keys = your-keys.dat` und ersetze `your-keys` mit einem geeigneten Namen. **Teile deine private `.dat`-Datei mit niemandem (hier besteht eine einzige Ausnahme und zwar, falls du Multihoming einsetzen möchtest) und stelle sicher, dass du eine Sicherungskopie der Datei erstellst!**
 
-Nach der Einrichtung wird deine [Base32-Adresse](https://getmonero.org/resources/moneropedia/base32-address) in deinem Log angezeigt, nachdem du kovri gestartet hast. Du findest die Adresse auch in einer Textdatei zusammen mit der privaten Schlüsseldatei in deinem kovri-Datenpfad im `client/keys`-Ordner. Die Adresse in dieser `.txt`-Textdatei kann gefahrlos weitergegeben werden, damit sich andere Personen mit deinem Dienst verbinden können.
+Nach der Einrichtung wird dein [Base32](https://getmonero.org/resources/moneropedia/base32-address)- und [Base64](https://getmonero.org/resources/moneropedia/base64-address)-codiertes Ziel in deinem Log angezeigt, nachdem du kovri gestartet hast. Du findest diese Codierungen auch in einer Textdatei zusammen mit der `.dat`-Datei in deinem kovri-Datenpfad im `client/keys`-Ordner. Das codierte Ziel in den **Textdateien** `.dat.b32.txt` und `.dat.b64.txt`kann gefahrlos an andere weitergegeben werden, damit sie sich mit deinem Dienst verbinden können.
 
 Beispiel:
 
 - Private Schlüsseldatei: `client/keys/your-keys.dat`
-- Öffentliche [Base32](https://getmonero.org/resources/moneropedia/base32-address)-/[Base64](https://getmonero.org/resources/moneropedia/base64-address)-Adresse: `client/keys/your-keys.dat.txt`
+- Öffentliche [Base32](https://getmonero.org/resources/moneropedia/base32-address): `client/keys/your-keys.dat.b32.txt`
+- Öffentliche [Base64](https://getmonero.org/resources/moneropedia/base64-address): `client/keys/your-keys.dat.b64.txt`
 
 **Hinweis: Deinen Datenpfad für Linux/OSX/Windows findest du in kovri.conf**
 
