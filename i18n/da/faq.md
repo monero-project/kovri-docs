@@ -131,7 +131,7 @@ Da denne slags uregelmæssige adfærd ville kun skade I2P-netværket og projekte
 
 ### Jeg har fundet en sikkerhedsfejl! Jeg har fundet en fejl! Hvad gør jeg?
 - Sikkerhedsfejle: læs vores [README](https://github.com/monero-project/kovri/blob/master/README.md)
-- Bugs: Læs vores [Developer Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/da/developer_guide.md)
+- Bugs: Læs vores [Udviklerguide](https://github.com/monero-project/kovri-docs/blob/master/i18n/da/developer_guide.md)
   
 ### Hvorfor viser min log mig en dato/tid forskellig for min tidszone?
 Logfiler registreres i UTC for at beskytte dit privatliv. Ved at bruge UTC har du bedre mulighed for at uploade logs, til at dele dem med udviklere eller fællesskabet uden at påvirke din anonymitet.

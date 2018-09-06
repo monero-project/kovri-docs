@@ -67,4 +67,4 @@ Capendo che questo comportamento avrebe solo fatto male al network I2P e all'int
 
 ## Ho trovato una vulnerabilità! Ho trovato un bug! Cosa devo fare?
 - Vulnerabilità: vedi il nostro [LEGGIMI](https://github.com/monero-project/kovri/blob/master/README.md)
-- Bugs: leggi la nostra [Developer Guide](https://github.com/monero-project/kovri-docs/blob/master/i18n/it/developer_guide.md)
+- Bugs: leggi la nostra [Guida per sviluppatori](https://github.com/monero-project/kovri-docs/blob/master/i18n/it/developer_guide.md)

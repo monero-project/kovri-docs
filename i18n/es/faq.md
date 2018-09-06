@@ -67,4 +67,4 @@ Ver que este comportamiento errático, solamente hería la red I2P y el proyecto
 
 ## ¡Encontré una vulnerabilidad! ¿Qué hago?
 - Vulnerabilidades: leer nuestro [README](https://github.com/monero-project/kovri/blob/master/README.md)
-- Bugs: leer nuestra [Guía para contribuir](https://github.com/monero-project/kovri-docs/blob/master/i18n/es/developer_guide.md)
+- Bugs: leer nuestra [Guía de desarrolladores](https://github.com/monero-project/kovri-docs/blob/master/i18n/es/developer_guide.md)
