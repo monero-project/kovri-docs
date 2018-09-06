@@ -19,8 +19,6 @@ Questa è la versione tradotta del README di Kovri, l'originale (in inglese) è 
 
 ### Pubblicazioni
 
-Alpha in arrivo
-
 ### [Pubblicazioni 'notturne' (bleeding edge)](https://build.getmonero.org/waterfall)
 
 | Download | Checksum | Status |
